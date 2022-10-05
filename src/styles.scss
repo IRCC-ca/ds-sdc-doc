@@ -2,7 +2,15 @@
 
 @use '~@ircc-ca/ds-sdc-core/index' as ircc-ds;
 
-@media (prefers-color-scheme: light) {
-  @include ircc-ds.theme-init-required(ircc-ds.palette-journeylab(), default, large, light);
+@media (prefers-color-scheme: dark) {
+  @include ircc-ds.theme-init-required(ircc-ds.palette-journeylab(), default, large, dark);
 }
+@include ircc-ds.theme-init-required(ircc-ds.palette-journeylab(), default, large, light);
+
 @include ircc-ds.element-styles();
+
+app-root {
+  display: block;
+  max-width: 1440px;
+  margin: 0 auto;
+}

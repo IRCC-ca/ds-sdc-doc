@@ -12,11 +12,12 @@
 
 <!-- Toolbar -->
 <jds-header>
-  <djl-link href="#">Français</djl-link>
+  <djl-link *ngIf="getCurrentLang()!='fr'" (click)="useLanguage('fr')" href="#">Français</djl-link>
+  <djl-link *ngIf="getCurrentLang()!='en'" (click)="useLanguage('en')" href="#">English</djl-link>
 </jds-header>
 
 <div class="content" role="main">
-  <h1>IRCC Design System</h1>
+  <h1>{{ 'Home.AppName' | translate }}</h1>
   <markdown [src]="'assets/md/README_core.md'"></markdown>
   <!-- Footer -->
   <jds-footer></jds-footer>

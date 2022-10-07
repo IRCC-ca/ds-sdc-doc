@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ds-sdc-doc';
+
+  constructor(private translate: TranslateService) {
+    translate.addLangs(['en', 'fr']);
+    translate.setDefaultLang('en');
+    this.useLanguage('en');
+  }
+
+  useLanguage(language: string): void {
+    this.translate.use(language);
+  }
+
+  getCurrentLang(): string {
+    return this.translate.currentLang;
+  }
 }

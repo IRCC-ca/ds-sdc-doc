@@ -11,6 +11,11 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@ircc-ca/ds-sdc-angular/*": [
+        "node_modules/@ircc-ca/ds-sdc-angular/dist/*"
+      ]
+    },
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,

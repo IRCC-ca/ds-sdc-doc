@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 // import ngx-translate and the http loader
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import {HttpClient, HttpClientModule} from '@angular/common/http';import { IRCCModule } from '@ircc-ca/ds-sdc-angular';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { IRCCModule } from '@ircc-ca/ds-sdc-angular';
 import { JLButtonModule } from '@ircc-ca/ds-sdc-angular/button';
 import { JLCheckboxModule } from '@ircc-ca/ds-sdc-angular/checkbox';
 import { JLFooterModule } from '@ircc-ca/ds-sdc-angular/footer';

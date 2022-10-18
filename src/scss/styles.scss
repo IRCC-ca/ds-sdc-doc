@@ -1,0 +1,60 @@
+/* You can add global styles to this file, and also import other style files */
+
+@use '../../node_modules/@ircc-ca/ds-sdc-core/index' as ircc-ds;
+@use '../../node_modules/@ircc-ca/ds-sdc-core/util/device' as ircc-ds-device;
+@use '../../node_modules/@ircc-ca/ds-sdc-core/util/color' as ircc-ds-color;
+@use '../../node_modules/@ircc-ca/ds-sdc-core/tokens/sizes' as ircc-ds-sizes;
+@use './grid';
+@import '../../node_modules/@ircc-ca/ds-sdc-core/layout/layout-grid';
+
+@media (prefers-color-scheme: dark) {
+  @include ircc-ds.theme-init-required(ircc-ds.palette-journeylab(), default, large, dark);
+}
+@include ircc-ds.theme-init-required(ircc-ds.palette-journeylab(), default, large, light);
+
+@include ircc-ds.element-styles();
+
+app-root {
+  display: block;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+jds-header {
+  picture {
+    min-width: 200px;
+  }
+}
+
+.content {
+  .content-area-responsive {
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 0;
+    border-top: 1px solid var(--divider);
+    > sidenav-container {
+      @include grid.col-12;
+      @include ircc-ds-device.in-tablet-layout {
+        @include grid.col-12;
+      }
+      @include ircc-ds-device.in-desktop-layout {
+        @include grid.col-3;
+        border-right: 1px solid var(--divider);
+      }
+    }
+    > .content-doc-wrapper {
+      @include grid.col-12;
+      @include ircc-ds-device.in-tablet-layout {
+        @include grid.col-12;
+      }
+      @include ircc-ds-device.in-desktop-layout {
+        @include grid.col-9;
+        max-width: 72%;
+        padding-left: ircc-ds-sizes.$fixed-4;
+      }
+      @media (min-width: grid.$screen_xl) {
+        padding-left: ircc-ds-sizes.$fixed-36;
+      }
+    }
+  }
+}

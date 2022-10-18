@@ -15,14 +15,45 @@
   <djl-link *ngIf="getCurrentLang()!='fr'" (click)="useLanguage('fr')" href="#">Français</djl-link>
   <djl-link *ngIf="getCurrentLang()!='en'" (click)="useLanguage('en')" href="#">English</djl-link>
 </jds-header>
-
 <div class="content" role="main">
   <h1>{{ 'Home.AppName' | translate }}</h1>
-  <markdown [src]="'assets/md/README_core.md'"></markdown>
-  <!-- Footer -->
-  <jds-footer></jds-footer>
-
+  <div class="content-area-responsive">
+    <sidenav-container>
+      <sidenav-section>
+        <sidenav-title>Getting started</sidenav-title>
+        <sidenav-item>Overview</sidenav-item>
+        <sidenav-item>For developers</sidenav-item>
+        <sidenav-item>For designers</sidenav-item>
+        <sidenav-item>Accessibility</sidenav-item>
+      </sidenav-section>
+      <sidenav-section>
+        <sidenav-title>Foundations</sidenav-title>
+        <sidenav-item>Colours</sidenav-item>
+        <sidenav-item>Typography</sidenav-item>
+        <sidenav-item>Iconography</sidenav-item>
+        <sidenav-item>Layouts</sidenav-item>
+        <sidenav-item>Tokens</sidenav-item>
+      </sidenav-section>
+      <sidenav-section>
+        <sidenav-title>Components</sidenav-title>
+        <sidenav-item>Buttons</sidenav-item>
+        <sidenav-item>Checkbox</sidenav-item>
+        <sidenav-item>External Link</sidenav-item>
+        <sidenav-item>Footer</sidenav-item>
+        <sidenav-item>Header</sidenav-item>
+        <sidenav-item>Icon button</sidenav-item>
+        <sidenav-item>Input field</sidenav-item>
+        <sidenav-item>Radio button</sidenav-item>
+        <sidenav-item>Tabs</sidenav-item>
+      </sidenav-section>
+    </sidenav-container>
+    <div class="content-doc-wrapper">
+      <markdown [src]="'assets/md/README_core.md'"></markdown>
+    </div>
+  </div>
 </div>
+<!-- Footer -->
+<jds-footer></jds-footer>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->

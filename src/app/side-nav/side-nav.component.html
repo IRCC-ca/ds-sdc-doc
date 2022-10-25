@@ -1,0 +1,10 @@
+<div class="sidenav-container">
+    <div class="sidenav-title">
+        <div *ngIf="isTitle">
+            <h3 class="title">{{title}}</h3>
+        </div>
+        <div *ngIf="!isTitle">
+            <a class="menuItems" href="">{{title}}</a>
+        </div>
+    </div>
+</div>

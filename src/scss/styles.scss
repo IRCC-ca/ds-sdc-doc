@@ -25,30 +25,3 @@ jds-header {
     min-width: 200px;
   }
 }
-
-.content {
-  .content-area-responsive {
-    justify-content: flex-start;
-    align-items: flex-start;
-    column-gap: 0;
-    border-top: 1px solid var(--divider);
-    > .content-doc-wrapper {
-      position: relative;
-      @include grid.col-12;
-      @include ircc-ds-device.in-tablet-layout {
-        @include grid.col-12;
-      }
-      @include ircc-ds-device.in-desktop-layout {
-        @include grid.col-9;
-      }
-      .mk-wrapper {
-        @include ircc-ds-device.in-desktop-layout {
-          padding-left: ircc-ds-sizes.$fixed-4;
-        }
-        @media (min-width: grid.$screen_xl) {
-          padding-left: ircc-ds-sizes.$fixed-36;
-        }
-      }
-    }
-  }
-}

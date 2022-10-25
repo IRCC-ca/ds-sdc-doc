@@ -17,6 +17,7 @@ import { MarkdownModule } from "ngx-markdown";
 
 import { AppComponent } from './app.component';
 import {SidenavModule} from "./sidenav/sidenav.module";
+import { SideNavComponent } from './side-nav/side-nav.component';
 
 const JL_ANGULAR_COMPONENTS = [
   JLButtonModule,
@@ -30,7 +31,8 @@ const JL_ANGULAR_COMPONENTS = [
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,

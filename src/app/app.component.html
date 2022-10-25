@@ -18,11 +18,11 @@
 <div class="content" role="main">
   <h1>{{ 'Home.AppName' | translate }}</h1>
   <div class="content-area-responsive">
-      <div class="left-nav">
-        <div *ngFor="let data of leftNavData">
-          <app-side-nav category="{{data.category}}" title="{{data.text}}"> </app-side-nav>
+    <app-side-nav-container class="left-nav" [mobileToggleIcon]="true">
+      <div *ngFor="let data of leftNavData">
+        <app-side-nav category="{{data.category}}" title="{{data.text}}"> </app-side-nav>
       </div>
-    </div>
+    </app-side-nav-container>
     <div class="content-doc-wrapper">
       <div class="mk-wrapper">
         <markdown [src]="'assets/md/README_core.md'"></markdown>

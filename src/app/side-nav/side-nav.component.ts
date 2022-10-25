@@ -14,7 +14,7 @@ export class SideNavComponent implements OnInit {
     if(this.category === 'title') {
       this.isTitle = true;
     } else {
-      this.isTitle= false;
+      this.isTitle = false;
     }
   }
 }

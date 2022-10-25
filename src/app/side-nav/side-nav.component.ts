@@ -12,7 +12,7 @@ export class SideNavComponent implements OnInit {
 
   ngOnInit() {
     if(this.category === 'title') {
-      this.isTitle=true;
+      this.isTitle = true;
     } else {
       this.isTitle= false;
     }

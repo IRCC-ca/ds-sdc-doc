@@ -1,5 +1,6 @@
 import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import ngx-translate and the http loader
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
@@ -35,6 +36,7 @@ const JL_ANGULAR_COMPONENTS = [
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     IRCCModule,
     JL_ANGULAR_COMPONENTS,
     SidenavModule,

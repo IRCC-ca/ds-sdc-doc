@@ -1,4 +1,4 @@
-import {Component, HostListener, OnInit} from '@angular/core';
+import {Component, HostListener, Input, OnInit} from '@angular/core';
 import {
   trigger,
   state,
@@ -27,30 +27,41 @@ import {
   ]
 })
 export class SidenavContainerComponent implements OnInit {
+  // If display toggle menu icon
+  @Input() mobileToggleIcon: boolean = false;
+  // If window is under mobile view
   mobile = false;
+  // If show or hide side menu
+  showMenu = true;
   barsIconConfig = {
     unicode: 'f0c9',
     fontFamily: 'fa-solid'
   };
-  showMenu = true;
 
   constructor() { }
 
   ngOnInit(): void {
     // See node_modules/@ircc-ca/ds-sdc-core/tokens/_sizes.scss:3
-    this.toggleMobile();
+    if (this.mobileToggleIcon) {
+      this.toggleMobile();
+    }
   }
 
   private toggleMobile() {
     if (window.innerWidth <= 768) {
       this.mobile = true;
       this.showMenu = false;
+    } else {
+      this.mobile = false;
+      this.showMenu = true;
     }
   }
 
   @HostListener('window:resize', ['$event'])
   onResize(event: Event) {
-    this.toggleMobile()
+    if (this.mobileToggleIcon) {
+      this.toggleMobile();
+    }
   }
 
   toggleMobileMenu() {

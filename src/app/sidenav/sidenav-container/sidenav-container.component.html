@@ -1,1 +1,7 @@
-<ng-content select="sidenav-section"></ng-content>
+<djl-icon *ngIf="mobile" [iconConfig]="barsIconConfig" (click)="toggleMobileMenu()"></djl-icon>
+<div
+  [@leftSideNavTrigger]="showMenu? 'open' : 'close' "
+  class="sidenav-section-wrapper"
+>
+  <ng-content select="sidenav-section"></ng-content>
+</div>

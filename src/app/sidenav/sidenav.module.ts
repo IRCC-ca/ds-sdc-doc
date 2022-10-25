@@ -4,7 +4,7 @@ import {SidenavContainerComponent} from "./sidenav-container/sidenav-container.c
 import { SidenavSectionComponent } from './sidenav-section/sidenav-section.component';
 import { SidenavTitleComponent } from './sidenav-title/sidenav-title.component';
 import { SidenavItemComponent } from './sidenav-item/sidenav-item.component';
-
+import { IRCCModule } from "@ircc-ca/ds-sdc-angular";
 
 
 @NgModule({
@@ -15,7 +15,8 @@ import { SidenavItemComponent } from './sidenav-item/sidenav-item.component';
     SidenavItemComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    IRCCModule
   ],
   exports: [
     SidenavContainerComponent,

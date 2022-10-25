@@ -16,9 +16,7 @@ import { JLRadiobuttonModule } from '@ircc-ca/ds-sdc-angular/radio-button';
 import { MarkdownModule } from "ngx-markdown";
 
 import { AppComponent } from './app.component';
-import {SidenavModule} from "./sidenav/sidenav.module";
-import { SideNavComponent } from './side-nav/side-nav.component';
-import {SideNavContainerComponent} from "./side-nav/side-nav-container.component";
+import { SideNavModule } from "./side-nav/side-nav.module";
 
 const JL_ANGULAR_COMPONENTS = [
   JLButtonModule,
@@ -33,15 +31,13 @@ const JL_ANGULAR_COMPONENTS = [
 @NgModule({
   declarations: [
     AppComponent,
-    SideNavComponent,
-    SideNavContainerComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     IRCCModule,
     JL_ANGULAR_COMPONENTS,
-    SidenavModule,
+    SideNavModule,
     HttpClientModule,
     MarkdownModule.forRoot({ loader: HttpClient }),
     // ngx-translate and the loader module

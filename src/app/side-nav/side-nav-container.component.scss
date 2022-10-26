@@ -3,6 +3,7 @@
 @use '~@ircc-ca/ds-sdc-core/tokens/sizes' as ircc-ds-sizes;
 
 :host {
+  overflow: hidden;
   &.left-nav {
     @include ircc-ds-device.in-desktop-layout {
       @include grid.col-3;

@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
-@use '~@ircc-ca/ds-sdc-core/index' as ircc-ds;
+@use '../../node_modules/@ircc-ca/ds-sdc-core/index' as ircc-ds;
+@use '../../node_modules/@ircc-ca/ds-sdc-core/util/device' as ircc-ds-device;
+@use '../../node_modules/@ircc-ca/ds-sdc-core/util/color' as ircc-ds-color;
+@use '../../node_modules/@ircc-ca/ds-sdc-core/tokens/sizes' as ircc-ds-sizes;
+@use './grid';
+@import '../../node_modules/@ircc-ca/ds-sdc-core/layout/layout-grid';
 
 @media (prefers-color-scheme: dark) {
   @include ircc-ds.theme-init-required(ircc-ds.palette-journeylab(), default, large, dark);

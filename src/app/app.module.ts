@@ -1,5 +1,6 @@
 import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import ngx-translate and the http loader
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
@@ -15,6 +16,7 @@ import { JLRadiobuttonModule } from '@ircc-ca/ds-sdc-angular/radio-button';
 import { MarkdownModule } from "ngx-markdown";
 
 import { AppComponent } from './app.component';
+import { SideNavModule } from "./side-nav/side-nav.module";
 
 const JL_ANGULAR_COMPONENTS = [
   JLButtonModule,
@@ -28,12 +30,14 @@ const JL_ANGULAR_COMPONENTS = [
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     IRCCModule,
     JL_ANGULAR_COMPONENTS,
+    SideNavModule,
     HttpClientModule,
     MarkdownModule.forRoot({ loader: HttpClient }),
     // ngx-translate and the loader module

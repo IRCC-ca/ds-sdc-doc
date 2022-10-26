@@ -1,0 +1,22 @@
+@use '~@ircc-ca/ds-sdc-core/tokens/text';
+
+.menuItems {
+  display: block;
+  padding: 16px 12px 16px 12px;
+  font-family: 'Lato', serif;
+  font-size: 16px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+a:link{
+  color:black;
+  text-decoration: none;
+}
+a:visited{
+  color:black;
+  text-decoration: none;
+}

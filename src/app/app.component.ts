@@ -1,18 +1,24 @@
 import { Component } from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
+import { getLeftNavBarConfig, getRightNavBarConfig } from './side-nav/side-nav.config';
+import {ISideNavDataInterface} from "./side-nav/side-nav.model";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'ds-sdc-doc';
+  rightNavData: ISideNavDataInterface[];
+  leftNavData: ISideNavDataInterface[];
 
   constructor(private translate: TranslateService) {
     translate.addLangs(['en', 'fr']);
     translate.setDefaultLang('en');
     this.useLanguage('en');
+    this.rightNavData = getRightNavBarConfig;
+    this.leftNavData = getLeftNavBarConfig;
   }
 
   useLanguage(language: string): void {

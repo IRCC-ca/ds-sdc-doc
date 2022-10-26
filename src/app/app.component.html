@@ -15,14 +15,28 @@
   <djl-link *ngIf="getCurrentLang()!='fr'" (click)="useLanguage('fr')" href="#">Français</djl-link>
   <djl-link *ngIf="getCurrentLang()!='en'" (click)="useLanguage('en')" href="#">English</djl-link>
 </jds-header>
-
 <div class="content" role="main">
   <h1>{{ 'Home.AppName' | translate }}</h1>
-  <markdown [src]="'assets/md/README_core.md'"></markdown>
-  <!-- Footer -->
-  <jds-footer></jds-footer>
-
+  <div class="content-area-responsive">
+    <app-side-nav-container class="left-nav" [mobileToggleIcon]="true">
+      <div *ngFor="let data of leftNavData">
+        <app-side-nav category="{{data.category}}" title="{{data.text}}"> </app-side-nav>
+      </div>
+    </app-side-nav-container>
+    <div class="content-doc-wrapper">
+      <div class="mk-wrapper">
+        <markdown [src]="'assets/md/README_core.md'"></markdown>
+      </div>
+    </div>
+    <app-side-nav-container class="right-nav">
+      <div *ngFor="let data of rightNavData">
+        <app-side-nav category="{{data.category}}" title="{{data.text}}"> </app-side-nav>
+      </div>
+    </app-side-nav-container>
+  </div>
 </div>
+<!-- Footer -->
+<jds-footer></jds-footer>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->

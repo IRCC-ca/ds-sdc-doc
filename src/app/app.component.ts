@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 import { getLeftNavBarConfig, getRightNavBarConfig } from './side-nav/side-nav.config';
+import {ISideNavDataInterface} from "./side-nav/side-nav.model";
 
 @Component({
   selector: 'app-root',
@@ -9,8 +10,8 @@ import { getLeftNavBarConfig, getRightNavBarConfig } from './side-nav/side-nav.c
 })
 export class AppComponent {
   title = 'ds-sdc-doc';
-  rightNavData;
-  leftNavData;
+  rightNavData: ISideNavDataInterface[];
+  leftNavData: ISideNavDataInterface[];
 
   constructor(private translate: TranslateService) {
     translate.addLangs(['en', 'fr']);

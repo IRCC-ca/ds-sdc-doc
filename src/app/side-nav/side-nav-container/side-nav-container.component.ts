@@ -9,9 +9,9 @@ import {
 } from '@angular/animations';
 
 @Component({
-  selector: 'sidenav-container',
-  templateUrl: './sidenav-container.component.html',
-  styleUrls: ['./sidenav-container.component.scss'],
+  selector: 'app-side-nav-container',
+  templateUrl: './side-nav-container.component.html',
+  styleUrls: ['./side-nav-container.component.scss'],
   animations: [
     trigger('leftSideNavTrigger', [
       // To define animations based on trigger actions
@@ -26,7 +26,7 @@ import {
     ])
   ]
 })
-export class SidenavContainerComponent implements OnInit {
+export class SideNavContainerComponent implements OnInit {
   // If display toggle menu icon
   @Input() mobileToggleIcon: boolean = false;
   // If window is under mobile view

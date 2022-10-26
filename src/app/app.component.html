@@ -28,11 +28,11 @@
         <markdown [src]="'assets/md/README_core.md'"></markdown>
       </div>
     </div>
-    <div class="right-nav">
+    <app-side-nav-container class="right-nav">
       <div *ngFor="let data of rightNavData">
         <app-side-nav category="{{data.category}}" title="{{data.text}}"> </app-side-nav>
       </div>
-    </div>
+    </app-side-nav-container>
   </div>
 </div>
 <!-- Footer -->

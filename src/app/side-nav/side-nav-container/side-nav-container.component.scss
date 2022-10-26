@@ -1,6 +1,6 @@
-@use '../../scss/grid';
-@use '~@ircc-ca/ds-sdc-core/util/device' as ircc-ds-device;
-@use '~@ircc-ca/ds-sdc-core/tokens/sizes' as ircc-ds-sizes;
+@use '../../../scss/grid';
+@use '../../../../node_modules/@ircc-ca/ds-sdc-core/util/device' as ircc-ds-device;
+@use '../../../../node_modules/@ircc-ca/ds-sdc-core/tokens/sizes' as ircc-ds-sizes;
 
 :host {
   overflow: hidden;

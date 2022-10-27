@@ -1,4 +1,4 @@
-import {Component, HostListener, Input, OnInit, ViewEncapsulation } from '@angular/core';
+import {Component, HostListener, Input, OnInit } from '@angular/core';
 
 import {
   trigger,
@@ -8,7 +8,7 @@ import {
   transition,
   // ...
 } from '@angular/animations';
-import { ISideNavDataInterface, ItemCategory, ItemType } from './side-nav.model';
+import { ISideNavDataInterface } from './side-nav.model';
 
 @Component({
   selector: 'app-side-nav',
@@ -30,8 +30,8 @@ import { ISideNavDataInterface, ItemCategory, ItemType } from './side-nav.model'
 })
 export class SideNavComponent implements OnInit {
   @Input() mobileToggleIcon: boolean = false; // If display toggle menu icon
-  @Input() navBardata : ISideNavDataInterface[] = [];
-  isTitle = true;
+  @Input() navBarData : ISideNavDataInterface[] = [];
+
   mobile =  false; // If window is under mobile view
   showMenu = true; // If show or hide side menu
   navClassName = 'right-nav';

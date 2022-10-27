@@ -1,4 +1,4 @@
-import {Component, HostListener, Input, OnInit } from '@angular/core';
+import {Component, ElementRef, HostListener, Input, OnInit} from '@angular/core';
 
 import {
   trigger,
@@ -34,16 +34,21 @@ export class SideNavComponent implements OnInit {
 
   mobile =  false; // If window is under mobile view
   showMenu = true; // If show or hide side menu
-  navClassName = 'right-nav';
+  navClassName = '';
   barsIconConfig = {
     unicode: 'f0c9',
     fontFamily: 'fa-solid'
   };
 
+  constructor(private el: ElementRef) {
+    if (el?.nativeElement?.className) {
+      this.navClassName = el?.nativeElement?.classList[0];
+    }
+  }
+
   ngOnInit() {
     // See node_modules/@ircc-ca/ds-sdc-core/tokens/_sizes.scss:3
     if (this.mobileToggleIcon) {
-      this.navClassName = 'left-nav';
       this.toggleMobile();
     }
   }

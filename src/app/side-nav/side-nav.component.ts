@@ -17,8 +17,8 @@ import { ISideNavDataInterface } from './side-nav.model';
   animations: [
     trigger('leftSideNavTrigger', [
       // To define animations based on trigger actions
-      state('open', style({ transform: 'translateY(0%)', height: '100%' })),
-      state('close', style({ transform: 'translateY(-103%)', height: '0' })),
+      state('open', style({ opacity: '1', height: '100%' })),
+      state('close', style({ opacity: '0', height: '0' })),
       transition('open => close', [
         animate('300ms ease-in')
       ]),
@@ -39,6 +39,10 @@ export class SideNavComponent implements OnInit {
     unicode: 'f0c9',
     fontFamily: 'fa-solid'
   };
+  xmarkIconConfig = {
+    unicode: 'f00d',
+    fontFamily: 'fa-solid'
+  }
 
   constructor(private el: ElementRef) {
     if (el?.nativeElement?.className) {

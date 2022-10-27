@@ -1,6 +1,6 @@
 import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {SideNavContainerComponent} from "./side-nav-container/side-nav-container.component";
+// import {SideNavContainerComponent} from "./side-nav-container/side-nav-container.component";
 import {SideNavComponent} from "./side-nav.component";
 import { IRCCModule } from "@ircc-ca/ds-sdc-angular";
 
@@ -8,7 +8,6 @@ import { IRCCModule } from "@ircc-ca/ds-sdc-angular";
 @NgModule({
   declarations: [
     SideNavComponent,
-    SideNavContainerComponent
   ],
   imports: [
     CommonModule,
@@ -16,7 +15,6 @@ import { IRCCModule } from "@ircc-ca/ds-sdc-angular";
   ],
   exports: [
     SideNavComponent,
-    SideNavContainerComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

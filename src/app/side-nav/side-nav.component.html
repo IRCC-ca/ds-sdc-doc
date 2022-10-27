@@ -1,10 +1,16 @@
-<div class="sidenav-container">
-    <div class="sidenav-title">
-        <div *ngIf="isTitle">
-            <h3 class="title">{{title}}</h3>
-        </div>
-        <div *ngIf="!isTitle">
-            <a class="menuItems" href="">{{title}}</a>
+<djl-icon *ngIf="mobileToggleIcon && mobile" [iconConfig]="barsIconConfig" (click)="toggleMobileMenu()"></djl-icon>
+<div
+  [@leftSideNavTrigger]="showMenu? 'open' : 'close' "
+  class="{{navClassName}} sidenav-section-wrapper" 
+>
+    <div *ngFor="let data of navBardata">
+        <div class="sidenav-title">
+            <div *ngIf="data.category === 'title'">
+                <h3 class="title">{{data.text}}</h3>
+            </div>
+            <div *ngIf="data.category === 'sub-title'">
+                <a class="menuItems" href="">{{data.text}}</a>
+            </div>
         </div>
     </div>
 </div>

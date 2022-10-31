@@ -19,12 +19,7 @@
   <h1>{{ 'Home.AppName' | translate }}</h1>
   <div class="content-area-responsive">
     <app-side-nav class="left-nav" [navBarData]="leftNavData" [mobileToggleIcon]="true"></app-side-nav>
-    <div class="content-doc-wrapper">
-      <div class="mk-wrapper">
-        <markdown [src]="'assets/md/README_core.md'"></markdown>
-      </div>
-    </div>
-    <app-side-nav class="right-nav" [navBarData]="rightNavData" [mobileToggleIcon]="false"></app-side-nav>
+    <router-outlet></router-outlet>
   </div>
 </div>
 <!-- Footer -->

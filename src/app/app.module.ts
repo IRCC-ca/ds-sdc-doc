@@ -17,6 +17,8 @@ import { MarkdownModule } from "ngx-markdown";
 
 import { AppComponent } from './app.component';
 import { SideNavModule } from "./side-nav/side-nav.module";
+import { AppRoutingModule } from './app-routing.module';
+import { OverviewComponent } from './pages/overview/overview.component';
 
 const JL_ANGULAR_COMPONENTS = [
   JLButtonModule,
@@ -31,6 +33,7 @@ const JL_ANGULAR_COMPONENTS = [
 @NgModule({
   declarations: [
     AppComponent,
+    OverviewComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,7 +51,8 @@ const JL_ANGULAR_COMPONENTS = [
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    AppRoutingModule
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

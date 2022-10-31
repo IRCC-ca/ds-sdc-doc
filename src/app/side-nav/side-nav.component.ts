@@ -1,4 +1,4 @@
-import {Component, HostListener, Input, OnInit, ViewEncapsulation } from '@angular/core';
+import {Component, ElementRef, HostListener, Input, OnInit} from '@angular/core';
 
 import {
   trigger,
@@ -8,7 +8,7 @@ import {
   transition,
   // ...
 } from '@angular/animations';
-import { ISideNavDataInterface, ItemCategory, ItemType } from './side-nav.model';
+import { ISideNavDataInterface } from './side-nav.model';
 
 @Component({
   selector: 'app-side-nav',
@@ -17,8 +17,8 @@ import { ISideNavDataInterface, ItemCategory, ItemType } from './side-nav.model'
   animations: [
     trigger('leftSideNavTrigger', [
       // To define animations based on trigger actions
-      state('open', style({ transform: 'translateY(0%)', height: '100%' })),
-      state('close', style({ transform: 'translateY(-103%)', height: '0' })),
+      state('open', style({ opacity: '1', height: '100%' })),
+      state('close', style({ opacity: '0', height: '0' })),
       transition('open => close', [
         animate('300ms ease-in')
       ]),
@@ -30,20 +30,29 @@ import { ISideNavDataInterface, ItemCategory, ItemType } from './side-nav.model'
 })
 export class SideNavComponent implements OnInit {
   @Input() mobileToggleIcon: boolean = false; // If display toggle menu icon
-  @Input() navBardata : ISideNavDataInterface[] = [];
-  isTitle = true;
+  @Input() navBarData : ISideNavDataInterface[] = [];
+
   mobile =  false; // If window is under mobile view
   showMenu = true; // If show or hide side menu
-  navClassName = 'right-nav';
+  navClassName = '';
   barsIconConfig = {
     unicode: 'f0c9',
     fontFamily: 'fa-solid'
   };
+  xmarkIconConfig = {
+    unicode: 'f00d',
+    fontFamily: 'fa-solid'
+  }
+
+  constructor(private el: ElementRef) {
+    if (el?.nativeElement?.className) {
+      this.navClassName = el?.nativeElement?.classList[0];
+    }
+  }
 
   ngOnInit() {
     // See node_modules/@ircc-ca/ds-sdc-core/tokens/_sizes.scss:3
     if (this.mobileToggleIcon) {
-      this.navClassName = 'left-nav';
       this.toggleMobile();
     }
   }

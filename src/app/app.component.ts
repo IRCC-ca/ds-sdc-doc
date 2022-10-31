@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 import { getLeftNavBarConfig, getRightNavBarConfig } from './side-nav/side-nav.config';
 import { ISideNavDataInterface } from './side-nav/side-nav.model';
+import {LocalizeRouterService} from "@gilsdav/ngx-translate-router";
 
 @Component({
   selector: 'app-root',
@@ -13,16 +14,17 @@ export class AppComponent {
   leftNavData: ISideNavDataInterface[];
   rightNavData: ISideNavDataInterface[];
 
-  constructor(private translate: TranslateService) {
-    translate.addLangs(['en', 'fr']);
+  constructor(
+    private translate: TranslateService,
+    private localize: LocalizeRouterService
+  ) {
     translate.setDefaultLang('en');
-    this.useLanguage('en');
     this.leftNavData = getLeftNavBarConfig;
     this.rightNavData = getRightNavBarConfig;
   }
 
   useLanguage(language: string): void {
-    this.translate.use(language);
+    this.localize.changeLanguage(language);
   }
 
   getCurrentLang(): string {

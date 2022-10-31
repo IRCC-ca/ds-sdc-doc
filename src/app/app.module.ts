@@ -20,6 +20,10 @@ import { SideNavModule } from "./side-nav/side-nav.module";
 import { AppRoutingModule } from './app-routing.module';
 import { OverviewComponent } from './pages/overview/overview.component';
 
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/locales/', '.json');
+}
+
 const JL_ANGULAR_COMPONENTS = [
   JLButtonModule,
   JLIconModule,
@@ -48,7 +52,7 @@ const JL_ANGULAR_COMPONENTS = [
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
+        useFactory: (createTranslateLoader),
         deps: [HttpClient]
       }
     }),
@@ -59,11 +63,6 @@ const JL_ANGULAR_COMPONENTS = [
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
-// required for AOT compilation
-export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
-  return new TranslateHttpLoader(http);
-}
 
 // enable default sanitization
 MarkdownModule.forRoot()

@@ -18,6 +18,8 @@
     "@angular/platform-browser": "^14.2.5",
     "@angular/platform-browser-dynamic": "^14.2.5",
     "@angular/router": "^14.2.5",
+    "@gilsdav/ngx-translate-router": "^5.1.1",
+    "@gilsdav/ngx-translate-router-http-loader": "^2.0.0",
     "@ircc-ca/ds-sdc-angular": "^0.0.15-beta.7",
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",

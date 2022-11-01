@@ -85,6 +85,24 @@
   max-width: 100%;
 }
 
+@mixin row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 // Media Queries Preset
+$screen_md: 768px;
 $screen_lg: 992px;
 $screen_xl: 1200px;
+
+@mixin in-tablet-layout {
+  @media only screen and (min-width: $screen_md) and (max-width: $screen_lg - 1px) {
+    @content;
+  }
+}
+
+@mixin in-tablet-layout {
+  @media only screen and (min-width: $screen_md) and (max-width: $screen_lg - 1px) {
+    @content;
+  }
+}

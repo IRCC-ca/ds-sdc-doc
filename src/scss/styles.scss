@@ -25,3 +25,26 @@ jds-header {
     min-width: 200px;
   }
 }
+
+.content-area-responsive {
+  align-items: flex-start !important;
+  column-gap: 0;
+  border-top: 1px solid var(--divider);
+  > app-overview {
+    @include grid.col-12;
+    @include ircc-ds-device.in-tablet-layout {
+      @include grid.col-12;
+    }
+    @include ircc-ds-device.in-desktop-layout {
+      @include grid.col-9;
+    }
+    .mk-wrapper {
+      @include ircc-ds-device.in-desktop-layout {
+        padding-left: ircc-ds-sizes.$fixed-4;
+      }
+      @media (min-width: grid.$screen_xl) {
+        padding-left: ircc-ds-sizes.$fixed-36;
+      }
+    }
+  }
+}

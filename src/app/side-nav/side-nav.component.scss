@@ -1,13 +1,12 @@
-@use '~@ircc-ca/ds-sdc-core/tokens/text';
 @use '../../scss/grid';
-@use '../../../node_modules/@ircc-ca/ds-sdc-core/util/device' as ircc-ds-device;
-@use '../../../node_modules/@ircc-ca/ds-sdc-core/tokens/sizes' as ircc-ds-sizes;
+@use 'node_modules/@ircc-ca/ds-sdc-core/util/device' as ircc-ds-device;
+@use 'node_modules/@ircc-ca/ds-sdc-core/tokens/sizes' as ircc-ds-sizes;
 
 :host {
   position: relative;
   &.left-nav {
     @include ircc-ds-device.in-desktop-layout {
-      @include grid.col-3;
+      @include grid.col-2;
       border-right: 1px solid var(--divider);
       margin-right: -1px;
     }

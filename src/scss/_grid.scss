@@ -1,3 +1,4 @@
+@use 'node_modules/@ircc-ca/ds-sdc-core/tokens/_sizes.scss' as ircc-ds-sizes;
 // Referenced from bootstrap's grid system https://getbootstrap.com/docs/4.0/layout/grid/
 // To be replaced by ircc design system's grid system.
 
@@ -91,9 +92,17 @@
 }
 
 // Media Queries Preset
-$screen_md: 768px;
+$screen_sm: ircc-ds-sizes.$bp-width-phone;
+$screen_md: ircc-ds-sizes.$bp-width-tablet;
 $screen_lg: 992px;
-$screen_xl: 1200px;
+$screen_xl: ircc-ds-sizes.$bp-width-desktop;
+
+// Interim fix until node_modules/@ircc-ca/ds-sdc-core/util/_device.scss's bug is fixed
+@mixin in-phone-layout {
+  @media only screen and (max-width: $screen_md - 1px) {
+    @content;
+  }
+}
 
 @mixin in-tablet-layout {
   @media only screen and (min-width: $screen_md) and (max-width: $screen_lg - 1px) {
@@ -101,8 +110,35 @@ $screen_xl: 1200px;
   }
 }
 
-@mixin in-tablet-layout {
-  @media only screen and (min-width: $screen_md) and (max-width: $screen_lg - 1px) {
+// Screen width under tablet layout
+@mixin un-tablet-layout {
+  @media only screen and (max-width: $screen_lg - 1px) {
+    @content;
+  }
+}
+
+@mixin in-laptop-layout {
+  @media only screen and (min-width: $screen_lg) and (max-width: $screen_xl - 1px) {
+    @content;
+  }
+}
+
+// Screen width under laptop layout
+@mixin un-laptop-layout {
+  @media only screen and (max-width: $screen_xl - 1px) {
+    @content;
+  }
+}
+
+// Screen width above laptop layout
+@mixin up-laptop-layout {
+  @media only screen and (min-width: $screen_lg) {
+    @content;
+  }
+}
+
+@mixin in-desktop-layout {
+  @media only screen and (min-width: $screen_xl) {
     @content;
   }
 }

@@ -58,7 +58,7 @@ export class SideNavComponent implements OnInit {
   }
 
   private toggleMobile() {
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 992) {
       this.mobile = true;
       this.showMenu = false;
     } else {

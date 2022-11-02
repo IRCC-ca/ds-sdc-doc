@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
-import { getLeftNavBarConfig, getRightNavBarConfig } from './side-nav/side-nav.config';
+import { SideNavConfig } from './side-nav/side-nav.config';
 import { ISideNavDataInterface } from './side-nav/side-nav.model';
 import {LocalizeRouterService} from "@gilsdav/ngx-translate-router";
 
@@ -12,15 +12,14 @@ import {LocalizeRouterService} from "@gilsdav/ngx-translate-router";
 export class AppComponent {
   title = 'ds-sdc-doc';
   leftNavData: ISideNavDataInterface[];
-  rightNavData: ISideNavDataInterface[];
 
   constructor(
     private translate: TranslateService,
-    private localize: LocalizeRouterService
+    private localize: LocalizeRouterService,
+    private navBarConfig : SideNavConfig
   ) {
     translate.setDefaultLang('en');
-    this.leftNavData = getLeftNavBarConfig;
-    this.rightNavData = getRightNavBarConfig;
+    this.leftNavData = navBarConfig.getLeftNavBarConfig(this.translate);
   }
 
   useLanguage(language: string): void {

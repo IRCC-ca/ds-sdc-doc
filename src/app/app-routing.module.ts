@@ -17,7 +17,25 @@ export function HttpLoaderFactory(translate: TranslateService, location: Locatio
 }
 
 const routes: Routes = [
-  { path: '', component: OverviewComponent }
+  { path: '', component: OverviewComponent },
+  { path: 'overview', component: OverviewComponent },
+  { path: 'for-developers', component: OverviewComponent },
+  { path: 'for-designers', component: OverviewComponent },
+  { path: 'accessibility', component: OverviewComponent },
+  { path: 'colours', component: OverviewComponent },
+  { path: 'typography', component: OverviewComponent },
+  { path: 'iconography', component: OverviewComponent },
+  { path: 'layouts', component: OverviewComponent },
+  { path: 'tokens', component: OverviewComponent },
+  { path: 'buttons', component: OverviewComponent },
+  { path: 'checkbox', component: OverviewComponent },
+  { path: 'external-link', component: OverviewComponent },
+  { path: 'footer', component: OverviewComponent },
+  { path: 'header', component: OverviewComponent },
+  { path: 'icon-button', component: OverviewComponent },
+  { path: 'input-field', component: OverviewComponent },
+  { path: 'radio-button', component: OverviewComponent },
+  { path: 'tabs', component: OverviewComponent },
 ];
 
 @NgModule({

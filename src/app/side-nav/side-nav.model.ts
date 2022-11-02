@@ -11,7 +11,8 @@ export enum ItemCategory {
 export interface ISideNavDataInterface {
   'text': string,
   'type': ItemType,
-  'category': ItemCategory
+  'category': ItemCategory,
+  'path' : string
 }
 
 

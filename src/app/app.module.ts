@@ -14,11 +14,11 @@ import { JLIconModule } from '@ircc-ca/ds-sdc-angular/icon';
 import { JLLinkModule } from '@ircc-ca/ds-sdc-angular/link';
 import { JLRadiobuttonModule } from '@ircc-ca/ds-sdc-angular/radio-button';
 import { MarkdownModule } from "ngx-markdown";
-
 import { AppComponent } from './app.component';
 import { SideNavModule } from "./side-nav/side-nav.module";
 import { AppRoutingModule } from './app-routing.module';
 import { OverviewComponent } from './pages/overview/overview.component';
+import { SideNavConfig } from './side-nav/side-nav.config';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/locales/', '.json');
@@ -58,7 +58,7 @@ const JL_ANGULAR_COMPONENTS = [
     }),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [SideNavConfig],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
 })

@@ -1,5 +1,48 @@
 {
   "Home": {
     "AppName": "IRCC Design System"
+  },
+  "RightSideNav": {
+    "title": {
+      "on-this-page" : "On this Page"
+    },
+    "sub-titles": {
+      "buttons": "Buttons",
+      "interactive-demo": "Interactive Demo",
+      "usage": "Usage",
+      "anatomy": "Anatomy",
+      "specs": "Specs",
+      "content-guidelines": "Content guidelines",
+      "accessibility": "Accessibility",
+      "research": "Research",
+      "related-components": "Related components"
+    }
+  },
+  "LeftSideNav": {
+    "title": {
+      "getting-started" : "Getting Started",
+      "foundation" : "Foundation",
+      "components" : "Components"
+    },
+    "sub-titles": {
+      "overview": "Overview",
+      "for-developers": "For developers",
+      "for-designers": "For designers",
+      "accessibility": "Accessibility",
+      "colours": "Colours",
+      "typography": "Typography",
+      "iconography": "Iconography",
+      "layouts": "Layouts",
+      "tokens": "Tokens",
+      "buttons": "Buttons",
+      "checkbox": "Checkbox",
+      "external-link": "External Link",
+      "footer": "Footer",
+      "header": "Header",
+      "icon-button": "Icon button",
+      "input-field": "Input field",
+      "radio-button": "Radio button",
+      "tabs": "Tabs"
+    }
   }
 }

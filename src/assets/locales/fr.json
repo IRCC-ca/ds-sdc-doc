@@ -1,5 +1,48 @@
 {
   "Home": {
     "AppName": "Système de conception IRCC"
+  },
+  "RightSideNav": {
+    "title": {
+      "on-this-page" : "[FR] On this Page"
+    },
+    "sub-titles": {
+      "buttons": "[FR] Buttons",
+      "interactive-demo": "[FR] Interactive Demo",
+      "usage": "[FR] Usage",
+      "anatomy": "[FR] Anatomy",
+      "specs": "[FR] Specs",
+      "content-guidelines": "[FR] Content guidelines",
+      "accessibility": "[FR] Accessibility",
+      "research": "[FR] Research",
+      "related-components": "[FR] Related components"
+    }
+  },
+  "LeftSideNav": {
+    "title": {
+      "getting-started" : "[FR] Getting Started",
+      "foundation" : "[FR] Foundation",
+      "components" : "[FR] Components"
+    },
+    "sub-titles": {
+      "overview": "[FR] Overview",
+      "for-developers": "[FR] For developers",
+      "for-designers": "[FR] For designers",
+      "accessibility": "[FR] Accessibility",
+      "colours": "[FR] Colours",
+      "typography": "[FR] Typography",
+      "iconography": "[FR] Iconography",
+      "layouts": "[FR] Layouts",
+      "tokens": "[FR] Tokens",
+      "buttons": "[FR] Buttons",
+      "checkbox": "[FR] Checkbox",
+      "external-link": "[FR] External Link",
+      "footer": "[FR] Footer",
+      "header": "[FR] Header",
+      "icon-button": "[FR] Icon button",
+      "input-field": "[FR] Input field",
+      "radio-button": "[FR] Radio button",
+      "tabs": "[FR] Tabs"
+    }
   }
 }

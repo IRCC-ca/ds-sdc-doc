@@ -9,6 +9,7 @@ import {
   // ...
 } from '@angular/animations';
 import { ISideNavDataInterface } from './side-nav.model';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-side-nav',
@@ -32,6 +33,7 @@ export class SideNavComponent implements OnInit {
   @Input() mobileToggleIcon: boolean = false; // If display toggle menu icon
   @Input() navBarData : ISideNavDataInterface[] = [];
 
+  currentLanguage : string = '';
   mobile =  false; // If window is under mobile view
   showMenu = true; // If show or hide side menu
   navClassName = '';
@@ -44,7 +46,7 @@ export class SideNavComponent implements OnInit {
     fontFamily: 'fa-solid'
   }
 
-  constructor(private el: ElementRef) {
+  constructor(private el: ElementRef, private translate: TranslateService) {
     if (el?.nativeElement?.className) {
       this.navClassName = el?.nativeElement?.classList[0];
     }
@@ -52,6 +54,7 @@ export class SideNavComponent implements OnInit {
 
   ngOnInit() {
     // See node_modules/@ircc-ca/ds-sdc-core/tokens/_sizes.scss:3
+    this.currentLanguage = this.translate.currentLang
     if (this.mobileToggleIcon) {
       this.toggleMobile();
     }

@@ -9,7 +9,7 @@
                 <h3 class="title">{{data.text}}</h3>
             </div>
             <div *ngIf="data.category === 'sub-title'">
-                <a class="menuItems" href="">{{data.text}}</a>
+                <a class="menuItems" routerLink="{{currentLanguage}}/{{data.path}}">{{data.text}}</a>
             </div>
         </div>
     </div>

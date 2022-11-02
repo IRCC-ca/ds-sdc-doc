@@ -1,4 +1,3 @@
-@use 'node_modules/@ircc-ca/ds-sdc-core/util/device' as ircc-ds-device;
 @use 'node_modules/@ircc-ca/ds-sdc-core/util/color' as ircc-ds-color;
 @use 'node_modules/@ircc-ca/ds-sdc-core/tokens/sizes' as ircc-ds-sizes;
 @use 'src/scss/grid';
@@ -7,17 +6,16 @@
   @include grid.row;
   > .content-doc-wrapper {
     @include grid.col-12;
-    @include ircc-ds-device.in-desktop-layout {
-      @include grid.col-9;
+    @include grid.up-laptop-layout {
+      @include grid.col-10;
     }
   }
   > .right-nav {
     @include grid.col-12;
-    @include ircc-ds-device.in-desktop-layout {
-      @include grid.col-3;
-      word-wrap: break-word;
+    @include grid.up-laptop-layout {
+      @include grid.col-2;
     }
-    @include ircc-ds-device.in-tablet-layout {
+    @include grid.un-tablet-layout {
       display: none;
     }
   }

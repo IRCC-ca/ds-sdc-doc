@@ -4,11 +4,11 @@ import { ISideNavDataInterface, ItemType, ItemCategory } from "./side-nav.model"
 
 
 @Injectable({
-    providedIn: 'root',
-  })
+  providedIn: 'root',
+})
 export class SideNavConfig {
 
-    getRightNavBarConfig(translator : TranslateService) : ISideNavDataInterface[] { 
+    getRightNavBarConfig(translator : TranslateService) : ISideNavDataInterface[] {
     return [
         {
             text : translator.instant('RightSideNav.title.on-this-page'),
@@ -73,7 +73,7 @@ export class SideNavConfig {
     ]
 }
 
-    getLeftNavBarConfig(translator : TranslateService) : ISideNavDataInterface[] { 
+    getLeftNavBarConfig(translator : TranslateService) : ISideNavDataInterface[] {
     return [
         {
             text : translator.instant('LeftSideNav.title.getting-started'),

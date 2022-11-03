@@ -17,7 +17,6 @@ export function HttpLoaderFactory(translate: TranslateService, location: Locatio
 }
 
 const routes: Routes = [
-  { path: '', component: OverviewComponent },
   { path: 'overview', component: OverviewComponent },
   { path: 'for-developers', component: OverviewComponent },
   { path: 'for-designers', component: OverviewComponent },
@@ -36,6 +35,7 @@ const routes: Routes = [
   { path: 'input-field', component: OverviewComponent },
   { path: 'radio-button', component: OverviewComponent },
   { path: 'tabs', component: OverviewComponent },
+  { path: '', redirectTo: '/overview', pathMatch: 'full' },
 ];
 
 @NgModule({

@@ -1,27 +1,15 @@
-@use '~@ircc-ca/ds-sdc-core/tokens/text';
 @use '../../scss/grid';
-@use '../../../node_modules/@ircc-ca/ds-sdc-core/util/device' as ircc-ds-device;
-@use '../../../node_modules/@ircc-ca/ds-sdc-core/tokens/sizes' as ircc-ds-sizes;
+@use 'node_modules/@ircc-ca/ds-sdc-core/tokens/sizes' as ircc-ds-sizes;
 
 :host {
   position: relative;
-  &.left-nav {
-    @include ircc-ds-device.in-desktop-layout {
-      @include grid.col-3;
-      border-right: 1px solid var(--divider);
-      margin-right: -1px;
-    }
-  }
   @include grid.col-12;
-  @include ircc-ds-device.in-tablet-layout {
-    @include grid.col-12;
-  }
   > djl-icon {
     font-size: ircc-ds-sizes.$fixed-24;
     position: absolute;
     top: -64px;
     right: 26px;
-    @include ircc-ds-device.in-phone-layout {
+    @include grid.un-laptop-layout {
       right: ircc-ds-sizes.$fixed-12;
     }
   }

@@ -14,9 +14,15 @@ import { JLIconModule } from '@ircc-ca/ds-sdc-angular/icon';
 import { JLLinkModule } from '@ircc-ca/ds-sdc-angular/link';
 import { JLRadiobuttonModule } from '@ircc-ca/ds-sdc-angular/radio-button';
 import { MarkdownModule } from "ngx-markdown";
-
 import { AppComponent } from './app.component';
 import { SideNavModule } from "./side-nav/side-nav.module";
+import { AppRoutingModule } from './app-routing.module';
+import { OverviewComponent } from './pages/overview/overview.component';
+import { SideNavConfig } from './side-nav/side-nav.config';
+
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/locales/', '.json');
+}
 
 const JL_ANGULAR_COMPONENTS = [
   JLButtonModule,
@@ -31,6 +37,7 @@ const JL_ANGULAR_COMPONENTS = [
 @NgModule({
   declarations: [
     AppComponent,
+    OverviewComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,21 +52,17 @@ const JL_ANGULAR_COMPONENTS = [
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
+        useFactory: (createTranslateLoader),
         deps: [HttpClient]
       }
-    })
+    }),
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [SideNavConfig],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
-// required for AOT compilation
-export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
-  return new TranslateHttpLoader(http);
-}
 
 // enable default sanitization
 MarkdownModule.forRoot()

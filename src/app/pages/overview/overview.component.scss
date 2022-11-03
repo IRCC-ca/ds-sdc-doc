@@ -1,0 +1,22 @@
+@use 'node_modules/@ircc-ca/ds-sdc-core/util/color' as ircc-ds-color;
+@use 'node_modules/@ircc-ca/ds-sdc-core/tokens/sizes' as ircc-ds-sizes;
+@use 'src/scss/grid';
+
+:host {
+  @include grid.row;
+  > .content-doc-wrapper {
+    @include grid.col-12;
+    @include grid.up-laptop-layout {
+      @include grid.col-10;
+    }
+  }
+  > .right-nav {
+    @include grid.col-12;
+    @include grid.up-laptop-layout {
+      @include grid.col-2;
+    }
+    @include grid.un-tablet-layout {
+      display: none;
+    }
+  }
+}

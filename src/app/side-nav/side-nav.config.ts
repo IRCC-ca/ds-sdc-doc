@@ -1,164 +1,206 @@
+import { Injectable } from "@angular/core";
+import { TranslateService } from "@ngx-translate/core";
 import { ISideNavDataInterface, ItemType, ItemCategory } from "./side-nav.model";
 
-export const getRightNavBarConfig : ISideNavDataInterface[] = 
-[
-    {
-        text : 'On this Page',
-        type : ItemType.PlainText,
-        category : ItemCategory.Title
-    },
-    {
-        text : 'Buttons',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
-    },
-    {
-        text : 'Interactive Demo',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
-    },
-    {
-        text : 'Usage',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
-    },
-    {
-        text : 'Anatomy',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
-    },
-    {
-        text : 'Specs',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
-    },
-    {
-        text : 'Content guidelines',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
-    },
-    {
-        text : 'Accessibility',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
-    },
-    {
-        text : 'Research',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
-    },
-    {
-        text : 'Related components',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
-    }
-]
 
-export const getLeftNavBarConfig : ISideNavDataInterface[] = 
-[
-    {
-        text : 'Getting Started',
-        type : ItemType.PlainText,
-        category : ItemCategory.Title
-    },
-    {
-        text : 'Overview',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
-    },
-    {
-        text : 'For developers',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
-    },
-    {
-        text : 'For designers',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
-    },
-    {
-        text : 'Accessibility',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
-    },
-    {
-        text : 'Foundation',
-        type : ItemType.Link,
-        category : ItemCategory.Title
-    },
-    {
-        text : 'Colours',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
-    },
-    {
-        text : 'Typography',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
-    },
-    {
-        text : 'Iconography',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
-    },
-    {
-        text : 'Layouts',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
-    },
-    {
-        text : 'Tokens',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
-    },
-    {
-        text : 'Components',
-        type : ItemType.Link,
-        category : ItemCategory.Title
-    },
-    {
-        text : 'Buttons',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
-    },
-    {
-        text : 'Checkbox',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
-    },
-    {
-        text : 'External Link',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
-    },
-    {
-        text : 'Footer',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
-    },
-    {
-        text : 'Header',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
-    },
-    {
-        text : 'Icon button',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
-    },
-    {
-        text : 'Input field',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
-    },
-    {
-        text : 'Radio button',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
-    },
-    {
-        text : 'Tabs',
-        type : ItemType.Link,
-        category : ItemCategory.subTitle
+@Injectable({
+  providedIn: 'root',
+})
+export class SideNavConfig {
+
+    getRightNavBarConfig(translator : TranslateService) : ISideNavDataInterface[] {
+    return [
+        {
+            text : translator.instant('RightSideNav.title.on-this-page'),
+            type : ItemType.PlainText,
+            category : ItemCategory.Title,
+            path: ""
+        },
+        {
+            text :  translator.instant('RightSideNav.sub-titles.buttons'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: ""
+        },
+        {
+            text : translator.instant('RightSideNav.sub-titles.interactive-demo'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: ""
+        },
+        {
+            text : translator.instant('RightSideNav.sub-titles.usage'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: ""
+        },
+        {
+            text : translator.instant('RightSideNav.sub-titles.anatomy'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: ""
+        },
+        {
+            text : translator.instant('RightSideNav.sub-titles.specs'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: ""
+        },
+        {
+            text : translator.instant('RightSideNav.sub-titles.content-guidelines'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: ""
+        },
+        {
+            text : translator.instant('RightSideNav.sub-titles.accessibility'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: ""
+        },
+        {
+            text : translator.instant('RightSideNav.sub-titles.research'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: ""
+        },
+        {
+            text : translator.instant('RightSideNav.sub-titles.related-components'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: ""
+        }
+    ]
+}
+
+    getLeftNavBarConfig(translator : TranslateService) : ISideNavDataInterface[] {
+    return [
+        {
+            text : translator.instant('LeftSideNav.title.getting-started'),
+            type : ItemType.PlainText,
+            category : ItemCategory.Title,
+            path: ""
+        },
+        {
+            text : translator.instant('LeftSideNav.sub-titles.overview'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: "overview"
+        },
+        {
+            text : translator.instant('LeftSideNav.sub-titles.for-developers'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: "for-developers"
+        },
+        {
+            text : translator.instant('LeftSideNav.sub-titles.for-designers'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: "for-designers"
+        },
+        {
+            text : translator.instant('LeftSideNav.sub-titles.accessibility'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: "accessibility"
+        },
+        {
+            text : translator.instant('LeftSideNav.title.foundation'),
+            type : ItemType.Link,
+            category : ItemCategory.Title,
+            path: ""
+        },
+        {
+            text : translator.instant('LeftSideNav.sub-titles.colours'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: "colours"
+        },
+        {
+            text : translator.instant('LeftSideNav.sub-titles.typography'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: "typography"
+        },
+        {
+            text : translator.instant('LeftSideNav.sub-titles.iconography'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: "iconography"
+        },
+        {
+            text : translator.instant('LeftSideNav.sub-titles.layouts'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: "layouts"
+        },
+        {
+            text : translator.instant('LeftSideNav.sub-titles.tokens'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: "tokens"
+        },
+        {
+            text : translator.instant('LeftSideNav.title.components'),
+            type : ItemType.Link,
+            category : ItemCategory.Title,
+            path: ""
+        },
+        {
+            text : translator.instant('LeftSideNav.sub-titles.buttons'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: "buttons"
+        },
+        {
+            text : translator.instant('LeftSideNav.sub-titles.checkbox'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: "checkbox"
+        },
+        {
+            text : translator.instant('LeftSideNav.sub-titles.external-link'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: "external-link"
+        },
+        {
+            text : translator.instant('LeftSideNav.sub-titles.footer'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: "footer"
+        },
+        {
+            text : translator.instant('LeftSideNav.sub-titles.header'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: "header"
+        },
+        {
+            text : translator.instant('LeftSideNav.sub-titles.icon-button'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: "icon-button"
+        },
+        {
+            text : translator.instant('LeftSideNav.sub-titles.input-field'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: "input-field"
+        },
+        {
+            text : translator.instant('LeftSideNav.sub-titles.radio-button'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: "radio-button"
+        },
+        {
+            text : translator.instant('LeftSideNav.sub-titles.tabs'),
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: "tabs"
+        }
+    ]
     }
-]
+}

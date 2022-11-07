@@ -3,6 +3,7 @@ import {TranslateService} from '@ngx-translate/core';
 import { SideNavConfig } from './side-nav/side-nav.config';
 import { ISideNavDataInterface } from './side-nav/side-nav.model';
 import {LocalizeNgModuleFactory, LocalizeRouterService} from "@gilsdav/ngx-translate-router";
+import { DisplayLanguages, Languages } from './share/global-params';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +22,7 @@ export class AppComponent implements OnInit {
     private localize: LocalizeRouterService,
     private navBarConfig : SideNavConfig
   ) {
-    translate.setDefaultLang('en');
+    translate.setDefaultLang(Languages.English);
     this.leftNavData = navBarConfig.getLeftNavBarConfig(this.translate);
   }
 
@@ -34,41 +35,33 @@ export class AppComponent implements OnInit {
     this.innerWidth = window.innerWidth;
     if (this.innerWidth <= 992 ) {
       this.mobile = true;
-      this.displayLanguage(this.getCurrentLang())
+      this.toggleLanguage(this.getCurrentLang())
     }
     else {
       this.mobile = false
-      this.displayLanguage(this.getCurrentLang())
+      this.toggleLanguage(this.getCurrentLang())
     }
   }
 
-  displayLanguage(language : string) : string {
+  toggleLanguage(language : string) : void {
     if (this.mobile) {
-      if (language === 'en') {
-        return this.language = 'FR';
-      } else {
-        return this.language = 'EN'
-      }
+      language === Languages.English ? this.language = DisplayLanguages.FR : this.language = DisplayLanguages.EN;
     }
     else {
-      if (language === 'en') {
-        return this.language = 'Français';
-      } else {
-        return this.language = 'English'
-      }
+      language === Languages.English ? this.language = DisplayLanguages.French : this.language = DisplayLanguages.English;
     }
   }
 
   useLanguage(): void {
     let language = this.getCurrentLang()
-    language === 'en' || language === 'English' ? language = "fr" : language = 'en'
+    language === Languages.English || language === DisplayLanguages.English ? language = Languages.French : language = Languages.English
     this.localize.changeLanguage(language);
     
   }
 
   getCurrentLang(): string {
     let currentLanguage = this.translate.currentLang;
-    this.displayLanguage(currentLanguage)
+    this.toggleLanguage(currentLanguage)
     return currentLanguage;
   }
 }

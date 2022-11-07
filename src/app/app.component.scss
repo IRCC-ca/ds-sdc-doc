@@ -4,3 +4,10 @@
 @use '../../node_modules/@ircc-ca/ds-sdc-core/tokens/sizes' as ircc-ds-sizes;
 @use '../scss/grid';
 @import '../../node_modules/@ircc-ca/ds-sdc-core/layout/layout-grid';
+
+//remove this once the header component bug is fixed
+.content {
+    border-top: 4px solid var(--divider);
+    border-color: black;
+}
+

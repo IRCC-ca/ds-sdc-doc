@@ -35,11 +35,11 @@ export class AppComponent implements OnInit {
     this.innerWidth = window.innerWidth;
     if (this.innerWidth <= 992 ) {
       this.mobile = true;
-      this.toggleLanguage(this.getCurrentLang())
+      this.toggleLanguage(this.getCurrentLang());
     }
     else {
-      this.mobile = false
-      this.toggleLanguage(this.getCurrentLang())
+      this.mobile = false;
+      this.toggleLanguage(this.getCurrentLang());
     }
   }
 
@@ -53,15 +53,15 @@ export class AppComponent implements OnInit {
   }
 
   useLanguage(): void {
-    let language = this.getCurrentLang()
-    language === Languages.English || language === DisplayLanguages.English ? language = Languages.French : language = Languages.English
+    let language = this.getCurrentLang();
+    language === Languages.English || language === DisplayLanguages.English ? language = Languages.French : language = Languages.English;
     this.localize.changeLanguage(language);
     
   }
 
   getCurrentLang(): string {
     let currentLanguage = this.translate.currentLang;
-    this.toggleLanguage(currentLanguage)
+    this.toggleLanguage(currentLanguage);
     return currentLanguage;
   }
 }

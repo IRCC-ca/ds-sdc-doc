@@ -187,7 +187,7 @@ $grid-row-columns: 6 !default;
     @include media-breakpoint-up($breakpoint, $breakpoints) {
       // Provide basic `.col-{bp}` classes for equal-width flexbox columns
       .col#{$infix} {
-        flex: 1 0 0%; // Flexbugs #4: https://github.com/philipwalton/flexbugs#flexbug-4
+        flex: 1 0 0; // Flexbugs #4: https://github.com/philipwalton/flexbugs#flexbug-4
       }
 
       .row-cols#{$infix}-auto > * {
@@ -260,5 +260,3 @@ $grid-row-columns: 6 !default;
   $num: divide($size, $columns);
   margin-left: if($num == 0, 0, percentage($num));
 }
-
-@include make-grid-columns();

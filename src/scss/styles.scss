@@ -13,6 +13,9 @@
 
 @include ircc-ds.element-styles();
 
+// Enable Bootstrap row & column support.
+@include make-grid-columns();
+
 app-root {
   display: block;
   max-width: 1440px;

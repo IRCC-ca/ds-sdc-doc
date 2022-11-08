@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   leftNavData: ISideNavDataInterface[];
   language = this.getCurrentLang();
   mobile = false;
-  public innerWidth: any;
+  public innerWidth: any; // Width of viewport window
 
   constructor(
     private translate: TranslateService,

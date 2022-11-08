@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ISideNavDataInterface } from "../../side-nav/side-nav.model";
-import { TranslateService} from "@ngx-translate/core";
+import { TranslateService } from "@ngx-translate/core";
 import { SideNavConfig } from "../../side-nav/side-nav.config";
 import { Router } from '@angular/router';
 

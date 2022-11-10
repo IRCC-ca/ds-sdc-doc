@@ -1,7 +1,14 @@
 :host {
+  display: block;
   > h2 {
     display: inline-block;
     font-weight: 700;
+    &.primary {
+      font-size: 36px;
+    }
+    &.secondary {
+      font-size: 28px;
+    }
   }
   > a {
     margin-left: 16px;

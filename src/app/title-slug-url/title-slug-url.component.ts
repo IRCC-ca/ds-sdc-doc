@@ -1,4 +1,4 @@
-import {AfterContentInit, Component, ElementRef} from '@angular/core';
+import {AfterContentInit, Component, ElementRef, Input} from '@angular/core';
 import { SlugifyPipe } from "../share/pipe-slugify.pipe";
 
 @Component({
@@ -8,6 +8,7 @@ import { SlugifyPipe } from "../share/pipe-slugify.pipe";
   providers: [SlugifyPipe]
 })
 export class TitleSlugUrlComponent implements AfterContentInit {
+  @Input() type = 'secondary'; // primary | secondary
   title = '';
   titleSlugified = ''; // overview-test
   slugifiedUrl = ''; // http://localhost:4200/en/overview#overview-test

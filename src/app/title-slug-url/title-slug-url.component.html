@@ -1,4 +1,7 @@
-<h2 [id]="titleSlugified"><ng-content></ng-content></h2>
+<h2
+  [id]="titleSlugified"
+  [className]="type"
+><ng-content></ng-content></h2>
 <a
   [href]="slugifiedUrl"
   [cdkCopyToClipboard]="slugifiedUrl"

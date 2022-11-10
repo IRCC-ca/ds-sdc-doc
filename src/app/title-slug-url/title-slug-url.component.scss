@@ -1,0 +1,13 @@
+:host {
+  > h2 {
+    display: inline-block;
+    font-weight: 700;
+  }
+  > a {
+    margin-left: 16px;
+    position: relative;
+    bottom: 5px;
+    text-decoration: none !important;
+    color: var(--text);
+  }
+}

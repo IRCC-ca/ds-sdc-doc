@@ -44,5 +44,8 @@
       "radio-button": "Radio button",
       "tabs": "Tabs"
     }
+  },
+  "TitleSlugUrl": {
+    "copy-url": "Copy URL"
   }
 }

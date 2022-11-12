@@ -2,9 +2,14 @@
   "Home": {
     "AppName": "IRCC Design System"
   },
+  "Buttons": {
+    "sub-titles": {
+      "design-guideline": "Design Guideline"
+    }
+  },
   "RightSideNav": {
     "title": {
-      "on-this-page" : "On this Page"
+      "on-this-page": "On this Page"
     },
     "sub-titles": {
       "buttons": "Buttons",
@@ -20,9 +25,9 @@
   },
   "LeftSideNav": {
     "title": {
-      "getting-started" : "Getting Started",
-      "foundation" : "Foundation",
-      "components" : "Components"
+      "getting-started": "Getting Started",
+      "foundation": "Foundation",
+      "components": "Components"
     },
     "sub-titles": {
       "overview": "Overview",

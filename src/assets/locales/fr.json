@@ -2,6 +2,11 @@
   "Home": {
     "AppName": "Système de conception IRCC"
   },
+  "Buttons": {
+    "sub-titles": {
+      "design-guideline": "[FR] Design Guideline"
+    }
+  },
   "RightSideNav": {
     "title": {
       "on-this-page" : "[FR] On this Page"
@@ -44,5 +49,8 @@
       "radio-button": "[FR] Radio button",
       "tabs": "[FR] Tabs"
     }
+  },
+  "TitleSlugUrl": {
+    "copy-url": "Copier le lien"
   }
 }

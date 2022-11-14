@@ -18,6 +18,7 @@ import { AppComponent } from './app.component';
 import { SideNavModule } from "./side-nav/side-nav.module";
 import { AppRoutingModule } from './app-routing.module';
 import { OverviewComponent } from './pages/overview/overview.component';
+import { PageButtonComponent } from './pages/button/button.component';
 import { SideNavConfig } from './side-nav/side-nav.config';
 import { TitleSlugUrlComponent } from './title-slug-url/title-slug-url.component';
 import { SlugifyPipe } from './share/pipe-slugify.pipe';
@@ -43,6 +44,7 @@ const JL_ANGULAR_COMPONENTS = [
     OverviewComponent,
     TitleSlugUrlComponent,
     SlugifyPipe,
+    PageButtonComponent,
   ],
   imports: [
     BrowserModule,

@@ -13,7 +13,7 @@ export class OverviewComponent {
   rightNavData: ISideNavDataInterface[];
 
   constructor(private translate: TranslateService, private router: Router, private navBarConfig : SideNavConfig) {
-    this.rightNavData = navBarConfig.getRightNavBarConfig(this.translate);
+    this.rightNavData = [];
   }
 
 }

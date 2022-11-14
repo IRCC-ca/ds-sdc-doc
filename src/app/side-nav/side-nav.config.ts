@@ -1,14 +1,22 @@
 import { Injectable } from "@angular/core";
 import { TranslateService } from "@ngx-translate/core";
 import { ISideNavDataInterface, ItemType, ItemCategory } from "./side-nav.model";
+import {SlugifyPipe} from "../share/pipe-slugify.pipe";
 
 
 @Injectable({
   providedIn: 'root',
 })
 export class SideNavConfig {
-
-    getRightNavBarConfig(translator : TranslateService) : ISideNavDataInterface[] {
+  /**
+   * Loop through an array of navData, get translated text from navData.textKey
+   * Then use SlugifyPipe to output slugged text, add # to front.
+   */
+  getRightNavBarConfig(
+      translator: TranslateService,
+      pipe: SlugifyPipe,
+      navData: {textKey: string, type: ItemType, category: ItemCategory}[]
+  ) : ISideNavDataInterface[] {
     return [
         {
             text : translator.instant('RightSideNav.title.on-this-page'),

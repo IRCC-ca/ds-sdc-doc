@@ -42,7 +42,7 @@ djl-header {
       margin-right: -1px;
     }
   }
-  > app-overview {
+  > :last-child {
     @include col-12;
     @include in-tablet-layout {
       @include col-12;
@@ -50,11 +50,12 @@ djl-header {
     @include up-laptop-layout {
       @include col-10;
     }
-    .mk-wrapper {
+    .mk-wrapper,
+    .content-doc {
       @include in-desktop-layout {
         padding-left: ircc-ds-sizes.$fixed-4;
       }
-      @media (min-width: $screen_xl) {
+      @include up-laptop-layout {
         padding-left: ircc-ds-sizes.$fixed-36;
       }
     }

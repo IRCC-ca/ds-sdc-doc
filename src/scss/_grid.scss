@@ -171,7 +171,7 @@ $grid-row-columns: 6 !default;
 
 @mixin make-col($size: false, $columns: $grid-columns) {
   @if $size {
-    flex: 0 0 auto;
+    flex: 0 0 auto !important;
     width: percentage(divide($size, $columns));
 
   } @else {

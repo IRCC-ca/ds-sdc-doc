@@ -23,6 +23,7 @@ import { SideNavConfig } from './side-nav/side-nav.config';
 import { TitleSlugUrlComponent } from './title-slug-url/title-slug-url.component';
 import { SlugifyPipe } from './share/pipe-slugify.pipe';
 import { ClipboardModule } from "@angular/cdk/clipboard";
+import { InfoTextSmallComponent } from './info-text-small/info-text-small.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/locales/', '.json');
@@ -45,6 +46,7 @@ const JL_ANGULAR_COMPONENTS = [
     TitleSlugUrlComponent,
     SlugifyPipe,
     PageButtonComponent,
+    InfoTextSmallComponent,
   ],
   imports: [
     BrowserModule,

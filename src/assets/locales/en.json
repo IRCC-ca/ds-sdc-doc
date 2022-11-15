@@ -3,8 +3,45 @@
     "AppName": "IRCC Design System"
   },
   "Buttons": {
+    "title": {
+      "buttons": "Buttons"
+    },
     "sub-titles": {
-      "design-guideline": "Design Guideline"
+      "design-guideline": "Design Guideline",
+      "types": "Types",
+      "configs": "Configurations"
+    },
+    "content": {
+      "buttons-trigger-action": "Buttons trigger an action or navigate to another page. They have multiple styles and configurations for various needs. They call attention to actions the user should take to progress through a flow.",
+      "ui-available-style": "This UI element is currently available in our styles package only. The component version is coming soon.",
+      "type-primary": "Primary",
+      "type-secondary": "Secondary",
+      "type-critical": "Critical",
+      "type-plain": "Plain",
+      "type-primary-desc": "Primary buttons are used to highlight the most important actions in any experience. Avoid using more than one primary button in a section or screen whenever possible.",
+      "type-secondary-desc": "Secondary buttons are used most often and are used when less visual attention is required on an action. They can also be used alongside a primary action if there are two options to present to the user that require a different hierarchy.",
+      "type-critical-desc": "Critical buttons are used for destructive actions like deleting user-contributed content.",
+      "type-plain-desc": "Plain buttons can be used for actions that require less attention than a primary or secondary button. They are also useful in situations where the UI is more compact. They are not to be used as links. Use the link text styles for those scenarios.",
+      "type-primary-alt": "Primary button",
+      "type-secondary-alt": "Secondary button",
+      "type-critical-alt": "Critical button",
+      "type-plain-alt": "Plain button",
+      "size": "Size",
+      "size-sm": "Small",
+      "size-lg": "Large",
+      "layout": "Layout",
+      "layout-fluid": "Fluid",
+      "layout-fixed": "Fixed",
+      "icon": "Icon",
+      "icon-none": "None",
+      "icon-leading": "Leading",
+      "icon-trailing": "Trailing",
+      "state": "State",
+      "state-default": "Default",
+      "state-hover": "Hover",
+      "state-active": "Active",
+      "state-disabled": "Disabled",
+      "state-focus": "Focus"
     }
   },
   "RightSideNav": {

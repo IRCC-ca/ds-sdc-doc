@@ -1,5 +1,62 @@
-<div class="content-doc-wrapper">
-  <app-title-slug-url type="primary">Button</app-title-slug-url>
-
+<div class="content-doc-wrapper col-12 col-lg-10">
+  <div class="content-doc">
+    <app-title-slug-url [translate]="'Buttons.title.buttons'" type="primary">Button</app-title-slug-url>
+    <p>{{'Buttons.content.buttons-trigger-action' | translate}}</p>
+    <app-info-text-small [style.color]="'var(--information-text)'">
+      {{'Buttons.content.ui-available-style' | translate}}
+    </app-info-text-small>
+    <div class="button-types">
+      <app-title-slug-url [translate]="'Buttons.sub-titles.types'"></app-title-slug-url>
+      <h5 [style.margin-top]="'7px'">{{'Buttons.content.type-primary' | translate}}</h5>
+      <img src="assets/img/button-types-1a.jpg" alt="{{'Buttons.content.type-primary-alt'|translate}}">
+      <p>{{'Buttons.content.type-primary-desc' | translate}}</p>
+      <h5>{{'Buttons.content.type-secondary' | translate}}</h5>
+      <img src="assets/img/button-types-1b.jpg" alt="{{'Buttons.content.button-type-secondary-alt'|translate}}">
+      <p>{{'Buttons.content.type-secondary-desc' | translate}}</p>
+      <h5>{{'Buttons.content.type-critical' | translate}}</h5>
+      <img src="assets/img/button-types-1c.jpg" alt="{{'Buttons.content.button-type-critical-alt'|translate}}">
+      <p>{{'Buttons.content.type-critical-desc' | translate}}</p>
+      <h5>{{'Buttons.content.type-plain' | translate}}</h5>
+      <img src="assets/img/button-types-1d.jpg" alt="{{'Buttons.content.button-type-plain-alt'|translate}}">
+      <p>{{'Buttons.content.type-plain-desc' | translate}}</p>
+    </div>
+    <div class="button-configs">
+      <app-title-slug-url [translate]="'Buttons.sub-titles.configs'"></app-title-slug-url>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <h5 [style.margin-top]="0">{{'Buttons.content.size' | translate}}</h5>
+          <ul>
+            <li>{{'Buttons.content.size-sm' | translate}}</li>
+            <li>{{'Buttons.content.size-lg' | translate}}</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6">
+          <h5 [style.margin-top]="0">{{'Buttons.content.layout' | translate}}</h5>
+          <ul>
+            <li>{{'Buttons.content.layout-fluid' | translate}}</li>
+            <li>{{'Buttons.content.layout-fixed' | translate}}</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6">
+          <h5>{{'Buttons.content.icon' | translate}}</h5>
+          <ul>
+            <li>{{'Buttons.content.icon-none' | translate}}</li>
+            <li>{{'Buttons.content.icon-leading' | translate}}</li>
+            <li>{{'Buttons.content.icon-trailing' | translate}}</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6">
+          <h5>{{'Buttons.content.state' | translate}}</h5>
+          <ul>
+            <li>{{'Buttons.content.state-default' | translate}}</li>
+            <li>{{'Buttons.content.state-hover' | translate}}</li>
+            <li>{{'Buttons.content.state-active' | translate}}</li>
+            <li>{{'Buttons.content.state-disabled' | translate}}</li>
+            <li>{{'Buttons.content.state-focus' | translate}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<app-side-nav class="right-nav" [navBarData]="rightNavData"></app-side-nav>
+<app-side-nav class="right-nav col-12 col-lg-2" [navBarData]="rightNavData"></app-side-nav>

@@ -3,8 +3,45 @@
     "AppName": "Système de conception IRCC"
   },
   "Buttons": {
+    "title": {
+      "buttons": "[FR] Buttons"
+    },
     "sub-titles": {
-      "design-guideline": "[FR] Design Guideline"
+      "design-guideline": "[FR] Design Guideline",
+      "types": "[FR] Types",
+      "configs": "[FR] Configurations"
+    },
+    "content": {
+      "buttons-trigger-action": "[FR] Buttons trigger an action or navigate to another page. They have multiple styles and configurations for various needs. They call attention to actions the user should take to progress through a flow.",
+      "ui-available-style": "[FR] This UI element is currently available in our styles package only. The component version is coming soon.",
+      "type-primary": "[FR] Primary",
+      "type-secondary": "[FR] Secondary",
+      "type-critical": "[FR] Critical",
+      "type-plain": "[FR] Plain",
+      "type-primary-desc": "[FR] Primary buttons are used to highlight the most important actions in any experience. Avoid using more than one primary button in a section or screen whenever possible.",
+      "type-secondary-desc": "[FR] Secondary buttons are used most often and are used when less visual attention is required on an action. They can also be used alongside a primary action if there are two options to present to the user that require a different hierarchy.",
+      "type-critical-desc": "[FR] Critical buttons are used for destructive actions like deleting user-contributed content.",
+      "type-plain-desc": "[FR] Plain buttons can be used for actions that require less attention than a primary or secondary button. They are also useful in situations where the UI is more compact. They are not to be used as links. Use the link text styles for those scenarios.",
+      "type-primary-alt": "[FR] Primary button",
+      "type-secondary-alt": "[FR] Secondary button",
+      "type-critical-alt": "[FR] Critical button",
+      "type-plain-alt": "[FR] Plain button",
+      "size": "[FR] Size",
+      "size-sm": "[FR] Small",
+      "size-lg": "[FR] Large",
+      "layout": "[FR] Layout",
+      "layout-fluid": "[FR] Fluid",
+      "layout-fixed": "[FR] Fixed",
+      "icon": "[FR] Icon",
+      "icon-none": "[FR] None",
+      "icon-leading": "[FR] Leading",
+      "icon-trailing": "[FR] Trailing",
+      "state": "[FR] State",
+      "state-default": "[FR] Default",
+      "state-hover": "[FR] Hover",
+      "state-active": "[FR] Active",
+      "state-disabled": "[FR] Disabled",
+      "state-focus": "[FR] Focus"
     }
   },
   "RightSideNav": {

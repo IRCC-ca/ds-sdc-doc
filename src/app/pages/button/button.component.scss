@@ -1,0 +1,12 @@
+@use 'src/scss/grid';
+:host {
+  @include grid.row;
+  .button-configs {
+    h5 {
+      margin-bottom: 0;
+    }
+    ul {
+      margin-top: 18px;
+    }
+  }
+}

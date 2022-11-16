@@ -164,9 +164,18 @@ $grid-columns: 12 !default;
 $grid-gutter-width: 1.5rem !default;
 $grid-row-columns: 6 !default;
 
+@mixin make-col-ready() {
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
 // Convenience classes for grid layout.
 .row {
   @include row;
+
+  > * {
+    @include make-col-ready();
+  }
 }
 
 @mixin make-col($size: false, $columns: $grid-columns) {

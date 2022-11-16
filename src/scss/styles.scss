@@ -3,6 +3,7 @@
 @use '../../node_modules/@ircc-ca/ds-sdc-core/index' as ircc-ds;
 @use '../../node_modules/@ircc-ca/ds-sdc-core/util/color' as ircc-ds-color;
 @use '../../node_modules/@ircc-ca/ds-sdc-core/tokens/sizes' as ircc-ds-sizes;
+@use 'sass:map';
 @import 'grid';
 @import '../../node_modules/@ircc-ca/ds-sdc-core/layout/layout-grid';
 
@@ -66,5 +67,37 @@ markdown {
   overflow: hidden;
   pre {
     overflow: auto !important;
+  }
+}
+
+h5 {
+  font-weight: 700 !important;
+  &.text-underline {
+    border-bottom: 1px solid;
+    margin: 8px 0;
+  }
+  &.text-color-green {
+    color: var(--success-text);
+  }
+  &.text-color-red {
+    color: var(--critical-text);
+  }
+  &.round-purple-num {
+    display: inline-block;
+    margin-left: 8px;
+    margin-top: 22px;
+    margin-bottom: 0;
+    position: relative;
+    top: 2px;
+  }
+}
+
+span {
+  &.round-purple-num {
+    color: ircc-ds-color.mix-token(visited, 900);
+    font-weight: 700;
+    background-color: ircc-ds-color.mix-token(visited, 200);
+    padding: 9px 15px;
+    border-radius:50%;
   }
 }

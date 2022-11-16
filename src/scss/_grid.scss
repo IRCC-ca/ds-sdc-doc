@@ -106,6 +106,13 @@ $screen_xl: ircc-ds-sizes.$bp-width-desktop;
   }
 }
 
+// Screen width above phone layout
+@mixin up-phone-layout {
+  @media only screen and (min-width: $screen_md) {
+    @content;
+  }
+}
+
 @mixin in-tablet-layout {
   @media only screen and (min-width: $screen_md) and (max-width: $screen_lg - 1px) {
     @content;

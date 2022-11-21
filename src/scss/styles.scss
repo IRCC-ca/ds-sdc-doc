@@ -44,21 +44,17 @@ djl-header {
     }
   }
   > :last-child {
+    box-sizing: border-box;
     @include col-12;
     @include in-tablet-layout {
       @include col-12;
     }
+    @include in-desktop-layout {
+      padding: 0 ircc-ds-sizes.$fixed-4;
+    }
     @include up-laptop-layout {
       @include col-10;
-    }
-    .mk-wrapper,
-    .content-doc {
-      @include in-desktop-layout {
-        padding-left: ircc-ds-sizes.$fixed-4;
-      }
-      @include up-laptop-layout {
-        padding-left: ircc-ds-sizes.$fixed-36;
-      }
+      padding: 0 ircc-ds-sizes.$fixed-36;
     }
   }
 }

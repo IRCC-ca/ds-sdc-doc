@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import {RouterModule, Routes} from "@angular/router";
+import {ExtraOptions, RouterModule, Routes} from "@angular/router";
 import {
   LocalizeRouterModule,
   LocalizeParser,
@@ -39,9 +39,18 @@ const routes: Routes = [
   { path: '', redirectTo: '/overview', pathMatch: 'full' },
 ];
 
+// scrolling options set
+const routerOptions: ExtraOptions = {
+  scrollPositionRestoration: "enabled",
+  anchorScrolling: "enabled",
+  scrollOffset: [0, 64],
+  onSameUrlNavigation: 'reload'
+  
+};
+
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, routerOptions),
     LocalizeRouterModule.forRoot(routes, {
       parser: {
         provide: LocalizeParser,

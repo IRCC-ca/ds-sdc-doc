@@ -8,16 +8,27 @@
     <div class="button-types">
       <app-title-slug-url [translate]="'Buttons.sub-titles.types'"></app-title-slug-url>
       <h5 [style.margin-top]="'7px'">{{'Buttons.content.type-primary' | translate}}</h5>
-      <img src="assets/img/button-types-1a.jpg" alt="{{'Buttons.alt-text.button-types-1a' | translate}}">
+      <app-component-preview>
+        <djl-button>{{'Buttons.content.type-primary-alt' | translate}}</djl-button>
+      </app-component-preview>
       <p>{{'Buttons.content.type-primary-desc' | translate}}</p>
       <h5>{{'Buttons.content.type-secondary' | translate}}</h5>
-      <img src="assets/img/button-types-1b.jpg" alt="{{'Buttons.alt-text.button-types-1b' | translate}}">
+      <app-component-preview>
+        <djl-button category="secondary">{{'Buttons.content.type-secondary-alt' | translate}}</djl-button>
+      </app-component-preview>
       <p>{{'Buttons.content.type-secondary-desc' | translate}}</p>
       <h5>{{'Buttons.content.type-critical' | translate}}</h5>
-      <img src="assets/img/button-types-1c.jpg" alt="{{'Buttons.alt-text.button-types-1c' | translate}}">
+      <app-component-preview>
+        <djl-button color="critical">{{'Buttons.content.type-critical-alt' | translate}}</djl-button>
+      </app-component-preview>
       <p>{{'Buttons.content.type-critical-desc' | translate}}</p>
       <h5>{{'Buttons.content.type-plain' | translate}}</h5>
-      <img src="assets/img/button-types-1d.jpg" alt="{{'Buttons.alt-text.button-types-1d' | translate}}">
+      <app-component-preview>
+        <djl-button category="plain">{{'Buttons.content.type-plain-alt' | translate}}</djl-button>
+      </app-component-preview>
+      <app-component-preview>
+        <djl-button category="plain" color="critical">{{'Buttons.content.type-plain-critical-alt' | translate}}</djl-button>
+      </app-component-preview>
       <p>{{'Buttons.content.type-plain-desc' | translate}}</p>
     </div>
     <div class="button-configs">

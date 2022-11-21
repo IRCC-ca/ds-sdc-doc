@@ -43,6 +43,7 @@
       "type-secondary-alt": "[FR] Secondary button",
       "type-critical-alt": "[FR] Critical button",
       "type-plain-alt": "[FR] Plain button",
+      "type-plain-critical-alt": "[FR] Plain critical button",
       "size": "[FR] Size",
       "size-sm": "[FR] Small",
       "size-lg": "[FR] Large",

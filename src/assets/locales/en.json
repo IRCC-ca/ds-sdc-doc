@@ -43,6 +43,7 @@
       "type-secondary-alt": "Secondary button",
       "type-critical-alt": "Critical button",
       "type-plain-alt": "Plain button",
+      "type-plain-critical-alt": "Plain critical button",
       "size": "Size",
       "size-sm": "Small",
       "size-lg": "Large",

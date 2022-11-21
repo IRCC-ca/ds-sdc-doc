@@ -56,6 +56,11 @@ djl-header {
       @include col-10;
       padding: 0 ircc-ds-sizes.$fixed-36;
     }
+    @include un-tablet-layout {
+      app-side-nav {
+        display: none;
+      }
+    }
   }
 }
 

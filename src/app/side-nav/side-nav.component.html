@@ -11,6 +11,9 @@
             <div *ngIf="data.category === 'sub-title'">
                 <a class="menuItems" routerLink="{{currentLanguage}}/{{data.path}}">{{data.text}}</a>
             </div>
+            <div *ngIf="data.category === 'slug-url'">
+                <a class="menuItems" routerLink="." fragment="{{data.path}}">{{data.text}}</a>
+            </div>
         </div>
     </div>
 </div>

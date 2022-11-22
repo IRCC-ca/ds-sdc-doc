@@ -106,6 +106,13 @@ $screen_xl: ircc-ds-sizes.$bp-width-desktop;
   }
 }
 
+// Screen width above phone layout
+@mixin up-phone-layout {
+  @media only screen and (min-width: $screen_md) {
+    @content;
+  }
+}
+
 @mixin in-tablet-layout {
   @media only screen and (min-width: $screen_md) and (max-width: $screen_lg - 1px) {
     @content;
@@ -164,14 +171,23 @@ $grid-columns: 12 !default;
 $grid-gutter-width: 1.5rem !default;
 $grid-row-columns: 6 !default;
 
+@mixin make-col-ready() {
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
 // Convenience classes for grid layout.
 .row {
   @include row;
+
+  > * {
+    @include make-col-ready();
+  }
 }
 
 @mixin make-col($size: false, $columns: $grid-columns) {
   @if $size {
-    flex: 0 0 auto;
+    flex: 0 0 auto !important;
     width: percentage(divide($size, $columns));
 
   } @else {

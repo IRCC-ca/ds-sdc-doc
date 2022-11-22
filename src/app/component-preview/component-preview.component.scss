@@ -1,0 +1,11 @@
+:host {
+  display: block;
+  .preview-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--surface2);
+    min-width: 300px;
+    min-height: 170px;
+  }
+}

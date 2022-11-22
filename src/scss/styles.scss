@@ -3,6 +3,7 @@
 @use '../../node_modules/@ircc-ca/ds-sdc-core/index' as ircc-ds;
 @use '../../node_modules/@ircc-ca/ds-sdc-core/util/color' as ircc-ds-color;
 @use '../../node_modules/@ircc-ca/ds-sdc-core/tokens/sizes' as ircc-ds-sizes;
+@use 'sass:map';
 @import 'grid';
 @import '../../node_modules/@ircc-ca/ds-sdc-core/layout/layout-grid';
 
@@ -42,20 +43,22 @@ djl-header {
       margin-right: -1px;
     }
   }
-  > app-overview {
+  > :last-child {
+    box-sizing: border-box;
     @include col-12;
     @include in-tablet-layout {
       @include col-12;
     }
+    @include in-desktop-layout {
+      padding: 0 ircc-ds-sizes.$fixed-4;
+    }
     @include up-laptop-layout {
       @include col-10;
+      padding: 0 ircc-ds-sizes.$fixed-36;
     }
-    .mk-wrapper {
-      @include in-desktop-layout {
-        padding-left: ircc-ds-sizes.$fixed-4;
-      }
-      @media (min-width: $screen_xl) {
-        padding-left: ircc-ds-sizes.$fixed-36;
+    @include un-tablet-layout {
+      app-side-nav {
+        display: none;
       }
     }
   }
@@ -65,5 +68,37 @@ markdown {
   overflow: hidden;
   pre {
     overflow: auto !important;
+  }
+}
+
+h5 {
+  font-weight: 700 !important;
+  &.text-underline {
+    border-bottom: 1px solid;
+    margin: 8px 0;
+  }
+  &.text-color-green {
+    color: var(--success-text);
+  }
+  &.text-color-red {
+    color: var(--critical-text);
+  }
+  &.round-purple-num {
+    display: inline-block;
+    margin-left: 8px;
+    margin-top: 22px;
+    margin-bottom: 0;
+    position: relative;
+    top: 2px;
+  }
+}
+
+span {
+  &.round-purple-num {
+    color: ircc-ds-color.mix-token(visited, 900);
+    font-weight: 700;
+    background-color: ircc-ds-color.mix-token(visited, 200);
+    padding: 9px 15px;
+    border-radius:50%;
   }
 }

@@ -1,0 +1,192 @@
+<div class="content-doc-wrapper col-12 col-lg-10">
+  <app-title-slug-url [translate]="'Buttons.title.buttons'" type="primary">Button</app-title-slug-url>
+  <p>{{'Buttons.content.buttons-trigger-action' | translate}}</p>
+  <app-info-text-small [style.color]="'var(--information-text)'">
+    {{'Buttons.content.ui-available-style' | translate}}
+  </app-info-text-small>
+  <div class="button-types">
+    <app-title-slug-url [translate]="'Buttons.sub-titles.types'"></app-title-slug-url>
+    <h5 [style.margin-top]="'7px'">{{'Buttons.content.type-primary' | translate}}</h5>
+    <app-component-preview>
+      <djl-button>{{'Buttons.content.type-primary-alt' | translate}}</djl-button>
+    </app-component-preview>
+    <p>{{'Buttons.content.type-primary-desc' | translate}}</p>
+    <h5>{{'Buttons.content.type-secondary' | translate}}</h5>
+    <app-component-preview>
+      <djl-button category="secondary">{{'Buttons.content.type-secondary-alt' | translate}}</djl-button>
+    </app-component-preview>
+    <p>{{'Buttons.content.type-secondary-desc' | translate}}</p>
+    <h5>{{'Buttons.content.type-critical' | translate}}</h5>
+    <app-component-preview>
+      <djl-button color="critical">{{'Buttons.content.type-critical-alt' | translate}}</djl-button>
+    </app-component-preview>
+    <p>{{'Buttons.content.type-critical-desc' | translate}}</p>
+    <h5>{{'Buttons.content.type-plain' | translate}}</h5>
+    <app-component-preview>
+      <djl-button category="plain">{{'Buttons.content.type-plain-alt' | translate}}</djl-button>
+    </app-component-preview>
+    <app-component-preview>
+      <djl-button category="plain" color="critical">{{'Buttons.content.type-plain-critical-alt' | translate}}</djl-button>
+    </app-component-preview>
+    <p>{{'Buttons.content.type-plain-desc' | translate}}</p>
+  </div>
+  <div class="button-configs">
+    <app-title-slug-url [translate]="'Buttons.sub-titles.configs'"></app-title-slug-url>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <h5 [style.margin-top]="0">{{'Buttons.content.size' | translate}}</h5>
+        <ul>
+          <li>{{'Buttons.content.size-sm' | translate}}</li>
+          <li>{{'Buttons.content.size-lg' | translate}}</li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-6">
+        <h5 [style.margin-top]="0">{{'Buttons.content.layout' | translate}}</h5>
+        <ul>
+          <li>{{'Buttons.content.layout-fluid' | translate}}</li>
+          <li>{{'Buttons.content.layout-fixed' | translate}}</li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-6">
+        <h5>{{'Buttons.content.icon' | translate}}</h5>
+        <ul>
+          <li>{{'Buttons.content.icon-none' | translate}}</li>
+          <li>{{'Buttons.content.icon-leading' | translate}}</li>
+          <li>{{'Buttons.content.icon-trailing' | translate}}</li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-6">
+        <h5>{{'Buttons.content.state' | translate}}</h5>
+        <ul>
+          <li>{{'Buttons.content.state-default' | translate}}</li>
+          <li>{{'Buttons.content.state-hover' | translate}}</li>
+          <li>{{'Buttons.content.state-active' | translate}}</li>
+          <li>{{'Buttons.content.state-disabled' | translate}}</li>
+          <li>{{'Buttons.content.state-focus' | translate}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="button-design-guide">
+    <app-title-slug-url [translate]="'Buttons.sub-titles.design-guideline'"></app-title-slug-url>
+    <h5 [style.margin-top]="0">{{'Buttons.sub-titles.hierarchy' | translate}}</h5>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <img src="assets/img/btn-do-1.jpg" alt="{{'Buttons.alt-text.btn-do-1' | translate}}">
+        <h5 class="text-underline text-color-green">{{'Buttons.content.do'|translate}}</h5>
+        <p>{{'Buttons.content.design-guide-1'|translate}}</p>
+      </div>
+      <div class="col-12 col-md-6">
+        <img src="assets/img/btn-do-2.jpg" alt="{{'Buttons.alt-text.btn-do-2' | translate}}">
+        <h5 class="text-underline text-color-red">{{'Buttons.content.dont'|translate}}</h5>
+        <p>{{'Buttons.content.design-guide-2'|translate}}</p>
+      </div>
+    </div>
+    <h5 [style.margin-top]="'16px'">{{'Buttons.sub-titles.destructive-actions' | translate}}</h5>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <img src="assets/img/btn-do-3.jpg" alt="{{'Buttons.alt-text.btn-do-3' | translate}}">
+        <h5 class="text-underline text-color-green">{{'Buttons.content.do'|translate}}</h5>
+        <p>{{'Buttons.content.design-guide-3'|translate}}</p>
+      </div>
+      <div class="col-12 col-md-6">
+        <img src="assets/img/btn-do-4.jpg" alt="{{'Buttons.alt-text.btn-do-4' | translate}}">
+        <h5 class="text-underline text-color-red">{{'Buttons.content.dont'|translate}}</h5>
+        <p>{{'Buttons.content.design-guide-4'|translate}}</p>
+      </div>
+    </div>
+    <h5 [style.margin-top]="'16px'">{{'Buttons.sub-titles.plain-buttons' | translate}}</h5>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <img src="assets/img/btn-do-5.jpg" alt="{{'Buttons.alt-text.btn-do-5' | translate}}">
+        <h5 class="text-underline text-color-green">{{'Buttons.content.do'|translate}}</h5>
+        <p>{{'Buttons.content.design-guide-5'|translate}}</p>
+      </div>
+      <div class="col-12 col-md-6">
+        <img src="assets/img/btn-do-6.jpg" alt="{{'Buttons.alt-text.btn-do-6' | translate}}">
+        <h5 class="text-underline text-color-red">{{'Buttons.content.dont'|translate}}</h5>
+        <p>{{'Buttons.content.design-guide-6'|translate}}</p>
+      </div>
+    </div>
+    <h5 [style.margin-top]="'14px'">{{'Buttons.content.spacing' | translate}}</h5>
+    <img src="assets/img/button-design-spacing.jpg" alt="{{'Buttons.alt-text.button-design-spacing' | translate}}">
+    <p>{{'Buttons.content.spacing-desc' | translate}}</p>
+    <h5 [style.margin-top]="'14px'">{{'Buttons.content.min-max-width' | translate}}</h5>
+    <img src="assets/img/button-design-width.jpg" alt="{{'Buttons.alt-text.button-design-width' | translate}}">
+    <p>{{'Buttons.content.min-max-width-desc' | translate}}</p>
+  </div>
+  <div class="button-anatomy">
+    <app-title-slug-url [translate]="'Buttons.sub-titles.anatomy'"></app-title-slug-url>
+    <img src="assets/img/anatomy-image-button.jpg" alt="{{'Buttons.alt-text.anatomy-image-button' | translate}}"><br/>
+    <span class="round-purple-num">1</span>
+    <h5 class="round-purple-num">{{'Buttons.sub-titles.background' | translate}}</h5>
+    <p [style.margin-bottom]="0">{{'Buttons.content.anatomy-background' | translate}}</p>
+    <span class="round-purple-num">2</span>
+    <h5 class="round-purple-num">{{'Buttons.sub-titles.icon' | translate}}</h5>
+    <p [style.margin-bottom]="0">{{'Buttons.content.anatomy-icon' | translate}}</p>
+    <span class="round-purple-num">3</span>
+    <h5 class="round-purple-num">{{'Buttons.sub-titles.label' | translate}}</h5>
+    <p>{{'Buttons.content.anatomy-label' | translate}}</p>
+  </div>
+  <div class="button-specs">
+    <img src="assets/img/anatomy-image-specs.jpg" alt="{{'Buttons.alt-text.anatomy-image-specs' | translate}}">
+  </div>
+  <div class="button-content-guidelines">
+    <app-title-slug-url [translate]="'Buttons.sub-titles.content-guideline'"></app-title-slug-url>
+    <h5 [style.margin-top]="0">{{'Buttons.sub-titles.label-capitalization' | translate}}</h5>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <img src="assets/img/button-content-guide-1.jpg" alt="{{'Buttons.alt-text.button-content-guide-1' | translate}}"><br/>
+        <h5 class="text-underline text-color-green">{{'Buttons.content.do'|translate}}</h5>
+        <p>{{'Buttons.content.content-guideline-1'|translate}}</p>
+      </div>
+      <div class="col-12 col-md-6">
+        <img src="assets/img/button-content-guide-2.jpg" alt="{{'Buttons.alt-text.button-content-guide-2' | translate}}"><br/>
+        <h5 class="text-underline text-color-red">{{'Buttons.content.dont'|translate}}</h5>
+        <p>{{'Buttons.content.content-guideline-2'|translate}}</p>
+      </div>
+    </div>
+    <h5>{{'Buttons.sub-titles.task-focused-labels' | translate}}</h5>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <img src="assets/img/button-content-guide-3.jpg" alt="{{'Buttons.alt-text.button-content-guide-3' | translate}}"><br/>
+        <h5 class="text-underline text-color-green">{{'Buttons.content.do'|translate}}</h5>
+        <p>{{'Buttons.content.content-guideline-3'|translate}}</p>
+      </div>
+      <div class="col-12 col-md-6">
+        <img src="assets/img/button-content-guide-4.jpg" alt="{{'Buttons.alt-text.button-content-guide-4' | translate}}"><br/>
+        <h5 class="text-underline text-color-red">{{'Buttons.content.dont'|translate}}</h5>
+        <p>{{'Buttons.content.content-guideline-4'|translate}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="button-usage-figma">
+    <app-title-slug-url [translate]="'Buttons.sub-titles.usage-figma'"></app-title-slug-url>
+    <div class="row">
+      <div class="col-12 col-md-8">
+        <h5 [style]="'margin-top: 0; margin-bottom: 12px;'">{{'Buttons.sub-titles.direction-of-use' | translate}}</h5>
+        <ol>
+          <li [innerHtml]="'Buttons.content.direction-of-use-1' | translate"></li>
+          <li [innerHtml]="'Buttons.content.direction-of-use-2' | translate"></li>
+          <li [innerHtml]="'Buttons.content.direction-of-use-3' | translate"></li>
+          <li [innerHtml]="'Buttons.content.direction-of-use-4' | translate"></li>
+        </ol>
+      </div>
+      <div class="col-12 col-md-4">
+        <img src="assets/img/button-figma.png" alt="{{'Buttons.alt-text.button-figma' | translate}}">
+      </div>
+    </div>
+  </div>
+  <div class="button-accessibility">
+    <app-title-slug-url [translate]="'Buttons.sub-titles.accessibility'"></app-title-slug-url>
+    <h5 [style.margin-top]="0">{{'Buttons.sub-titles.colour-contrast' | translate}}</h5>
+    <p>{{'Buttons.content.colour-contrast' | translate}}</p>
+    <h5 [style.margin-top]="0">{{'Buttons.sub-titles.keyboard-accessible' | translate}}</h5>
+    <p>{{'Buttons.content.keyboard-accessible' | translate}}</p>
+  </div>
+  <div class="button-research">
+    <app-title-slug-url [translate]="'Buttons.sub-titles.research'"></app-title-slug-url>
+    <p>{{'Buttons.content.research' | translate}}</p>
+  </div>
+</div>
+<app-side-nav class="right-nav col-12 col-lg-2" [navBarData]="rightNavData"></app-side-nav>

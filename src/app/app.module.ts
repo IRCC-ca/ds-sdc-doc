@@ -18,7 +18,13 @@ import { AppComponent } from './app.component';
 import { SideNavModule } from "./side-nav/side-nav.module";
 import { AppRoutingModule } from './app-routing.module';
 import { OverviewComponent } from './pages/overview/overview.component';
+import { PageButtonComponent } from './pages/button/button.component';
 import { SideNavConfig } from './side-nav/side-nav.config';
+import { TitleSlugUrlComponent } from './title-slug-url/title-slug-url.component';
+import { SlugifyPipe } from './share/pipe-slugify.pipe';
+import { ClipboardModule } from "@angular/cdk/clipboard";
+import { InfoTextSmallComponent } from './info-text-small/info-text-small.component';
+import { ComponentPreviewComponent } from './component-preview/component-preview.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/locales/', '.json');
@@ -38,6 +44,11 @@ const JL_ANGULAR_COMPONENTS = [
   declarations: [
     AppComponent,
     OverviewComponent,
+    TitleSlugUrlComponent,
+    SlugifyPipe,
+    PageButtonComponent,
+    InfoTextSmallComponent,
+    ComponentPreviewComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,7 +67,8 @@ const JL_ANGULAR_COMPONENTS = [
         deps: [HttpClient]
       }
     }),
-    AppRoutingModule
+    AppRoutingModule,
+    ClipboardModule
   ],
   providers: [SideNavConfig],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

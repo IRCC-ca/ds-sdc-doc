@@ -1,77 +1,42 @@
 import { Injectable } from "@angular/core";
 import { TranslateService } from "@ngx-translate/core";
 import { ISideNavDataInterface, ItemType, ItemCategory } from "./side-nav.model";
-
+import {SlugifyPipe} from "../share/pipe-slugify.pipe";
 
 @Injectable({
   providedIn: 'root',
 })
 export class SideNavConfig {
-
-    getRightNavBarConfig(translator : TranslateService) : ISideNavDataInterface[] {
-    return [
-        {
-            text : translator.instant('RightSideNav.title.on-this-page'),
-            type : ItemType.PlainText,
-            category : ItemCategory.Title,
-            path: ""
-        },
-        {
-            text :  translator.instant('RightSideNav.sub-titles.buttons'),
-            type : ItemType.Link,
-            category : ItemCategory.subTitle,
-            path: ""
-        },
-        {
-            text : translator.instant('RightSideNav.sub-titles.interactive-demo'),
-            type : ItemType.Link,
-            category : ItemCategory.subTitle,
-            path: ""
-        },
-        {
-            text : translator.instant('RightSideNav.sub-titles.usage'),
-            type : ItemType.Link,
-            category : ItemCategory.subTitle,
-            path: ""
-        },
-        {
-            text : translator.instant('RightSideNav.sub-titles.anatomy'),
-            type : ItemType.Link,
-            category : ItemCategory.subTitle,
-            path: ""
-        },
-        {
-            text : translator.instant('RightSideNav.sub-titles.specs'),
-            type : ItemType.Link,
-            category : ItemCategory.subTitle,
-            path: ""
-        },
-        {
-            text : translator.instant('RightSideNav.sub-titles.content-guidelines'),
-            type : ItemType.Link,
-            category : ItemCategory.subTitle,
-            path: ""
-        },
-        {
-            text : translator.instant('RightSideNav.sub-titles.accessibility'),
-            type : ItemType.Link,
-            category : ItemCategory.subTitle,
-            path: ""
-        },
-        {
-            text : translator.instant('RightSideNav.sub-titles.research'),
-            type : ItemType.Link,
-            category : ItemCategory.subTitle,
-            path: ""
-        },
-        {
-            text : translator.instant('RightSideNav.sub-titles.related-components'),
-            type : ItemType.Link,
-            category : ItemCategory.subTitle,
-            path: ""
-        }
-    ]
-}
+    /**
+        * Loop through an array of navData, translates all the titles and subtitles
+        * Sets the default category and type for each right nav subtitle
+        * Then use SlugifyPipe to output slugged text, add # to front.
+    */
+    getRightNavBarConfig(
+        translator: TranslateService,
+        pipe: SlugifyPipe,
+        navData: string[]
+    ) : ISideNavDataInterface[] {
+        const rightNavData: ISideNavDataInterface[] = [
+            {
+                text: translator.instant('RightSideNav.title.on-this-page'),
+                type : ItemType.PlainText,
+                category : ItemCategory.Title,
+                path: ''
+            }
+        ];
+        navData.forEach(data =>  {
+            rightNavData.push(
+                {
+                    text: translator.instant(data),
+                    type : ItemType.Link,
+                    category : ItemCategory.slugUrl,
+                    path: pipe.transform(translator.instant(data))
+                }
+            ) 
+        })
+        return rightNavData
+    }
 
     getLeftNavBarConfig(translator : TranslateService) : ISideNavDataInterface[] {
     return [

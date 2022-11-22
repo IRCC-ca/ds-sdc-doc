@@ -5,12 +5,13 @@ export enum ItemType {
 
 export enum ItemCategory {
   Title = 'title',
-  subTitle = 'sub-title'
+  subTitle = 'sub-title',
+  slugUrl = 'slug-url'
 }
 
 export interface ISideNavDataInterface {
   'text': string,
   'type': ItemType, // If the nav item is a link or plain text
-  'category': ItemCategory, // If the nav item is title or subtitle
-  'path' : string // Link for nav item
+  'category': ItemCategory, // If the nav item is title, subtitle or slug-url
+  'path': string // Link for nav item
 }

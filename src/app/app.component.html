@@ -11,10 +11,9 @@
 </style>
 
 <!-- Toolbar -->
-<jds-header>
-  <djl-link *ngIf="getCurrentLang()!='fr'" (click)="useLanguage('fr')" href="#">Français</djl-link>
-  <djl-link *ngIf="getCurrentLang()!='en'" (click)="useLanguage('en')" href="#">English</djl-link>
-</jds-header>
+<djl-header>
+  <djl-link (click)="useLanguage()" href="#">{{language}}</djl-link>
+</djl-header>
 <div class="content" role="main">
   <h1>{{ 'Home.AppName' | translate }}</h1>
   <div class="content-area-responsive">
@@ -23,7 +22,7 @@
   </div>
 </div>
 <!-- Footer -->
-<jds-footer></jds-footer>
+<djl-footer></djl-footer>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->

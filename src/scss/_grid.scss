@@ -1,4 +1,6 @@
 @use 'node_modules/@ircc-ca/ds-sdc-core/tokens/_sizes.scss' as ircc-ds-sizes;
+@import 'functions';
+
 // Referenced from bootstrap's grid system https://getbootstrap.com/docs/4.0/layout/grid/
 // To be replaced by ircc design system's grid system.
 
@@ -104,6 +106,13 @@ $screen_xl: ircc-ds-sizes.$bp-width-desktop;
   }
 }
 
+// Screen width above phone layout
+@mixin up-phone-layout {
+  @media only screen and (min-width: $screen_md) {
+    @content;
+  }
+}
+
 @mixin in-tablet-layout {
   @media only screen and (min-width: $screen_md) and (max-width: $screen_lg - 1px) {
     @content;
@@ -141,4 +150,129 @@ $screen_xl: ircc-ds-sizes.$bp-width-desktop;
   @media only screen and (min-width: $screen_xl) {
     @content;
   }
+}
+
+// The following was copied & modified from https://github.com/twbs/bootstrap/blob/main/scss/_grid.scss
+// scss-docs-start grid-breakpoints
+// Aligned with IRCC Design System Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: $screen_sm,
+  md: $screen_md,
+  lg: $screen_lg,
+  xl: $screen_xl,
+) !default;
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 1.5rem !default;
+$grid-row-columns: 6 !default;
+
+@mixin make-col-ready() {
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+// Convenience classes for grid layout.
+.row {
+  @include row;
+
+  > * {
+    @include make-col-ready();
+  }
+}
+
+@mixin make-col($size: false, $columns: $grid-columns) {
+  @if $size {
+    flex: 0 0 auto !important;
+    width: percentage(divide($size, $columns));
+
+  } @else {
+    flex: 1 1 0;
+    max-width: 100%;
+  }
+}
+
+@mixin make-grid-columns($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
+  @each $breakpoint in map-keys($breakpoints) {
+    $infix: breakpoint-infix($breakpoint, $breakpoints);
+
+    @include media-breakpoint-up($breakpoint, $breakpoints) {
+      // Provide basic `.col-{bp}` classes for equal-width flexbox columns
+      .col#{$infix} {
+        flex: 1 0 0; // Flexbugs #4: https://github.com/philipwalton/flexbugs#flexbug-4
+      }
+
+      .row-cols#{$infix}-auto > * {
+        @include make-col-auto();
+      }
+
+      @if $grid-row-columns > 0 {
+        @for $i from 1 through $grid-row-columns {
+          .row-cols#{$infix}-#{$i} {
+            @include row-cols($i);
+          }
+        }
+      }
+
+      .col#{$infix}-auto {
+        @include make-col-auto();
+      }
+
+      @if $columns > 0 {
+        @for $i from 1 through $columns {
+          .col#{$infix}-#{$i} {
+            @include make-col($i, $columns);
+          }
+        }
+
+        // `$columns - 1` because offsetting by the width of an entire row isn't possible
+        @for $i from 0 through ($columns - 1) {
+          @if not ($infix == "" and $i == 0) { // Avoid emitting useless .offset-0
+            .offset#{$infix}-#{$i} {
+              @include make-col-offset($i, $columns);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media of at least the minimum breakpoint width. No query for the smallest breakpoint.
+// Makes the @content apply to the given breakpoint and wider.
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin make-col-auto() {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+// Row columns
+//
+// Specify on a parent element(e.g., .row) to force immediate children into NN
+// number of columns. Supports wrapping to new lines, but does not do a Masonry
+// style grid.
+@mixin row-cols($count) {
+  > * {
+    flex: 0 0 auto;
+    width: divide(100%, $count);
+  }
+}
+
+@mixin make-col-offset($size, $columns: $grid-columns) {
+  $num: divide($size, $columns);
+  margin-left: if($num == 0, 0, percentage($num));
 }

@@ -109,6 +109,36 @@
       "button-content-guide-4": "[FR] A button that has the label “Documents”."
     }
   },
+  "Tokens": {
+    "title": {
+      "tokens": "[FR] Tokens"
+    },
+    "sub-titles": {
+      "spacing": "[FR] Spacing",
+      "breakpoints": "[FR] Breakpoints",
+      "style": "[FR] Style",
+      "token-name": "[FR] Token name",
+      "colour-role": "[FR] Colour role, hue & hex value",
+      "figma-colour-style": "[FR] Figma colour style",
+      "font-weight": "[FR] Font & weight",
+      "size": "[FR] Size",
+      "line-height": "[FR] Line height & paragraph spacing",
+      "figma-text-style": "[FR] Figma text style",
+      "sample": "[FR] Sample",
+      "value": "[FR] Value",
+      "figma-usage": "[FR] Figma usage",
+      "width": "[FR] Width"
+    },
+    "content": {
+      "token-desc": "[FR] Tokens are re-usable utilities that are applied consistently to elements and components throughout the entire design system. This creates consistency to how colours, spacing, etc. are applied and allows efficient and reliable design iterations to be made globally.",
+      "colours-desc": "[FR] Designers have a variety of colours to choose from to ensure clear communication, indicate UI functionality, and provide colour contrast that complies with accessibility standards. The colour system is designed to define meaning for each colour, allow for global colour changes, and ensure every colour used comes from the system.",
+      "typography-desc": "[FR] The type scale keeps the number of styles to a minimum and is designed to ensure an affective visual hierarchy of content globally. Text styles include point sizes, line heights and paragraph spacing that pass AAA accessibility standards under WCAG 2.1.",
+      "spacing-desc": "[FR] Spacing units to apply as padding or margins throughout the UI. Spacing options are limited to help create consistency across spacing decisions. All spacing units are a multiple of four to adhere to a four pixel grid.",
+      "breakpoints-desc": "[FR] Setting breakpoints allows content and design to adapt in order to provide the best possible layout for the viewport or device. Use these common breakpoint widths for layout consistency. Design system consumers can add additional breakpoints as needed."
+    },
+    "alt-text": {
+    }
+  },
   "RightSideNav": {
     "title": {
       "on-this-page" : "[FR] On this Page"

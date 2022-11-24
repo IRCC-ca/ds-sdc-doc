@@ -5,6 +5,7 @@
 @use '../../node_modules/@ircc-ca/ds-sdc-core/tokens/sizes' as ircc-ds-sizes;
 @use 'sass:map';
 @import 'grid';
+@import 'table';
 @import '../../node_modules/@ircc-ca/ds-sdc-core/layout/layout-grid';
 
 @media (prefers-color-scheme: dark) {

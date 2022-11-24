@@ -86,7 +86,8 @@
       "direction-of-use-4": "[FR] If an icon is used, designers can <a target=_blank href=https://www.loom.com/share/b0d137f991034f08b504c93278384c2f>change the Font Awesome keyword</a> to update the icon in the button to any Font Awesome icon.",
       "colour-contrast": "[FR] Primary buttons have a colour contrast ratio of 8.88:1 and passes AAA accessibility standards under WCAG 2.1.",
       "keyboard-accessible": "[FR] Buttons are developed using the native HTML button element to ensure interactive elements are keyboard accessible and pass WCAG 2.1 AA conformity.",
-      "research": "[FR] Coming soon."
+      "research": "[FR] Coming soon.",
+      "specs-desc": "[FR] The small button with fluid layout has 8 pixels of vertical padding and 16 pixels of horizontal padding inside the button. The icon has a 20 pixel width and height. There is 8 pixels between the icon and label. The label width is dynamic based on number of characters. The large button with fluid layout has 12 pixels of vertical padding and 20 pixels of horizontal padding inside the button. The icon has a 24 pixel width and height. There is 8 pixels between the icon and label. The label width is dynamic based on number of characters. The small button with fixed layout has 8 pixels of vertical padding and fluid horizontal padding based on the fixed width of the button. The icon has a 20 pixel width and height. There is 8 pixels between the icon and label. The label width is dynamic based on number of characters. The large button with fixed layout has 12 pixels of vertical padding and fluid horizontal padding based on the fixed width of the button. The icon has a 24 pixel width and height. There is 8 pixels between the icon and label. The label width is dynamic based on number of characters."
     },
     "alt-text": {
       "button-types-1a": "[FR] A button using the primary button styling. The button has a filled dark blue backing with white text.",
@@ -102,11 +103,11 @@
       "button-design-spacing": "[FR] Specs displaying the correct spacing between buttons. Spacing is described in the paragraph below.",
       "button-design-width": "[FR] Specs displaying the minimum and maximum widths of the button component. Widths are described in the paragraph below.",
       "anatomy-image-button": "[FR] The parts that makeup the button component. The parts are described in the content below.",
-      "anatomy-image-specs": "[FR] Specs displaying the padding and layer measurements within the button component.",
       "button-content-guide-1": "[FR] A button that has the label “Save changes” written in sentence case.",
       "button-content-guide-2": "[FR] A button that has the label “Save changes” written in title case.",
       "button-content-guide-3": "[FR] A button that has the label “View my documents”.",
-      "button-content-guide-4": "[FR] A button that has the label “Documents”."
+      "button-content-guide-4": "[FR] A button that has the label “Documents”.",
+      "button-spec": "[FR] Specs displaying the padding and layer measurements within the button component. Specs are described in the paragraph below."
     }
   },
   "RightSideNav": {

@@ -103,3 +103,8 @@ span {
     border-radius:50%;
   }
 }
+
+app-info-text-small {
+  // To be replace with color token
+  color: ircc-ds-color.mix-token(information, 900);
+}

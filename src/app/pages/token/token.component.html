@@ -10,12 +10,11 @@
       <th>{{'Tokens.sub-titles.colour-role' | translate}}</th>
       <th>{{'Tokens.sub-titles.figma-colour-style' | translate}}</th>
     </tr>
-    <tr>
-      <td>{{'Tokens.sub-titles.style' | translate}}</td>
-      <td>--background</td>
-      <td>CTA, Hue 700<br/>
-        #2A4980</td>
-      <td>button-primary / CTA / background</td>
+    <tr *ngFor="let color of colorSample">
+      <td [innerHtml]="color.style | SafeHtmlPipe"></td>
+      <td >{{color.tokenName}}</td>
+      <td [innerHtml]="color.colorRole"></td>
+      <td [innerHtml]="color.figmaStyle"></td>
     </tr>
   </table>
   <app-title-slug-url [translate]="'LeftSideNav.sub-titles.typography'">Typography</app-title-slug-url>

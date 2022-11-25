@@ -74,6 +74,7 @@ markdown {
 
 h5 {
   font-weight: 700 !important;
+  margin-bottom: 12px;
   &.text-underline {
     border-bottom: 1px solid;
     margin: 8px 0;
@@ -102,4 +103,9 @@ span {
     padding: 9px 15px;
     border-radius:50%;
   }
+}
+
+app-info-text-small {
+  // To be replace with color token
+  color: ircc-ds-color.mix-token(information, 900);
 }

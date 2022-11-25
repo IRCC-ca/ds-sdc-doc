@@ -1,7 +1,7 @@
 <div class="content-doc-wrapper col-12 col-lg-10">
   <app-title-slug-url [translate]="'Buttons.title.buttons'" type="primary">Button</app-title-slug-url>
   <p>{{'Buttons.content.buttons-trigger-action' | translate}}</p>
-  <app-info-text-small [style.color]="'var(--information-text)'">
+  <app-info-text-small>
     {{'Buttons.content.ui-available-style' | translate}}
   </app-info-text-small>
   <div class="button-types">
@@ -129,7 +129,9 @@
     <p>{{'Buttons.content.anatomy-label' | translate}}</p>
   </div>
   <div class="button-specs">
-    <img src="assets/img/anatomy-image-specs.jpg" alt="{{'Buttons.alt-text.anatomy-image-specs' | translate}}">
+    <app-title-slug-url [translate]="'Buttons.sub-titles.specs'"></app-title-slug-url>
+    <img src="assets/img/button-specs.jpg" alt="{{'Buttons.alt-text.button-specs' | translate}}">
+    <p>{{'Buttons.content.specs-desc' | translate}}</p>
   </div>
   <div class="button-content-guidelines">
     <app-title-slug-url [translate]="'Buttons.sub-titles.content-guideline'"></app-title-slug-url>

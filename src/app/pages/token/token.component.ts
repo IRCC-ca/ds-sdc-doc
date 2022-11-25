@@ -3,7 +3,7 @@ import {ISideNavDataInterface} from "../../side-nav/side-nav.model";
 import {TranslateService} from "@ngx-translate/core";
 import {SideNavConfig} from "../../side-nav/side-nav.config";
 import {SlugifyPipe} from "../../share/pipe-slugify.pipe";
-import {colorSample, colorSamples} from "./token.constant";
+import {colorSample, colorSamples, spacingsFixed} from "./token.constant";
 import {SafeHtmlPipe} from "../../share/safe-html.pipe";
 
 @Component({
@@ -22,6 +22,7 @@ export class PageTokenComponent {
     'Tokens.sub-titles.breakpoints',
   ]
   colorSample: colorSample[] = colorSamples;
+  spacingSample: number[] = spacingsFixed;
 
   constructor(
     private translate: TranslateService,

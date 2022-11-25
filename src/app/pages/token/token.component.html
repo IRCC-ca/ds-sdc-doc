@@ -12,7 +12,7 @@
     </tr>
     <tr *ngFor="let color of colorSample">
       <td [innerHtml]="color.style | SafeHtmlPipe"></td>
-      <td >{{color.tokenName}}</td>
+      <td>{{color.tokenName}}</td>
       <td [innerHtml]="color.colorRole"></td>
       <td [innerHtml]="color.figmaStyle"></td>
     </tr>
@@ -21,6 +21,22 @@
   <p>{{'Tokens.content.typography-desc' | translate}}</p>
   <app-title-slug-url [translate]="'Tokens.sub-titles.spacing'">Spacing</app-title-slug-url>
   <p>{{'Tokens.content.spacing-desc' | translate}}</p>
+  <table>
+    <tr>
+      <th>{{'Tokens.sub-titles.sample' | translate}}</th>
+      <th>{{'Tokens.sub-titles.token-name' | translate}}</th>
+      <th>{{'Tokens.sub-titles.value' | translate}}</th>
+      <th>{{'Tokens.sub-titles.figma-usage' | translate}}</th>
+    </tr>
+    <tr *ngFor="let space of spacingSample">
+      <td>
+        <div class="spacing-sample" [style.width]="space+'px'"></div>
+      </td>
+      <td>$fixed-{{space}}</td>
+      <td>{{space}} {{'Tokens.sub-titles.pixels' | translate}}</td>
+      <td>{{'Tokens.content.figma-usage' | translate:{px: space} }}</td>
+    </tr>
+  </table>
   <app-title-slug-url [translate]="'Tokens.sub-titles.breakpoints'">Breakpoints</app-title-slug-url>
   <p>{{'Tokens.content.breakpoints-desc' | translate}}</p>
 </div>

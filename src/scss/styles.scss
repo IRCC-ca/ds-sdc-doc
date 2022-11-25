@@ -109,3 +109,13 @@ app-info-text-small {
   // To be replace with color token
   color: ircc-ds-color.mix-token(information, 900);
 }
+
+app-page-token {
+  .spacing-sample {
+    height: 20px;
+    margin: 0 auto;
+    background: ircc-ds-color.mix-token(visited, 100);
+    border-left: 1px solid ircc-ds-color.mix-token(visited, 700);
+    border-right: 1px solid ircc-ds-color.mix-token(visited, 700);
+  }
+}

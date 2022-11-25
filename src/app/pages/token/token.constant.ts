@@ -31,3 +31,5 @@ export const colorSamples: colorSample[] = [
     figmaStyle: 'button-primary / CTA /<br/> background'
   },
 ];
+
+export const spacingsFixed: number[] = [4, 8, 12, 16, 24, 32, 40, 56, 72, 88, 100, 400];

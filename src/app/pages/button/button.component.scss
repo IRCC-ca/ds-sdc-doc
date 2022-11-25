@@ -11,8 +11,10 @@
   }
 
   .button-design-guide {
-    img {
-      width: 100%;
+    @include grid.up-laptop-layout {
+      img {
+        width: 100%;
+      }
     }
   }
 

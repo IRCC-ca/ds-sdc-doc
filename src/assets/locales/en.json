@@ -111,9 +111,10 @@
       "button-spec": "Specs displaying the padding and layer measurements within the button component. Specs are described in the paragraph below."
     }
   },
-  "Tokens": {
+  "Utilities": {
     "title": {
-      "tokens": "Tokens"
+      "tokens": "Tokens",
+      "utilities": "Utilities"
     },
     "sub-titles": {
       "spacing": "Spacing",
@@ -134,7 +135,7 @@
       "pixels": "pixels"
     },
     "content": {
-      "token-desc": "Tokens are re-usable utilities that are applied consistently to elements and components throughout the entire design system. This creates consistency to how colours, spacing, etc. are applied and allows efficient and reliable design iterations to be made globally.",
+      "token-desc": "Utilities are re-usable tokens, variables, etc. that are applied consistently to elements and components throughout the entire design system. This creates consistency in how the design system’s foundations are applied and allows efficient and reliable design iterations to be made globally.",
       "colours-desc": "Designers have a variety of colours to choose from to ensure clear communication, indicate UI functionality, and provide colour contrast that complies with accessibility standards. The colour system is designed to define meaning for each colour, allow for global colour changes, and ensure every colour used comes from the system.",
       "typography-desc": "The type scale keeps the number of styles to a minimum and is designed to ensure an affective visual hierarchy of content globally. Text styles include point sizes, line heights and paragraph spacing that pass AAA accessibility standards under WCAG 2.1.",
       "spacing-desc": "Spacing units to apply as padding or margins throughout the UI. Spacing options are limited to help create consistency across spacing decisions. All spacing units are a multiple of four to adhere to a four pixel grid.",
@@ -176,6 +177,7 @@
       "iconography": "Iconography",
       "layouts": "Layouts",
       "tokens": "Tokens",
+      "utilities": "Utilities",
       "buttons": "Buttons",
       "checkbox": "Checkbox",
       "external-link": "External Link",

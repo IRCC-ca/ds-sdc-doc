@@ -12,7 +12,7 @@ import { HttpClient } from '@angular/common/http';
 import { Location } from '@angular/common';
 import {OverviewComponent} from "./pages/overview/overview.component";
 import {PageButtonComponent} from "./pages/button/button.component";
-import {PageTokenComponent} from "./pages/token/token.component";
+import {PageUtilitiesComponent} from "./pages/utilities/utilities.component";
 
 export function HttpLoaderFactory(translate: TranslateService, location: Location, settings: LocalizeRouterSettings, http: HttpClient) {
   return new LocalizeRouterHttpLoader(translate, location, { ...settings, alwaysSetPrefix: true }, http);
@@ -27,7 +27,7 @@ const routes: Routes = [
   { path: 'typography', component: OverviewComponent },
   { path: 'iconography', component: OverviewComponent },
   { path: 'layouts', component: OverviewComponent },
-  { path: 'tokens', component: PageTokenComponent },
+  { path: 'utilities', component: PageUtilitiesComponent },
   { path: 'buttons', component: PageButtonComponent },
   { path: 'checkbox', component: OverviewComponent },
   { path: 'external-link', component: OverviewComponent },

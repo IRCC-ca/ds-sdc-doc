@@ -1,0 +1,43 @@
+<div class="content-doc-wrapper col-12 col-lg-10">
+  <app-title-slug-url [translate]="'Utilities.title.utilities'" type="primary">Utilities</app-title-slug-url>
+  <p>{{'Utilities.content.token-desc' | translate}}</p>
+  <app-title-slug-url [translate]="'LeftSideNav.sub-titles.colours'">Colours</app-title-slug-url>
+  <p>{{'Utilities.content.colours-desc' | translate}}</p>
+  <table>
+    <tr>
+      <th>{{'Utilities.sub-titles.style' | translate}}</th>
+      <th>{{'Utilities.sub-titles.token-name' | translate}}</th>
+      <th>{{'Utilities.sub-titles.colour-role' | translate}}</th>
+      <th>{{'Utilities.sub-titles.figma-colour-style' | translate}}</th>
+    </tr>
+    <tr *ngFor="let color of colorSample">
+      <td [innerHtml]="color.style | SafeHtmlPipe"></td>
+      <td>{{color.tokenName}}</td>
+      <td [innerHtml]="color.colorRole"></td>
+      <td [innerHtml]="color.figmaStyle"></td>
+    </tr>
+  </table>
+  <app-title-slug-url [translate]="'LeftSideNav.sub-titles.typography'">Typography</app-title-slug-url>
+  <p>{{'Utilities.content.typography-desc' | translate}}</p>
+  <app-title-slug-url [translate]="'Utilities.sub-titles.spacing'">Spacing</app-title-slug-url>
+  <p>{{'Utilities.content.spacing-desc' | translate}}</p>
+  <table>
+    <tr>
+      <th>{{'Utilities.sub-titles.sample' | translate}}</th>
+      <th>{{'Utilities.sub-titles.token-name' | translate}}</th>
+      <th>{{'Utilities.sub-titles.value' | translate}}</th>
+      <th>{{'Utilities.sub-titles.figma-usage' | translate}}</th>
+    </tr>
+    <tr *ngFor="let space of spacingSample">
+      <td>
+        <div class="spacing-sample" [style.width]="space+'px'"></div>
+      </td>
+      <td>$fixed-{{space}}</td>
+      <td>{{space}} {{'Utilities.sub-titles.pixels' | translate}}</td>
+      <td>{{'Utilities.content.figma-usage' | translate:{px: space} }}</td>
+    </tr>
+  </table>
+  <app-title-slug-url [translate]="'Utilities.sub-titles.breakpoints'">Breakpoints</app-title-slug-url>
+  <p>{{'Utilities.content.breakpoints-desc' | translate}}</p>
+</div>
+<app-side-nav class="right-nav col-12 col-lg-2" [navBarData]="rightNavData"></app-side-nav>

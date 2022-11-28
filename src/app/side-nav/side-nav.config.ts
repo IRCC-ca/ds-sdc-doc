@@ -101,10 +101,10 @@ export class SideNavConfig {
             path: "layouts"
         },
         {
-            text : translator.instant('LeftSideNav.sub-titles.tokens'),
+            text : translator.instant('LeftSideNav.sub-titles.utilities'),
             type : ItemType.Link,
             category : ItemCategory.subTitle,
-            path: "tokens"
+            path: "utilities"
         },
         {
             text : translator.instant('LeftSideNav.title.components'),

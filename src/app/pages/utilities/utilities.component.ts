@@ -3,23 +3,23 @@ import {ISideNavDataInterface} from "../../side-nav/side-nav.model";
 import {TranslateService} from "@ngx-translate/core";
 import {SideNavConfig} from "../../side-nav/side-nav.config";
 import {SlugifyPipe} from "../../share/pipe-slugify.pipe";
-import {colorSample, colorSamples, spacingsFixed} from "./token.constant";
+import {colorSample, colorSamples, spacingsFixed} from "./utilities.constant";
 import {SafeHtmlPipe} from "../../share/safe-html.pipe";
 
 @Component({
   selector: 'app-page-token',
-  templateUrl: './token.component.html',
-  styleUrls: ['./token.component.scss'],
+  templateUrl: './utilities.component.html',
+  styleUrls: ['./utilities.component.scss'],
   providers: [SlugifyPipe, SafeHtmlPipe],
   encapsulation: ViewEncapsulation.None
 })
-export class PageTokenComponent {
+export class PageUtilitiesComponent {
   rightNavData: ISideNavDataInterface[];
   rightNavDataRaw: string[] = [ // list of all right nav items
     'LeftSideNav.sub-titles.colours',
     'LeftSideNav.sub-titles.typography',
-    'Tokens.sub-titles.spacing',
-    'Tokens.sub-titles.breakpoints',
+    'Utilities.sub-titles.spacing',
+    'Utilities.sub-titles.breakpoints',
   ]
   colorSample: colorSample[] = colorSamples;
   spacingSample: number[] = spacingsFixed;

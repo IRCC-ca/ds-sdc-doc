@@ -140,7 +140,8 @@
       "typography-desc": "The type scale keeps the number of styles to a minimum and is designed to ensure an affective visual hierarchy of content globally. Text styles include point sizes, line heights and paragraph spacing that pass AAA accessibility standards under WCAG 2.1.",
       "spacing-desc": "Spacing units to apply as padding or margins throughout the UI. Spacing options are limited to help create consistency across spacing decisions. All spacing units are a multiple of four to adhere to a four pixel grid.",
       "breakpoints-desc": "Setting breakpoints allows content and design to adapt in order to provide the best possible layout for the viewport or device. Use these common breakpoint widths for layout consistency. Design system consumers can add additional breakpoints as needed.",
-      "figma-usage": "Use {{px}} pixels of spacing"
+      "figma-usage": "Use {{px}} pixels of spacing",
+      "bp-figma-usage": "Set frame width to {{px}} pixels"
     },
     "alt-text": {
     }

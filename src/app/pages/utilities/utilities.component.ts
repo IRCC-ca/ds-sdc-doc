@@ -3,7 +3,7 @@ import {ISideNavDataInterface} from "../../side-nav/side-nav.model";
 import {TranslateService} from "@ngx-translate/core";
 import {SideNavConfig} from "../../side-nav/side-nav.config";
 import {SlugifyPipe} from "../../share/pipe-slugify.pipe";
-import {colorSample, colorSamples, spacingsFixed} from "./utilities.constant";
+import {breakpoint, breakpoints, colorSample, colorSamples, spacingsFixed} from "./utilities.constant";
 import {SafeHtmlPipe} from "../../share/safe-html.pipe";
 
 @Component({
@@ -23,6 +23,7 @@ export class PageUtilitiesComponent {
   ]
   colorSample: colorSample[] = colorSamples;
   spacingSample: number[] = spacingsFixed;
+  breakpoints: breakpoint[] = breakpoints;
 
   constructor(
     private translate: TranslateService,

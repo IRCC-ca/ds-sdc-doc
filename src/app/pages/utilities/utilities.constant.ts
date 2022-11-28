@@ -33,3 +33,27 @@ export const colorSamples: colorSample[] = [
 ];
 
 export const spacingsFixed: number[] = [4, 8, 12, 16, 24, 32, 40, 56, 72, 88, 100, 400];
+
+export interface breakpoint {
+  svgPath: string,
+  varName: string,
+  width: number,
+}
+
+export const breakpoints: breakpoint[] = [
+  {
+    svgPath: 'assets/svg/icon-bp-1.svg',
+    varName: '$bp-width-phone',
+    width: 360,
+  },
+  {
+    svgPath: 'assets/svg/icon-bp-2.svg',
+    varName: '$bp-width-tablet',
+    width: 768,
+  },
+  {
+    svgPath: 'assets/svg/icon-bp-3.svg',
+    varName: '$bp-width-tablet',
+    width: 1366,
+  },
+];

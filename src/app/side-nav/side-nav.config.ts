@@ -33,7 +33,7 @@ export class SideNavConfig {
                     category : ItemCategory.slugUrl,
                     path: pipe.transform(translator.instant(data))
                 }
-            ) 
+            )
         })
         return rightNavData
     }

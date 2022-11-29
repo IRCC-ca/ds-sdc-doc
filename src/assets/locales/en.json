@@ -132,7 +132,9 @@
       "value": "Value",
       "figma-usage": "Figma usage",
       "width": "Width",
-      "pixels": "pixels"
+      "pixels": "pixels",
+      "tag-name": "Tag name",
+      "desc": "Description"
     },
     "content": {
       "token-desc": "Utilities are re-usable tokens, variables, etc. that are applied consistently to elements and components throughout the entire design system. This creates consistency in how the design system’s foundations are applied and allows efficient and reliable design iterations to be made globally.",
@@ -141,7 +143,10 @@
       "spacing-desc": "Spacing units to apply as padding or margins throughout the UI. Spacing options are limited to help create consistency across spacing decisions. All spacing units are a multiple of four to adhere to a four pixel grid.",
       "breakpoints-desc": "Setting breakpoints allows content and design to adapt in order to provide the best possible layout for the viewport or device. Use these common breakpoint widths for layout consistency. Design system consumers can add additional breakpoints as needed.",
       "figma-usage": "Use {{px}} pixels of spacing",
-      "bp-figma-usage": "Set frame width to {{px}} pixels"
+      "bp-figma-usage": "Set frame width to {{px}} pixels",
+      "lato-regular": "Lato<br/>Regular",
+      "default": "Default",
+      "emphasis": "Emphasis"
     },
     "alt-text": {
     }

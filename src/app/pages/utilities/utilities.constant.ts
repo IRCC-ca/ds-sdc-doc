@@ -57,3 +57,43 @@ export const breakpoints: breakpoint[] = [
     width: 1366,
   },
 ];
+
+export interface typography {
+  tag: string,
+  class: string | null // Use null if tag name is same as class name
+  fontNWeight: string,
+  size: string,
+  lineHeight: string,
+  textStyle: [string, string], // ['key_for_style_name', 'tag_name']
+  description: string | null // translation key or null if no description
+}
+
+export const typographys: typography[] = [
+  {
+    tag: 'h1',
+    class: null,
+    fontNWeight: 'Utilities.content.lato-regular',
+    size: '36px / 2.25rem',
+    lineHeight: '52px / 3.25rem<br/>16px / 1 rem',
+    textStyle: ['Utilities.content.default', 'H1'],
+    description: null
+  },
+  {
+    tag: 'h2',
+    class: null,
+    fontNWeight: 'Utilities.content.lato-regular',
+    size: '32px / 2rem',
+    lineHeight: '44px / 2.75rem<br/>16px / 1 rem',
+    textStyle: ['Utilities.content.default', 'H2'],
+    description: null
+  },
+  {
+    tag: 'h1-emphasis',
+    class: 'h1 emphasis',
+    fontNWeight: 'Utilities.content.lato-regular',
+    size: '36px / 2.25rem',
+    lineHeight: '52px / 3.25rem<br/>16px / 1 rem',
+    textStyle: ['Utilities.content.emphasis', 'H1'],
+    description: null
+  }
+];

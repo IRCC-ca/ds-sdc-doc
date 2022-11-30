@@ -7,11 +7,7 @@
 @import 'grid';
 @import '../../node_modules/@ircc-ca/ds-sdc-core/layout/layout-grid';
 
-@media (prefers-color-scheme: dark) {
-  @include ircc-ds.theme-init-required(ircc-ds.palette-journeylab(), default, large, dark);
-}
 @include ircc-ds.theme-init-required(ircc-ds.palette-journeylab(), default, large, light);
-
 @include ircc-ds.element-styles();
 
 // Enable Bootstrap row & column support.
@@ -24,6 +20,7 @@ app-root {
 }
 
 djl-header {
+  position: fixed;
   picture {
     min-width: 295px;
   }
@@ -35,6 +32,7 @@ djl-header {
   border-top: 1px solid var(--divider);
   justify-content: flex-start !important;
   > app-side-nav.left-nav {
+    position: fixed;
     @include up-laptop-layout {
       @include col-2;
     }

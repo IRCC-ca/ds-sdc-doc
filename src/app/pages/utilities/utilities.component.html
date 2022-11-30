@@ -3,18 +3,22 @@
   <p>{{'Utilities.content.token-desc' | translate}}</p>
   <app-title-slug-url [translate]="'LeftSideNav.sub-titles.colours'">Colours</app-title-slug-url>
   <p>{{'Utilities.content.colours-desc' | translate}}</p>
-  <table>
+  <table [style.max-height]="'450px'">
     <tr>
       <th>{{'Utilities.sub-titles.style' | translate}}</th>
       <th>{{'Utilities.sub-titles.token-name' | translate}}</th>
       <th>{{'Utilities.sub-titles.colour-role' | translate}}</th>
       <th>{{'Utilities.sub-titles.figma-colour-style' | translate}}</th>
+      <th>{{'Utilities.sub-titles.desc' | translate}}</th>
     </tr>
     <tr *ngFor="let color of colorSample">
-      <td [innerHtml]="color.style | SafeHtmlPipe"></td>
+      <td>
+        <div class="color-sample" [style]="'background: '+color.colorCode+';'"></div>
+      </td>
       <td>{{color.tokenName}}</td>
       <td [innerHtml]="color.colorRole"></td>
       <td [innerHtml]="color.figmaStyle"></td>
+      <td>{{color.description | translate}}</td>
     </tr>
   </table>
   <app-title-slug-url [translate]="'LeftSideNav.sub-titles.typography'">Typography</app-title-slug-url>
@@ -22,7 +26,7 @@
   <table [style.max-height]="'450px'">
     <tr>
       <th>{{'Utilities.sub-titles.style' | translate}}</th>
-      <th>{{'Utilities.sub-titles.token-name' | translate}}</th>
+      <th>{{'Utilities.sub-titles.tag-name' | translate}}</th>
       <th>{{'Utilities.sub-titles.font-weight' | translate}}</th>
       <th>{{'Utilities.sub-titles.size' | translate}}</th>
       <th>{{'Utilities.sub-titles.line-height' | translate}}</th>
@@ -34,7 +38,7 @@
         <p [class]="typo.class ?? typo.tag">Aa</p>
       </td>
       <td>--{{typo.tag}}</td>
-      <td [innerHtml]="typo.fontNWeight"></td>
+      <td [innerHtml]="typo.fontWeight"></td>
       <td>{{typo.size}}</td>
       <td [innerHtml]="typo.lineHeight"></td>
       <td>{{typo.textStyle}}</td>

@@ -32,7 +32,7 @@ export const colorSamples: colorSample[] = [
   },
 ];
 
-export const spacingsFixed: number[] = [4, 8, 12, 16, 24, 32, 40, 56, 72, 88, 100, 400];
+export const spacingsFixed: number[] = [4, 8, 12, 16, 24, 32, 40, 56, 72, 88, 100];
 
 export interface breakpoint {
   svgPath: string,
@@ -64,7 +64,7 @@ export interface typography {
   fontNWeight: string,
   size: string,
   lineHeight: string,
-  textStyle: [string, string], // ['key_for_style_name', 'tag_name']
+  textStyle: string, // ['key_for_style_name', 'tag_name']
   description: string | null // translation key or null if no description
 }
 
@@ -72,28 +72,55 @@ export const typographys: typography[] = [
   {
     tag: 'h1',
     class: null,
-    fontNWeight: 'Utilities.content.lato-regular',
+    fontNWeight: 'Lato<br/>Regular',
     size: '36px / 2.25rem',
     lineHeight: '52px / 3.25rem<br/>16px / 1 rem',
-    textStyle: ['Utilities.content.default', 'H1'],
+    textStyle: 'Default / H1',
     description: null
   },
   {
     tag: 'h2',
     class: null,
-    fontNWeight: 'Utilities.content.lato-regular',
+    fontNWeight: 'Lato<br/>Regular',
     size: '32px / 2rem',
     lineHeight: '44px / 2.75rem<br/>16px / 1 rem',
-    textStyle: ['Utilities.content.default', 'H2'],
+    textStyle: 'Default / H2',
+    description: null
+  },
+  {
+    tag: 'h3',
+    class: null,
+    fontNWeight: 'Lato<br/>Regular',
+    size: '28px / 1.75rem',
+    lineHeight: '40px / 2.5rem<br/>12px / 0.75 rem',
+    textStyle: 'Default / H3',
+    description: null
+  },
+  {
+    tag: 'h4',
+    class: null,
+    fontNWeight: 'Lato<br/>Regular',
+    size: '24px / 1.5rem',
+    lineHeight: '36px / 2.25rem<br/>12px / 0.75 rem',
+    textStyle: 'Default / H4',
+    description: null
+  },
+  {
+    tag: 'h5',
+    class: null,
+    fontNWeight: 'Lato<br/>Regular',
+    size: '20px / 1.25rem',
+    lineHeight: '28px / 1.75rem<br/>12px / 0.75 rem',
+    textStyle: 'Default / H5',
     description: null
   },
   {
     tag: 'h1-emphasis',
     class: 'h1 emphasis',
-    fontNWeight: 'Utilities.content.lato-regular',
+    fontNWeight: 'Lato<br/>Regular',
     size: '36px / 2.25rem',
     lineHeight: '52px / 3.25rem<br/>16px / 1 rem',
-    textStyle: ['Utilities.content.emphasis', 'H1'],
+    textStyle: 'Default / H1',
     description: null
   }
 ];

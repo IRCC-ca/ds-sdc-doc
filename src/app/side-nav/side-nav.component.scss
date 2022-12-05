@@ -1,5 +1,6 @@
 @use '../../scss/grid';
 @use 'node_modules/@ircc-ca/ds-sdc-core/tokens/sizes' as ircc-ds-sizes;
+@import '../../scss/grid';
 
 :host {
   position: relative;
@@ -14,7 +15,20 @@
     }
   }
   .sidenav-section-wrapper {
-    overflow: hidden;
+    position: fixed;
+    height: calc(100% - 340px) !important;
+    overflow-y: auto;
+    min-width: 250px;
+
+    @include in-laptop-layout {
+      width: 25%
+    }
+
+    @include in-desktop-layout {
+      // min-width: 220px;
+      width: 15%;
+    }
+    
   }
   .menuItems {
     display: block;

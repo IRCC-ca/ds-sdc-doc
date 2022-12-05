@@ -11,18 +11,27 @@
 </style>
 
 <!-- Toolbar -->
-<djl-header>
-  <djl-link (click)="useLanguage()" href="#">{{language}}</djl-link>
-</djl-header>
-<div class="content" role="main">
-  <h1>{{ 'Home.AppName' | translate }}</h1>
-  <div class="content-area-responsive">
-    <app-side-nav class="left-nav" [navBarData]="leftNavData" [mobileToggleIcon]="true"></app-side-nav>
-    <router-outlet></router-outlet>
+<div>
+  <div class="header">
+    <djl-header>
+      <djl-link (click)="useLanguage()" href="#">{{language}}</djl-link>
+    </djl-header>
+    <h1>{{ 'Home.AppName' | translate }}</h1>
   </div>
+
+  <div class="main-container top">
+    <app-side-nav class="left-nav" [navBarData]="leftNavData" [mobileToggleIcon]="true"></app-side-nav>
+    <div class="content" role="main"> 
+      <div class="content-area-responsive">
+        <div class="page-content">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <djl-footer></djl-footer>
 </div>
-<!-- Footer -->
-<djl-footer></djl-footer>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->

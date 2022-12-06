@@ -34,6 +34,7 @@ djl-header {
 .header {
   overflow: hidden;
   top: 0;
+  max-width: 1440px;
   width: 100%;
   background: white;
   z-index: 100;
@@ -43,11 +44,20 @@ djl-header {
 }
 .main-container {
 
-  display: flex;
-    
-    &.top {
-        margin-top: 180px;
-    }
+  &.nav-open {
+    display: flex;  
+    align-items: flex-start !important;
+    column-gap: 0 !important;
+    justify-content: flex-start !important;
+  }
+
+  &.nav-closed {
+    display: block;
+  }
+  
+  &.top {
+      margin-top: 180px;
+  }
 
   > app-side-nav.left-nav {
     height: 100px;
@@ -58,19 +68,14 @@ djl-header {
       @include col-3;
       margin-right: -1px;
     }
-    @include un-laptop-layout {
-      display: none;
+    @include un-tablet-layout {
+      @include col-12;
     }
   }
   .content-area-responsive {
-    align-items: flex-start !important;
-    column-gap: 0 !important;
-    // border-top: 1px solid var(--divider);
-    justify-content: flex-start !important;
     > .page-content {
-      // background-color: blanchedalmond;
       box-sizing: border-box;
-      // min-height: calc(100vh - 60px);
+      min-height: calc(100vh - 60px);
 
       @include col-12;
       @include in-tablet-layout {

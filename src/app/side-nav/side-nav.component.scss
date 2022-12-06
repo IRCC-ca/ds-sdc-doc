@@ -1,6 +1,5 @@
 @use '../../scss/grid';
 @use 'node_modules/@ircc-ca/ds-sdc-core/tokens/sizes' as ircc-ds-sizes;
-@import '../../scss/grid';
 
 :host {
   position: relative;
@@ -14,11 +13,9 @@
       right: ircc-ds-sizes.$fixed-12;
       z-index: 200;
     }
-    
   }
   .sidenav-section-wrapper {
-    
-    @include in-laptop-layout {
+    @include grid.in-laptop-layout {
       position: fixed;
       height: calc(100% - 340px);
       overflow-y: auto;
@@ -26,7 +23,7 @@
       width: 25%;
     }
 
-    @include in-desktop-layout {
+    @include grid.in-desktop-layout {
       position: fixed;
       height: calc(100% - 340px);
       overflow-y: auto;
@@ -35,7 +32,7 @@
     }
 
     &.nav-open {
-      @include un-tablet-layout {
+      @include grid.un-tablet-layout {
           position: relative;
           width: 100%;
           text-align: center;

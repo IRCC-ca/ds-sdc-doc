@@ -87,8 +87,7 @@ export class SideNavComponent implements OnInit {
         this.navStatus = "nav-closed"
         this.showMenu = !this.showMenu;
       }
-    }
-    else {
+    } else {
       if(this.showMenu) {
         window.scrollTo(0, 0);
         this.navStatus = "nav-closed"

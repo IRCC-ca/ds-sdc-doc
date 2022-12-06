@@ -27,7 +27,7 @@ export class PageUtilitiesComponent {
     'LeftSideNav.sub-titles.colours',
     'LeftSideNav.sub-titles.typography',
     'Utilities.sub-titles.spacing',
-    'Utilities.sub-titles.breakpoints',
+    'Utilities.BreakpointsHeading',
   ]
   colorSample: colorSample[] = colorSamples;
   spacingSample: number[] = spacingsFixed;

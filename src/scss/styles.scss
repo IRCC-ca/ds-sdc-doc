@@ -8,11 +8,7 @@
 @import 'table';
 @import '../../node_modules/@ircc-ca/ds-sdc-core/layout/layout-grid';
 
-@media (prefers-color-scheme: dark) {
-  @include ircc-ds.theme-init-required(ircc-ds.palette-journeylab(), default, large, dark);
-}
 @include ircc-ds.theme-init-required(ircc-ds.palette-journeylab(), default, large, light);
-
 @include ircc-ds.element-styles();
 
 // Enable Bootstrap row & column support.
@@ -22,6 +18,7 @@ app-root {
   display: block;
   max-width: 1440px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 djl-header {
@@ -30,36 +27,69 @@ djl-header {
   }
 }
 
-.content-area-responsive {
-  align-items: flex-start !important;
-  column-gap: 0 !important;
-  border-top: 1px solid var(--divider);
-  justify-content: flex-start !important;
+.language-toggle {
+  padding: 10px;
+}
+
+.header {
+  overflow: hidden;
+  top: 0;
+  max-width: 1440px;
+  width: 100%;
+  background: white;
+  z-index: 100;
+  position: fixed;
+  border-bottom: 1px solid var(--divider);
+
+}
+.main-container {
+
+  &.nav-open {
+    display: flex;  
+    align-items: flex-start !important;
+    column-gap: 0 !important;
+    justify-content: flex-start !important;
+  }
+
+  &.nav-closed {
+    display: block;
+  }
+  
+  &.top {
+      margin-top: 180px;
+  }
+
   > app-side-nav.left-nav {
+    height: 100px;
     @include up-laptop-layout {
-      @include col-2;
+      @include col-3;
     }
     @include in-desktop-layout {
-      border-right: 1px solid var(--divider);
+      @include col-3;
       margin-right: -1px;
     }
-  }
-  > :last-child {
-    box-sizing: border-box;
-    @include col-12;
-    @include in-tablet-layout {
+    @include un-tablet-layout {
       @include col-12;
     }
-    @include in-desktop-layout {
-      padding: 0 ircc-ds-sizes.$fixed-4;
-    }
-    @include up-laptop-layout {
-      @include col-10;
-      padding: 0 ircc-ds-sizes.$fixed-36;
-    }
-    @include un-tablet-layout {
-      app-side-nav {
-        display: none;
+  }
+  .content-area-responsive {
+    > .page-content {
+      box-sizing: border-box;
+      min-height: calc(100vh - 60px);
+
+      @include col-12;
+      @include in-tablet-layout {
+        @include col-12;
+      }
+      @include in-desktop-layout {
+        padding: 0 ircc-ds-sizes.$fixed-4;
+      }
+      @include up-laptop-layout {
+        @include col-10;
+        padding: 0 ircc-ds-sizes.$fixed-36;
+      }
+      @include un-tablet-layout {
+        @include col-12;
       }
     }
   }

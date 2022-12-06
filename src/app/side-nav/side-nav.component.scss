@@ -6,16 +6,45 @@
   @include grid.col-12;
   > djl-icon {
     font-size: ircc-ds-sizes.$fixed-24;
-    position: absolute;
-    top: -64px;
+    position: fixed;
+    top: 120px;
     right: 26px;
     @include grid.un-laptop-layout {
       right: ircc-ds-sizes.$fixed-12;
+      z-index: 200;
     }
   }
   .sidenav-section-wrapper {
-    overflow: hidden;
+    @include grid.in-laptop-layout {
+      position: fixed;
+      height: calc(100% - 340px);
+      overflow-y: auto;
+      min-width: 250px;
+      width: 25%;
+    }
+
+    @include grid.in-desktop-layout {
+      position: fixed;
+      height: calc(100% - 340px);
+      overflow-y: auto;
+      min-width: 250px;
+      width: 15%;
+    }
+
+    &.nav-open {
+      @include grid.un-tablet-layout {
+          position: relative;
+          width: 100%;
+          text-align: center;
+          height: 100%;
+        }
+    }
+
+    &.nav-closed {
+      text-align: center;
+    }
   }
+
   .menuItems {
     display: block;
     padding: 16px 12px 16px 12px;

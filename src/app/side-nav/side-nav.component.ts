@@ -18,8 +18,8 @@ import { TranslateService } from '@ngx-translate/core';
   animations: [
     trigger('leftSideNavTrigger', [
       // To define animations based on trigger actions
-      state('open', style({ opacity: '1', height: '100%' })),
-      state('close', style({ opacity: '0', height: '0' })),
+      state('open', style({ opacity: '1'})),
+      state('close', style({ opacity: '0', height: '0', "pointer-events": "none" })),
       transition('open => close', [
         animate('300ms ease-in')
       ]),
@@ -37,6 +37,7 @@ export class SideNavComponent implements OnInit {
   mobile =  false; // If window is under mobile view
   showMenu = true; // If show or hide side menu
   navClassName = '';
+  navStatus = 'nav-closed';
   barsIconConfig = {
     unicode: 'f0c9',
     fontFamily: 'fa-solid'
@@ -64,9 +65,11 @@ export class SideNavComponent implements OnInit {
     if (window.innerWidth <= 992) {
       this.mobile = true;
       this.showMenu = false;
+      this.navStatus = 'nav-closed';
     } else {
       this.mobile = false;
       this.showMenu = true;
+      this.navStatus = 'nav-open';
     }
   }
 
@@ -77,8 +80,24 @@ export class SideNavComponent implements OnInit {
     }
   }
 
-  toggleMobileMenu() {
-    this.showMenu = !this.showMenu;
-  }
+  toggleMobileMenu(hideOnClickMobileView : boolean) {
 
+    if(hideOnClickMobileView) { //minimize left nav after menu item clicked in mobileView
+      if (this.mobile && this.navStatus === 'nav-open') {
+        this.navStatus = "nav-closed"
+        this.showMenu = !this.showMenu;
+      }
+    } else {
+      if(this.showMenu) {
+        window.scrollTo(0, 0);
+        this.navStatus = "nav-closed"
+        this.showMenu = !this.showMenu;
+      }
+      else {
+        window.scrollTo(0, 0);
+        this.showMenu = !this.showMenu;
+        this.navStatus = "nav-open"
+      }
+    }
+  }
 }

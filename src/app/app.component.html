@@ -19,7 +19,7 @@
     <h1>{{ 'Home.AppName' | translate }}</h1>
   </div>
 
-  <div class="main-container top">
+  <div class="main-container top {{navStatus}}">
     <app-side-nav class="left-nav" [navBarData]="leftNavData" [mobileToggleIcon]="true"></app-side-nav>
     <div class="content" role="main"> 
       <div class="content-area-responsive">

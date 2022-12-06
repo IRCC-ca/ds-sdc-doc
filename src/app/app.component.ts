@@ -15,6 +15,7 @@ export class AppComponent implements OnInit {
   leftNavData: ISideNavDataInterface[];
   language = this.getCurrentLang();
   mobile = false;
+  navStatus = 'nav-oepn';
   public innerWidth: any; // Width of viewport window
 
   constructor(
@@ -35,10 +36,12 @@ export class AppComponent implements OnInit {
     this.innerWidth = window.innerWidth;
     if (this.innerWidth <= 992 ) {
       this.mobile = true;
+      this.navStatus = 'nav-closed';
       this.toggleLanguage(this.getCurrentLang());
     }
     else {
       this.mobile = false;
+      this.navStatus = 'nav-open';
       this.toggleLanguage(this.getCurrentLang());
     }
   }

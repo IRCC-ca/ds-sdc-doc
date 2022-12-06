@@ -1,7 +1,7 @@
-<djl-icon class="menu-icon" *ngIf="mobileToggleIcon && mobile" [iconConfig]="showMenu ? xmarkIconConfig : barsIconConfig" (click)="toggleMobileMenu()"></djl-icon>
-<div
+<djl-icon class="menu-icon" *ngIf="mobileToggleIcon && mobile" [iconConfig]="showMenu ? xmarkIconConfig : barsIconConfig" (click)="toggleMobileMenu(false)"></djl-icon>
+<div 
   [@leftSideNavTrigger]="showMenu? 'open' : 'close' "
-  class="{{navClassName}} sidenav-section-wrapper"
+  class="{{navClassName}} sidenav-section-wrapper {{navStatus}}"
 >
     <div *ngFor="let data of navBarData">
         <div class="sidenav-title">
@@ -9,7 +9,7 @@
                 <h3 class="title">{{data.text}}</h3>
             </div>
             <div *ngIf="data.category === 'sub-title'">
-                <a class="menuItems" routerLink="{{currentLanguage}}/{{data.path}}">{{data.text}}</a>
+                <a class="menuItems" routerLink="{{currentLanguage}}/{{data.path}}" (click)="toggleMobileMenu(true)">{{data.text}}</a>
             </div>
             <div *ngIf="data.category === 'slug-url'">
                 <a class="menuItems" routerLink="." fragment="{{data.path}}">{{data.text}}</a>

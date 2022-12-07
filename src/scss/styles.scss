@@ -14,9 +14,11 @@
 // Enable Bootstrap row & column support.
 @include make-grid-columns();
 
+$page-width: 1440px;
+
 app-root {
   display: block;
-  max-width: 1440px;
+  max-width: $page-width;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -45,7 +47,7 @@ djl-header {
 .main-container {
 
   &.nav-open {
-    display: flex;  
+    display: flex;
     align-items: flex-start !important;
     column-gap: 0 !important;
     justify-content: flex-start !important;
@@ -54,43 +56,45 @@ djl-header {
   &.nav-closed {
     display: block;
   }
-  
+
   &.top {
       margin-top: 180px;
   }
 
   > app-side-nav.left-nav {
-    height: 100px;
+    min-height: 100px;
     @include up-laptop-layout {
       @include col-3;
     }
     @include in-desktop-layout {
-      @include col-3;
+      @include col-2;
       margin-right: -1px;
     }
     @include un-tablet-layout {
       @include col-12;
     }
   }
-  .content-area-responsive {
-    > .page-content {
-      box-sizing: border-box;
-      min-height: calc(100vh - 60px);
+  .content[role=main] {
+    box-sizing: border-box;
+    min-height: calc(100vh - 60px);
 
+    @include col-12;
+    @include in-tablet-layout {
       @include col-12;
-      @include in-tablet-layout {
-        @include col-12;
-      }
-      @include in-desktop-layout {
-        padding: 0 ircc-ds-sizes.$fixed-4;
-      }
-      @include up-laptop-layout {
-        @include col-10;
-        padding: 0 ircc-ds-sizes.$fixed-36;
-      }
-      @include un-tablet-layout {
-        @include col-12;
-      }
+    }
+    @include up-laptop-layout {
+      @include col-9;
+      padding-left: ircc-ds-sizes.$fixed-36;
+    }
+    @include in-desktop-layout {
+      @include col-10;
+      padding-left: ircc-ds-sizes.$fixed-40;
+    }
+    @include un-tablet-layout {
+      @include col-12;
+    }
+    .page-content {
+      width: 100%;
     }
   }
 }

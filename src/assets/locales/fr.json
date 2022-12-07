@@ -116,30 +116,18 @@
       "utilities": "[FR] Utilities"
     },
     "sub-titles": {
-      "spacing": "[FR] Spacing",
-      "style": "[FR] Style",
-      "token-name": "[FR] Token name",
-      "colour-role": "[FR] Colour role, hue & hex value",
-      "figma-colour-style": "[FR] Figma colour style",
-      "font-weight": "[FR] Font & weight",
-      "size": "[FR] Size",
-      "line-height": "[FR] Line height & paragraph spacing",
-      "figma-text-style": "[FR] Figma text style",
       "width": "[FR] Width",
-      "pixels": "[FR] pixels",
-      "tag-name": "[FR] Tag name",
-      "desc": "[FR] Description"
+      "pixels": "[FR] pixels"
     },
     "content": {
       "token-desc": "[FR] Utilities are re-usable tokens, variables, etc. that are applied consistently to elements and components throughout the entire design system. This creates consistency in how the design system’s foundations are applied and allows efficient and reliable design iterations to be made globally.",
-      "colours-desc": "[FR] Designers have a variety of colours to choose from to ensure clear communication, indicate UI functionality, and provide colour contrast that complies with accessibility standards. The colour system is designed to define meaning for each colour, allow for global colour changes, and ensure every colour used comes from the system.",
-      "typography-desc": "[FR] The type scale keeps the number of styles to a minimum and is designed to ensure an affective visual hierarchy of content globally. Text styles include point sizes, line heights and paragraph spacing that pass AAA accessibility standards under WCAG 2.1.",
       "figma-usage": "[FR] Use {{px}} pixels of spacing",
       "bp-figma-usage": "[FR] Set frame width to {{px}} pixels"
     },
     "alt-text": {
     },
     "TypographyHeading": "[FR] Typography",
+    "TypographyText": "[FR] The type scale keeps the number of styles to a minimum and is designed to ensure an affective visual hierarchy of content globally. Text styles include point sizes, line heights and paragraph spacing that pass AAA accessibility standards under WCAG 2.1.",
     "SpacingText": "[FR] Spacing units to apply as padding or margins throughout the UI. Spacing options are limited to help create consistency across spacing decisions. All spacing units are a multiple of four to adhere to a four pixel grid.",
     "SpacingTableSampleHeading": "[FR] Sample",
     "SpacingTableVariableHeading": "[FR] Variable name",
@@ -147,6 +135,12 @@
     "SpacingTableFigmaHeading": "[FR] Figma usage",
     "BreakpointsHeading": "[FR] Breakpoints",
     "BreakpointsText": "[FR] Setting breakpoints allows content and design to adapt in order to provide the best possible layout for the viewport or device. Use these common breakpoint widths for layout consistency. Design system consumers can add additional breakpoints as needed.",
+    "ColourText": "[FR] Designers have a variety of colours to choose from to ensure clear communication, indicate UI functionality, and provide colour contrast that complies with accessibility standards. The colour system is designed to define meaning for each colour, allow for global colour changes, and ensure every colour used comes from the system.",
+    "SpacingHeading": "[FR] Spacing",
+    "ColourTableTokenHeading": "[FR] Token name",
+    "ColourTableColourHeading": "[FR] Colour role, hue & hex value",
+    "ColourTableFigmaHeading": "[FR] Figma colour style",
+    "ColourTableDescriptionHeading": "[FR] Description",
     "ColourTableDescriptionRow1": "[FR] Background of the primary button.",
     "ColourTableDescriptionRow2": "[FR] Background of the primary button while in the hover state.",
     "ColourTableDescriptionRow3": "[FR] Background of the primary button while in the active state.",
@@ -258,7 +252,13 @@
     "ColourTableDescriptionRow109": "[FR] All text that requires a secondary visual hierarchy. Can also be used as supporting text alongside primary text if there is a contextual relationship between the two.",
     "ColourTableDescriptionRow110": "[FR] Placeholder text within input field components.",
     "ColourTableDescriptionRow111": "[FR] Disabled text within interactive elements that use a neutral text palette.",
-    "ColourTableDescriptionRow112": "[FR] The outline used to indicate that an element is in focus."
+    "ColourTableDescriptionRow112": "[FR] The outline used to indicate that an element is in focus.",
+    "TypographyTableStyleHeading": "[FR] Style",
+    "TypographyTableFontWeightHeading": "[FR] Font & weight",
+    "TypographyTableSizeHeading": "[FR] Size",
+    "TypographyTableLineHeightHeading": "[FR] Line height & paragraph spacing",
+    "TypographyTableFigmaHeading": "[FR] Figma text style",
+    "TypographyTableTokenHeading": "[FR] Tag name"
   },
   "RightSideNav": {
     "title": {

@@ -2,14 +2,14 @@
   <app-title-slug-url [translate]="'Utilities.title.utilities'" type="primary">Utilities</app-title-slug-url>
   <p>{{'Utilities.content.token-desc' | translate}}</p>
   <app-title-slug-url [translate]="'LeftSideNav.sub-titles.colours'">Colours</app-title-slug-url>
-  <p>{{'Utilities.content.colours-desc' | translate}}</p>
+  <p>{{'Utilities.ColourText' | translate}}</p>
   <table [style.max-height]="'450px'">
     <tr>
-      <th>{{'Utilities.sub-titles.style' | translate}}</th>
-      <th>{{'Utilities.sub-titles.token-name' | translate}}</th>
-      <th>{{'Utilities.sub-titles.colour-role' | translate}}</th>
-      <th>{{'Utilities.sub-titles.figma-colour-style' | translate}}</th>
-      <th>{{'Utilities.sub-titles.desc' | translate}}</th>
+      <th>{{'Utilities.TypographyTableStyleHeading' | translate}}</th>
+      <th>{{'Utilities.ColourTableTokenHeading' | translate}}</th>
+      <th>{{'Utilities.ColourTableColourHeading' | translate}}</th>
+      <th>{{'Utilities.ColourTableFigmaHeading' | translate}}</th>
+      <th>{{'Utilities.ColourTableDescriptionHeading' | translate}}</th>
     </tr>
     <tr *ngFor="let color of colorSample">
       <td>
@@ -22,16 +22,16 @@
     </tr>
   </table>
   <app-title-slug-url [translate]="'Utilities.TypographyHeading'">Typography</app-title-slug-url>
-  <p>{{'Utilities.content.typography-desc' | translate}}</p>
+  <p>{{'Utilities.TypographyText' | translate}}</p>
   <table [style.max-height]="'450px'">
     <tr>
-      <th>{{'Utilities.sub-titles.style' | translate}}</th>
-      <th>{{'Utilities.sub-titles.tag-name' | translate}}</th>
-      <th>{{'Utilities.sub-titles.font-weight' | translate}}</th>
-      <th>{{'Utilities.sub-titles.size' | translate}}</th>
-      <th>{{'Utilities.sub-titles.line-height' | translate}}</th>
-      <th>{{'Utilities.sub-titles.figma-text-style' | translate}}</th>
-      <th>{{'Utilities.sub-titles.desc' | translate}}</th>
+      <th>{{'Utilities.TypographyTableStyleHeading' | translate}}</th>
+      <th>{{'Utilities.TypographyTableTokenHeading' | translate}}</th>
+      <th>{{'Utilities.TypographyTableFontWeightHeading' | translate}}</th>
+      <th>{{'Utilities.TypographyTableSizeHeading' | translate}}</th>
+      <th>{{'Utilities.TypographyTableLineHeightHeading' | translate}}</th>
+      <th>{{'Utilities.TypographyTableFigmaHeading' | translate}}</th>
+      <th>{{'Utilities.ColourTableDescriptionHeading' | translate}}</th>
     </tr>
     <tr *ngFor="let typo of typographySample">
       <td class="typo-sample">
@@ -45,12 +45,12 @@
       <td>{{typo.description ? (typo.description | translate) : '-'}}</td>
     </tr>
   </table>
-  <app-title-slug-url [translate]="'Utilities.sub-titles.spacing'">Spacing</app-title-slug-url>
+  <app-title-slug-url [translate]="'Utilities.SpacingHeading'">Spacing</app-title-slug-url>
   <p>{{'Utilities.SpacingText' | translate}}</p>
   <table>
     <tr>
       <th>{{'Utilities.sub-titles.sample' | translate}}</th>
-      <th>{{'Utilities.sub-titles.token-name' | translate}}</th>
+      <th>{{'Utilities.ColourTableTokenHeading' | translate}}</th>
       <th>{{'Utilities.SpacingTableValueHeading' | translate}}</th>
       <th>{{'Utilities.SpacingTableFigmaHeading' | translate}}</th>
     </tr>

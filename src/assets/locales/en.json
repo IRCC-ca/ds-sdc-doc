@@ -117,28 +117,16 @@
       "utilities": "Utilities"
     },
     "sub-titles": {
-      "spacing": "Spacing",
-      "style": "Style",
-      "token-name": "Token name",
-      "colour-role": "Colour role, hue & hex value",
-      "figma-colour-style": "Figma colour style",
-      "font-weight": "Font & weight",
-      "size": "Size",
-      "line-height": "Line height & paragraph spacing",
-      "figma-text-style": "Figma text style",
       "width": "Width",
-      "pixels": "pixels",
-      "tag-name": "Tag name",
-      "desc": "Description"
+      "pixels": "pixels"
     },
     "content": {
       "token-desc": "Utilities are re-usable tokens, variables, etc. that are applied consistently to elements and components throughout the entire design system. This creates consistency in how the design system’s foundations are applied and allows efficient and reliable design iterations to be made globally.",
-      "colours-desc": "Designers have a variety of colours to choose from to ensure clear communication, indicate UI functionality, and provide colour contrast that complies with accessibility standards. The colour system is designed to define meaning for each colour, allow for global colour changes, and ensure every colour used comes from the system.",
-      "typography-desc": "The type scale keeps the number of styles to a minimum and is designed to ensure an affective visual hierarchy of content globally. Text styles include point sizes, line heights and paragraph spacing that pass AAA accessibility standards under WCAG 2.1.",
       "figma-usage": "Use {{px}} pixels of spacing",
       "bp-figma-usage": "Set frame width to {{px}} pixels"
     },
     "TypographyHeading": "Typography",
+    "TypographyText": "The type scale keeps the number of styles to a minimum and is designed to ensure an affective visual hierarchy of content globally. Text styles include point sizes, line heights and paragraph spacing that pass AAA accessibility standards under WCAG 2.1.",
     "SpacingText": "Spacing units to apply as padding or margins throughout the UI. Spacing options are limited to help create consistency across spacing decisions. All spacing units are a multiple of four to adhere to a four pixel grid.",
     "SpacingTableSampleHeading": "Sample",
     "SpacingTableVariableHeading": "Variable name",
@@ -146,6 +134,12 @@
     "SpacingTableFigmaHeading": "Figma usage",
     "BreakpointsHeading": "Breakpoints",
     "BreakpointsText": "Setting breakpoints allows content and design to adapt in order to provide the best possible layout for the viewport or device. Use these common breakpoint widths for layout consistency. Design system consumers can add additional breakpoints as needed.",
+    "ColourText": "Designers have a variety of colours to choose from to ensure clear communication, indicate UI functionality, and provide colour contrast that complies with accessibility standards. The colour system is designed to define meaning for each colour, allow for global colour changes, and ensure every colour used comes from the system.",
+    "SpacingHeading": "Spacing",
+    "ColourTableTokenHeading": "Token name",
+    "ColourTableColourHeading": "Colour role, hue & hex value",
+    "ColourTableFigmaHeading": "Figma colour style",
+    "ColourTableDescriptionHeading": "Description",
     "ColourTableDescriptionRow1": "Background of the primary button.",
     "ColourTableDescriptionRow2": "Background of the primary button while in the hover state.",
     "ColourTableDescriptionRow3": "Background of the primary button while in the active state.",
@@ -257,7 +251,13 @@
     "ColourTableDescriptionRow109": "All text that requires a secondary visual hierarchy. Can also be used as supporting text alongside primary text if there is a contextual relationship between the two.",
     "ColourTableDescriptionRow110": "Placeholder text within input field components.",
     "ColourTableDescriptionRow111": "Disabled text within interactive elements that use a neutral text palette.",
-    "ColourTableDescriptionRow112": "The outline used to indicate that an element is in focus."
+    "ColourTableDescriptionRow112": "The outline used to indicate that an element is in focus.",
+    "TypographyTableStyleHeading": "Style",
+    "TypographyTableFontWeightHeading": "Font & weight",
+    "TypographyTableSizeHeading": "Size",
+    "TypographyTableLineHeightHeading": "Line height & paragraph spacing",
+    "TypographyTableFigmaHeading": "Figma text style",
+    "TypographyTableTokenHeading": "Tag name"
   },
   "RightSideNav": {
     "title": {

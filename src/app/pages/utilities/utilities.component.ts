@@ -26,7 +26,7 @@ export class PageUtilitiesComponent {
   rightNavDataRaw: string[] = [ // list of all right nav items
     'LeftSideNav.sub-titles.colours',
     'LeftSideNav.sub-titles.typography',
-    'Utilities.sub-titles.spacing',
+    'Utilities.SpacingHeading',
     'Utilities.BreakpointsHeading',
   ]
   colorSample: colorSample[] = colorSamples;

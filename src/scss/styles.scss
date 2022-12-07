@@ -36,7 +36,7 @@ djl-header {
 .header {
   overflow: hidden;
   top: 0;
-  max-width: 1440px;
+  max-width: $page-width;
   width: 100%;
   background: white;
   z-index: 100;

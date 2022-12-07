@@ -62,7 +62,7 @@ djl-header {
   }
 
   > app-side-nav.left-nav {
-    min-height: 100px;
+    height: 100px;
     @include up-laptop-layout {
       @include col-3;
     }

@@ -1,7 +1,8 @@
 <djl-icon class="menu-icon" *ngIf="mobileToggleIcon && mobile" [iconConfig]="showMenu ? xmarkIconConfig : barsIconConfig" (click)="toggleMobileMenu(false)"></djl-icon>
-<div 
+<div
   [@leftSideNavTrigger]="showMenu? 'open' : 'close' "
   class="{{navClassName}} sidenav-section-wrapper {{navStatus}}"
+  [style.width]="width+'px'"
 >
     <div *ngFor="let data of navBarData">
         <div class="sidenav-title">

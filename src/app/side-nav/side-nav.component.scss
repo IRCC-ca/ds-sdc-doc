@@ -24,14 +24,12 @@ $footer-height: 340px;
       position: fixed;
       height: calc(100% - $footer-height);
       overflow-y: auto;
-      width: grid.$col-3-width;
     }
 
     @include grid.in-desktop-layout {
       position: fixed;
       height: calc(100% - $footer-height);
       overflow-y: auto;
-      width: grid.$col-2-width;
     }
 
     &.nav-open {

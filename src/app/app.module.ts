@@ -19,12 +19,14 @@ import { SideNavModule } from "./side-nav/side-nav.module";
 import { AppRoutingModule } from './app-routing.module';
 import { OverviewComponent } from './pages/overview/overview.component';
 import { PageButtonComponent } from './pages/button/button.component';
+import { PageUtilitiesComponent } from './pages/utilities/utilities.component';
 import { SideNavConfig } from './side-nav/side-nav.config';
 import { TitleSlugUrlComponent } from './title-slug-url/title-slug-url.component';
 import { SlugifyPipe } from './share/pipe-slugify.pipe';
 import { ClipboardModule } from "@angular/cdk/clipboard";
 import { InfoTextSmallComponent } from './info-text-small/info-text-small.component';
 import { ComponentPreviewComponent } from './component-preview/component-preview.component';
+import { SafeHtmlPipe } from './share/safe-html.pipe';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/locales/', '.json');
@@ -49,6 +51,8 @@ const JL_ANGULAR_COMPONENTS = [
     PageButtonComponent,
     InfoTextSmallComponent,
     ComponentPreviewComponent,
+    PageUtilitiesComponent,
+    SafeHtmlPipe,
   ],
   imports: [
     BrowserModule,

@@ -46,6 +46,7 @@ export class SideNavComponent implements OnInit {
     unicode: 'f00d',
     fontFamily: 'fa-solid'
   }
+  width: number = 0; // Width of component
 
   constructor(private el: ElementRef, private translate: TranslateService) {
     if (el?.nativeElement?.className) {
@@ -59,6 +60,7 @@ export class SideNavComponent implements OnInit {
     if (this.mobileToggleIcon) {
       this.toggleMobile();
     }
+    this.adjustWidth();
   }
 
   private toggleMobile() {
@@ -73,11 +75,19 @@ export class SideNavComponent implements OnInit {
     }
   }
 
+  /**
+   * Grab width from parent element and bind it to child
+   */
+  private adjustWidth() {
+    this.width = this.el.nativeElement.clientWidth;
+  }
+
   @HostListener('window:resize', ['$event'])
   onResize(event: Event) {
     if (this.mobileToggleIcon) {
       this.toggleMobile();
     }
+    this.adjustWidth()
   }
 
   toggleMobileMenu(hideOnClickMobileView : boolean) {

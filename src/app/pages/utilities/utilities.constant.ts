@@ -18,7 +18,7 @@ export const colorSamples: colorSample[] = [
     tokenName: '--background-hover',
     colorRole: 'CTA, Hue 800<br/>#233F71',
     colorCode: '#233F71',
-    figmaStyle: 'button-primary / CTA /<br/> background',
+    figmaStyle: 'button-primary / CTA /<br/> background-hover',
     description: 'Utilities.ColourTableDescriptionRow2'
   },
   {
@@ -60,7 +60,7 @@ export const colorSamples: colorSample[] = [
     tokenName: '--background-hover',
     colorRole: 'Critical, Hue 800<br/>#931C1F',
     colorCode: '#931C1F',
-    figmaStyle: 'button-primary / critical /<br/> background',
+    figmaStyle: 'button-primary / critical /<br/> background-hover',
     description: 'Utilities.ColourTableDescriptionRow8'
   },
   {

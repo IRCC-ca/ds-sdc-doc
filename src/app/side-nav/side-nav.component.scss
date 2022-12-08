@@ -18,11 +18,12 @@ $footer-height: 340px;
   }
   .sidenav-section-wrapper {
     background: var(--surface1);
+    width: inherit;
+    max-width: inherit;
     @include grid.in-laptop-layout {
       position: fixed;
       height: calc(100% - $footer-height);
       overflow-y: auto;
-      min-width: 250px;
       width: grid.$col-3-width;
     }
 
@@ -30,7 +31,6 @@ $footer-height: 340px;
       position: fixed;
       height: calc(100% - $footer-height);
       overflow-y: auto;
-      min-width: 250px;
       width: grid.$col-2-width;
     }
 

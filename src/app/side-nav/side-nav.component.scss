@@ -1,6 +1,8 @@
 @use '../../scss/grid';
 @use 'node_modules/@ircc-ca/ds-sdc-core/tokens/sizes' as ircc-ds-sizes;
 
+$footer-height: 340px;
+
 :host {
   position: relative;
   @include grid.col-12;
@@ -22,33 +24,25 @@
   }
 
   .sidenav-section-wrapper {
+    background: var(--surface1);
     @include grid.in-laptop-layout {
       position: fixed;
-      height: calc(100% - 340px);
+      height: calc(100% - $footer-height);
       overflow-y: auto;
-      min-width: 250px;
-      // width: 25%;
     }
 
     @include grid.in-desktop-layout {
       position: fixed;
-      height: calc(100% - 340px);
+      height: calc(100% - $footer-height);
       overflow-y: auto;
-      min-width: 250px;
-      // width: 15%;
     }
 
     &.nav-open {
       @include grid.un-tablet-layout {
-          position: relative;
-          width: 100%;
-          text-align: center;
-          height: 100%;
-        }
-    }
-
-    &.nav-closed {
-      text-align: center;
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 

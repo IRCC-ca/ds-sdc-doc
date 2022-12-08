@@ -20,7 +20,7 @@
       height: calc(100% - 340px);
       overflow-y: auto;
       min-width: 250px;
-      width: 25%;
+      // width: 25%;
     }
 
     @include grid.in-desktop-layout {
@@ -28,7 +28,7 @@
       height: calc(100% - 340px);
       overflow-y: auto;
       min-width: 250px;
-      width: 15%;
+      // width: 15%;
     }
 
     &.nav-open {

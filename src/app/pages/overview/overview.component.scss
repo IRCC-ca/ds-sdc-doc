@@ -5,16 +5,31 @@
   > .content-doc-wrapper {
     @include grid.col-12;
     @include grid.up-laptop-layout {
-      @include grid.col-10;
+      @include grid.col-12;
     }
-  }
-  > .right-nav {
-    @include grid.col-12;
-    @include grid.up-laptop-layout {
-      @include grid.col-2;
-    }
-    @include grid.un-tablet-layout {
-      display: none;
+
+    .wrapper-container {
+      margin-top: 64px;
+    
+      .for-designers, .for-devs {
+        @include grid.row;
+        width: 500px;
+        height: 174px;
+        border: 1px solid #DFDFE1;
+        border-radius: 12px;
+        padding: 0px 24px 24px 20px;
+        margin: 6px;
+
+        @include grid.un-laptop-layout {
+          width: 328px;
+        }
+        h3 {
+          margin: 20px 0px 0px 0px;
+        }
+        p {
+          margin: 12px 0px;
+        }
+      }
     }
   }
 }

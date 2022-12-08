@@ -156,5 +156,15 @@
   },
   "TitleSlugUrl": {
     "copy-url": "Copy URL"
+  },
+  "OverviewPage": {
+    "title": "Overview",
+    "sub-title": "IRCC design system",
+    "sub-title-description": "The IRCC design system is a toolkit of shared design and code that provides visual language, components, patterns and guidelines – all in one centralized source of truth that enables product teams to build scalable, accessible, unified experiences. It is customized for the client and officer experience and allows teams to efficiently build consistent immigration digital services.",
+    "sub-heading-1": "For designers",
+    "sub-heading-1-description": "Learn how to get started with the IRCC design system Figma library.",
+    "sub-heading-2": "For developers",
+    "sub-heading-2-description": "Learn how to get started with lorem ipsum dolor sir amet consecteteur.",
+    "get-started-sub-text": "Get started"
   }
 }

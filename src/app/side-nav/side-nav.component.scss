@@ -18,8 +18,6 @@ $footer-height: 340px;
   }
   .sidenav-section-wrapper {
     background: var(--surface1);
-    width: inherit;
-    max-width: inherit;
     @include grid.in-laptop-layout {
       position: fixed;
       height: calc(100% - $footer-height);

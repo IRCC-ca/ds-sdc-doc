@@ -16,6 +16,14 @@ $footer-height: 340px;
       z-index: 200;
     }
   }
+
+  .right-nav {
+    padding-left: 40px;
+    @include grid.un-laptop-layout {
+      display: none;
+    }
+  }
+
   .sidenav-section-wrapper {
     background: var(--surface1);
     @include grid.in-laptop-layout {

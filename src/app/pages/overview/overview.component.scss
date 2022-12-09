@@ -10,35 +10,29 @@
 
     .wrapper-container {
       margin-top: 64px;
-    
+
       .for-designers, .for-devs {
         width: 470px;
         height: 174px;
         border: 1px solid #DFDFE1;
         border-radius: 12px;
-        padding: 0px 24px 24px 20px;
+        padding: 0 24px 24px 20px;
         margin: 6px;
 
         @include grid.un-laptop-layout {
           width: 328px;
         }
         .sub-title h2{
-          margin-top: 0px !important;
           font-weight: 700 !important;
         }
 
         h3 {
-          margin: 20px 0px 0px 0px;
+          margin: 20px 0 0 0;
           font-weight: 700;
         }
 
         p {
-          margin: 12px 0px;
-        }
-
-        a {
-          text-decoration:underline;
-          color: #2A4980;
+          margin: 12px 0;
         }
       }
     }

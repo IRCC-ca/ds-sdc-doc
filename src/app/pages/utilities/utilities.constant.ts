@@ -822,6 +822,7 @@ export const breakpoints: breakpoint[] = [
 export interface typography {
   tag: string,
   class: string | null // Use null if tag name is same as class name
+  type?: 'p' | 'a', // Type of paragraph or anchor link
   fontWeight: string,
   size: string,
   lineHeight: string,
@@ -1000,5 +1001,195 @@ export const typographys: typography[] = [
     lineHeight: '20px / 1.25rem<br/>8px / 0.5rem',
     textStyle: 'Default / body3',
     description: null
+  },
+  {
+    tag: 'body4-emphasis',
+    class: 'body4 emphasis',
+    fontWeight: 'Inter<br/>Semi-bold',
+    size: '12px / 0.875rem',
+    lineHeight: '20px / 1.25rem<br/>8px / 0.5rem',
+    textStyle: 'Default / body4',
+    description: null
+  },
+  {
+    tag: 'h1',
+    class: null,
+    fontWeight: 'Lato<br/>Regular',
+    size: '36px / 2.25rem',
+    lineHeight: '52px / 3.25rem<br/>16px / 1 rem',
+    textStyle: 'Default Links / H1',
+    description: null
+  },
+  {
+    tag: 'h2',
+    class: null,
+    fontWeight: 'Lato<br/>Regular',
+    size: '32px / 2rem',
+    lineHeight: '44px / 2.75rem<br/>16px / 1 rem',
+    textStyle: 'Default Links / H2',
+    description: null
+  },
+  {
+    tag: 'h3',
+    class: null,
+    fontWeight: 'Lato<br/>Regular',
+    size: '28px / 1.75rem',
+    lineHeight: '40px / 2.5rem<br/>12px / 0.75 rem',
+    textStyle: 'Default Links / H3',
+    description: null
+  },
+  {
+    tag: 'h4',
+    class: null,
+    fontWeight: 'Lato<br/>Regular',
+    size: '24px / 1.5rem',
+    lineHeight: '36px / 2.25rem<br/>12px / 0.75 rem',
+    textStyle: 'Default Links / H4',
+    description: null
+  },
+  {
+    tag: 'h5',
+    class: null,
+    fontWeight: 'Lato<br/>Regular',
+    size: '20px / 1.25rem',
+    lineHeight: '28px / 1.75rem<br/>12px / 0.75 rem',
+    textStyle: 'Default Links / H5',
+    description: null
+  },
+  {
+    tag: 'h6',
+    class: null,
+    fontWeight: 'Lato<br/>Regular',
+    size: '16px / 1rem',
+    lineHeight: '24px / 1.5rem<br/>8px / 0.5rem',
+    textStyle: 'Default Links / H6',
+    description: null
+  },
+  {
+    tag: 'body1',
+    class: null,
+    fontWeight: 'Inter<br/>Regular',
+    size: '20px / 1.25rem',
+    lineHeight: '28px / 1.75rem<br/>12px / 0.75rem',
+    textStyle: 'Default Links / body1',
+    description: null
+  },
+  {
+    tag: 'body2',
+    class: null,
+    fontWeight: 'Inter<br/>Regular',
+    size: '16px / 1rem',
+    lineHeight: '24px / 1.5rem<br/>8px / 0.5rem',
+    textStyle: 'Default Links / body2',
+    description: null
+  },
+  {
+    tag: 'body3',
+    class: null,
+    fontWeight: 'Inter<br/>Regular',
+    size: '14px / 0.875rem',
+    lineHeight: '20px / 1.25rem<br/>8px / 0.5rem',
+    textStyle: 'Default Links / body3',
+    description: 'Default paragraph style for internal-facing applications.'
+  },
+  {
+    tag: 'body4',
+    class: null,
+    fontWeight: 'Inter<br/>Regular',
+    size: '12px / 0.75rem',
+    lineHeight: '20px / 1.25rem<br/>8px / 0.5rem',
+    textStyle: 'Default Links / body4',
+    description: null
+  },
+  {
+    tag: 'h1',
+    class: null,
+    fontWeight: 'Lato<br/>bold',
+    size: '36px / 2.25rem',
+    lineHeight: '52px / 3.25rem<br/>16px / 1 rem',
+    textStyle: 'Emphasis Links / H1',
+    description: null
+  },
+  {
+    tag: 'h2',
+    class: null,
+    fontWeight: 'Lato<br/>bold',
+    size: '32px / 2rem',
+    lineHeight: '44px / 2.75rem<br/>16px / 1 rem',
+    textStyle: 'Emphasis Links / H2',
+    description: null
+  },
+  {
+    tag: 'h3',
+    class: null,
+    fontWeight: 'Lato<br/>bold',
+    size: '28px / 1.75rem',
+    lineHeight: '40px / 2.5rem<br/>12px / 0.75 rem',
+    textStyle: 'Emphasis Links / H3',
+    description: null
+  },
+  {
+    tag: 'h4',
+    class: null,
+    fontWeight: 'Lato<br/>bold',
+    size: '24px / 1.5rem',
+    lineHeight: '36px / 2.25rem<br/>12px / 0.75 rem',
+    textStyle: 'Emphasis Links / H4',
+    description: null
+  },
+  {
+    tag: 'h5',
+    class: null,
+    fontWeight: 'Lato<br/>bold',
+    size: '20px / 1.25rem',
+    lineHeight: '28px / 1.75rem<br/>12px / 0.75 rem',
+    textStyle: 'Emphasis Links / H5',
+    description: null
+  },
+  {
+    tag: 'h6',
+    class: null,
+    fontWeight: 'Lato<br/>bold',
+    size: '16px / 1rem',
+    lineHeight: '24px / 1.5rem<br/>8px / 0.5rem',
+    textStyle: 'Emphasis Links / H6',
+    description: null
+  },
+  {
+    tag: 'body1',
+    class: null,
+    fontWeight: 'Inter<br/>Semi-bold',
+    size: '20px / 1.25rem',
+    lineHeight: '28px / 1.75rem<br/>12px / 0.75rem',
+    textStyle: 'Emphasis Links / body1',
+    description: null
+  },
+  {
+    tag: 'body2',
+    class: null,
+    fontWeight: 'Inter<br/>Semi-bold',
+    size: '16px / 1rem',
+    lineHeight: '24px / 1.5rem<br/>8px / 0.5rem',
+    textStyle: 'Emphasis Links / body2',
+    description: null
+  },
+  {
+    tag: 'body3',
+    class: null,
+    fontWeight: 'Inter<br/>Semi-bold',
+    size: '14px / 0.875rem',
+    lineHeight: '20px / 1.25rem<br/>8px / 0.5rem',
+    textStyle: 'Emphasis Links / body3',
+    description: null
+  },
+  {
+    tag: 'body4',
+    class: null,
+    type: 'a',
+    fontWeight: 'Inter<br/>Semi-bold',
+    size: '12px / 0.75rem',
+    lineHeight: '20px / 1.25rem<br/>8px / 0.5rem',
+    textStyle: 'Emphasis Links / body4',
+    description: null,
   },
 ];

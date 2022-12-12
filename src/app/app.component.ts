@@ -56,10 +56,12 @@ export class AppComponent implements OnInit {
   }
 
   useLanguage(): void {
-    let language = this.getCurrentLang();
-    language === Languages.English || language === DisplayLanguages.English ? language = Languages.French : language = Languages.English;
-    this.localize.changeLanguage(language);
-    
+    let currentLanguage = this.getCurrentLang();
+    let updatedLanguage = ""
+    currentLanguage === Languages.English || currentLanguage === DisplayLanguages.English ? updatedLanguage = Languages.French : updatedLanguage = Languages.English;
+    let pathName = window.location.pathname;
+    pathName = pathName.replace(currentLanguage, updatedLanguage);
+    window.location.replace(pathName) // navigate to path with updated language
   }
 
   getCurrentLang(): string {

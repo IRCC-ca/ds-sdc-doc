@@ -1014,6 +1014,7 @@ export const typographys: typography[] = [
   {
     tag: 'h1',
     class: null,
+    type: 'a',
     fontWeight: 'Lato<br/>Regular',
     size: '36px / 2.25rem',
     lineHeight: '52px / 3.25rem<br/>16px / 1 rem',
@@ -1023,6 +1024,7 @@ export const typographys: typography[] = [
   {
     tag: 'h2',
     class: null,
+    type: 'a',
     fontWeight: 'Lato<br/>Regular',
     size: '32px / 2rem',
     lineHeight: '44px / 2.75rem<br/>16px / 1 rem',
@@ -1032,6 +1034,7 @@ export const typographys: typography[] = [
   {
     tag: 'h3',
     class: null,
+    type: 'a',
     fontWeight: 'Lato<br/>Regular',
     size: '28px / 1.75rem',
     lineHeight: '40px / 2.5rem<br/>12px / 0.75 rem',
@@ -1041,6 +1044,7 @@ export const typographys: typography[] = [
   {
     tag: 'h4',
     class: null,
+    type: 'a',
     fontWeight: 'Lato<br/>Regular',
     size: '24px / 1.5rem',
     lineHeight: '36px / 2.25rem<br/>12px / 0.75 rem',
@@ -1050,6 +1054,7 @@ export const typographys: typography[] = [
   {
     tag: 'h5',
     class: null,
+    type: 'a',
     fontWeight: 'Lato<br/>Regular',
     size: '20px / 1.25rem',
     lineHeight: '28px / 1.75rem<br/>12px / 0.75 rem',
@@ -1059,6 +1064,7 @@ export const typographys: typography[] = [
   {
     tag: 'h6',
     class: null,
+    type: 'a',
     fontWeight: 'Lato<br/>Regular',
     size: '16px / 1rem',
     lineHeight: '24px / 1.5rem<br/>8px / 0.5rem',
@@ -1068,6 +1074,7 @@ export const typographys: typography[] = [
   {
     tag: 'body1',
     class: null,
+    type: 'a',
     fontWeight: 'Inter<br/>Regular',
     size: '20px / 1.25rem',
     lineHeight: '28px / 1.75rem<br/>12px / 0.75rem',
@@ -1077,6 +1084,7 @@ export const typographys: typography[] = [
   {
     tag: 'body2',
     class: null,
+    type: 'a',
     fontWeight: 'Inter<br/>Regular',
     size: '16px / 1rem',
     lineHeight: '24px / 1.5rem<br/>8px / 0.5rem',
@@ -1086,6 +1094,7 @@ export const typographys: typography[] = [
   {
     tag: 'body3',
     class: null,
+    type: 'a',
     fontWeight: 'Inter<br/>Regular',
     size: '14px / 0.875rem',
     lineHeight: '20px / 1.25rem<br/>8px / 0.5rem',
@@ -1095,6 +1104,7 @@ export const typographys: typography[] = [
   {
     tag: 'body4',
     class: null,
+    type: 'a',
     fontWeight: 'Inter<br/>Regular',
     size: '12px / 0.75rem',
     lineHeight: '20px / 1.25rem<br/>8px / 0.5rem',
@@ -1103,7 +1113,8 @@ export const typographys: typography[] = [
   },
   {
     tag: 'h1',
-    class: null,
+    class: 'h1 emphasis',
+    type: 'a',
     fontWeight: 'Lato<br/>bold',
     size: '36px / 2.25rem',
     lineHeight: '52px / 3.25rem<br/>16px / 1 rem',
@@ -1112,7 +1123,8 @@ export const typographys: typography[] = [
   },
   {
     tag: 'h2',
-    class: null,
+    class: 'h2 emphasis',
+    type: 'a',
     fontWeight: 'Lato<br/>bold',
     size: '32px / 2rem',
     lineHeight: '44px / 2.75rem<br/>16px / 1 rem',
@@ -1121,7 +1133,8 @@ export const typographys: typography[] = [
   },
   {
     tag: 'h3',
-    class: null,
+    class: 'h3 emphasis',
+    type: 'a',
     fontWeight: 'Lato<br/>bold',
     size: '28px / 1.75rem',
     lineHeight: '40px / 2.5rem<br/>12px / 0.75 rem',
@@ -1130,7 +1143,8 @@ export const typographys: typography[] = [
   },
   {
     tag: 'h4',
-    class: null,
+    class: 'h4 emphasis',
+    type: 'a',
     fontWeight: 'Lato<br/>bold',
     size: '24px / 1.5rem',
     lineHeight: '36px / 2.25rem<br/>12px / 0.75 rem',
@@ -1139,7 +1153,8 @@ export const typographys: typography[] = [
   },
   {
     tag: 'h5',
-    class: null,
+    class: 'h5 emphasis',
+    type: 'a',
     fontWeight: 'Lato<br/>bold',
     size: '20px / 1.25rem',
     lineHeight: '28px / 1.75rem<br/>12px / 0.75 rem',
@@ -1148,7 +1163,8 @@ export const typographys: typography[] = [
   },
   {
     tag: 'h6',
-    class: null,
+    class: 'h6 emphasis',
+    type: 'a',
     fontWeight: 'Lato<br/>bold',
     size: '16px / 1rem',
     lineHeight: '24px / 1.5rem<br/>8px / 0.5rem',
@@ -1157,7 +1173,8 @@ export const typographys: typography[] = [
   },
   {
     tag: 'body1',
-    class: null,
+    class: 'body1 emphasis',
+    type: 'a',
     fontWeight: 'Inter<br/>Semi-bold',
     size: '20px / 1.25rem',
     lineHeight: '28px / 1.75rem<br/>12px / 0.75rem',
@@ -1166,7 +1183,8 @@ export const typographys: typography[] = [
   },
   {
     tag: 'body2',
-    class: null,
+    class: 'body2 emphasis',
+    type: 'a',
     fontWeight: 'Inter<br/>Semi-bold',
     size: '16px / 1rem',
     lineHeight: '24px / 1.5rem<br/>8px / 0.5rem',
@@ -1175,7 +1193,8 @@ export const typographys: typography[] = [
   },
   {
     tag: 'body3',
-    class: null,
+    class: 'body3 emphasis',
+    type: 'a',
     fontWeight: 'Inter<br/>Semi-bold',
     size: '14px / 0.875rem',
     lineHeight: '20px / 1.25rem<br/>8px / 0.5rem',
@@ -1184,7 +1203,7 @@ export const typographys: typography[] = [
   },
   {
     tag: 'body4',
-    class: null,
+    class: 'body4 emphasis',
     type: 'a',
     fontWeight: 'Inter<br/>Semi-bold',
     size: '12px / 0.75rem',

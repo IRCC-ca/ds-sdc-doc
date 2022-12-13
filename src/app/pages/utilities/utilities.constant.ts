@@ -8,42 +8,42 @@ export interface colorSample {
 
 export const colorSamples: colorSample[] = [
   {
-    tokenName: '--background',
+    tokenName: '--primary-background',
     colorRole: 'CTA, Hue 700<br/>#2A4980',
     colorCode: '#2A4980',
     figmaStyle: 'button-primary / CTA /<br/> background',
     description: 'Utilities.ColourTableDescriptionRow1'
   },
   {
-    tokenName: '--background-hover',
+    tokenName: '--primary-background-hover',
     colorRole: 'CTA, Hue 800<br/>#233F71',
     colorCode: '#233F71',
     figmaStyle: 'button-primary / CTA /<br/> background-hover',
     description: 'Utilities.ColourTableDescriptionRow2'
   },
   {
-    tokenName: '--background-active',
+    tokenName: '--primary-background-active',
     colorRole: 'CTA, Hue 900<br/>#1D3561',
     colorCode: '#1D3561',
     figmaStyle: 'button-primary / CTA /<br/> background-active',
     description: 'Utilities.ColourTableDescriptionRow3'
   },
   {
-    tokenName: '--background-disabled',
+    tokenName: '--primary-background-disabled',
     colorRole: 'CTA, Hue 300<br/>#AEBBD3',
     colorCode: '#AEBBD3',
     figmaStyle: 'button-primary / CTA /<br/> background-disabled',
     description: 'Utilities.ColourTableDescriptionRow4'
   },
   {
-    tokenName: '--text',
+    tokenName: '--primary-text',
     colorRole: 'Neutral, Hue 100<br/>#FFFFFF',
     colorCode: '#FFFFFF',
     figmaStyle: 'button-primary / CTA /<br/> text',
     description: 'Utilities.ColourTableDescriptionRow5'
   },
   {
-    tokenName: '--text-disabled',
+    tokenName: '--primary-text-disabled',
     colorRole: 'Neutral, Hue 100<br/>#FFFFFF',
     colorCode: '#FFFFFF',
     figmaStyle: 'button-primary / CTA /<br/> text-disabled',

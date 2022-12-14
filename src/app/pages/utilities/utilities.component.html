@@ -1,7 +1,7 @@
 <div class="content-doc-wrapper col-12 col-lg-9 col-xl-10">
-  <app-title-slug-url [translate]="'Utilities.title.utilities'" type="primary">Utilities</app-title-slug-url>
-  <p>{{'Utilities.content.token-desc' | translate}}</p>
-  <app-title-slug-url [translate]="'LeftSideNav.sub-titles.colours'">Colours</app-title-slug-url>
+  <app-title-slug-url [translate]="'Utilities.Heading'" type="primary">Utilities</app-title-slug-url>
+  <p>{{'Utilities.Text' | translate}}</p>
+  <app-title-slug-url [translate]="'Utilities.ColourHeading'">Colours</app-title-slug-url>
   <p>{{'Utilities.ColourText' | translate}}</p>
   <table [style.max-height]="'450px'">
     <tr>
@@ -35,9 +35,13 @@
     </tr>
     <tr *ngFor="let typo of typographySample">
       <td class="typo-sample">
-        <p [class]="typo.class ?? typo.tag">Aa</p>
+        <a *ngIf="typo.type==='a'"
+           [class]="typo.class ?? typo.tag"
+           [style]="'text-decoration: underline; color: var(--link-text);'"
+        >Aa</a>
+        <p *ngIf="typo.type==='p' || !typo.type" [class]="typo.class ?? typo.tag">Aa</p>
       </td>
-      <td>--{{typo.tag}}</td>
+      <td>{{typo.class ?? typo.tag}}</td>
       <td [innerHtml]="typo.fontWeight"></td>
       <td>{{typo.size}}</td>
       <td [innerHtml]="typo.lineHeight"></td>
@@ -50,7 +54,7 @@
   <table>
     <tr>
       <th>{{'Utilities.SpacingTableSampleHeading' | translate}}</th>
-      <th>{{'Utilities.ColourTableTokenHeading' | translate}}</th>
+      <th>{{'Utilities.SpacingTableVariableHeading' | translate}}</th>
       <th>{{'Utilities.SpacingTableValueHeading' | translate}}</th>
       <th>{{'Utilities.SpacingTableFigmaHeading' | translate}}</th>
     </tr>
@@ -64,11 +68,12 @@
     </tr>
   </table>
   <app-title-slug-url [translate]="'Utilities.BreakpointsHeading'">Breakpoints</app-title-slug-url>
+  <p>{{'Utilities.BreakpointsText' | translate}}</p>
   <table>
     <tr>
       <th>{{'Utilities.SpacingTableSampleHeading' | translate}}</th>
       <th>{{'Utilities.SpacingTableVariableHeading' | translate}}</th>
-      <th>{{'Utilities.sub-titles.width' | translate}}</th>
+      <th>{{'Utilities.BreakpointsTableWidthHeading' | translate}}</th>
       <th>{{'Utilities.SpacingTableFigmaHeading' | translate}}</th>
     </tr>
     <tr *ngFor="let pt of breakpoints">
@@ -80,6 +85,5 @@
       <td>{{'Utilities.content.bp-figma-usage' | translate:{px: pt.width} }}</td>
     </tr>
   </table>
-  <p>{{'Utilities.BreakpointsText' | translate}}</p>
 </div>
 <app-side-nav class="right-nav col-12 col-lg-3 col-xl-2" [navBarData]="rightNavData"></app-side-nav>

@@ -35,10 +35,13 @@
     </tr>
     <tr *ngFor="let typo of typographySample">
       <td class="typo-sample">
-        <a *ngIf="typo.type==='a'" [class]="typo.class ?? typo.tag" [style.text-decoration]="'underline'">Aa</a>
+        <a *ngIf="typo.type==='a'"
+           [class]="typo.class ?? typo.tag"
+           [style]="'text-decoration: underline; color: var(--link-text);'"
+        >Aa</a>
         <p *ngIf="typo.type==='p' || !typo.type" [class]="typo.class ?? typo.tag">Aa</p>
       </td>
-      <td>--{{typo.tag}}</td>
+      <td>{{typo.class ?? typo.tag}}</td>
       <td [innerHtml]="typo.fontWeight"></td>
       <td>{{typo.size}}</td>
       <td [innerHtml]="typo.lineHeight"></td>

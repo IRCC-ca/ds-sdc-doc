@@ -258,7 +258,7 @@
     "TypographyTableSizeHeading": "Size",
     "TypographyTableLineHeightHeading": "Line height & paragraph spacing",
     "TypographyTableFigmaHeading": "Figma text style",
-    "TypographyTableTokenHeading": "Tag name"
+    "TypographyTableTokenHeading": "Class name"
   },
   "RightSideNav": {
     "title": {

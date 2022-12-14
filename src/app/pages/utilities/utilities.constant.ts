@@ -814,7 +814,7 @@ export const breakpoints: breakpoint[] = [
   },
   {
     svgPath: 'assets/svg/icon-bp-3.svg',
-    varName: '$bp-width-tablet',
+    varName: '$bp-width-desktop',
     width: 1366,
   },
 ];

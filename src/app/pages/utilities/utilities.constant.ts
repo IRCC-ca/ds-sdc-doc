@@ -785,10 +785,10 @@ export const colorSamples: colorSample[] = [
     description: 'Utilities.ColourTableDescriptionRow111'
   },
   {
-    tokenName: '--border',
-    colorRole: 'Neutral, Hue 700<br/>#4974F5',
+    tokenName: '--focus-border',
+    colorRole: 'Focus, Hue 700<br/>#4974F5',
     colorCode: '#4974F5',
-    figmaStyle: 'global / focus / <br/> text-border',
+    figmaStyle: 'global / focus / <br/> border',
     description: 'Utilities.ColourTableDescriptionRow112'
   },
 ];
@@ -981,7 +981,7 @@ export const typographys: typography[] = [
     fontWeight: 'Inter<br/>Semi-bold',
     size: '20px / 1.25rem',
     lineHeight: '28px / 1.75rem<br/>12px / 0.75rem',
-    textStyle: 'Default / body1',
+    textStyle: 'Emphasis / body1',
     description: null
   },
   {
@@ -990,7 +990,7 @@ export const typographys: typography[] = [
     fontWeight: 'Inter<br/>Semi-bold',
     size: '16px / 1rem',
     lineHeight: '24px / 1.5rem<br/>8px / 0.5rem',
-    textStyle: 'Default / body2',
+    textStyle: 'Emphasis / body2',
     description: null
   },
   {
@@ -999,16 +999,16 @@ export const typographys: typography[] = [
     fontWeight: 'Inter<br/>Semi-bold',
     size: '14px / 0.875rem',
     lineHeight: '20px / 1.25rem<br/>8px / 0.5rem',
-    textStyle: 'Default / body3',
+    textStyle: 'Emphasis / body3',
     description: null
   },
   {
     tag: 'body4-emphasis',
     class: 'body4 emphasis',
     fontWeight: 'Inter<br/>Semi-bold',
-    size: '12px / 0.875rem',
+    size: '12px / 0.75rem',
     lineHeight: '20px / 1.25rem<br/>8px / 0.5rem',
-    textStyle: 'Default / body4',
+    textStyle: 'Emphasis / body4',
     description: null
   },
   {
@@ -1099,7 +1099,7 @@ export const typographys: typography[] = [
     size: '14px / 0.875rem',
     lineHeight: '20px / 1.25rem<br/>8px / 0.5rem',
     textStyle: 'Default Links / body3',
-    description: 'Default paragraph style for internal-facing applications.'
+    description: null
   },
   {
     tag: 'body4',

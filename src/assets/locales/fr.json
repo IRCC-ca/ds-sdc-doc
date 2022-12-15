@@ -314,5 +314,11 @@
     "sub-heading-2": "[FR] For developers",
     "sub-heading-2-description": "[FR] Learn how to get started with lorem ipsum dolor sir amet consecteteur.",
     "get-started-sub-text": "[FR] Get started"
+  },
+  "ForDevelopers": {
+    "title": "[FR] For developers",
+    "GettingStarted": "[FR] Getting started",
+    "Usage": "[FR] Usage",
+    "Notes": "[FR] Notes"
   }
 }

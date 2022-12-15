@@ -1,4 +1,4 @@
-import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule, SecurityContext} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 // import ngx-translate and the http loader
@@ -13,7 +13,7 @@ import {JLHeaderModule} from '@ircc-ca/ds-sdc-angular/header';
 import {JLIconModule} from '@ircc-ca/ds-sdc-angular/icon';
 import {JLLinkModule} from '@ircc-ca/ds-sdc-angular/link';
 import {JLRadiobuttonModule} from '@ircc-ca/ds-sdc-angular/radio-button';
-import {MarkdownModule} from "ngx-markdown";
+import {MarkdownModule, MarkedOptions} from "ngx-markdown";
 import {AppComponent} from './app.component';
 import {SideNavModule} from "./side-nav/side-nav.module";
 import {AppRoutingModule} from './app-routing.module';
@@ -63,7 +63,17 @@ const JL_ANGULAR_COMPONENTS = [
     JL_ANGULAR_COMPONENTS,
     SideNavModule,
     HttpClientModule,
-    MarkdownModule.forRoot({ loader: HttpClient }),
+    MarkdownModule.forRoot({
+      loader: HttpClient,
+      // Disable html sanitize to allow generating id
+      sanitize: SecurityContext.NONE,
+      markedOptions: {
+        provide: MarkedOptions,
+        useValue: {
+          headerIds: true
+        }
+      }
+    }),
     // ngx-translate and the loader module
     HttpClientModule,
     TranslateModule.forRoot({
@@ -81,6 +91,3 @@ const JL_ANGULAR_COMPONENTS = [
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
-// enable default sanitization
-MarkdownModule.forRoot()

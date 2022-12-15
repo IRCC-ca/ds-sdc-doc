@@ -1,7 +1,6 @@
 This package contains the theming functionality for the Journey Design System
 
-## Getting started {#getting-started}
-<h2 id='getting-started'>Getting started</h2>
+## Getting started
 
 To install the IRCC Digital Journey Labs Design System styles, you will need to run the following command using [npm](https://www.npmjs.com/):
 
@@ -9,7 +8,7 @@ To install the IRCC Digital Journey Labs Design System styles, you will need to 
 npm install --save-dev @ircc-ca/ds-sdc-core
 ```
 
-## [Usage](#usage)
+## Usage
 
 In your root-level stylesheet, initialize the design system with
 
@@ -21,7 +20,7 @@ In your root-level stylesheet, initialize the design system with
 
 A list of elements can be passed to `element-styles` to include, should only certain element styles be desired.
 
-## [Notes](#notes)
+## Notes
 
 A css reset is not currently expected or required, if you are experiencing an unexpected visual bug, please submit a Bug.
 This package is intended to apply with minimal effort based on HTML tags and minimal use of class selectors to reduce overhead in existing projects.

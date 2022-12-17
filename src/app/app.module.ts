@@ -27,6 +27,7 @@ import { ClipboardModule } from "@angular/cdk/clipboard";
 import { InfoTextSmallComponent } from './info-text-small/info-text-small.component';
 import { ComponentPreviewComponent } from './component-preview/component-preview.component';
 import { SafeHtmlPipe } from './share/safe-html.pipe';
+import { ForDesignersComponent } from './pages/for-designers/for-designers.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/locales/', '.json');
@@ -53,6 +54,7 @@ const JL_ANGULAR_COMPONENTS = [
     ComponentPreviewComponent,
     PageUtilitiesComponent,
     SafeHtmlPipe,
+    ForDesignersComponent,
   ],
   imports: [
     BrowserModule,

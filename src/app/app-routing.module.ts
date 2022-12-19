@@ -13,6 +13,7 @@ import { Location } from '@angular/common';
 import {OverviewComponent} from "./pages/overview/overview.component";
 import {PageButtonComponent} from "./pages/button/button.component";
 import {PageUtilitiesComponent} from "./pages/utilities/utilities.component";
+import { ForDesignersComponent } from './pages/for-designers/for-designers.component';
 import {PageForDevelopersComponent} from "./pages/for-developers/for-developers.component";
 
 export function HttpLoaderFactory(translate: TranslateService, location: Location, settings: LocalizeRouterSettings, http: HttpClient) {
@@ -21,8 +22,8 @@ export function HttpLoaderFactory(translate: TranslateService, location: Locatio
 
 const routes: Routes = [
   { path: 'overview', component: OverviewComponent },
+  { path: 'for-designers', component: ForDesignersComponent },
   { path: 'for-developers', component: PageForDevelopersComponent },
-  { path: 'for-designers', component: OverviewComponent },
   { path: 'accessibility', component: OverviewComponent },
   { path: 'colours', component: OverviewComponent },
   { path: 'typography', component: OverviewComponent },

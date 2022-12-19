@@ -28,6 +28,7 @@ import {InfoTextSmallComponent} from './info-text-small/info-text-small.componen
 import {ComponentPreviewComponent} from './component-preview/component-preview.component';
 import {SafeHtmlPipe} from './share/safe-html.pipe';
 import {PageForDevelopersComponent} from './pages/for-developers/for-developers.component';
+import { ForDesignersComponent } from './pages/for-designers/for-designers.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/locales/', '.json');
@@ -54,6 +55,7 @@ const JL_ANGULAR_COMPONENTS = [
     ComponentPreviewComponent,
     PageUtilitiesComponent,
     SafeHtmlPipe,
+    ForDesignersComponent,
     PageForDevelopersComponent,
   ],
   imports: [

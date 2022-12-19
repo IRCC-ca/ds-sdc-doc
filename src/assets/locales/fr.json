@@ -1,6 +1,7 @@
 {
   "Home": {
-    "AppName": "Système de conception IRCC"
+    "AppName": "Système de conception IRCC",
+    "DateModified": "Date de modification"
   },
   "Buttons": {
     "title": {
@@ -279,7 +280,8 @@
     "title": {
       "getting-started" : "[FR] Getting Started",
       "foundation" : "[FR] Foundation",
-      "components" : "[FR] Components"
+      "components" : "[FR] Components",
+      "support": "[FR] Support"
     },
     "sub-titles": {
       "overview": "[FR] Overview",
@@ -299,7 +301,8 @@
       "icon-button": "[FR] Icon button",
       "input-field": "[FR] Input field",
       "radio-button": "[FR] Radio button",
-      "tabs": "[FR] Tabs"
+      "tabs": "[FR] Tabs",
+      "contact": "[FR] Contact"
     }
   },
   "TitleSlugUrl": {

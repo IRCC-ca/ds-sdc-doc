@@ -1,6 +1,7 @@
 {
   "Home": {
-    "AppName": "IRCC Design System"
+    "AppName": "IRCC Design System",
+    "DateModified": "Date Modified"
   },
   "Buttons": {
     "title": {
@@ -280,7 +281,8 @@
     "title": {
       "getting-started": "Getting Started",
       "foundation": "Foundation",
-      "components": "Components"
+      "components": "Components",
+      "support": "Support"
     },
     "sub-titles": {
       "overview": "Overview",
@@ -300,7 +302,8 @@
       "icon-button": "Icon button",
       "input-field": "Input field",
       "radio-button": "Radio button",
-      "tabs": "Tabs"
+      "tabs": "Tabs",
+      "contact": "Contact"
     }
   },
   "TitleSlugUrl": {

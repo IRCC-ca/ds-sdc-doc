@@ -1,6 +1,6 @@
-import { Injectable } from "@angular/core";
-import { TranslateService } from "@ngx-translate/core";
-import { ISideNavDataInterface, ItemType, ItemCategory } from "./side-nav.model";
+import {Injectable} from "@angular/core";
+import {TranslateService} from "@ngx-translate/core";
+import {ISideNavDataInterface, ItemCategory, ItemType} from "./side-nav.model";
 import {SlugifyPipe} from "../share/pipe-slugify.pipe";
 
 @Injectable({
@@ -64,42 +64,42 @@ export class SideNavConfig {
             category : ItemCategory.subTitle,
             path: "for-designers"
         },
-        {
-            text : translator.instant('LeftSideNav.sub-titles.accessibility'),
-            type : ItemType.Link,
-            category : ItemCategory.subTitle,
-            path: "accessibility"
-        },
+        // {
+        //     text : translator.instant('LeftSideNav.sub-titles.accessibility'),
+        //     type : ItemType.Link,
+        //     category : ItemCategory.subTitle,
+        //     path: "accessibility"
+        // },
         {
             text : translator.instant('LeftSideNav.title.foundation'),
             type : ItemType.Link,
             category : ItemCategory.Title,
             path: ""
         },
-        {
-            text : translator.instant('LeftSideNav.sub-titles.colours'),
-            type : ItemType.Link,
-            category : ItemCategory.subTitle,
-            path: "colours"
-        },
-        {
-            text : translator.instant('LeftSideNav.sub-titles.typography'),
-            type : ItemType.Link,
-            category : ItemCategory.subTitle,
-            path: "typography"
-        },
-        {
-            text : translator.instant('LeftSideNav.sub-titles.iconography'),
-            type : ItemType.Link,
-            category : ItemCategory.subTitle,
-            path: "iconography"
-        },
-        {
-            text : translator.instant('LeftSideNav.sub-titles.layouts'),
-            type : ItemType.Link,
-            category : ItemCategory.subTitle,
-            path: "layouts"
-        },
+        // {
+        //     text : translator.instant('LeftSideNav.sub-titles.colours'),
+        //     type : ItemType.Link,
+        //     category : ItemCategory.subTitle,
+        //     path: "colours"
+        // },
+        // {
+        //     text : translator.instant('LeftSideNav.sub-titles.typography'),
+        //     type : ItemType.Link,
+        //     category : ItemCategory.subTitle,
+        //     path: "typography"
+        // },
+        // {
+        //     text : translator.instant('LeftSideNav.sub-titles.iconography'),
+        //     type : ItemType.Link,
+        //     category : ItemCategory.subTitle,
+        //     path: "iconography"
+        // },
+        // {
+        //     text : translator.instant('LeftSideNav.sub-titles.layouts'),
+        //     type : ItemType.Link,
+        //     category : ItemCategory.subTitle,
+        //     path: "layouts"
+        // },
         {
             text : translator.instant('Utilities.Heading'),
             type : ItemType.Link,
@@ -118,54 +118,66 @@ export class SideNavConfig {
             category : ItemCategory.subTitle,
             path: "buttons"
         },
+        // {
+        //     text : translator.instant('LeftSideNav.sub-titles.checkbox'),
+        //     type : ItemType.Link,
+        //     category : ItemCategory.subTitle,
+        //     path: "checkbox"
+        // },
+        // {
+        //     text : translator.instant('LeftSideNav.sub-titles.external-link'),
+        //     type : ItemType.Link,
+        //     category : ItemCategory.subTitle,
+        //     path: "external-link"
+        // },
+        // {
+        //     text : translator.instant('LeftSideNav.sub-titles.footer'),
+        //     type : ItemType.Link,
+        //     category : ItemCategory.subTitle,
+        //     path: "footer"
+        // },
+        // {
+        //     text : translator.instant('LeftSideNav.sub-titles.header'),
+        //     type : ItemType.Link,
+        //     category : ItemCategory.subTitle,
+        //     path: "header"
+        // },
+        // {
+        //     text : translator.instant('LeftSideNav.sub-titles.icon-button'),
+        //     type : ItemType.Link,
+        //     category : ItemCategory.subTitle,
+        //     path: "icon-button"
+        // },
+        // {
+        //     text : translator.instant('LeftSideNav.sub-titles.input-field'),
+        //     type : ItemType.Link,
+        //     category : ItemCategory.subTitle,
+        //     path: "input-field"
+        // },
+        // {
+        //     text : translator.instant('LeftSideNav.sub-titles.radio-button'),
+        //     type : ItemType.Link,
+        //     category : ItemCategory.subTitle,
+        //     path: "radio-button"
+        // },
+        // {
+        //     text : translator.instant('LeftSideNav.sub-titles.tabs'),
+        //     type : ItemType.Link,
+        //     category : ItemCategory.subTitle,
+        //     path: "tabs"
+        // }
         {
-            text : translator.instant('LeftSideNav.sub-titles.checkbox'),
-            type : ItemType.Link,
-            category : ItemCategory.subTitle,
-            path: "checkbox"
+            text: translator.instant('LeftSideNav.title.support'),
+            type: ItemType.Link,
+            category: ItemCategory.Title,
+            path: ""
         },
         {
-            text : translator.instant('LeftSideNav.sub-titles.external-link'),
+            text : translator.instant('LeftSideNav.sub-titles.contact'),
             type : ItemType.Link,
             category : ItemCategory.subTitle,
-            path: "external-link"
+            path: "contact"
         },
-        {
-            text : translator.instant('LeftSideNav.sub-titles.footer'),
-            type : ItemType.Link,
-            category : ItemCategory.subTitle,
-            path: "footer"
-        },
-        {
-            text : translator.instant('LeftSideNav.sub-titles.header'),
-            type : ItemType.Link,
-            category : ItemCategory.subTitle,
-            path: "header"
-        },
-        {
-            text : translator.instant('LeftSideNav.sub-titles.icon-button'),
-            type : ItemType.Link,
-            category : ItemCategory.subTitle,
-            path: "icon-button"
-        },
-        {
-            text : translator.instant('LeftSideNav.sub-titles.input-field'),
-            type : ItemType.Link,
-            category : ItemCategory.subTitle,
-            path: "input-field"
-        },
-        {
-            text : translator.instant('LeftSideNav.sub-titles.radio-button'),
-            type : ItemType.Link,
-            category : ItemCategory.subTitle,
-            path: "radio-button"
-        },
-        {
-            text : translator.instant('LeftSideNav.sub-titles.tabs'),
-            type : ItemType.Link,
-            category : ItemCategory.subTitle,
-            path: "tabs"
-        }
     ]
     }
 }

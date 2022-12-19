@@ -101,7 +101,7 @@ export class SideNavConfig {
             path: "layouts"
         },
         {
-            text : translator.instant('LeftSideNav.sub-titles.utilities'),
+            text : translator.instant('Utilities.Heading'),
             type : ItemType.Link,
             category : ItemCategory.subTitle,
             path: "utilities"

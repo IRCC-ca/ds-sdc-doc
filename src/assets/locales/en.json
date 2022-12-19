@@ -113,18 +113,17 @@
   },
   "Utilities": {
     "title": {
-      "tokens": "Tokens",
-      "utilities": "Utilities"
+      "tokens": "Tokens"
     },
     "sub-titles": {
-      "width": "Width",
       "pixels": "pixels"
     },
     "content": {
-      "token-desc": "Utilities are re-usable tokens, variables, etc. that are applied consistently to elements and components throughout the entire design system. This creates consistency in how the design system’s foundations are applied and allows efficient and reliable design iterations to be made globally.",
       "figma-usage": "Use {{px}} pixels of spacing",
       "bp-figma-usage": "Set frame width to {{px}} pixels"
     },
+    "Heading": "Utilities",
+    "Text": "Tokens are re-usable utilities that are applied consistently to elements and components throughout the entire design system. This creates consistency to how colours, spacing, etc. are applied and allows efficient and reliable design iterations to be made globally.",
     "TypographyHeading": "Typography",
     "TypographyText": "The type scale keeps the number of styles to a minimum and is designed to ensure an affective visual hierarchy of content globally. Text styles include point sizes, line heights and paragraph spacing that pass AAA accessibility standards under WCAG 2.1.",
     "SpacingText": "Spacing units to apply as padding or margins throughout the UI. Spacing options are limited to help create consistency across spacing decisions. All spacing units are a multiple of four to adhere to a four pixel grid.",
@@ -134,6 +133,8 @@
     "SpacingTableFigmaHeading": "Figma usage",
     "BreakpointsHeading": "Breakpoints",
     "BreakpointsText": "Setting breakpoints allows content and design to adapt in order to provide the best possible layout for the viewport or device. Use these common breakpoint widths for layout consistency. Design system consumers can add additional breakpoints as needed.",
+    "BreakpointsTableWidthHeading": "Width",
+    "ColourHeading": "Colours",
     "ColourText": "Designers have a variety of colours to choose from to ensure clear communication, indicate UI functionality, and provide colour contrast that complies with accessibility standards. The colour system is designed to define meaning for each colour, allow for global colour changes, and ensure every colour used comes from the system.",
     "SpacingHeading": "Spacing",
     "ColourTableTokenHeading": "Token name",
@@ -257,7 +258,7 @@
     "TypographyTableSizeHeading": "Size",
     "TypographyTableLineHeightHeading": "Line height & paragraph spacing",
     "TypographyTableFigmaHeading": "Figma text style",
-    "TypographyTableTokenHeading": "Tag name"
+    "TypographyTableTokenHeading": "Class name"
   },
   "RightSideNav": {
     "title": {
@@ -291,7 +292,6 @@
       "iconography": "Iconography",
       "layouts": "Layouts",
       "tokens": "Tokens",
-      "utilities": "Utilities",
       "buttons": "Buttons",
       "checkbox": "Checkbox",
       "external-link": "External Link",
@@ -369,5 +369,11 @@
     "UsingComponentsConfigureImgAlt": "The Figma design panel displaying configuration options for a button component.",
     "FigmaHeading": "Figma usage guidelines",
     "FigmaText": "The above is general information in order to get started. You can find more detailed Figma usage guidelines specific to each system part on on their respective pages throughout this site."
+  },
+  "ForDevelopers": {
+    "title": "For developers",
+    "GettingStarted": "Getting started",
+    "Usage": "Usage",
+    "Notes": "Notes"
   }
 }

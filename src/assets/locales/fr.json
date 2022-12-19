@@ -112,34 +112,33 @@
   },
   "Utilities": {
     "title": {
-      "tokens": "[FR] Tokens",
-      "utilities": "[FR] Utilities"
+      "tokens": "[FR] Tokens"
     },
     "sub-titles": {
-      "width": "[FR] Width",
-      "pixels": "[FR] pixels"
+      "pixels": "pixels"
     },
     "content": {
-      "token-desc": "[FR] Utilities are re-usable tokens, variables, etc. that are applied consistently to elements and components throughout the entire design system. This creates consistency in how the design system’s foundations are applied and allows efficient and reliable design iterations to be made globally.",
-      "figma-usage": "[FR] Use {{px}} pixels of spacing",
-      "bp-figma-usage": "[FR] Set frame width to {{px}} pixels"
+      "figma-usage": "Utiliser {{px}} pixels d’espacement",
+      "bp-figma-usage": "Définir la largeur du cadre à {{px}} pixels"
     },
-    "alt-text": {
-    },
-    "TypographyHeading": "[FR] Typography",
-    "TypographyText": "[FR] The type scale keeps the number of styles to a minimum and is designed to ensure an affective visual hierarchy of content globally. Text styles include point sizes, line heights and paragraph spacing that pass AAA accessibility standards under WCAG 2.1.",
-    "SpacingText": "[FR] Spacing units to apply as padding or margins throughout the UI. Spacing options are limited to help create consistency across spacing decisions. All spacing units are a multiple of four to adhere to a four pixel grid.",
-    "SpacingTableSampleHeading": "[FR] Sample",
-    "SpacingTableVariableHeading": "[FR] Variable name",
-    "SpacingTableValueHeading": "[FR] Value",
-    "SpacingTableFigmaHeading": "[FR] Figma usage",
-    "BreakpointsHeading": "[FR] Breakpoints",
-    "BreakpointsText": "[FR] Setting breakpoints allows content and design to adapt in order to provide the best possible layout for the viewport or device. Use these common breakpoint widths for layout consistency. Design system consumers can add additional breakpoints as needed.",
-    "ColourText": "[FR] Designers have a variety of colours to choose from to ensure clear communication, indicate UI functionality, and provide colour contrast that complies with accessibility standards. The colour system is designed to define meaning for each colour, allow for global colour changes, and ensure every colour used comes from the system.",
-    "SpacingHeading": "[FR] Spacing",
-    "ColourTableTokenHeading": "[FR] Token name",
-    "ColourTableColourHeading": "[FR] Colour role, hue & hex value",
-    "ColourTableFigmaHeading": "[FR] Figma colour style",
+    "Heading": "Utilitaires",
+    "Text": "Les jetons sont des utilitaires réutilisables qui sont appliqués de manière cohérente aux éléments et aux composants dans l’ensemble du système de conception. Cela crée une cohérence dans la façon dont les couleurs, l’espacement, etc. sont appliqués et cela permet d’effectuer des répétitions des conceptions à l’échelle mondiale qui sont efficaces et fiables.",
+    "TypographyHeading": "Typographie",
+    "TypographyText": "L’échelle de caractères réduit le nombre de styles au minimum et elle est conçue pour assurer une hiérarchie visuelle efficace du contenu dans son ensemble. Les styles de texte comprennent des tailles de points, des hauteurs de lignes et des espacements de paragraphes qui répondent aux normes d’accessibilité AAA de la version 2.1 des normes WCAG.",
+    "SpacingHeading": "Espacement",
+    "SpacingText": "Unités d’espacement à appliquer comme remplissage ou comme marges dans l’interface utilisateur. Les options d’espacement sont limitées pour aider à créer une cohérence entre les espacements. Toutes les unités d’espacement sont en groupe de quatre pour respecter une grille de quatre pixels.",
+    "SpacingTableSampleHeading": "Échantillon",
+    "SpacingTableVariableHeading": "Nom de la variable",
+    "SpacingTableValueHeading": "Valeur",
+    "SpacingTableFigmaHeading": "Utilisation de Figma",
+    "BreakpointsHeading": "Points d’arrêt",
+    "BreakpointsText": "Définir des points d’arrêt permet au contenu et à la conception de s’adapter afin de fournir la meilleure disposition possible pour la fenêtre d’affichage ou le périphérique. Utiliser les largeurs fréquentes des points d’arrêt pour assurer la cohérence de la mise en page. Les consommateurs du système de conception peuvent ajouter des points d’arrêt supplémentaires si nécessaire.",
+    "BreakpointsTableWidthHeading": "Largeur",
+    "ColourHeading": "Couleurs",
+    "ColourText": "Les concepteurs ont le choix entre plusieurs couleurs pour assurer une communication claire, indiquer la fonctionnalité de l’interface utilisateur et fournir un contraste de couleurs conforme aux normes d’accessibilité. Le système de couleurs est conçu pour définir la signification de chaque couleur, permettre des changements de couleur globaux et garantir que chaque couleur utilisée provient du système.",
+    "ColourTableTokenHeading": "Nom du jeton",
+    "ColourTableColourHeading": "Rôle de la couleur, teinte et valeur hexadécimale",
+    "ColourTableFigmaHeading": "Style de couleur Figma",
     "ColourTableDescriptionHeading": "[FR] Description",
     "ColourTableDescriptionRow1": "[FR] Background of the primary button.",
     "ColourTableDescriptionRow2": "[FR] Background of the primary button while in the hover state.",
@@ -253,12 +252,12 @@
     "ColourTableDescriptionRow110": "[FR] Placeholder text within input field components.",
     "ColourTableDescriptionRow111": "[FR] Disabled text within interactive elements that use a neutral text palette.",
     "ColourTableDescriptionRow112": "[FR] The outline used to indicate that an element is in focus.",
-    "TypographyTableStyleHeading": "[FR] Style",
-    "TypographyTableFontWeightHeading": "[FR] Font & weight",
-    "TypographyTableSizeHeading": "[FR] Size",
-    "TypographyTableLineHeightHeading": "[FR] Line height & paragraph spacing",
-    "TypographyTableFigmaHeading": "[FR] Figma text style",
-    "TypographyTableTokenHeading": "[FR] Tag name"
+    "TypographyTableStyleHeading": "Style",
+    "TypographyTableFontWeightHeading": "Police et dimensions",
+    "TypographyTableSizeHeading": "Format",
+    "TypographyTableLineHeightHeading": "Hauteur de ligne et espacement des paragraphes",
+    "TypographyTableFigmaHeading": "Style de texte Figma",
+    "TypographyTableTokenHeading": "Nom du cours"
   },
   "RightSideNav": {
     "title": {
@@ -287,13 +286,12 @@
       "for-developers": "[FR] For developers",
       "for-designers": "[FR] For designers",
       "accessibility": "[FR] Accessibility",
-      "colours": "[FR] Colours",
-      "typography": "[FR] Typography",
+      "colours": "Couleurs",
+      "typography": "Typographie",
       "iconography": "[FR] Iconography",
       "layouts": "[FR] Layouts",
       "tokens": "[FR] Tokens",
-      "utilities": "[FR] Utilities",
-      "buttons": "[FR] Buttons",
+      "buttons": "Boutons",
       "checkbox": "[FR] Checkbox",
       "external-link": "[FR] External Link",
       "footer": "[FR] Footer",
@@ -370,6 +368,12 @@
     "UsingComponentsConfigureImgAlt": "[FR] The Figma design panel displaying configuration options for a button component.",
     "FigmaHeading": "[FR] Figma usage guidelines",
     "FigmaText": "[FR] The above is general information in order to get started. You can find more detailed Figma usage guidelines specific to each system part on on their respective pages throughout this site."
+  },
+  "ForDevelopers": {
+    "title": "[FR] For developers",
+    "GettingStarted": "[FR] Getting started",
+    "Usage": "[FR] Usage",
+    "Notes": "[FR] Notes"
   }
 }
 

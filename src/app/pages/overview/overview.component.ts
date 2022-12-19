@@ -12,9 +12,11 @@ import {SlugifyPipe} from "../../share/pipe-slugify.pipe";
 })
 export class OverviewComponent {
   rightNavData: ISideNavDataInterface[];
+  currentLanguage : string = '';
 
   constructor(private translate: TranslateService, private slugify: SlugifyPipe, private navBarConfig : SideNavConfig) {
     this.rightNavData = navBarConfig.getRightNavBarConfig(translate, slugify, []);
+    this.currentLanguage = translate.currentLang;
   }
 
 }

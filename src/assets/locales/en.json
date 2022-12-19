@@ -315,5 +315,11 @@
     "sub-heading-2": "For developers",
     "sub-heading-2-description": "Learn how to get started with lorem ipsum dolor sir amet consecteteur.",
     "get-started-sub-text": "Get started"
+  },
+  "ForDevelopers": {
+    "title": "For developers",
+    "GettingStarted": "Getting started",
+    "Usage": "Usage",
+    "Notes": "Notes"
   }
 }

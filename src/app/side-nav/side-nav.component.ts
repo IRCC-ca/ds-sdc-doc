@@ -77,6 +77,7 @@ export class SideNavComponent implements OnInit {
 
   /**
    * Grab width from parent element and bind it to child
+   * If side nav does not show up, check if row is enabled in component style sheet.
    */
   private adjustWidth() {
     this.width = this.el.nativeElement.clientWidth;

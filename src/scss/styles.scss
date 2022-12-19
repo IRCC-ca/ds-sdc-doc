@@ -6,6 +6,7 @@
 @use 'sass:map';
 @import 'grid';
 @import 'table';
+@import 'code';
 @import '../../node_modules/@ircc-ca/ds-sdc-core/layout/layout-grid';
 
 @include ircc-ds.theme-init-required(ircc-ds.palette-journeylab(), default, large, light);

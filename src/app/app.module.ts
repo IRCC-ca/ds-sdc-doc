@@ -5,7 +5,6 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
-import {IRCCModule} from '@ircc-ca/ds-sdc-angular';
 import {JLButtonModule} from '@ircc-ca/ds-sdc-angular/button';
 import {JLCheckboxModule} from '@ircc-ca/ds-sdc-angular/checkbox';
 import {JLFooterModule} from '@ircc-ca/ds-sdc-angular/footer';
@@ -61,7 +60,6 @@ const JL_ANGULAR_COMPONENTS = [
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    IRCCModule,
     JL_ANGULAR_COMPONENTS,
     SideNavModule,
     HttpClientModule,

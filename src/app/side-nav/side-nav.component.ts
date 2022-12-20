@@ -10,6 +10,7 @@ import {
 } from '@angular/animations';
 import { ISideNavDataInterface } from './side-nav.model';
 import { TranslateService } from '@ngx-translate/core';
+import {IIconConfig} from '@ircc-ca/ds-sdc-angular/icon';
 
 @Component({
   selector: 'app-side-nav',
@@ -38,15 +39,15 @@ export class SideNavComponent implements OnInit {
   showMenu = true; // If show or hide side menu
   navClassName = '';
   navStatus = 'nav-closed';
-  barsIconConfig = {
+  barsIconConfig: IIconConfig = {
     unicode: 'f0c9',
     fontFamily: 'fa-solid'
   };
-  xmarkIconConfig = {
+  xmarkIconConfig: IIconConfig = {
     unicode: 'f00d',
     fontFamily: 'fa-solid'
   }
-  width: number = 0; // Width of component
+  width: string = '100%'; // Width of component
 
   constructor(private el: ElementRef, private translate: TranslateService) {
     if (el?.nativeElement?.className) {
@@ -80,7 +81,9 @@ export class SideNavComponent implements OnInit {
    * If side nav does not show up, check if row is enabled in component style sheet.
    */
   private adjustWidth() {
-    this.width = this.el.nativeElement.clientWidth;
+    this.width = this.el.nativeElement.clientWidth > 0
+      ? this.el.nativeElement.clientWidth.toString() + 'px'
+      : '100%' ;
   }
 
   @HostListener('window:resize', ['$event'])

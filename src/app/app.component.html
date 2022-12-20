@@ -13,9 +13,9 @@
 <!-- Toolbar -->
 <div>
   <div class="header">
-    <djl-header>
-      <djl-link class='language-toggle' (click)="useLanguage()">{{language}}</djl-link>
-    </djl-header>
+    <jds-header>
+      <jds-link class='language-toggle' (click)="useLanguage()">{{language}}</jds-link>
+    </jds-header>
     <h1>{{ 'Home.AppName' | translate }}</h1>
   </div>
 
@@ -30,7 +30,9 @@
     </div>
   </div>
   <!-- Footer -->
-  <djl-footer></djl-footer>
+  <jds-footer>
+    {{ 'Home.DateModified' | translate}}: 2022-12-19
+  </jds-footer>
 </div>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->

@@ -1,12 +1,12 @@
 @use '../../scss/grid';
 @use 'node_modules/@ircc-ca/ds-sdc-core/tokens/sizes' as ircc-ds-sizes;
 
-$footer-height: 340px;
+$footer-height: 240px;
 
 :host {
   position: relative;
   @include grid.col-12;
-  > djl-icon {
+  > jds-font-icon {
     font-size: ircc-ds-sizes.$fixed-24;
     position: fixed;
     top: 120px;
@@ -26,13 +26,7 @@ $footer-height: 340px;
 
   .sidenav-section-wrapper {
     background: var(--surface1);
-    @include grid.in-laptop-layout {
-      position: fixed;
-      height: calc(100% - $footer-height);
-      overflow-y: auto;
-    }
-
-    @include grid.in-desktop-layout {
+    @include grid.up-laptop-layout {
       position: fixed;
       height: calc(100% - $footer-height);
       overflow-y: auto;

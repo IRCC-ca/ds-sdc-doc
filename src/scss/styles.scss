@@ -60,11 +60,10 @@ djl-header {
   }
 
   &.top {
-      margin-top: 180px;
+    margin-top: 170px;
   }
 
   > app-side-nav.left-nav {
-    height: 100px;
     @include up-laptop-layout {
       @include col-2;
     }

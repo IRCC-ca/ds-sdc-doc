@@ -1,7 +1,7 @@
 @use '../../scss/grid';
 @use 'node_modules/@ircc-ca/ds-sdc-core/tokens/sizes' as ircc-ds-sizes;
 
-$footer-height: 340px;
+$footer-height: 240px;
 
 :host {
   position: relative;
@@ -26,17 +26,17 @@ $footer-height: 340px;
 
   .sidenav-section-wrapper {
     background: var(--surface1);
-    @include grid.in-laptop-layout {
+    @include grid.up-laptop-layout {
       position: fixed;
       height: calc(100% - $footer-height);
       overflow-y: auto;
     }
-
-    @include grid.in-desktop-layout {
-      position: fixed;
-      height: calc(100% - $footer-height);
-      overflow-y: auto;
-    }
+    //
+    //@include grid.in-desktop-layout {
+    //  position: fixed;
+    //  height: calc(100% - $footer-height);
+    //  overflow-y: auto;
+    //}
 
     &.nav-open {
       @include grid.un-tablet-layout {

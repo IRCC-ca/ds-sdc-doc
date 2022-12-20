@@ -1,4 +1,4 @@
-<djl-icon class="menu-icon" *ngIf="mobileToggleIcon && mobile" [iconConfig]="showMenu ? xmarkIconConfig : barsIconConfig" (click)="toggleMobileMenu(false)"></djl-icon>
+<jds-font-icon class="menu-icon" *ngIf="mobileToggleIcon && mobile" [iconConfig]="showMenu ? xmarkIconConfig : barsIconConfig" (click)="toggleMobileMenu(false)"></jds-font-icon>
 <div
   [@leftSideNavTrigger]="showMenu? 'open' : 'close' "
   class="{{navClassName}} sidenav-section-wrapper {{navStatus}}"

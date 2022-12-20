@@ -10,6 +10,7 @@ import {
 } from '@angular/animations';
 import { ISideNavDataInterface } from './side-nav.model';
 import { TranslateService } from '@ngx-translate/core';
+import {IIconConfig} from '@ircc-ca/ds-sdc-angular/icon';
 
 @Component({
   selector: 'app-side-nav',
@@ -38,11 +39,11 @@ export class SideNavComponent implements OnInit {
   showMenu = true; // If show or hide side menu
   navClassName = '';
   navStatus = 'nav-closed';
-  barsIconConfig = {
+  barsIconConfig: IIconConfig = {
     unicode: 'f0c9',
     fontFamily: 'fa-solid'
   };
-  xmarkIconConfig = {
+  xmarkIconConfig: IIconConfig = {
     unicode: 'f00d',
     fontFamily: 'fa-solid'
   }

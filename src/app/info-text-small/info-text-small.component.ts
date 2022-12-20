@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {IIconConfig} from '@ircc-ca/ds-sdc-angular/icon';
 
 @Component({
   selector: 'app-info-text-small',
@@ -6,7 +7,7 @@ import {Component} from '@angular/core';
   styleUrls: ['./info-text-small.component.scss']
 })
 export class InfoTextSmallComponent {
-  circleInfoIcon = {
+  circleInfoIcon: IIconConfig = {
     unicode: 'f05a',
     fontFamily: 'fa-regular',
   }

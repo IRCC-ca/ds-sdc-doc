@@ -6,7 +6,7 @@ $footer-height: 240px;
 :host {
   position: relative;
   @include grid.col-12;
-  > djl-icon {
+  > jds-font-icon {
     font-size: ircc-ds-sizes.$fixed-24;
     position: fixed;
     top: 120px;

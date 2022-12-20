@@ -31,12 +31,6 @@ $footer-height: 240px;
       height: calc(100% - $footer-height);
       overflow-y: auto;
     }
-    //
-    //@include grid.in-desktop-layout {
-    //  position: fixed;
-    //  height: calc(100% - $footer-height);
-    //  overflow-y: auto;
-    //}
 
     &.nav-open {
       @include grid.un-tablet-layout {

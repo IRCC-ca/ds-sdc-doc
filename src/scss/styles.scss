@@ -148,12 +148,3 @@ app-page-token {
     border-right: 1px solid ircc-ds-color.mix-token(visited, 700);
   }
 }
-
-// To be removed once angular package is updated from npm
-jds-header {
-  .grid-container {
-    img {
-      min-width: 295px;
-    }
-  }
-}

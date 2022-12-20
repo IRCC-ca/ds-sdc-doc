@@ -22,7 +22,7 @@
     "@angular/router": "^14.2.5",
     "@gilsdav/ngx-translate-router": "^5.1.1",
     "@gilsdav/ngx-translate-router-http-loader": "^2.0.0",
-    "@ircc-ca/ds-sdc-angular": "~0.1.12",
+    "@ircc-ca/ds-sdc-angular": "^0.2.7",
     "@ircc-ca/ds-sdc-core": "^1.0.0",
     "@ircc-ca/ds-sdc-web": "~0.0.54",
     "@ngx-translate/core": "^14.0.0",

@@ -46,7 +46,7 @@ export class SideNavComponent implements OnInit {
     unicode: 'f00d',
     fontFamily: 'fa-solid'
   }
-  width: number = 0; // Width of component
+  width: string = '100%'; // Width of component
 
   constructor(private el: ElementRef, private translate: TranslateService) {
     if (el?.nativeElement?.className) {
@@ -80,7 +80,9 @@ export class SideNavComponent implements OnInit {
    * If side nav does not show up, check if row is enabled in component style sheet.
    */
   private adjustWidth() {
-    this.width = this.el.nativeElement.clientWidth;
+    this.width = this.el.nativeElement.clientWidth > 0
+      ? this.el.nativeElement.clientWidth.toString() + 'px'
+      : '100%' ;
   }
 
   @HostListener('window:resize', ['$event'])

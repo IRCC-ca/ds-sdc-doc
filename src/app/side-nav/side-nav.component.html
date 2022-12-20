@@ -2,7 +2,7 @@
 <div
   [@leftSideNavTrigger]="showMenu? 'open' : 'close' "
   class="{{navClassName}} sidenav-section-wrapper {{navStatus}}"
-  [style.width]="width+'px'"
+  [style.width]="width"
 >
     <div *ngFor="let data of navBarData">
         <div class="sidenav-title">

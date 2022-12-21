@@ -11,11 +11,13 @@ import {
 import { ISideNavDataInterface } from './side-nav.model';
 import { TranslateService } from '@ngx-translate/core';
 import {IIconConfig} from '@ircc-ca/ds-sdc-angular/icon';
+import { UrlPipe } from '../share/url.pipe';
 
 @Component({
   selector: 'app-side-nav',
   templateUrl: './side-nav.component.html',
   styleUrls: ['./side-nav.component.scss'],
+  providers: [UrlPipe],
   animations: [
     trigger('leftSideNavTrigger', [
       // To define animations based on trigger actions

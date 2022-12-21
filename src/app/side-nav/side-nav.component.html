@@ -10,7 +10,7 @@
                 <h3 class="title">{{data.text}}</h3>
             </div>
             <div *ngIf="data.category === 'sub-title'">
-                <a class="menuItems" routerLink="{{currentLanguage}}/{{data.path}}" (click)="toggleMobileMenu(true)">{{data.text}}</a>
+                <a class="menuItems" routerLink="{{ data.path  | urlTrans}}" (click)="toggleMobileMenu(true)">{{data.text}}</a>
             </div>
             <div *ngIf="data.category === 'slug-url'">
                 <a class="menuItems" routerLink="." fragment="{{data.path}}">{{data.text}}</a>

@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import {SideNavComponent} from "./side-nav.component";
 import { RouterModule } from '@angular/router';
 import {JLIconModule} from "@ircc-ca/ds-sdc-angular/icon";
+import { UrlPipe } from '../share/url.pipe';
 
 
 @NgModule({
   declarations: [
     SideNavComponent,
+    UrlPipe
   ],
   imports: [
     CommonModule,

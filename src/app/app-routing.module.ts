@@ -15,31 +15,50 @@ import {PageButtonComponent} from "./pages/button/button.component";
 import {PageUtilitiesComponent} from "./pages/utilities/utilities.component";
 import { ForDesignersComponent } from './pages/for-designers/for-designers.component';
 import {PageForDevelopersComponent} from "./pages/for-developers/for-developers.component";
+import { DefaultHomePage } from './share/global-params';
 
 export function HttpLoaderFactory(translate: TranslateService, location: Location, settings: LocalizeRouterSettings, http: HttpClient) {
   return new LocalizeRouterHttpLoader(translate, location, { ...settings, alwaysSetPrefix: true }, http);
 }
 
 const routes: Routes = [
-  { path: 'overview', component: OverviewComponent },
-  { path: 'for-designers', component: ForDesignersComponent },
+  { path: "overview", component: OverviewComponent },
+  { path: "overviewFR", component: OverviewComponent },
   { path: 'for-developers', component: PageForDevelopersComponent },
-  { path: 'accessibility', component: OverviewComponent },
-  { path: 'colours', component: OverviewComponent },
-  { path: 'typography', component: OverviewComponent },
-  { path: 'iconography', component: OverviewComponent },
-  { path: 'layouts', component: OverviewComponent },
+  { path: 'for-developersFR', component: PageForDevelopersComponent },
+  { path: 'for-designers', component: ForDesignersComponent },
+  { path: 'for-designersFR', component: ForDesignersComponent },
+  // { path: 'accessibility', component: OverviewComponent },
+  // { path: 'accessibilityFR', component: OverviewComponent },
+  // { path: 'colours', component: OverviewComponent },
+  // { path: 'coloursFR', component: OverviewComponent },
+  // { path: 'typography', component: OverviewComponent },
+  // { path: 'typographyFR', component: OverviewComponent },
+  // { path: 'iconography', component: OverviewComponent },
+  // { path: 'iconographyFR', component: OverviewComponent },
+  // { path: 'layouts', component: OverviewComponent },
+  // { path: 'layoutsFR', component: OverviewComponent },
   { path: 'utilities', component: PageUtilitiesComponent },
+  { path: 'utilitiesFR', component: PageUtilitiesComponent },
   { path: 'buttons', component: PageButtonComponent },
-  { path: 'checkbox', component: OverviewComponent },
-  { path: 'external-link', component: OverviewComponent },
-  { path: 'footer', component: OverviewComponent },
-  { path: 'header', component: OverviewComponent },
-  { path: 'icon-button', component: OverviewComponent },
-  { path: 'input-field', component: OverviewComponent },
-  { path: 'radio-button', component: OverviewComponent },
-  { path: 'tabs', component: OverviewComponent },
-  { path: '', redirectTo: '/overview', pathMatch: 'full' },
+  { path: 'buttonsFR', component: PageButtonComponent },
+  // { path: 'checkbox', component: OverviewComponent },
+  // { path: 'checkboxFR', component: OverviewComponent },
+  // { path: 'external-link', component: OverviewComponent },
+  // { path: 'external-linkFR', component: OverviewComponent },
+  // { path: 'footer', component: OverviewComponent },
+  // { path: 'footerFR', component: OverviewComponent },
+  // { path: 'header', component: OverviewComponent },
+  // { path: 'headerFR', component: OverviewComponent },
+  // { path: 'icon-button', component: OverviewComponent },
+  // { path: 'icon-buttonFR', component: OverviewComponent },
+  // { path: 'input-field', component: OverviewComponent },
+  // { path: 'input-fieldFR', component: OverviewComponent },
+  // { path: 'radio-button', component: OverviewComponent },
+  // { path: 'radio-buttonFR', component: OverviewComponent },
+  // { path: 'tabs', component: OverviewComponent },
+  // { path: 'tabsFR', component: OverviewComponent },
+  { path: '', redirectTo: DefaultHomePage, pathMatch: 'full' },
 ];
 
 // scrolling options set

@@ -9,3 +9,9 @@ export enum DisplayLanguages {
     English = 'English',
     French = 'Français'
 }
+
+export const DefaultHomePage = '/overview'
+
+export enum StorageKeys {
+    Locale = 'locale',
+}

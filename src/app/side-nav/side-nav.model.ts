@@ -13,5 +13,5 @@ export interface ISideNavDataInterface {
   'text': string,
   'type': ItemType, // If the nav item is a link or plain text
   'category': ItemCategory, // If the nav item is title, subtitle or slug-url
-  'path': string // Link for nav item
+  'path'?: string // Link for nav item
 }

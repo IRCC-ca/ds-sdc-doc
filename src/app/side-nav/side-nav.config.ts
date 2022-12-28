@@ -44,37 +44,29 @@ export class SideNavConfig {
             text : translator.instant('LeftSideNav.title.getting-started'),
             type : ItemType.PlainText,
             category : ItemCategory.Title,
-            path: ""
         },
         {
             text : translator.instant('LeftSideNav.sub-titles.overview'),
             type : ItemType.Link,
             category : ItemCategory.subTitle,
-            path: "overview"
+            path: translator.instant('ROUTES.overview')
         },
         {
             text : translator.instant('LeftSideNav.sub-titles.for-developers'),
             type : ItemType.Link,
             category : ItemCategory.subTitle,
-            path: "for-developers"
+            path: translator.instant('ROUTES.forDevelopers')
         },
         {
             text : translator.instant('LeftSideNav.sub-titles.for-designers'),
             type : ItemType.Link,
             category : ItemCategory.subTitle,
-            path: "for-designers"
+            path: translator.instant('ROUTES.forDesigners')
         },
-        // {
-        //     text : translator.instant('LeftSideNav.sub-titles.accessibility'),
-        //     type : ItemType.Link,
-        //     category : ItemCategory.subTitle,
-        //     path: "accessibility"
-        // },
         {
             text : translator.instant('LeftSideNav.title.foundation'),
             type : ItemType.Link,
             category : ItemCategory.Title,
-            path: ""
         },
         // {
         //     text : translator.instant('LeftSideNav.sub-titles.colours'),
@@ -104,19 +96,18 @@ export class SideNavConfig {
             text : translator.instant('Utilities.Heading'),
             type : ItemType.Link,
             category : ItemCategory.subTitle,
-            path: "utilities"
+            path: translator.instant('ROUTES.utilities')
         },
         {
             text : translator.instant('LeftSideNav.title.components'),
             type : ItemType.Link,
             category : ItemCategory.Title,
-            path: ""
         },
         {
             text : translator.instant('LeftSideNav.sub-titles.buttons'),
             type : ItemType.Link,
             category : ItemCategory.subTitle,
-            path: "buttons"
+            path: translator.instant('ROUTES.buttons')
         },
         // {
         //     text : translator.instant('LeftSideNav.sub-titles.checkbox'),
@@ -176,7 +167,7 @@ export class SideNavConfig {
             text : translator.instant('LeftSideNav.sub-titles.contact'),
             type : ItemType.Link,
             category : ItemCategory.subTitle,
-            path: "contact"
+            path: translator.instant('ROUTES.contact')
         },
     ]
     }

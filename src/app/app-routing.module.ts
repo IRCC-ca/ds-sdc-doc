@@ -21,24 +21,20 @@ export function HttpLoaderFactory(translate: TranslateService, location: Locatio
 }
 
 const routes: Routes = [
+  // English
   { path: 'overview', component: OverviewComponent },
   { path: 'for-designers', component: ForDesignersComponent },
   { path: 'for-developers', component: PageForDevelopersComponent },
-  { path: 'accessibility', component: OverviewComponent },
-  { path: 'colours', component: OverviewComponent },
-  { path: 'typography', component: OverviewComponent },
-  { path: 'iconography', component: OverviewComponent },
-  { path: 'layouts', component: OverviewComponent },
   { path: 'utilities', component: PageUtilitiesComponent },
   { path: 'buttons', component: PageButtonComponent },
-  { path: 'checkbox', component: OverviewComponent },
-  { path: 'external-link', component: OverviewComponent },
-  { path: 'footer', component: OverviewComponent },
-  { path: 'header', component: OverviewComponent },
-  { path: 'icon-button', component: OverviewComponent },
-  { path: 'input-field', component: OverviewComponent },
-  { path: 'radio-button', component: OverviewComponent },
-  { path: 'tabs', component: OverviewComponent },
+  { path: 'contact', component: OverviewComponent },
+  // French
+  { path: 'aperçu', component: OverviewComponent },
+  { path: 'pour-les-designers', component: ForDesignersComponent },
+  { path: 'pour-les-développeurs', component: PageForDevelopersComponent },
+  { path: 'utilitaires', component: PageUtilitiesComponent },
+  { path: 'boutons', component: PageButtonComponent },
+  { path: 'contactez', component: OverviewComponent },
   { path: '', redirectTo: '/overview', pathMatch: 'full' },
 ];
 

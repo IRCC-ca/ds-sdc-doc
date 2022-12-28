@@ -1,9 +1,13 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 import {TranslateService} from '@ngx-translate/core';
 import { SideNavConfig } from './side-nav/side-nav.config';
 import { ISideNavDataInterface } from './side-nav/side-nav.model';
-import {LocalizeNgModuleFactory, LocalizeRouterService} from "@gilsdav/ngx-translate-router";
 import { DisplayLanguages, Languages } from './share/global-params';
+// @ts-ignore
+import en from '../assets/locales/en.json';
+// @ts-ignore
+import fr from '../assets/locales/fr.json';
 
 @Component({
   selector: 'app-root',
@@ -20,11 +24,26 @@ export class AppComponent implements OnInit {
 
   constructor(
     private translate: TranslateService,
-    private localize: LocalizeRouterService,
+    private router: Router,
     private navBarConfig : SideNavConfig
   ) {
     translate.setDefaultLang(Languages.English);
+    translate.setTranslation(Languages.English, en);
+    translate.setTranslation(Languages.French, fr);
     this.leftNavData = navBarConfig.getLeftNavBarConfig(this.translate);
+
+    // Set initial language
+    /**
+     * Subscribe to router events because the init cycle for this component happens
+     * before the router functionality
+     */
+    this.router.events.subscribe((event: any) => {
+      if (event instanceof NavigationEnd) {
+        this.translate.use(this.router.url.includes('/fr') ? Languages.French : Languages.English);
+        //Sets the html language attribute to current language
+        document.documentElement.lang = this.translate.currentLang.substring(0,2);
+      }
+    });
   }
 
   ngOnInit() {
@@ -49,19 +68,9 @@ export class AppComponent implements OnInit {
   toggleLanguage(language : string) : void {
     if (this.mobile) {
       language === Languages.English ? this.language = DisplayLanguages.FR : this.language = DisplayLanguages.EN;
-    }
-    else {
+    } else {
       language === Languages.English ? this.language = DisplayLanguages.French : this.language = DisplayLanguages.English;
     }
-  }
-
-  useLanguage(): void {
-    let currentLanguage = this.getCurrentLang();
-    let updatedLanguage = ""
-    currentLanguage === Languages.English || currentLanguage === DisplayLanguages.English ? updatedLanguage = Languages.French : updatedLanguage = Languages.English;
-    let pathName = window.location.pathname;
-    pathName = pathName.replace(currentLanguage, updatedLanguage);
-    window.location.replace(pathName) // navigate to path with updated language
   }
 
   getCurrentLang(): string {

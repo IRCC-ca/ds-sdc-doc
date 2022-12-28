@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {TranslateService} from "@ngx-translate/core";
 import {SideNavConfig} from "../../side-nav/side-nav.config";
 import {SlugifyPipe} from "../../share/pipe-slugify.pipe";
 import {ISideNavDataInterface} from "../../side-nav/side-nav.model";
+import {LanSwitchService} from "../../share/lan-switch/lan-switch.service";
 
 @Component({
   selector: 'app-button',
@@ -10,7 +11,7 @@ import {ISideNavDataInterface} from "../../side-nav/side-nav.model";
   styleUrls: ['./button.component.scss'],
   providers: [SlugifyPipe]
 })
-export class PageButtonComponent {
+export class PageButtonComponent implements OnInit {
   rightNavData: ISideNavDataInterface[];
   rightNavDataRaw: string[] = [ // list of all right nav items
     'Buttons.title.buttons',
@@ -23,13 +24,18 @@ export class PageButtonComponent {
     'Buttons.sub-titles.accessibility',
     'Buttons.sub-titles.research'
   ]
-  
+  private altLangLink: string = 'buttons'; // ROUTE translation path
+
   constructor(
     private translate: TranslateService,
+    private lang: LanSwitchService,
     private navBarConfig: SideNavConfig,
     private slugify: SlugifyPipe
   ) {
     this.rightNavData = navBarConfig.getRightNavBarConfig(translate, slugify, this.rightNavDataRaw);
   }
 
+  ngOnInit(): void {
+    this.lang.setAltLangLink(this.altLangLink);
+  }
 }

@@ -14,7 +14,7 @@ import {LanSwitchService} from "../../share/lan-switch/lan-switch.service";
 export class OverviewComponent implements OnInit {
   rightNavData: ISideNavDataInterface[];
   currentLanguage : string = '';
-  private altLangLink: string = 'overview';
+  private altLangLink: string = 'overview'; // ROUTE translation path
 
   constructor(
     private translate: TranslateService,

@@ -27,8 +27,8 @@ export class LanSwitchComponent implements OnInit {
     private router: Router
   ) {
     // Embed languages to avoid extra HTTP requests
-    translate.setTranslation('en', en);
-    translate.setTranslation('fr', fr);
+    translate.setTranslation(Languages.English, en);
+    translate.setTranslation(Languages.French, fr);
   }
 
   ngOnInit(): void {
@@ -55,9 +55,9 @@ export class LanSwitchComponent implements OnInit {
     e.preventDefault();
     // Swaps language
     const curLang = this.translate.currentLang;
-    this.translate.use(curLang === 'en' ? 'fr' : 'en');
+    this.translate.use(curLang === Languages.English ? Languages.French : Languages.English);
     // Changes the html lang attribute
-    document.documentElement.lang = (curLang === 'en' ? 'fr' : 'en');
+    document.documentElement.lang = (curLang === Languages.English ? Languages.French : Languages.English);
     // Pushes page into history to allow the use of the 'Back' button on browser
     window.history.pushState('', '', this.altLangURL);
     this.setAltLangURL();

@@ -5,6 +5,7 @@ import {TranslateService} from "@ngx-translate/core";
 import en from "../../../assets/locales/en.json";
 // @ts-ignore
 import fr from "../../../assets/locales/fr.json";
+import {Languages} from "../global-params";
 
 @Injectable({
   providedIn: 'root'
@@ -14,8 +15,8 @@ export class LanSwitchService {
   private altLangLink = new BehaviorSubject<string>('');
   altLangLinkObs = this.altLangLink.asObservable();
   constructor(private translate: TranslateService) {
-    translate.setTranslation('en', en);
-    translate.setTranslation('fr', fr);
+    translate.setTranslation(Languages.English, en);
+    translate.setTranslation(Languages.French, fr);
   }
 
   /**

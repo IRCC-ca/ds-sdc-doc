@@ -1,7 +1,5 @@
 import {Injectable} from "@angular/core";
-import {TranslateService} from "@ngx-translate/core";
 import {ISideNavDataInterface, ItemCategory, ItemType} from "./side-nav.model";
-import {SlugifyPipe} from "../share/pipe-slugify.pipe";
 
 @Injectable({
   providedIn: 'root',
@@ -12,11 +10,7 @@ export class SideNavConfig {
         * Sets the default category and type for each right nav subtitle
         * Then use SlugifyPipe to output slugged text, add # to front.
     */
-    getRightNavBarConfig(
-        translator: TranslateService,
-        pipe: SlugifyPipe,
-        navData: string[]
-    ) : ISideNavDataInterface[] {
+    getRightNavBarConfig(navData: string[]): ISideNavDataInterface[] {
         const rightNavData: ISideNavDataInterface[] = [
             {
                 text: 'RightSideNav.title.on-this-page',
@@ -38,7 +32,7 @@ export class SideNavConfig {
         return rightNavData
     }
 
-    getLeftNavBarConfig(translator : TranslateService) : ISideNavDataInterface[] {
+    getLeftNavBarConfig() : ISideNavDataInterface[] {
     return [
         {
             text : 'LeftSideNav.title.getting-started',

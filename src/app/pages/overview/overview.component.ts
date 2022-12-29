@@ -22,7 +22,7 @@ export class OverviewComponent implements OnInit {
     private slugify: SlugifyPipe,
     private navBarConfig : SideNavConfig
   ) {
-    this.rightNavData = navBarConfig.getRightNavBarConfig(translate, slugify, []);
+    this.rightNavData = navBarConfig.getRightNavBarConfig([]);
     this.currentLanguage = translate.currentLang;
   }
 

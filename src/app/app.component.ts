@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
     translate.setDefaultLang(Languages.English);
     translate.setTranslation(Languages.English, en);
     translate.setTranslation(Languages.French, fr);
-    this.leftNavData = navBarConfig.getLeftNavBarConfig(this.translate);
+    this.leftNavData = navBarConfig.getLeftNavBarConfig();
 
     // Set initial language
     /**

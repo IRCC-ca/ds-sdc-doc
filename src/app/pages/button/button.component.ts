@@ -29,10 +29,9 @@ export class PageButtonComponent implements OnInit {
   constructor(
     private translate: TranslateService,
     private lang: LanSwitchService,
-    private navBarConfig: SideNavConfig,
-    private slugify: SlugifyPipe
+    private navBarConfig: SideNavConfig
   ) {
-    this.rightNavData = navBarConfig.getRightNavBarConfig(translate, slugify, this.rightNavDataRaw);
+    this.rightNavData = navBarConfig.getRightNavBarConfig(this.rightNavDataRaw);
   }
 
   ngOnInit(): void {

@@ -3,7 +3,7 @@ import { NavigationEnd, Router } from '@angular/router';
 import {TranslateService} from '@ngx-translate/core';
 import { SideNavConfig } from './side-nav/side-nav.config';
 import { ISideNavDataInterface } from './side-nav/side-nav.model';
-import { DisplayLanguages, Languages } from './share/global-params';
+import { Languages } from './share/global-params';
 // @ts-ignore
 import en from '../assets/locales/en.json';
 // @ts-ignore
@@ -17,9 +17,8 @@ import fr from '../assets/locales/fr.json';
 export class AppComponent implements OnInit {
   title = 'ds-sdc-doc';
   leftNavData: ISideNavDataInterface[];
-  language = this.getCurrentLang();
   mobile = false;
-  navStatus = 'nav-oepn';
+  navStatus = 'nav-open';
   public innerWidth: any; // Width of viewport window
 
   constructor(
@@ -56,26 +55,10 @@ export class AppComponent implements OnInit {
     if (this.innerWidth <= 992 ) {
       this.mobile = true;
       this.navStatus = 'nav-closed';
-      this.toggleLanguage(this.getCurrentLang());
     }
     else {
       this.mobile = false;
       this.navStatus = 'nav-open';
-      this.toggleLanguage(this.getCurrentLang());
     }
-  }
-
-  toggleLanguage(language : string) : void {
-    if (this.mobile) {
-      language === Languages.English ? this.language = DisplayLanguages.FR : this.language = DisplayLanguages.EN;
-    } else {
-      language === Languages.English ? this.language = DisplayLanguages.French : this.language = DisplayLanguages.English;
-    }
-  }
-
-  getCurrentLang(): string {
-    let currentLanguage = this.translate.currentLang;
-    this.toggleLanguage(currentLanguage);
-    return currentLanguage;
   }
 }

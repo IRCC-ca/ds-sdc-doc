@@ -11,6 +11,7 @@ import {
 import { ISideNavDataInterface } from './side-nav.model';
 import { TranslateService } from '@ngx-translate/core';
 import {IIconConfig} from '@ircc-ca/ds-sdc-angular/icon';
+import {SlugifyPipe} from "../share/pipe-slugify.pipe";
 
 @Component({
   selector: 'app-side-nav',
@@ -28,7 +29,8 @@ import {IIconConfig} from '@ircc-ca/ds-sdc-angular/icon';
         animate('300ms ease-out')
       ])
     ])
-  ]
+  ],
+  providers: [SlugifyPipe]
 })
 export class SideNavComponent implements OnInit {
   @Input() mobileToggleIcon: boolean = false; // If display toggle menu icon

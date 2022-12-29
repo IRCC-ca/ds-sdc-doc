@@ -14,7 +14,6 @@ import {JLLinkModule} from '@ircc-ca/ds-sdc-angular/link';
 import {JLRadiobuttonModule} from '@ircc-ca/ds-sdc-angular/radio-button';
 import {MarkdownModule, MarkedOptions} from "ngx-markdown";
 import {AppComponent} from './app.component';
-import {SideNavModule} from "./side-nav/side-nav.module";
 import {AppRoutingModule} from './app-routing.module';
 import {OverviewComponent} from './pages/overview/overview.component';
 import {PageButtonComponent} from './pages/button/button.component';
@@ -29,6 +28,7 @@ import {SafeHtmlPipe} from './share/safe-html.pipe';
 import {PageForDevelopersComponent} from './pages/for-developers/for-developers.component';
 import { ForDesignersComponent } from './pages/for-designers/for-designers.component';
 import { LanSwitchComponent } from './share/lan-switch/lan-switch.component';
+import {SideNavComponent} from "./side-nav/side-nav.component";
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/locales/', '.json');
@@ -58,12 +58,12 @@ const JL_ANGULAR_COMPONENTS = [
     ForDesignersComponent,
     PageForDevelopersComponent,
     LanSwitchComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     JL_ANGULAR_COMPONENTS,
-    SideNavModule,
     HttpClientModule,
     MarkdownModule.forRoot({
       loader: HttpClient,

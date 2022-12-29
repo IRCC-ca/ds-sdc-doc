@@ -19,19 +19,19 @@ export class SideNavConfig {
     ) : ISideNavDataInterface[] {
         const rightNavData: ISideNavDataInterface[] = [
             {
-                text: translator.instant('RightSideNav.title.on-this-page'),
+                text: 'RightSideNav.title.on-this-page',
                 type : ItemType.PlainText,
                 category : ItemCategory.Title,
                 path: ''
             }
         ];
-        navData.forEach(data =>  {
+        navData.forEach(data => {
             rightNavData.push(
                 {
-                    text: translator.instant(data),
+                    text: data,
                     type : ItemType.Link,
                     category : ItemCategory.slugUrl,
-                    path: pipe.transform(translator.instant(data))
+                    path: data
                 }
             )
         })
@@ -41,133 +41,60 @@ export class SideNavConfig {
     getLeftNavBarConfig(translator : TranslateService) : ISideNavDataInterface[] {
     return [
         {
-            text : translator.instant('LeftSideNav.title.getting-started'),
+            text : 'LeftSideNav.title.getting-started',
             type : ItemType.PlainText,
             category : ItemCategory.Title,
         },
         {
-            text : translator.instant('LeftSideNav.sub-titles.overview'),
+            text : 'LeftSideNav.sub-titles.overview',
             type : ItemType.Link,
             category : ItemCategory.subTitle,
-            path: translator.instant('ROUTES.overview')
+            path: 'ROUTES.overview'
         },
         {
-            text : translator.instant('LeftSideNav.sub-titles.for-developers'),
+            text : 'LeftSideNav.sub-titles.for-developers',
             type : ItemType.Link,
             category : ItemCategory.subTitle,
-            path: translator.instant('ROUTES.forDevelopers')
+            path: 'ROUTES.forDevelopers'
         },
         {
-            text : translator.instant('LeftSideNav.sub-titles.for-designers'),
+            text : 'LeftSideNav.sub-titles.for-designers',
             type : ItemType.Link,
             category : ItemCategory.subTitle,
-            path: translator.instant('ROUTES.forDesigners')
+            path: 'ROUTES.forDesigners'
         },
         {
-            text : translator.instant('LeftSideNav.title.foundation'),
-            type : ItemType.Link,
-            category : ItemCategory.Title,
-        },
-        // {
-        //     text : translator.instant('LeftSideNav.sub-titles.colours'),
-        //     type : ItemType.Link,
-        //     category : ItemCategory.subTitle,
-        //     path: "colours"
-        // },
-        // {
-        //     text : translator.instant('LeftSideNav.sub-titles.typography'),
-        //     type : ItemType.Link,
-        //     category : ItemCategory.subTitle,
-        //     path: "typography"
-        // },
-        // {
-        //     text : translator.instant('LeftSideNav.sub-titles.iconography'),
-        //     type : ItemType.Link,
-        //     category : ItemCategory.subTitle,
-        //     path: "iconography"
-        // },
-        // {
-        //     text : translator.instant('LeftSideNav.sub-titles.layouts'),
-        //     type : ItemType.Link,
-        //     category : ItemCategory.subTitle,
-        //     path: "layouts"
-        // },
-        {
-            text : translator.instant('Utilities.Heading'),
-            type : ItemType.Link,
-            category : ItemCategory.subTitle,
-            path: translator.instant('ROUTES.utilities')
-        },
-        {
-            text : translator.instant('LeftSideNav.title.components'),
+            text : 'LeftSideNav.title.foundation',
             type : ItemType.Link,
             category : ItemCategory.Title,
         },
         {
-            text : translator.instant('LeftSideNav.sub-titles.buttons'),
+            text : 'Utilities.Heading',
             type : ItemType.Link,
             category : ItemCategory.subTitle,
-            path: translator.instant('ROUTES.buttons')
+            path: 'ROUTES.utilities'
         },
-        // {
-        //     text : translator.instant('LeftSideNav.sub-titles.checkbox'),
-        //     type : ItemType.Link,
-        //     category : ItemCategory.subTitle,
-        //     path: "checkbox"
-        // },
-        // {
-        //     text : translator.instant('LeftSideNav.sub-titles.external-link'),
-        //     type : ItemType.Link,
-        //     category : ItemCategory.subTitle,
-        //     path: "external-link"
-        // },
-        // {
-        //     text : translator.instant('LeftSideNav.sub-titles.footer'),
-        //     type : ItemType.Link,
-        //     category : ItemCategory.subTitle,
-        //     path: "footer"
-        // },
-        // {
-        //     text : translator.instant('LeftSideNav.sub-titles.header'),
-        //     type : ItemType.Link,
-        //     category : ItemCategory.subTitle,
-        //     path: "header"
-        // },
-        // {
-        //     text : translator.instant('LeftSideNav.sub-titles.icon-button'),
-        //     type : ItemType.Link,
-        //     category : ItemCategory.subTitle,
-        //     path: "icon-button"
-        // },
-        // {
-        //     text : translator.instant('LeftSideNav.sub-titles.input-field'),
-        //     type : ItemType.Link,
-        //     category : ItemCategory.subTitle,
-        //     path: "input-field"
-        // },
-        // {
-        //     text : translator.instant('LeftSideNav.sub-titles.radio-button'),
-        //     type : ItemType.Link,
-        //     category : ItemCategory.subTitle,
-        //     path: "radio-button"
-        // },
-        // {
-        //     text : translator.instant('LeftSideNav.sub-titles.tabs'),
-        //     type : ItemType.Link,
-        //     category : ItemCategory.subTitle,
-        //     path: "tabs"
-        // }
         {
-            text: translator.instant('LeftSideNav.title.support'),
+            text : 'LeftSideNav.title.components',
+            type : ItemType.Link,
+            category : ItemCategory.Title,
+        },
+        {
+            text : 'LeftSideNav.sub-titles.buttons',
+            type : ItemType.Link,
+            category : ItemCategory.subTitle,
+            path: 'ROUTES.buttons'
+        },
+        {
+            text: 'LeftSideNav.title.support',
             type: ItemType.Link,
             category: ItemCategory.Title,
-            path: ""
         },
         {
-            text : translator.instant('LeftSideNav.sub-titles.contact'),
+            text : 'LeftSideNav.sub-titles.contact',
             type : ItemType.Link,
             category : ItemCategory.subTitle,
-            path: translator.instant('ROUTES.contact')
+            path: 'ROUTES.contact'
         },
     ]
     }

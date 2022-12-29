@@ -61,8 +61,9 @@ export class LanSwitchComponent implements OnInit {
     // Pushes page into history to allow the use of the 'Back' button on browser
     window.history.pushState('', '', this.altLangURL);
     this.setAltLangURL();
-    // window.location.replace(this.altLangURL);
-    this.router.navigateByUrl(this.altLangURL);
+    // Force page reload so all the anchor still work
+    window.location.replace(this.altLangURL);
+    // this.router.navigateByUrl(this.altLangURL);
     this.changeLangStr();
   }
 

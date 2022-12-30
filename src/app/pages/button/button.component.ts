@@ -14,8 +14,8 @@ import {LanSwitchService} from "../../share/lan-switch/lan-switch.service";
 export class PageButtonComponent implements OnInit {
   rightNavData: ISideNavDataInterface[];
   rightNavDataRaw: string[] = [ // list of all right nav items
-    'Buttons.title.buttons',
-    'Buttons.sub-titles.types',
+    'Buttons.Title',
+    'Buttons.TypesHeading',
     'Buttons.sub-titles.configs',
     'Buttons.sub-titles.design-guideline',
     'Buttons.sub-titles.anatomy',

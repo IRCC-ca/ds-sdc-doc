@@ -12,15 +12,11 @@
     "contact": "contactez"
   },
   "Buttons": {
-    "title": {
-      "buttons": "[FR] Buttons"
-    },
     "sub-titles": {
       "design-guideline": "[FR] Design Guideline",
       "hierarchy": "[FR] Hierarchy",
       "destructive-actions": "[FR] Destructive actions",
       "plain-buttons": "[FR] Plain buttons",
-      "types": "[FR] Types",
       "configs": "[FR] Configurations",
       "anatomy": "[FR] Anatomy",
       "background": "[FR] Background",
@@ -38,21 +34,6 @@
       "research": "[FR] Research"
     },
     "content": {
-      "buttons-trigger-action": "[FR] Buttons trigger an action or navigate to another page. They have multiple styles and configurations for various needs. They call attention to actions the user should take to progress through a flow.",
-      "ui-available-style": "[FR] This UI element is currently available in our styles package only. The component version is coming soon.",
-      "type-primary": "[FR] Primary",
-      "type-secondary": "[FR] Secondary",
-      "type-critical": "[FR] Critical",
-      "type-plain": "[FR] Plain",
-      "type-primary-desc": "[FR] Primary buttons are used to highlight the most important actions in any experience. Avoid using more than one primary button in a section or screen whenever possible.",
-      "type-secondary-desc": "[FR] Secondary buttons are used most often and are used when less visual attention is required on an action. They can also be used alongside a primary action if there are two options to present to the user that require a different hierarchy.",
-      "type-critical-desc": "[FR] Critical buttons are used for destructive actions like deleting user-contributed content.",
-      "type-plain-desc": "[FR] Plain buttons can be used for actions that require less attention than a primary or secondary button. They are also useful in situations where the UI is more compact. They are not to be used as links. Use the link text styles for those scenarios.",
-      "type-primary-alt": "[FR] Primary button",
-      "type-secondary-alt": "[FR] Secondary button",
-      "type-critical-alt": "[FR] Critical button",
-      "type-plain-alt": "[FR] Plain button",
-      "type-plain-critical-alt": "[FR] Plain critical button",
       "size": "[FR] Size",
       "size-sm": "[FR] Small",
       "size-lg": "[FR] Large",
@@ -117,7 +98,25 @@
       "button-content-guide-3": "[FR] A button that has the label “View my documents”.",
       "button-content-guide-4": "[FR] A button that has the label “Documents”.",
       "button-spec": "[FR] Specs displaying the padding and layer measurements within the button component. Specs are described in the paragraph below."
-    }
+    },
+    "Title": "Boutons",
+    "CopyURL": "Copier l’URL",
+    "Intro": "Les boutons déclenchent une action ou permettent de naviguer vers une autre page. Ils ont de multiples styles et configurations selon les besoins variés. Ils attirent l’attention sur les actions que l’utilisateur doit effectuer pour progresser dans un flux.",
+    "IntroAlert": "Cet élément de l’interface utilisateur est actuellement disponible uniquement dans le prologiciel des styles. Il sera bientôt offert pour le progiciel des composantes.",
+    "TypesHeading": "Types",
+    "PrimaryHeading": "Principal",
+    "PrimaryBtnText": "Bouton principal",
+    "PrimaryText": "Les boutons principaux sont utilisés pour mettre en évidence les actions les plus importantes dans toute expérience utilisateur. Éviter autant que possible d’utiliser plus d’un bouton principal dans la même section ou le même écran.",
+    "SecondaryHeading": "Secondaire",
+    "SecondaryIBtnText": "Bouton secondaire",
+    "SecondaryText": "Les boutons secondaires sont les plus utilisés et ils sont utilisés lorsqu’une action requiert moins d’attention visuelle. Ils peuvent également être utilisés parallèlement à une action principale s’il y a deux options à présenter à l’utilisateur et que ces options nécessitent une hiérarchie différente.",
+    "CriticalHeading": "Critique",
+    "CriticalBtnText": "Bouton critique",
+    "CriticalText": "Les boutons critiques sont utilisés pour des actions de destruction comme la suppression du contenu fourni par l’utilisateur.",
+    "PlainHeading": "Simple",
+    "PlainBtnText": "Bouton simple",
+    "PlainText": "Les boutons simples peuvent être utilisés pour des actions qui nécessitent moins d’attention que celles des boutons principaux ou secondaires. Ils sont également utiles dans les situations où l’interface utilisateur est plus compacte. Ces boutons ne doivent pas être utilisés comme des liens. Utiliser les styles de texte des liens dans ces situations.",
+    "PlainCritBtnText": "Bouton simple critique"
   },
   "Utilities": {
     "title": {
@@ -312,9 +311,6 @@
       "tabs": "[FR] Tabs",
       "contact": "[FR] Contact"
     }
-  },
-  "TitleSlugUrl": {
-    "copy-url": "Copier le lien"
   },
   "OverviewPage": {
     "title": "[FR] Overview",

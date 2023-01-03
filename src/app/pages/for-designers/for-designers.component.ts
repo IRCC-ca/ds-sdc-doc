@@ -3,7 +3,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { SlugifyPipe } from 'src/app/share/pipe-slugify.pipe';
 import { SideNavConfig } from 'src/app/side-nav/side-nav.config';
 import { ISideNavDataInterface } from 'src/app/side-nav/side-nav.model';
-import {LanSwitchService} from "../../share/lan-switch/lan-switch.service";
+import {LangSwitchService} from "../../share/lan-switch/lang-switch.service";
 
 @Component({
   selector: 'app-for-designers',
@@ -27,7 +27,7 @@ export class ForDesignersComponent implements OnInit {
 
   constructor(
     private translate: TranslateService,
-    private lang: LanSwitchService,
+    private lang: LangSwitchService,
     private navBarConfig: SideNavConfig
   ) {
     this.rightNavData = navBarConfig.getRightNavBarConfig(this.rightNavDataRaw);

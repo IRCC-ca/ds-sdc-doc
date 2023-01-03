@@ -10,7 +10,7 @@ import {Languages} from "../global-params";
 @Injectable({
   providedIn: 'root'
 })
-export class LanSwitchService {
+export class LangSwitchService {
   /** BehaviourSubject/Observable for alt language paths */
   private altLangLink = new BehaviorSubject<string>('');
   altLangLinkObs = this.altLangLink.asObservable();

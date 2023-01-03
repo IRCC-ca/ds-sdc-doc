@@ -5,7 +5,7 @@ import { TranslateService } from '@ngx-translate/core';
 import en from '../../../assets/locales/en.json';
 // @ts-ignore
 import fr from '../../../assets/locales/fr.json';
-import {LanSwitchService} from "./lan-switch.service";
+import {LangSwitchService} from "./lang-switch.service";
 import {DisplayLanguages, Languages} from "../global-params";
 
 @Component({
@@ -23,7 +23,7 @@ export class LangSwitchComponent implements OnInit {
   language: string = this.translate.currentLang;
   constructor(
     private translate: TranslateService,
-    private altLang: LanSwitchService,
+    private altLang: LangSwitchService,
     private router: Router
   ) {
     // Embed languages to avoid extra HTTP requests

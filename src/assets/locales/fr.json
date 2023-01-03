@@ -3,6 +3,14 @@
     "AppName": "Système de conception IRCC",
     "DateModified": "Date de modification"
   },
+  "ROUTES": {
+    "overview": "aperçu",
+    "forDesigners": "pour-les-designers",
+    "forDevelopers": "pour-les-développeurs",
+    "utilities": "utilitaires",
+    "buttons": "boutons",
+    "contact": "contactez"
+  },
   "Buttons": {
     "title": {
       "buttons": "[FR] Buttons"

@@ -1,4 +1,4 @@
-import {Component, ViewEncapsulation} from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {ISideNavDataInterface} from "../../side-nav/side-nav.model";
 import {TranslateService} from "@ngx-translate/core";
 import {SideNavConfig} from "../../side-nav/side-nav.config";
@@ -13,6 +13,7 @@ import {
   typographys
 } from "./utilities.constant";
 import {SafeHtmlPipe} from "../../share/safe-html.pipe";
+import {LangSwitchService} from "../../share/lan-switch/lang-switch.service";
 
 @Component({
   selector: 'app-page-token',
@@ -21,7 +22,7 @@ import {SafeHtmlPipe} from "../../share/safe-html.pipe";
   providers: [SlugifyPipe, SafeHtmlPipe],
   encapsulation: ViewEncapsulation.None
 })
-export class PageUtilitiesComponent {
+export class PageUtilitiesComponent implements OnInit {
   rightNavData: ISideNavDataInterface[];
   rightNavDataRaw: string[] = [ // list of all right nav items
     'LeftSideNav.sub-titles.colours',
@@ -33,13 +34,17 @@ export class PageUtilitiesComponent {
   spacingSample: number[] = spacingsFixed;
   breakpoints: breakpoint[] = breakpoints;
   typographySample: typography[] = typographys;
+  private altLangLink: string = 'utilities'; // ROUTE translation path
 
   constructor(
     private translate: TranslateService,
-    private navBarConfig: SideNavConfig,
-    private slugify: SlugifyPipe
+    private lang: LangSwitchService,
+    private navBarConfig: SideNavConfig
   ) {
-    this.rightNavData = navBarConfig.getRightNavBarConfig(translate, slugify, this.rightNavDataRaw);
+    this.rightNavData = navBarConfig.getRightNavBarConfig(this.rightNavDataRaw);
   }
 
+  ngOnInit(): void {
+    this.lang.setAltLangLink(this.altLangLink);
+  }
 }

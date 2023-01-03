@@ -3,6 +3,14 @@
     "AppName": "IRCC Design System",
     "DateModified": "Date Modified"
   },
+  "ROUTES": {
+    "overview": "overview",
+    "forDesigners": "for-designers",
+    "forDevelopers": "for-developers",
+    "utilities": "utilities",
+    "buttons": "buttons",
+    "contact": "contact"
+  },
   "Buttons": {
     "title": {
       "buttons": "Buttons"

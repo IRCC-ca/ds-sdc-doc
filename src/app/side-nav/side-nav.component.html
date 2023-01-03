@@ -7,13 +7,17 @@
     <div *ngFor="let data of navBarData">
         <div class="sidenav-title">
             <div *ngIf="data.category === 'title'">
-                <h3 class="title">{{data.text}}</h3>
+                <h3 class="title">{{data.text | translate}}</h3>
             </div>
-            <div *ngIf="data.category === 'sub-title'">
-                <a class="menuItems" routerLink="{{currentLanguage}}/{{data.path}}" (click)="toggleMobileMenu(true)">{{data.text}}</a>
+            <div *ngIf="data.category === 'sub-title' && data.path">
+                <a class="menuItems"
+                   routerLink="{{currentLanguage}}/{{data.path | translate}}"
+                   (click)="toggleMobileMenu(true)">
+                  {{data.text | translate}}
+                </a>
             </div>
-            <div *ngIf="data.category === 'slug-url'">
-                <a class="menuItems" routerLink="." fragment="{{data.path}}">{{data.text}}</a>
+            <div *ngIf="data.category === 'slug-url' && data.path">
+                <a class="menuItems" routerLink="." fragment="{{data.path | translate | SlugifyPipe}}">{{data.text | translate}}</a>
             </div>
         </div>
     </div>

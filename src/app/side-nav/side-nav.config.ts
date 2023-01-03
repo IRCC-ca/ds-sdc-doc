@@ -13,7 +13,7 @@ export class SideNavConfig {
     getRightNavBarConfig(navData: string[]): ISideNavDataInterface[] {
         const rightNavData: ISideNavDataInterface[] = [
             {
-                text: 'RightSideNav.title.on-this-page',
+                text: 'RightSideNav.OnThisPage',
                 type : ItemType.PlainText,
                 category : ItemCategory.Title,
                 path: ''

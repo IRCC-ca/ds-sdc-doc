@@ -13,7 +13,7 @@ import {
   typographys
 } from "./utilities.constant";
 import {SafeHtmlPipe} from "../../share/safe-html.pipe";
-import {LanSwitchService} from "../../share/lan-switch/lan-switch.service";
+import {LangSwitchService} from "../../share/lan-switch/lang-switch.service";
 
 @Component({
   selector: 'app-page-token',
@@ -38,7 +38,7 @@ export class PageUtilitiesComponent implements OnInit {
 
   constructor(
     private translate: TranslateService,
-    private lang: LanSwitchService,
+    private lang: LangSwitchService,
     private navBarConfig: SideNavConfig
   ) {
     this.rightNavData = navBarConfig.getRightNavBarConfig(this.rightNavDataRaw);

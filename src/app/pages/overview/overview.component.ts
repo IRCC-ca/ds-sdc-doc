@@ -3,7 +3,7 @@ import { ISideNavDataInterface } from "../../side-nav/side-nav.model";
 import { TranslateService } from "@ngx-translate/core";
 import { SideNavConfig } from "../../side-nav/side-nav.config";
 import {SlugifyPipe} from "../../share/pipe-slugify.pipe";
-import {LanSwitchService} from "../../share/lan-switch/lan-switch.service";
+import {LangSwitchService} from "../../share/lan-switch/lang-switch.service";
 
 @Component({
   selector: 'app-overview',
@@ -18,7 +18,7 @@ export class OverviewComponent implements OnInit {
 
   constructor(
     private translate: TranslateService,
-    private lang: LanSwitchService,
+    private lang: LangSwitchService,
     private slugify: SlugifyPipe,
     private navBarConfig : SideNavConfig
   ) {

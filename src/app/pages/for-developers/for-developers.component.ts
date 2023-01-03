@@ -3,7 +3,7 @@ import {SlugifyPipe} from "../../share/pipe-slugify.pipe";
 import {TranslateService} from "@ngx-translate/core";
 import {SideNavConfig} from "../../side-nav/side-nav.config";
 import {ISideNavDataInterface} from "../../side-nav/side-nav.model";
-import {LanSwitchService} from "../../share/lan-switch/lan-switch.service";
+import {LangSwitchService} from "../../share/lan-switch/lang-switch.service";
 
 @Component({
   selector: 'app-for-developer',
@@ -21,7 +21,7 @@ export class PageForDevelopersComponent implements OnInit {
   private altLangLink: string = 'forDevelopers'; // ROUTE translation path
   constructor(
     private translate: TranslateService,
-    private lang: LanSwitchService,
+    private lang: LangSwitchService,
     private navBarConfig: SideNavConfig
   ) {
     this.rightNavData = navBarConfig.getRightNavBarConfig(this.rightNavDataRaw);

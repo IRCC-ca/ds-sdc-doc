@@ -27,7 +27,7 @@ import {ComponentPreviewComponent} from './component-preview/component-preview.c
 import {SafeHtmlPipe} from './share/safe-html.pipe';
 import {PageForDevelopersComponent} from './pages/for-developers/for-developers.component';
 import { ForDesignersComponent } from './pages/for-designers/for-designers.component';
-import { LanSwitchComponent } from './share/lan-switch/lan-switch.component';
+import { LangSwitchComponent } from './share/lan-switch/lang-switch.component';
 import {SideNavComponent} from "./side-nav/side-nav.component";
 
 export function createTranslateLoader(http: HttpClient) {
@@ -57,7 +57,7 @@ const JL_ANGULAR_COMPONENTS = [
     SafeHtmlPipe,
     ForDesignersComponent,
     PageForDevelopersComponent,
-    LanSwitchComponent,
+    LangSwitchComponent,
     SideNavComponent
   ],
   imports: [

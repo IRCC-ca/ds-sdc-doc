@@ -12,30 +12,29 @@ import { HttpClient } from '@angular/common/http';
 import { Location } from '@angular/common';
 import {OverviewComponent} from "./pages/overview/overview.component";
 import {PageButtonComponent} from "./pages/button/button.component";
+import {PageUtilitiesComponent} from "./pages/utilities/utilities.component";
+import { ForDesignersComponent } from './pages/for-designers/for-designers.component';
+import {PageForDevelopersComponent} from "./pages/for-developers/for-developers.component";
 
 export function HttpLoaderFactory(translate: TranslateService, location: Location, settings: LocalizeRouterSettings, http: HttpClient) {
   return new LocalizeRouterHttpLoader(translate, location, { ...settings, alwaysSetPrefix: true }, http);
 }
 
 const routes: Routes = [
+  // English
   { path: 'overview', component: OverviewComponent },
-  { path: 'for-developers', component: OverviewComponent },
-  { path: 'for-designers', component: OverviewComponent },
-  { path: 'accessibility', component: OverviewComponent },
-  { path: 'colours', component: OverviewComponent },
-  { path: 'typography', component: OverviewComponent },
-  { path: 'iconography', component: OverviewComponent },
-  { path: 'layouts', component: OverviewComponent },
-  { path: 'tokens', component: OverviewComponent },
+  { path: 'for-designers', component: ForDesignersComponent },
+  { path: 'for-developers', component: PageForDevelopersComponent },
+  { path: 'utilities', component: PageUtilitiesComponent },
   { path: 'buttons', component: PageButtonComponent },
-  { path: 'checkbox', component: OverviewComponent },
-  { path: 'external-link', component: OverviewComponent },
-  { path: 'footer', component: OverviewComponent },
-  { path: 'header', component: OverviewComponent },
-  { path: 'icon-button', component: OverviewComponent },
-  { path: 'input-field', component: OverviewComponent },
-  { path: 'radio-button', component: OverviewComponent },
-  { path: 'tabs', component: OverviewComponent },
+  { path: 'contact', component: OverviewComponent },
+  // French
+  { path: 'aperçu', component: OverviewComponent },
+  { path: 'pour-les-designers', component: ForDesignersComponent },
+  { path: 'pour-les-développeurs', component: PageForDevelopersComponent },
+  { path: 'utilitaires', component: PageUtilitiesComponent },
+  { path: 'boutons', component: PageButtonComponent },
+  { path: 'contactez', component: OverviewComponent },
   { path: '', redirectTo: '/overview', pathMatch: 'full' },
 ];
 
@@ -43,9 +42,8 @@ const routes: Routes = [
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: "enabled",
   anchorScrolling: "enabled",
-  scrollOffset: [0, 64],
+  scrollOffset: [0, 200],
   onSameUrlNavigation: 'reload'
-  
 };
 
 @NgModule({

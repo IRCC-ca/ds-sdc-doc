@@ -30,7 +30,12 @@
             "styles": [
               "src/scss/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/prismjs/prism.js",
+              "node_modules/prismjs/components/prism-bash.min.js",
+              "node_modules/prismjs/components/prism-sass.min.js",
+              "node_modules/clipboard/dist/clipboard.min.js"
+            ]
           },
           "configurations": {
             "production": {

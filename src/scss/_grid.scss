@@ -18,12 +18,16 @@
   max-width: 16.66667%;
 }
 
+$col-2-width: 16.66667%;
+
 @mixin col-3 {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 25%;
   flex: 0 0 25%;
   max-width: 25%;
 }
+
+$col-3-width: 25%;
 
 @mixin col-4 {
   -webkit-box-flex: 0;

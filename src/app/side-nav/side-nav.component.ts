@@ -10,6 +10,8 @@ import {
 } from '@angular/animations';
 import { ISideNavDataInterface } from './side-nav.model';
 import { TranslateService } from '@ngx-translate/core';
+import {IIconConfig} from '@ircc-ca/ds-sdc-angular/icon';
+import {SlugifyPipe} from "../share/pipe-slugify.pipe";
 
 @Component({
   selector: 'app-side-nav',
@@ -18,8 +20,8 @@ import { TranslateService } from '@ngx-translate/core';
   animations: [
     trigger('leftSideNavTrigger', [
       // To define animations based on trigger actions
-      state('open', style({ opacity: '1', height: '100%' })),
-      state('close', style({ opacity: '0', height: '0' })),
+      state('open', style({ opacity: '1'})),
+      state('close', style({ opacity: '0', height: '0', "pointer-events": "none" })),
       transition('open => close', [
         animate('300ms ease-in')
       ]),
@@ -27,7 +29,8 @@ import { TranslateService } from '@ngx-translate/core';
         animate('300ms ease-out')
       ])
     ])
-  ]
+  ],
+  providers: [SlugifyPipe]
 })
 export class SideNavComponent implements OnInit {
   @Input() mobileToggleIcon: boolean = false; // If display toggle menu icon
@@ -37,14 +40,16 @@ export class SideNavComponent implements OnInit {
   mobile =  false; // If window is under mobile view
   showMenu = true; // If show or hide side menu
   navClassName = '';
-  barsIconConfig = {
+  navStatus = 'nav-closed';
+  barsIconConfig: IIconConfig = {
     unicode: 'f0c9',
     fontFamily: 'fa-solid'
   };
-  xmarkIconConfig = {
+  xmarkIconConfig: IIconConfig = {
     unicode: 'f00d',
     fontFamily: 'fa-solid'
   }
+  width: string = '100%'; // Width of component
 
   constructor(private el: ElementRef, private translate: TranslateService) {
     if (el?.nativeElement?.className) {
@@ -58,16 +63,29 @@ export class SideNavComponent implements OnInit {
     if (this.mobileToggleIcon) {
       this.toggleMobile();
     }
+    this.adjustWidth();
   }
 
   private toggleMobile() {
     if (window.innerWidth <= 992) {
       this.mobile = true;
       this.showMenu = false;
+      this.navStatus = 'nav-closed';
     } else {
       this.mobile = false;
       this.showMenu = true;
+      this.navStatus = 'nav-open';
     }
+  }
+
+  /**
+   * Grab width from parent element and bind it to child
+   * If side nav does not show up, check if row is enabled in component style sheet.
+   */
+  private adjustWidth() {
+    this.width = this.el.nativeElement.clientWidth > 0
+      ? this.el.nativeElement.clientWidth.toString() + 'px'
+      : '100%' ;
   }
 
   @HostListener('window:resize', ['$event'])
@@ -75,10 +93,27 @@ export class SideNavComponent implements OnInit {
     if (this.mobileToggleIcon) {
       this.toggleMobile();
     }
+    this.adjustWidth()
   }
 
-  toggleMobileMenu() {
-    this.showMenu = !this.showMenu;
-  }
+  toggleMobileMenu(hideOnClickMobileView : boolean) {
 
+    if(hideOnClickMobileView) { //minimize left nav after menu item clicked in mobileView
+      if (this.mobile && this.navStatus === 'nav-open') {
+        this.navStatus = "nav-closed"
+        this.showMenu = !this.showMenu;
+      }
+    } else {
+      if(this.showMenu) {
+        window.scrollTo(0, 0);
+        this.navStatus = "nav-closed"
+        this.showMenu = !this.showMenu;
+      }
+      else {
+        window.scrollTo(0, 0);
+        this.showMenu = !this.showMenu;
+        this.navStatus = "nav-open"
+      }
+    }
+  }
 }

@@ -1,5 +1,19 @@
-<div class="content-doc-wrapper">
-  <app-title-slug-url type="primary">Overview</app-title-slug-url>
-  <markdown [src]="'assets/md/README_core.md'"></markdown>
+<div class="content-doc-wrapper col-12 col-lg-10">
+  <app-title-slug-url type="primary">{{'OverviewPage.title' | translate}}</app-title-slug-url>
+  <h2 class="sub-title emphasis" [style.margin-top]="0">{{'OverviewPage.sub-title' | translate}} </h2>
+  <p> {{'OverviewPage.sub-title-description' | translate}} </p>
+
+  <div class="wrapper-container row">
+    <div class="for-designers col-12 col-md-6">
+      <h3> {{'OverviewPage.sub-heading-1' | translate}} </h3>
+      <p> {{'OverviewPage.sub-heading-1-description' | translate}} </p>
+      <jds-link href="{{currentLanguage}}/for-designers">{{'OverviewPage.get-started-sub-text' | translate}}</jds-link>
+    </div>
+
+    <div class="for-devs col-12 col-md-6">
+      <h3> {{'OverviewPage.sub-heading-2' | translate}} </h3>
+      <p> {{'OverviewPage.sub-heading-1-description' | translate}} </p>
+      <jds-link href="{{currentLanguage}}/for-developers">{{'OverviewPage.get-started-sub-text' | translate}}</jds-link>
+    </div>
+  </div>
 </div>
-<app-side-nav class="right-nav" [navBarData]="rightNavData" [mobileToggleIcon]="false"></app-side-nav>

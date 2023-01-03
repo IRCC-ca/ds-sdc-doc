@@ -10,10 +10,10 @@ import {DisplayLanguages, Languages} from "../global-params";
 
 @Component({
   selector: 'app-lan-switch',
-  templateUrl: './lan-switch.component.html',
-  styleUrls: ['./lan-switch.component.scss']
+  templateUrl: './lang-switch.component.html',
+  styleUrls: ['./lang-switch.component.scss']
 })
-export class LanSwitchComponent implements OnInit {
+export class LangSwitchComponent implements OnInit {
   /** String for storing the URL of the page with the alternative language set */
   altLangURL: string = '';
   altPathKey: string = '';

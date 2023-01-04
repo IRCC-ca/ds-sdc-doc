@@ -14,15 +14,15 @@ import {LangSwitchService} from "../../share/lan-switch/lang-switch.service";
 export class PageButtonComponent implements OnInit {
   rightNavData: ISideNavDataInterface[];
   rightNavDataRaw: string[] = [ // list of all right nav items
-    'Buttons.title.buttons',
-    'Buttons.sub-titles.types',
-    'Buttons.sub-titles.configs',
-    'Buttons.sub-titles.design-guideline',
-    'Buttons.sub-titles.anatomy',
-    'Buttons.sub-titles.content-guideline',
-    'Buttons.sub-titles.usage-figma',
-    'Buttons.sub-titles.accessibility',
-    'Buttons.sub-titles.research'
+    'Buttons.Title',
+    'Buttons.TypesHeading',
+    'Buttons.ConfigurationsHeading',
+    'Buttons.DesignGuidelinesHeading',
+    'Buttons.AnatomyHeading',
+    'Buttons.ContentGuidelinesHeading',
+    'Buttons.FigmaHeading',
+    'Buttons.AccessibilityHeading',
+    'Buttons.ResearchHeading'
   ]
   private altLangLink: string = 'buttons'; // ROUTE translation path
 

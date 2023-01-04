@@ -11,7 +11,7 @@
             </div>
             <div *ngIf="data.category === 'sub-title' && data.path">
                 <a class="menuItems"
-                   routerLink="{{currentLanguage}}/{{data.path | translate}}"
+                   routerLink="{{data.path | translate}}"
                    (click)="toggleMobileMenu(true)">
                   {{data.text | translate}}
                 </a>

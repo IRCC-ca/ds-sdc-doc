@@ -14,6 +14,7 @@ import {
 } from "./utilities.constant";
 import {SafeHtmlPipe} from "../../share/safe-html.pipe";
 import {LangSwitchService} from "../../share/lan-switch/lang-switch.service";
+import {TranslatedPageComponent} from "../translated-page-component";
 
 @Component({
   selector: 'app-page-token',
@@ -22,7 +23,7 @@ import {LangSwitchService} from "../../share/lan-switch/lang-switch.service";
   providers: [SlugifyPipe, SafeHtmlPipe],
   encapsulation: ViewEncapsulation.None
 })
-export class PageUtilitiesComponent implements OnInit {
+export class PageUtilitiesComponent implements OnInit, TranslatedPageComponent {
   rightNavData: ISideNavDataInterface[];
   rightNavDataRaw: string[] = [ // list of all right nav items
     'LeftSideNav.sub-titles.colours',
@@ -34,7 +35,7 @@ export class PageUtilitiesComponent implements OnInit {
   spacingSample: number[] = spacingsFixed;
   breakpoints: breakpoint[] = breakpoints;
   typographySample: typography[] = typographys;
-  private altLangLink: string = 'utilities'; // ROUTE translation path
+  altLangLink = 'utilities'; // ROUTE translation path
 
   constructor(
     private translate: TranslateService,

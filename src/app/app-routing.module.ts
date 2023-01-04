@@ -22,23 +22,24 @@ export function HttpLoaderFactory(translate: TranslateService, location: Locatio
 }
 
 const routes: Routes = [
-  // English
   Shell.childRoutes([
-  { path: 'overview', component: OverviewComponent },
-  { path: 'for-designers', component: ForDesignersComponent },
-  { path: 'for-developers', component: PageForDevelopersComponent },
-  { path: 'utilities', component: PageUtilitiesComponent },
-  { path: 'buttons', component: PageButtonComponent },
-  { path: 'contact', component: OverviewComponent },
+    // English
+    { path: 'overview', component: OverviewComponent },
+    { path: 'for-designers', component: ForDesignersComponent },
+    { path: 'for-developers', component: PageForDevelopersComponent },
+    { path: 'utilities', component: PageUtilitiesComponent },
+    { path: 'buttons', component: PageButtonComponent },
+    { path: 'contact', component: OverviewComponent },
+    // French
+    { path: 'aperçu', component: OverviewComponent },
+    { path: 'pour-les-designers', component: ForDesignersComponent },
+    { path: 'pour-les-développeurs', component: PageForDevelopersComponent },
+    { path: 'utilitaires', component: PageUtilitiesComponent },
+    { path: 'boutons', component: PageButtonComponent },
+    { path: 'contactez', component: OverviewComponent },
+    { path: '', redirectTo: '/overview', pathMatch: 'full' },
   ]),
-  // French
-  { path: 'aperçu', component: OverviewComponent },
-  { path: 'pour-les-designers', component: ForDesignersComponent },
-  { path: 'pour-les-développeurs', component: PageForDevelopersComponent },
-  { path: 'utilitaires', component: PageUtilitiesComponent },
-  { path: 'boutons', component: PageButtonComponent },
-  { path: 'contactez', component: OverviewComponent },
-  { path: '', redirectTo: '/overview', pathMatch: 'full' },
+  { path: '**', redirectTo: '/overview', pathMatch: 'full' },
 ];
 
 // scrolling options set

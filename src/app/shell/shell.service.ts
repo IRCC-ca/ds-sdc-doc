@@ -3,7 +3,7 @@
  */
 
 import { Route, Routes } from "@angular/router";
-import { ShellComponent } from "../shell/shell.component";
+import { ShellComponent } from "./shell.component";
 
 export class Shell {
 

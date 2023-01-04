@@ -4,6 +4,7 @@ import {SideNavConfig} from "../../side-nav/side-nav.config";
 import {SlugifyPipe} from "../../share/pipe-slugify.pipe";
 import {ISideNavDataInterface} from "../../side-nav/side-nav.model";
 import {LangSwitchService} from "../../share/lan-switch/lang-switch.service";
+import {TranslatedPageComponent} from "../translated-page-component";
 
 @Component({
   selector: 'app-button',
@@ -11,7 +12,7 @@ import {LangSwitchService} from "../../share/lan-switch/lang-switch.service";
   styleUrls: ['./button.component.scss'],
   providers: [SlugifyPipe]
 })
-export class PageButtonComponent implements OnInit {
+export class PageButtonComponent implements OnInit, TranslatedPageComponent {
   rightNavData: ISideNavDataInterface[];
   rightNavDataRaw: string[] = [ // list of all right nav items
     'Buttons.Title',
@@ -24,7 +25,7 @@ export class PageButtonComponent implements OnInit {
     'Buttons.AccessibilityHeading',
     'Buttons.ResearchHeading'
   ]
-  private altLangLink: string = 'buttons'; // ROUTE translation path
+  altLangLink = 'buttons';
 
   constructor(
     private translate: TranslateService,

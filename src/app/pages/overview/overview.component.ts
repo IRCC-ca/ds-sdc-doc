@@ -4,6 +4,7 @@ import { TranslateService } from "@ngx-translate/core";
 import { SideNavConfig } from "../../side-nav/side-nav.config";
 import {SlugifyPipe} from "../../share/pipe-slugify.pipe";
 import {LangSwitchService} from "../../share/lan-switch/lang-switch.service";
+import {TranslatedPageComponent} from "../translated-page-component";
 
 @Component({
   selector: 'app-overview',
@@ -11,10 +12,10 @@ import {LangSwitchService} from "../../share/lan-switch/lang-switch.service";
   styleUrls: ['./overview.component.scss'],
   providers: [SlugifyPipe]
 })
-export class OverviewComponent implements OnInit {
+export class OverviewComponent implements OnInit, TranslatedPageComponent {
   rightNavData: ISideNavDataInterface[];
   currentLanguage : string = '';
-  private altLangLink: string = 'overview'; // ROUTE translation path
+  altLangLink = 'overview'; // ROUTE translation path
 
   constructor(
     private translate: TranslateService,

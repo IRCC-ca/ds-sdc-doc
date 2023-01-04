@@ -4,6 +4,7 @@ import { SlugifyPipe } from 'src/app/share/pipe-slugify.pipe';
 import { SideNavConfig } from 'src/app/side-nav/side-nav.config';
 import { ISideNavDataInterface } from 'src/app/side-nav/side-nav.model';
 import {LangSwitchService} from "../../share/lan-switch/lang-switch.service";
+import {TranslatedPageComponent} from "../translated-page-component";
 
 @Component({
   selector: 'app-for-designers',
@@ -11,7 +12,7 @@ import {LangSwitchService} from "../../share/lan-switch/lang-switch.service";
   styleUrls: ['./for-designers.component.scss'],
   providers: [SlugifyPipe]
 })
-export class ForDesignersComponent implements OnInit {
+export class ForDesignersComponent implements OnInit, TranslatedPageComponent {
 
   rightNavData: ISideNavDataInterface[];
   rightNavDataRaw: string[] = [ // list of all right nav items
@@ -23,7 +24,7 @@ export class ForDesignersComponent implements OnInit {
     'Designers.UsingComponentsHeading',
     'Designers.FigmaHeading',
   ]
-  private altLangLink: string = 'forDesigners'; // ROUTE translation path
+  altLangLink = 'forDesigners';
 
   constructor(
     private translate: TranslateService,

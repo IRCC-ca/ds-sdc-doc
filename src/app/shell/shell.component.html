@@ -1,0 +1,23 @@
+<div>
+    <div class="header">
+      <jds-header>
+        <app-lan-switch></app-lan-switch>
+      </jds-header>
+      <h1>{{ 'Home.AppName' | translate }}</h1>
+    </div>
+  
+    <div class="main-container top {{navStatus}}">
+      <app-side-nav class="left-nav" [navBarData]="leftNavData" [mobileToggleIcon]="true"></app-side-nav>
+      <div class="content" role="main">
+        <div class="content-area-responsive">
+          <div class="page-content">
+            <router-outlet></router-outlet>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <jds-footer>
+      {{ 'Home.DateModified' | translate}}: 2022-12-19
+    </jds-footer>
+  </div>

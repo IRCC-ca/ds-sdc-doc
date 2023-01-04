@@ -15,27 +15,31 @@ import {PageButtonComponent} from "./pages/button/button.component";
 import {PageUtilitiesComponent} from "./pages/utilities/utilities.component";
 import { ForDesignersComponent } from './pages/for-designers/for-designers.component';
 import {PageForDevelopersComponent} from "./pages/for-developers/for-developers.component";
+import { Shell } from './shell/shell.service';
 
 export function HttpLoaderFactory(translate: TranslateService, location: Location, settings: LocalizeRouterSettings, http: HttpClient) {
   return new LocalizeRouterHttpLoader(translate, location, { ...settings, alwaysSetPrefix: true }, http);
 }
 
 const routes: Routes = [
-  // English
-  { path: 'overview', component: OverviewComponent },
-  { path: 'for-designers', component: ForDesignersComponent },
-  { path: 'for-developers', component: PageForDevelopersComponent },
-  { path: 'utilities', component: PageUtilitiesComponent },
-  { path: 'buttons', component: PageButtonComponent },
-  { path: 'contact', component: OverviewComponent },
-  // French
-  { path: 'aperçu', component: OverviewComponent },
-  { path: 'pour-les-designers', component: ForDesignersComponent },
-  { path: 'pour-les-développeurs', component: PageForDevelopersComponent },
-  { path: 'utilitaires', component: PageUtilitiesComponent },
-  { path: 'boutons', component: PageButtonComponent },
-  { path: 'contactez', component: OverviewComponent },
-  { path: '', redirectTo: '/overview', pathMatch: 'full' },
+  Shell.childRoutes([
+    // English
+    { path: 'overview', component: OverviewComponent },
+    { path: 'for-designers', component: ForDesignersComponent },
+    { path: 'for-developers', component: PageForDevelopersComponent },
+    { path: 'utilities', component: PageUtilitiesComponent },
+    { path: 'buttons', component: PageButtonComponent },
+    { path: 'contact', component: OverviewComponent },
+    // French
+    { path: 'aperçu', component: OverviewComponent },
+    { path: 'pour-les-designers', component: ForDesignersComponent },
+    { path: 'pour-les-développeurs', component: PageForDevelopersComponent },
+    { path: 'utilitaires', component: PageUtilitiesComponent },
+    { path: 'boutons', component: PageButtonComponent },
+    { path: 'contactez', component: OverviewComponent },
+    { path: '', redirectTo: '/overview', pathMatch: 'full' },
+  ]),
+  { path: '**', redirectTo: '/overview', pathMatch: 'full' },
 ];
 
 // scrolling options set

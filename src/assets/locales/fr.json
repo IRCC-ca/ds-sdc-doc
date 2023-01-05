@@ -353,11 +353,13 @@
     "FigmaHeading": "[FR] Figma usage guidelines",
     "FigmaText": "[FR] The above is general information in order to get started. You can find more detailed Figma usage guidelines specific to each system part on on their respective pages throughout this site."
   },
-  "ForDevelopers": {
-    "title": "[FR] For developers",
-    "GettingStarted": "[FR] Getting started",
-    "Usage": "[FR] Usage",
-    "Notes": "[FR] Notes"
+  "Developers": {
+    "Heading": "[FR] For developers",
+    "GetStartedHeading": "[FR] Getting started",
+    "UsageHeading": "[FR] Usage",
+    "ThemesHeading": "[FR] Themes",
+    "FontAwesomeHeading": "[FR] Font Awesome",
+    "ReleasesHeading": "[FR] Releases"
   }
 }
 

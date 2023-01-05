@@ -354,10 +354,12 @@
     "FigmaHeading": "Figma usage guidelines",
     "FigmaText": "The above is general information in order to get started. You can find more detailed Figma usage guidelines specific to each system part on on their respective pages throughout this site."
   },
-  "ForDevelopers": {
-    "title": "For developers",
-    "GettingStarted": "Getting started",
-    "Usage": "Usage",
-    "Notes": "Notes"
+  "Developers": {
+    "Heading": "For developers",
+    "GetStartedHeading": "Getting started",
+    "UsageHeading": "Usage",
+    "ThemesHeading": "Themes",
+    "FontAwesomeHeading": "Font Awesome",
+    "ReleasesHeading": "Releases"
   }
 }

@@ -10,19 +10,59 @@ npm install --save-dev @ircc-ca/ds-sdc-core
 
 ## Usage
 
-In your root-level stylesheet, initialize the design system with
+In your root-level stylesheet, initialize the design system with the following:
 
+**For external websites:**
+```scss
+@use '~@ircc-ca/ds-sdc-core/index' as ircc-ds;
+@include ircc-ds.theme-init-required(ircc-ds.palette-journeylab(), default, large);
+@include ircc-ds.element-styles();
+```
+**For internal websites:**
 ```scss
 @use '~@ircc-ca/ds-sdc-core/index' as ircc-ds;
 @include ircc-ds.theme-init-required(ircc-ds.palette-journeylab(), default, large);
 @include ircc-ds.element-styles();
 ```
 
-A list of elements can be passed to `element-styles` to include, should only certain element styles be desired.
+## Themes
 
-## Notes
+You can set the theme for your project to either Light, Dark or System. Setting the theme to System will apply the Light or Dark theme to your applications UI based on the users Operating System preferences.
+**To use the Light theme:**
+```
+<code block/>
+```
+**To use the Dark theme:**
+```
+<code block/>
+```
+**To use the users Operating System preference to set the theme:**
+```
+<code block/>
+```
 
-A css reset is not currently expected or required, if you are experiencing an unexpected visual bug, please submit a Bug.
-This package is intended to apply with minimal effort based on HTML tags and minimal use of class selectors to reduce overhead in existing projects.
-As this project is a work in progress, usage of multiple design systems is recommended, so long as they don't visually conflict.
-If you find an issue, [please submit a Bug or Feature Request on our Github](https://github.com/IRCC-ca/ds-sdc/issues/new/choose) and add the `core` tag.
+## Font Awesome
+
+The Design System core leverages the use of Font Awesome kits to import icons used by the design system. Place the following in the head of your project to pull down the relevant icons.
+```
+<code block/>
+```
+
+## Releases
+
+The Design System utilizes three different types of releases: patch releases, beta releases and full releases. To target a specific release type use the relevant pattern and specify the release number.
+
+**To install a patch release:**
+```
+<code block/>
+```
+
+**To install a beta release:**
+```
+<code block/>
+```
+
+**To install a full release:**
+```
+<code block/>
+```

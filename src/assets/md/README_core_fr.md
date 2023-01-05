@@ -1,5 +1,4 @@
-This package contains the theming functionality for the Journey Design System
-
+Ce package contient la fonctionnalité de thème pour le Journey Design System
 ## Getting started
 
 To install the IRCC Digital Journey Labs Design System styles, you will need to run the following command using [npm](https://www.npmjs.com/):

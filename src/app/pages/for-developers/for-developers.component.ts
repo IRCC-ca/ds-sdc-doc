@@ -15,13 +15,15 @@ import {TranslatedPageComponent} from "../translated-page-component";
 export class PageForDevelopersComponent implements OnInit, TranslatedPageComponent {
   rightNavData: ISideNavDataInterface[];
   rightNavDataRaw: string[] = [ // list of all right nav items
-    'ForDevelopers.GettingStarted',
-    'ForDevelopers.Usage',
-    'ForDevelopers.Notes'
+    'Developers.GetStartedHeading',
+    'Developers.UsageHeading',
+    'Developers.ThemesHeading',
+    'Developers.FontAwesomeHeading',
+    'Developers.ReleasesHeading',
   ]
   altLangLink = 'forDevelopers';
   constructor(
-    private translate: TranslateService,
+    public translate: TranslateService,
     private lang: LangSwitchService,
     private navBarConfig: SideNavConfig
   ) {

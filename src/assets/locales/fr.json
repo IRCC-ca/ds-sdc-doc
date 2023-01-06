@@ -261,26 +261,26 @@
   },
   "LeftSideNav": {
     "title": {
-      "foundation" : "[FR] Foundation",
-      "components" : "[FR] Components",
-      "support": "[FR] Support"
+      "foundation" : "Fondation",
+      "components" : "Composants",
+      "support": "Soutien"
     },
     "sub-titles": {
-      "accessibility": "[FR] Accessibility",
+      "accessibility": "Accessibilité",
       "colours": "Couleurs",
       "typography": "Typographie",
-      "iconography": "[FR] Iconography",
-      "layouts": "[FR] Layouts",
-      "tokens": "[FR] Tokens",
-      "checkbox": "[FR] Checkbox",
-      "external-link": "[FR] External Link",
-      "footer": "[FR] Footer",
-      "header": "[FR] Header",
-      "icon-button": "[FR] Icon button",
-      "input-field": "[FR] Input field",
-      "radio-button": "[FR] Radio button",
-      "tabs": "[FR] Tabs",
-      "contact": "[FR] Contact"
+      "iconography": "Iconographie",
+      "layouts": "Dispositions",
+      "tokens": "Jetons",
+      "checkbox": "Case à cocher",
+      "external-link": "Lien externe",
+      "footer": "Bas de page",
+      "header": "Entête",
+      "icon-button": "Bouton icône",
+      "input-field": "Champ de saisie",
+      "radio-button": "Bouton radio",
+      "tabs": "Onglets",
+      "contact": "Contacter"
     }
   },
   "Overview": {

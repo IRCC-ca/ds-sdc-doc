@@ -12,6 +12,7 @@ import { ISideNavDataInterface } from './side-nav.model';
 import { TranslateService } from '@ngx-translate/core';
 import {IIconConfig} from '@ircc-ca/ds-sdc-angular/icon';
 import {SlugifyPipe} from "../share/pipe-slugify.pipe";
+import {IsActiveMatchOptions} from "@angular/router";
 
 @Component({
   selector: 'app-side-nav',
@@ -50,6 +51,14 @@ export class SideNavComponent implements OnInit {
     fontFamily: 'fa-solid'
   }
   width: string = '100%'; // Width of component
+
+  // Check if current url's fragment match
+  readonly fragMatchOptions: IsActiveMatchOptions = {
+    queryParams: 'ignored',
+    matrixParams: 'exact',
+    paths: 'exact',
+    fragment: 'exact',
+  };
 
   constructor(private el: ElementRef, private translate: TranslateService) {
     if (el?.nativeElement?.className) {

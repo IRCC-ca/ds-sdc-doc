@@ -1,12 +1,11 @@
 {
   "Home": {
-    "AppName": "Système de conception IRCC",
     "DateModified": "Date de modification"
   },
   "ROUTES": {
-    "overview": "aperçu",
-    "forDesigners": "pour-les-designers",
-    "forDevelopers": "pour-les-développeurs",
+    "overview": "apercu",
+    "forDesigners": "concepteurs",
+    "forDevelopers": "developpeurs",
     "utilities": "utilitaires",
     "buttons": "boutons",
     "contact": "contactez"
@@ -289,15 +288,15 @@
       "contact": "[FR] Contact"
     }
   },
-  "OverviewPage": {
-    "title": "[FR] Overview",
-    "sub-title": "[FR] IRCC design system",
-    "sub-title-description": "[FR] The IRCC design system is a toolkit of shared design and code that provides visual language, components, patterns and guidelines – all in one centralized source of truth that enables product teams to build scalable, accessible, unified experiences. It is customized for the client and officer experience and allows teams to efficiently build consistent immigration digital services.",
-    "sub-heading-1": "[FR] For designers",
-    "sub-heading-1-description": "[FR] Learn how to get started with the IRCC design system Figma library.",
-    "sub-heading-2": "[FR] For developers",
-    "sub-heading-2-description": "[FR] Learn how to get started with lorem ipsum dolor sir amet consecteteur.",
-    "get-started-sub-text": "[FR] Get started"
+  "Overview": {
+    "Heading": "Aperçu",
+    "SubHeading": "Système de conception IRCC",
+    "Text": "Le système de conception IRCC est une boîte à outils de conception et de code partagés qui fournit un langage visuel, des composants, des modèles et des directives, le tout dans une source de vérité centralisée qui permet aux équipes de produits de créer des expériences évolutives, accessibles et unifiées. Il est personnalisé pour l'expérience du client et de l'agent et permet aux équipes de créer efficacement des services numériques d'immigration cohérents.",
+    "DesignerHeading": "Pour les concepteurs",
+    "DesignerText": "Découvrez comment démarrer avec la bibliothèque Figma du système de conception IRCC.",
+    "DeveloperHeading": "Pour les développeurs",
+    "DeveloperText": "Découvrez comment commencer à mettre en œuvre le système de conception IRCC dans votre projet.",
+    "GetStartedHeading": "Commencer"
   },
   "Designers": {
     "Heading": "[FR] For designers",

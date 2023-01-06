@@ -1,19 +1,17 @@
 <div class="content-doc-wrapper col-12 col-lg-10">
-  <app-title-slug-url type="primary">{{'OverviewPage.title' | translate}}</app-title-slug-url>
-  <h2 class="sub-title emphasis" [style.margin-top]="0">{{'OverviewPage.sub-title' | translate}} </h2>
-  <p> {{'OverviewPage.sub-title-description' | translate}} </p>
-
+  <app-title-slug-url [translate]="'Overview.Heading'" type="primary">Overview</app-title-slug-url>
+  <h2 class="sub-title emphasis" [style.margin-top]="0">{{'Overview.SubHeading' | translate}} </h2>
+  <p>{{'Overview.Text' | translate}}</p>
   <div class="wrapper-container row">
     <div class="for-designers col-12 col-md-6">
-      <h3> {{'OverviewPage.sub-heading-1' | translate}} </h3>
-      <p> {{'OverviewPage.sub-heading-1-description' | translate}} </p>
-      <jds-link href="{{currentLanguage}}/for-designers">{{'OverviewPage.get-started-sub-text' | translate}}</jds-link>
+      <h3>{{'Overview.DesignerHeading' | translate}}</h3>
+      <p>{{'Overview.DesignerText' | translate}}</p>
+      <jds-link href="{{currentLanguage}}/{{'ROUTES.forDesigners' | translate}}">{{'Overview.GetStartedHeading' | translate}}</jds-link>
     </div>
-
     <div class="for-devs col-12 col-md-6">
-      <h3> {{'OverviewPage.sub-heading-2' | translate}} </h3>
-      <p> {{'OverviewPage.sub-heading-1-description' | translate}} </p>
-      <jds-link href="{{currentLanguage}}/for-developers">{{'OverviewPage.get-started-sub-text' | translate}}</jds-link>
+      <h3>{{'Overview.DeveloperHeading' | translate}}</h3>
+      <p>{{'Overview.DeveloperText' | translate}}</p>
+      <jds-link href="{{currentLanguage}}/{{'ROUTES.forDevelopers' | translate}}">{{'Overview.GetStartedHeading' | translate}}</jds-link>
     </div>
   </div>
 </div>

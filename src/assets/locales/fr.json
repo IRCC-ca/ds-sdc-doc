@@ -257,26 +257,21 @@
     "TypographyTableTokenHeading": "Nom du cours"
   },
   "RightSideNav": {
-    "OnThisPage": "[FR] On this Page"
+    "OnThisPage": "Sur cette page"
   },
   "LeftSideNav": {
     "title": {
-      "getting-started" : "[FR] Getting Started",
       "foundation" : "[FR] Foundation",
       "components" : "[FR] Components",
       "support": "[FR] Support"
     },
     "sub-titles": {
-      "overview": "[FR] Overview",
-      "for-developers": "[FR] For developers",
-      "for-designers": "[FR] For designers",
       "accessibility": "[FR] Accessibility",
       "colours": "Couleurs",
       "typography": "Typographie",
       "iconography": "[FR] Iconography",
       "layouts": "[FR] Layouts",
       "tokens": "[FR] Tokens",
-      "buttons": "Boutons",
       "checkbox": "[FR] Checkbox",
       "external-link": "[FR] External Link",
       "footer": "[FR] Footer",

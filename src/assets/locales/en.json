@@ -262,22 +262,17 @@
   },
   "LeftSideNav": {
     "title": {
-      "getting-started": "Getting Started",
       "foundation": "Foundation",
       "components": "Components",
       "support": "Support"
     },
     "sub-titles": {
-      "overview": "Overview",
-      "for-developers": "For developers",
-      "for-designers": "For designers",
       "accessibility": "Accessibility",
       "colours": "Colours",
       "typography": "Typography",
       "iconography": "Iconography",
       "layouts": "Layouts",
       "tokens": "Tokens",
-      "buttons": "Buttons",
       "checkbox": "Checkbox",
       "external-link": "External Link",
       "footer": "Footer",

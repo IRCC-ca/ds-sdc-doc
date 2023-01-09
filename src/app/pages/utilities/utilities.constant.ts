@@ -7,202 +7,202 @@ export interface colorSample {
 }
 
 export const colorSamples: colorSample[] = [
-  {
-    tokenName: '--primary-background',
-    colorRole: 'CTA, Hue 700<br/>#2A4980',
-    colorCode: '#2A4980',
-    figmaStyle: 'button-primary / CTA /<br/> background',
-    description: 'Utilities.ColourTableDescriptionRow1'
-  },
-  {
-    tokenName: '--primary-background-hover',
-    colorRole: 'CTA, Hue 800<br/>#233F71',
-    colorCode: '#233F71',
-    figmaStyle: 'button-primary / CTA /<br/> background-hover',
-    description: 'Utilities.ColourTableDescriptionRow2'
-  },
-  {
-    tokenName: '--primary-background-active',
-    colorRole: 'CTA, Hue 900<br/>#1D3561',
-    colorCode: '#1D3561',
-    figmaStyle: 'button-primary / CTA /<br/> background-active',
-    description: 'Utilities.ColourTableDescriptionRow3'
-  },
-  {
-    tokenName: '--primary-background-disabled',
-    colorRole: 'CTA, Hue 300<br/>#AEBBD3',
-    colorCode: '#AEBBD3',
-    figmaStyle: 'button-primary / CTA /<br/> background-disabled',
-    description: 'Utilities.ColourTableDescriptionRow4'
-  },
-  {
-    tokenName: '--primary-text',
-    colorRole: 'Neutral, Hue 100<br/>#FFFFFF',
-    colorCode: '#FFFFFF',
-    figmaStyle: 'button-primary / CTA /<br/> text',
-    description: 'Utilities.ColourTableDescriptionRow5'
-  },
-  {
-    tokenName: '--primary-text-disabled',
-    colorRole: 'Neutral, Hue 100<br/>#FFFFFF',
-    colorCode: '#FFFFFF',
-    figmaStyle: 'button-primary / CTA /<br/> text-disabled',
-    description: 'Utilities.ColourTableDescriptionRow6'
-  },
-  {
-    tokenName: '--primary-background',
-    colorRole: 'Critical, Hue 700<br/>#AB2225',
-    colorCode: '#AB2225',
-    figmaStyle: 'button-primary / critical /<br/> background',
-    description: 'Utilities.ColourTableDescriptionRow7'
-  },
-  {
-    tokenName: '--primary-background-hover',
-    colorRole: 'Critical, Hue 800<br/>#931C1F',
-    colorCode: '#931C1F',
-    figmaStyle: 'button-primary / critical /<br/> background-hover',
-    description: 'Utilities.ColourTableDescriptionRow8'
-  },
-  {
-    tokenName: '--primary-background-active',
-    colorRole: 'Critical, Hue 900<br/>#7B1619',
-    colorCode: '#7B1619',
-    figmaStyle: 'button-primary / critical /<br/> background-active',
-    description: 'Utilities.ColourTableDescriptionRow9'
-  },
-  {
-    tokenName: '--primary-background-disabled',
-    colorRole: 'Critical, Hue 300<br/>#DEA8A9',
-    colorCode: '#DEA8A9',
-    figmaStyle: 'button-primary / critical /<br/> background-disabled',
-    description: 'Utilities.ColourTableDescriptionRow10'
-  },
-  {
-    tokenName: '--primary-text',
-    colorRole: 'Neutral, Hue 100<br/>#FFFFFF',
-    colorCode: '#FFFFFF',
-    figmaStyle: 'button-primary / critical /<br/> text',
-    description: 'Utilities.ColourTableDescriptionRow11'
-  },
-  {
-    tokenName: '--primary-text-disabled',
-    colorRole: 'Neutral, Hue 100<br/>#FFFFFF',
-    colorCode: '#FFFFFF',
-    figmaStyle: 'button-primary / critical /<br/> text-disabled',
-    description: 'Utilities.ColourTableDescriptionRow12'
-  },
-  {
-    tokenName: '--secondary-border',
-    colorRole: 'CTA, Hue 700<br/>#2A4980',
-    colorCode: '#2A4980',
-    figmaStyle: 'button-secondary / CTA /<br/> border',
-    description: 'Utilities.ColourTableDescriptionRow13'
-  },
-  {
-    tokenName: '--secondary-border-hover',
-    colorRole: 'CTA, Hue 800<br/>#233F71',
-    colorCode: '#233F71',
-    figmaStyle: 'button-secondary / CTA /<br/> border-hover',
-    description: 'Utilities.ColourTableDescriptionRow14'
-  },
-  {
-    tokenName: '--secondary-border-active',
-    colorRole: 'CTA, Hue 900<br/>#1D3561',
-    colorCode: '#1D3561',
-    figmaStyle: 'button-secondary / CTA /<br/> border-active',
-    description: 'Utilities.ColourTableDescriptionRow15'
-  },
-  {
-    tokenName: '--secondary-border-disabled',
-    colorRole: 'CTA, Hue 300<br/>#AEBBD3',
-    colorCode: '#AEBBD3',
-    figmaStyle: 'button-secondary / CTA /<br/> border-disabled',
-    description: 'Utilities.ColourTableDescriptionRow16'
-  },
-  {
-    tokenName: '--secondary-text',
-    colorRole: 'CTA, Hue 700<br/>#2A4980',
-    colorCode: '#2A4980',
-    figmaStyle: 'button-secondary / CTA /<br/> text',
-    description: 'Utilities.ColourTableDescriptionRow17'
-  },
-  {
-    tokenName: '--secondary-text-disabled',
-    colorRole: 'CTA, Hue 300<br/>#AEBBD3',
-    colorCode: '#AEBBD3',
-    figmaStyle: 'button-secondary / CTA /<br/> text-disabled',
-    description: 'Utilities.ColourTableDescriptionRow18'
-  },
-  {
-    tokenName: '--secondary-border',
-    colorRole: 'Critical, Hue 700<br/>#AB2225',
-    colorCode: '#AB2225',
-    figmaStyle: 'button-secondary / critical /<br/> border',
-    description: 'Utilities.ColourTableDescriptionRow19'
-  },
-  {
-    tokenName: '--secondary-border-hover',
-    colorRole: 'Critical, Hue 800<br/>#931C1F',
-    colorCode: '#931C1F',
-    figmaStyle: 'button-secondary / critical /<br/> border-hover',
-    description: 'Utilities.ColourTableDescriptionRow20'
-  },
-  {
-    tokenName: '--secondary-border-active',
-    colorRole: 'Critical, Hue 900<br/>#7B1619',
-    colorCode: '#7B1619',
-    figmaStyle: 'button-secondary / critical /<br/> border-active',
-    description: 'Utilities.ColourTableDescriptionRow21'
-  },
-  {
-    tokenName: '--secondary-border-disabled',
-    colorRole: 'Critical, Hue 300<br/>#DEA8A9',
-    colorCode: '#DEA8A9',
-    figmaStyle: 'button-secondary / critical /<br/> border-disabled',
-    description: 'Utilities.ColourTableDescriptionRow22'
-  },
-  {
-    tokenName: '--secondary-text',
-    colorRole: 'Critical, Hue 700<br/>#AB2225',
-    colorCode: '#AB2225',
-    figmaStyle: 'button-secondary / critical /<br/> text',
-    description: 'Utilities.ColourTableDescriptionRow23'
-  },
-  {
-    tokenName: '--secondary-text-disabled',
-    colorRole: 'CTA, Hue 300<br/>#AEBBD3',
-    colorCode: '#AEBBD3',
-    figmaStyle: 'button-secondary / critical /<br/> text-disabled',
-    description: 'Utilities.ColourTableDescriptionRow24'
-  },
-  {
-    tokenName: '--link-text',
-    colorRole: 'CTA, Hue 700<br/>#2A4980',
-    colorCode: '#2A4980',
-    figmaStyle: 'link / CTA /<br/> text',
-    description: 'Utilities.ColourTableDescriptionRow25'
-  },
-  {
-    tokenName: '--link-text-hover',
-    colorRole: 'CTA, Hue 800<br/>#3C60CE',
-    colorCode: '#3C60CE',
-    figmaStyle: 'link / CTA /<br/> text-hover',
-    description: 'Utilities.ColourTableDescriptionRow26'
-  },
-  {
-    tokenName: '--link-text-active',
-    colorRole: 'CTA, Hue 900<br/>#1D3561',
-    colorCode: '#1D3561',
-    figmaStyle: 'link / CTA /<br/> active',
-    description: 'Utilities.ColourTableDescriptionRow27'
-  },
-  {
-    tokenName: '--link-text-visited',
-    colorRole: 'Visited, Hue 700<br/>#7F42BC',
-    colorCode: '#7F42BC',
-    figmaStyle: 'link / CTA /<br/> visited',
-    description: 'Utilities.ColourTableDescriptionRow28'
-  },
+  // {
+  //   tokenName: '--primary-background',
+  //   colorRole: 'CTA, Hue 700<br/>#2A4980',
+  //   colorCode: '#2A4980',
+  //   figmaStyle: 'button-primary / CTA /<br/> background',
+  //   description: 'Utilities.ColourTableDescriptionRow1'
+  // },
+  // {
+  //   tokenName: '--primary-background-hover',
+  //   colorRole: 'CTA, Hue 800<br/>#233F71',
+  //   colorCode: '#233F71',
+  //   figmaStyle: 'button-primary / CTA /<br/> background-hover',
+  //   description: 'Utilities.ColourTableDescriptionRow2'
+  // },
+  // {
+  //   tokenName: '--primary-background-active',
+  //   colorRole: 'CTA, Hue 900<br/>#1D3561',
+  //   colorCode: '#1D3561',
+  //   figmaStyle: 'button-primary / CTA /<br/> background-active',
+  //   description: 'Utilities.ColourTableDescriptionRow3'
+  // },
+  // {
+  //   tokenName: '--primary-background-disabled',
+  //   colorRole: 'CTA, Hue 300<br/>#AEBBD3',
+  //   colorCode: '#AEBBD3',
+  //   figmaStyle: 'button-primary / CTA /<br/> background-disabled',
+  //   description: 'Utilities.ColourTableDescriptionRow4'
+  // },
+  // {
+  //   tokenName: '--primary-text',
+  //   colorRole: 'Neutral, Hue 100<br/>#FFFFFF',
+  //   colorCode: '#FFFFFF',
+  //   figmaStyle: 'button-primary / CTA /<br/> text',
+  //   description: 'Utilities.ColourTableDescriptionRow5'
+  // },
+  // {
+  //   tokenName: '--primary-text-disabled',
+  //   colorRole: 'Neutral, Hue 100<br/>#FFFFFF',
+  //   colorCode: '#FFFFFF',
+  //   figmaStyle: 'button-primary / CTA /<br/> text-disabled',
+  //   description: 'Utilities.ColourTableDescriptionRow6'
+  // },
+  // {
+  //   tokenName: '--primary-background',
+  //   colorRole: 'Critical, Hue 700<br/>#AB2225',
+  //   colorCode: '#AB2225',
+  //   figmaStyle: 'button-primary / critical /<br/> background',
+  //   description: 'Utilities.ColourTableDescriptionRow7'
+  // },
+  // {
+  //   tokenName: '--primary-background-hover',
+  //   colorRole: 'Critical, Hue 800<br/>#931C1F',
+  //   colorCode: '#931C1F',
+  //   figmaStyle: 'button-primary / critical /<br/> background-hover',
+  //   description: 'Utilities.ColourTableDescriptionRow8'
+  // },
+  // {
+  //   tokenName: '--primary-background-active',
+  //   colorRole: 'Critical, Hue 900<br/>#7B1619',
+  //   colorCode: '#7B1619',
+  //   figmaStyle: 'button-primary / critical /<br/> background-active',
+  //   description: 'Utilities.ColourTableDescriptionRow9'
+  // },
+  // {
+  //   tokenName: '--primary-background-disabled',
+  //   colorRole: 'Critical, Hue 300<br/>#DEA8A9',
+  //   colorCode: '#DEA8A9',
+  //   figmaStyle: 'button-primary / critical /<br/> background-disabled',
+  //   description: 'Utilities.ColourTableDescriptionRow10'
+  // },
+  // {
+  //   tokenName: '--primary-text',
+  //   colorRole: 'Neutral, Hue 100<br/>#FFFFFF',
+  //   colorCode: '#FFFFFF',
+  //   figmaStyle: 'button-primary / critical /<br/> text',
+  //   description: 'Utilities.ColourTableDescriptionRow11'
+  // },
+  // {
+  //   tokenName: '--primary-text-disabled',
+  //   colorRole: 'Neutral, Hue 100<br/>#FFFFFF',
+  //   colorCode: '#FFFFFF',
+  //   figmaStyle: 'button-primary / critical /<br/> text-disabled',
+  //   description: 'Utilities.ColourTableDescriptionRow12'
+  // },
+  // {
+  //   tokenName: '--secondary-border',
+  //   colorRole: 'CTA, Hue 700<br/>#2A4980',
+  //   colorCode: '#2A4980',
+  //   figmaStyle: 'button-secondary / CTA /<br/> border',
+  //   description: 'Utilities.ColourTableDescriptionRow13'
+  // },
+  // {
+  //   tokenName: '--secondary-border-hover',
+  //   colorRole: 'CTA, Hue 800<br/>#233F71',
+  //   colorCode: '#233F71',
+  //   figmaStyle: 'button-secondary / CTA /<br/> border-hover',
+  //   description: 'Utilities.ColourTableDescriptionRow14'
+  // },
+  // {
+  //   tokenName: '--secondary-border-active',
+  //   colorRole: 'CTA, Hue 900<br/>#1D3561',
+  //   colorCode: '#1D3561',
+  //   figmaStyle: 'button-secondary / CTA /<br/> border-active',
+  //   description: 'Utilities.ColourTableDescriptionRow15'
+  // },
+  // {
+  //   tokenName: '--secondary-border-disabled',
+  //   colorRole: 'CTA, Hue 300<br/>#AEBBD3',
+  //   colorCode: '#AEBBD3',
+  //   figmaStyle: 'button-secondary / CTA /<br/> border-disabled',
+  //   description: 'Utilities.ColourTableDescriptionRow16'
+  // },
+  // {
+  //   tokenName: '--secondary-text',
+  //   colorRole: 'CTA, Hue 700<br/>#2A4980',
+  //   colorCode: '#2A4980',
+  //   figmaStyle: 'button-secondary / CTA /<br/> text',
+  //   description: 'Utilities.ColourTableDescriptionRow17'
+  // },
+  // {
+  //   tokenName: '--secondary-text-disabled',
+  //   colorRole: 'CTA, Hue 300<br/>#AEBBD3',
+  //   colorCode: '#AEBBD3',
+  //   figmaStyle: 'button-secondary / CTA /<br/> text-disabled',
+  //   description: 'Utilities.ColourTableDescriptionRow18'
+  // },
+  // {
+  //   tokenName: '--secondary-border',
+  //   colorRole: 'Critical, Hue 700<br/>#AB2225',
+  //   colorCode: '#AB2225',
+  //   figmaStyle: 'button-secondary / critical /<br/> border',
+  //   description: 'Utilities.ColourTableDescriptionRow19'
+  // },
+  // {
+  //   tokenName: '--secondary-border-hover',
+  //   colorRole: 'Critical, Hue 800<br/>#931C1F',
+  //   colorCode: '#931C1F',
+  //   figmaStyle: 'button-secondary / critical /<br/> border-hover',
+  //   description: 'Utilities.ColourTableDescriptionRow20'
+  // },
+  // {
+  //   tokenName: '--secondary-border-active',
+  //   colorRole: 'Critical, Hue 900<br/>#7B1619',
+  //   colorCode: '#7B1619',
+  //   figmaStyle: 'button-secondary / critical /<br/> border-active',
+  //   description: 'Utilities.ColourTableDescriptionRow21'
+  // },
+  // {
+  //   tokenName: '--secondary-border-disabled',
+  //   colorRole: 'Critical, Hue 300<br/>#DEA8A9',
+  //   colorCode: '#DEA8A9',
+  //   figmaStyle: 'button-secondary / critical /<br/> border-disabled',
+  //   description: 'Utilities.ColourTableDescriptionRow22'
+  // },
+  // {
+  //   tokenName: '--secondary-text',
+  //   colorRole: 'Critical, Hue 700<br/>#AB2225',
+  //   colorCode: '#AB2225',
+  //   figmaStyle: 'button-secondary / critical /<br/> text',
+  //   description: 'Utilities.ColourTableDescriptionRow23'
+  // },
+  // {
+  //   tokenName: '--secondary-text-disabled',
+  //   colorRole: 'CTA, Hue 300<br/>#AEBBD3',
+  //   colorCode: '#AEBBD3',
+  //   figmaStyle: 'button-secondary / critical /<br/> text-disabled',
+  //   description: 'Utilities.ColourTableDescriptionRow24'
+  // },
+  // {
+  //   tokenName: '--link-text',
+  //   colorRole: 'CTA, Hue 700<br/>#2A4980',
+  //   colorCode: '#2A4980',
+  //   figmaStyle: 'link / CTA /<br/> text',
+  //   description: 'Utilities.ColourTableDescriptionRow25'
+  // },
+  // {
+  //   tokenName: '--link-text-hover',
+  //   colorRole: 'CTA, Hue 800<br/>#3C60CE',
+  //   colorCode: '#3C60CE',
+  //   figmaStyle: 'link / CTA /<br/> text-hover',
+  //   description: 'Utilities.ColourTableDescriptionRow26'
+  // },
+  // {
+  //   tokenName: '--link-text-active',
+  //   colorRole: 'CTA, Hue 900<br/>#1D3561',
+  //   colorCode: '#1D3561',
+  //   figmaStyle: 'link / CTA /<br/> active',
+  //   description: 'Utilities.ColourTableDescriptionRow27'
+  // },
+  // {
+  //   tokenName: '--link-text-visited',
+  //   colorRole: 'Visited, Hue 700<br/>#7F42BC',
+  //   colorCode: '#7F42BC',
+  //   figmaStyle: 'link / CTA /<br/> visited',
+  //   description: 'Utilities.ColourTableDescriptionRow28'
+  // },
   // {
   //   tokenName: '--background',
   //   colorRole: 'Warning, Hue 100<br/>#FAF3ED',
@@ -288,336 +288,336 @@ export const colorSamples: colorSample[] = [
   //   description: 'Utilities.ColourTableDescriptionRow40'
   // },
   {
-    tokenName: '--background',
+    tokenName: '--critical-background',
     colorRole: 'Critical, Hue 700<br/>#AB2225',
     colorCode: '#AB2225',
     figmaStyle: 'validation / critical /<br/> background',
     description: 'Utilities.ColourTableDescriptionRow41'
   },
   {
-    tokenName: '--background-hover',
+    tokenName: '--critical-background-hover',
     colorRole: 'Critical, Hue 800<br/>#931C1F',
     colorCode: '#931C1F',
     figmaStyle: 'validation / critical /<br/> background-hover',
     description: 'Utilities.ColourTableDescriptionRow42'
   },
   {
-    tokenName: '--background-active',
+    tokenName: '--critical-background-active',
     colorRole: 'Critical, Hue 900<br/>#7B1619',
     colorCode: '#7B1619',
     figmaStyle: 'validation / critical /<br/> background-active',
     description: 'Utilities.ColourTableDescriptionRow43'
   },
   {
-    tokenName: '--background-disabled',
+    tokenName: '--critical-background-disabled',
     colorRole: 'Critical, Hue 300<br/>#DEA8A9',
     colorCode: '#DEA8A9',
     figmaStyle: 'validation / critical /<br/> background-disabled',
     description: 'Utilities.ColourTableDescriptionRow44'
   },
   {
-    tokenName: '--background-weak',
+    tokenName: '--critical-background-weak',
     colorRole: 'Critical, Hue 100<br/>#FAEDEE',
     colorCode: '#FAEDEE',
     figmaStyle: 'validation / critical /<br/> background-weak',
     description: 'Utilities.ColourTableDescriptionRow45'
   },
   {
-    tokenName: '--background-weak-hover',
+    tokenName: '--critical-background-weak-hover',
     colorRole: 'Critical, Hue 200<br/>#EACACA',
     colorCode: '#EACACA',
     figmaStyle: 'validation / critical /<br/> background-weak-hover',
     description: 'Utilities.ColourTableDescriptionRow46'
   },
   {
-    tokenName: '--background-weak-active',
+    tokenName: '--critical-background-weak-active',
     colorRole: 'Critical, Hue 300<br/>#DEA8A9',
     colorCode: '#DEA8A9',
     figmaStyle: 'validation / critical /<br/> background-weak-active',
     description: 'Utilities.ColourTableDescriptionRow47'
   },
   {
-    tokenName: '--background-weak-disabled',
+    tokenName: '--critical-background-weak-disabled',
     colorRole: 'Critical, Hue 100 @ 50% opacity<br/>#FAEDEE',
     colorCode: '#FAEDEE',
     figmaStyle: 'validation / critical /<br/> background-weak-disabled',
     description: 'Utilities.ColourTableDescriptionRow48'
   },
   {
-    tokenName: '--border',
+    tokenName: '--critical-border',
     colorRole: 'Critical, Hue 700<br/>#AB2225',
     colorCode: '#AB2225',
     figmaStyle: 'validation / critical /<br/> border',
     description: 'Utilities.ColourTableDescriptionRow49'
   },
   {
-    tokenName: '--border-hover',
+    tokenName: '--critical-border-hover',
     colorRole: 'Critical, Hue 800<br/>#931C1F',
     colorCode: '#931C1F',
     figmaStyle: 'validation / critical /<br/> border-hover',
     description: 'Utilities.ColourTableDescriptionRow50'
   },
   {
-    tokenName: '--border-disabled',
+    tokenName: '--critical-border-disabled',
     colorRole: 'Critical, Hue 300<br/>#DEA8A9',
     colorCode: '#DEA8A9',
     figmaStyle: 'validation / critical /<br/> border-disabled',
     description: 'Utilities.ColourTableDescriptionRow51'
   },
   {
-    tokenName: '--text',
+    tokenName: '--critical-text',
     colorRole: 'Critical, Hue 700<br/>#AB2225',
     colorCode: '#AB2225',
     figmaStyle: 'validation / critical /<br/> text',
     description: 'Utilities.ColourTableDescriptionRow52'
   },
   {
-    tokenName: '--background',
+    tokenName: '--success-background',
     colorRole: 'Success, Hue 700<br/>#08A657',
     colorCode: '#08A657',
     figmaStyle: 'validation / success /<br/> background',
     description: 'Utilities.ColourTableDescriptionRow53'
   },
   {
-    tokenName: '--background-hover',
+    tokenName: '--success-background-hover',
     colorRole: 'Success, Hue 800<br/>#078C4A',
     colorCode: '#078C4A',
     figmaStyle: 'validation / success /<br/> background-hover',
     description: 'Utilities.ColourTableDescriptionRow54'
   },
   {
-    tokenName: '--background-active',
+    tokenName: '--success-background-active',
     colorRole: 'Success, Hue 900<br/>#06733C',
     colorCode: '#06733C',
     figmaStyle: 'validation / success /<br/> background-active',
     description: 'Utilities.ColourTableDescriptionRow55'
   },
   {
-    tokenName: '--background-disabled',
+    tokenName: '--success-background-disabled',
     colorRole: 'Success, Hue 300<br/>#A1DEC0',
     colorCode: '#A1DEC0',
     figmaStyle: 'validation / success /<br/> background-disabled',
     description: 'Utilities.ColourTableDescriptionRow56'
   },
   {
-    tokenName: '--background-weak',
+    tokenName: '--success-background-weak',
     colorRole: 'Success, Hue 100<br/>#EDFAF4',
     colorCode: '#EDFAF4',
     figmaStyle: 'validation / success /<br/> background-weak',
     description: 'Utilities.ColourTableDescriptionRow57'
   },
   {
-    tokenName: '--background-weak-hover',
+    tokenName: '--success-background-weak-hover',
     colorRole: 'Success, Hue 200<br/>#C7ECDA',
     colorCode: '#C7ECDA',
     figmaStyle: 'validation / success /<br/> background-weak-hover',
     description: 'Utilities.ColourTableDescriptionRow58'
   },
   {
-    tokenName: '--background-weak-active',
+    tokenName: '--success-background-weak-active',
     colorRole: 'Success, Hue 300<br/>#A1DEC0',
     colorCode: '#A1DEC0',
     figmaStyle: 'validation / success /<br/> background-weak-active',
     description: 'Utilities.ColourTableDescriptionRow59'
   },
   {
-    tokenName: '--background-weak-disabled',
+    tokenName: '--success-background-weak-disabled',
     colorRole: 'Success, Hue 100 @ 50% opacity<br/>#EDFAF4',
     colorCode: '#EDFAF4',
     figmaStyle: 'validation / success /<br/> background-weak-disabled',
     description: 'Utilities.ColourTableDescriptionRow60'
   },
   {
-    tokenName: '--border',
+    tokenName: '--success-border',
     colorRole: 'Success, Hue 700<br/>#08A657',
     colorCode: '#08A657',
     figmaStyle: 'validation / success /<br/> border',
     description: 'Utilities.ColourTableDescriptionRow61'
   },
   {
-    tokenName: '--border-hover',
+    tokenName: '--success-border-hover',
     colorRole: 'Success, Hue 800<br/>#078C4A',
     colorCode: '#078C4A',
     figmaStyle: 'validation / success /<br/> border-hover',
     description: 'Utilities.ColourTableDescriptionRow62'
   },
   {
-    tokenName: '--border-disabled',
+    tokenName: '--success-border-disabled',
     colorRole: 'Success, Hue 300<br/>#A1DEC0',
     colorCode: '#A1DEC0',
     figmaStyle: 'validation / success /<br/> border-disabled',
     description: 'Utilities.ColourTableDescriptionRow63'
   },
   {
-    tokenName: '--text',
+    tokenName: '--success-text',
     colorRole: 'Success, Hue 900<br/>#06733C',
     colorCode: '#06733C',
     figmaStyle: 'validation / success /<br/> text',
     description: 'Utilities.ColourTableDescriptionRow64'
   },
   {
-    tokenName: '--background',
+    tokenName: '--warning-background',
     colorRole: 'Warning, Hue 700<br/>#E07616',
     colorCode: '#E07616',
     figmaStyle: 'validation / warning /<br/> background',
     description: 'Utilities.ColourTableDescriptionRow65'
   },
   {
-    tokenName: '--background-hover',
+    tokenName: '--warning-background-hover',
     colorRole: 'Warning, Hue 800<br/>#BD6413',
     colorCode: '#BD6413',
     figmaStyle: 'validation / warning /<br/> background-hover',
     description: 'Utilities.ColourTableDescriptionRow66'
   },
   {
-    tokenName: '--background-active',
+    tokenName: '--warning-background-active',
     colorRole: 'Warning, Hue 900<br/>#9B520F',
     colorCode: '#9B520F',
     figmaStyle: 'validation / warning /<br/> background-active',
     description: 'Utilities.ColourTableDescriptionRow67'
   },
   {
-    tokenName: '--background-disabled',
+    tokenName: '--warning-background-disabled',
     colorRole: 'Warning, Hue 300<br/>#F1C9A5',
     colorCode: '#F1C9A5',
     figmaStyle: 'validation / warning /<br/> background-disabled',
     description: 'Utilities.ColourTableDescriptionRow68'
   },
   {
-    tokenName: '--background-weak',
+    tokenName: '--warning-background-weak',
     colorRole: 'Warning, Hue 100<br/>#FAF3ED',
     colorCode: '#FAF3ED',
     figmaStyle: 'validation / warning /<br/> background-weak',
     description: 'Utilities.ColourTableDescriptionRow69'
   },
   {
-    tokenName: '--background-weak-hover',
+    tokenName: '--warning-background-weak-hover',
     colorRole: 'Warning, Hue 200<br/>#F6DEC9',
     colorCode: '#F6DEC9',
     figmaStyle: 'validation / warning /<br/> background-weak-hover',
     description: 'Utilities.ColourTableDescriptionRow70'
   },
   {
-    tokenName: '--background-weak-active',
+    tokenName: '--warning-background-weak-active',
     colorRole: 'Warning, Hue 300<br/>#F1C9A5',
     colorCode: '#F1C9A5',
     figmaStyle: 'validation / warning /<br/> background-weak-active',
     description: 'Utilities.ColourTableDescriptionRow71'
   },
   {
-    tokenName: '--background-weak-disabled',
+    tokenName: '--warning-background-weak-disabled',
     colorRole: 'Warning, Hue 100 @ 50% opacity<br/>#FAF3ED',
     colorCode: '#FAF3ED',
     figmaStyle: 'validation / warning /<br/> background-weak-disabled',
     description: 'Utilities.ColourTableDescriptionRow72'
   },
   {
-    tokenName: '--border',
+    tokenName: '--warning-border',
     colorRole: 'Warning, Hue 700<br/>#E07616',
     colorCode: '#E07616',
     figmaStyle: 'validation / warning /<br/> border',
     description: 'Utilities.ColourTableDescriptionRow73'
   },
   {
-    tokenName: '--border-hover',
+    tokenName: '--warning-border-hover',
     colorRole: 'Warning, Hue 800<br/>#BD6413',
     colorCode: '#BD6413',
     figmaStyle: 'validation / warning /<br/> border-hover',
     description: 'Utilities.ColourTableDescriptionRow74'
   },
   {
-    tokenName: '--border-disabled',
+    tokenName: '--warning-border-disabled',
     colorRole: 'Warning, Hue 300<br/>#F1C9A5',
     colorCode: '#F1C9A5',
     figmaStyle: 'validation / warning /<br/> border-disabled',
     description: 'Utilities.ColourTableDescriptionRow75'
   },
   {
-    tokenName: '--text',
+    tokenName: '--warning-text',
     colorRole: 'Warning, Hue 900<br/>#9B520F',
     colorCode: '#9B520F',
     figmaStyle: 'validation / warning /<br/> text',
     description: 'Utilities.ColourTableDescriptionRow76'
   },
   {
-    tokenName: '--background',
+    tokenName: '--information-background',
     colorRole: 'Information, Hue 700<br/>#E07616',
     colorCode: '#E07616',
     figmaStyle: 'validation / information /<br/> background',
     description: 'Utilities.ColourTableDescriptionRow77'
   },
   {
-    tokenName: '--background-hover',
+    tokenName: '--information-background-hover',
     colorRole: 'Information, Hue 800<br/>#BD6413',
     colorCode: '#BD6413',
     figmaStyle: 'validation / information /<br/> background-hover',
     description: 'Utilities.ColourTableDescriptionRow78'
   },
   {
-    tokenName: '--background-active',
+    tokenName: '--information-background-active',
     colorRole: 'Information, Hue 900<br/>#9B520F',
     colorCode: '#9B520F',
     figmaStyle: 'validation / information /<br/> background-active',
     description: 'Utilities.ColourTableDescriptionRow79'
   },
   {
-    tokenName: '--background-disabled',
+    tokenName: '--information-background-disabled',
     colorRole: 'Information, Hue 300<br/>#F1C9A5',
     colorCode: '#F1C9A5',
     figmaStyle: 'validation / information /<br/> background-disabled',
     description: 'Utilities.ColourTableDescriptionRow80'
   },
   {
-    tokenName: '--background-weak',
+    tokenName: '--information-background-weak',
     colorRole: 'Information, Hue 100<br/>#FAF3ED',
     colorCode: '#FAF3ED',
     figmaStyle: 'validation / information /<br/> background-weak',
     description: 'Utilities.ColourTableDescriptionRow81'
   },
   {
-    tokenName: '--background-weak-hover',
+    tokenName: '--information-background-weak-hover',
     colorRole: 'Information, Hue 200<br/>#F6DEC9',
     colorCode: '#F6DEC9',
     figmaStyle: 'validation / information /<br/> background-weak-hover',
     description: 'Utilities.ColourTableDescriptionRow82'
   },
   {
-    tokenName: '--background-weak-active',
+    tokenName: '--information-background-weak-active',
     colorRole: 'Information, Hue 300<br/>#F1C9A5',
     colorCode: '#F1C9A5',
     figmaStyle: 'validation / information /<br/> background-weak-active',
     description: 'Utilities.ColourTableDescriptionRow83'
   },
   {
-    tokenName: '--background-weak-disabled',
+    tokenName: '--information-background-weak-disabled',
     colorRole: 'Information, Hue 100 @ 50% opacity<br/>#FAF3ED',
     colorCode: '#FAF3ED',
     figmaStyle: 'validation / information /<br/> background-weak-disabled',
     description: 'Utilities.ColourTableDescriptionRow84'
   },
   {
-    tokenName: '--border',
+    tokenName: '--information-border',
     colorRole: 'Information, Hue 700<br/>#E07616',
     colorCode: '#E07616',
     figmaStyle: 'validation / information /<br/> border',
     description: 'Utilities.ColourTableDescriptionRow85'
   },
   {
-    tokenName: '--border-hover',
+    tokenName: '--information-border-hover',
     colorRole: 'Information, Hue 800<br/>#BD6413',
     colorCode: '#BD6413',
     figmaStyle: 'validation / information /<br/> border-hover',
     description: 'Utilities.ColourTableDescriptionRow86'
   },
   {
-    tokenName: '--border-disabled',
+    tokenName: '--information-border-disabled',
     colorRole: 'Information, Hue 300<br/>#F1C9A5',
     colorCode: '#F1C9A5',
     figmaStyle: 'validation / information /<br/> border-disabled',
     description: 'Utilities.ColourTableDescriptionRow87'
   },
   {
-    tokenName: '--text',
+    tokenName: '--information-text',
     colorRole: 'Information, Hue 900<br/>#9B520F',
     colorCode: '#9B520F',
     figmaStyle: 'validation / information /<br/> text',

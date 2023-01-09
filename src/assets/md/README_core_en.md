@@ -4,7 +4,7 @@ This package contains the theming functionality for the Journey Design System
 
 To install the IRCC Digital Journey Labs Design System styles, you will need to run the following command using [npm](https://www.npmjs.com/):
 
-```
+```sh
 npm install --save-dev @ircc-ca/ds-sdc-core
 ```
 
@@ -12,57 +12,29 @@ npm install --save-dev @ircc-ca/ds-sdc-core
 
 In your root-level stylesheet, initialize the design system with the following:
 
-**For external websites:**
 ```scss
 @use '~@ircc-ca/ds-sdc-core/index' as ircc-ds;
-@include ircc-ds.theme-init-required(ircc-ds.palette-journeylab(), default, large);
+@include ircc-ds.theme-init-required(ircc-ds.palette-journeylab(), default, large, light);
 @include ircc-ds.element-styles();
 ```
-**For internal websites:**
-```scss
-@use '~@ircc-ca/ds-sdc-core/index' as ircc-ds;
-@include ircc-ds.theme-init-required(ircc-ds.palette-journeylab(), default, large);
-@include ircc-ds.element-styles();
-```
+The 3rd parameter should be set to `small` for **internal** websites, `large` for **external** websites.
 
-## Themes
+You can pass in `dark` instead of `light` as the final parameter of `theme-init-required()` to initialize only the dark color scheme, or `system` if you would like to default to the user's operating system settings.
 
-You can set the theme for your project to either Light, Dark or System. Setting the theme to System will apply the Light or Dark theme to your applications UI based on the users Operating System preferences.
-**To use the Light theme:**
-```
-<code block/>
-```
-**To use the Dark theme:**
-```
-<code block/>
-```
-**To use the users Operating System preference to set the theme:**
-```
-<code block/>
-```
+A list of elements can be passed to `element-styles()` to include, should only certain element styles be desired.
 
 ## Font Awesome
 
 The Design System core leverages the use of Font Awesome kits to import icons used by the design system. Place the following in the head of your project to pull down the relevant icons.
-```
-<code block/>
+```html
+<script src="https://kit.fontawesome.com/8e16e0c619.js" crossorigin="anonymous"></script>
 ```
 
 ## Releases
 
-The Design System utilizes three different types of releases: patch releases, beta releases and full releases. To target a specific release type use the relevant pattern and specify the release number.
+The Design System utilizes two different types of releases: patch releases and full releases. To target a patch release use the command below.
 
 **To install a patch release:**
-```
-<code block/>
-```
-
-**To install a beta release:**
-```
-<code block/>
-```
-
-**To install a full release:**
-```
-<code block/>
+```sh
+npm install @ircc-ca/ds-sdc-core@patch
 ```

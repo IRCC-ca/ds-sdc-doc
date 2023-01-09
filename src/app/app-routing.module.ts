@@ -25,15 +25,15 @@ const routes: Routes = [
   Shell.childRoutes([
     // English
     { path: 'overview', component: OverviewComponent },
-    { path: 'for-designers', component: ForDesignersComponent },
-    { path: 'for-developers', component: PageForDevelopersComponent },
+    { path: 'designers', component: ForDesignersComponent },
+    { path: 'developers', component: PageForDevelopersComponent },
     { path: 'utilities', component: PageUtilitiesComponent },
     { path: 'buttons', component: PageButtonComponent },
     { path: 'contact', component: OverviewComponent },
     // French
     { path: 'aperçu', component: OverviewComponent },
-    { path: 'pour-les-designers', component: ForDesignersComponent },
-    { path: 'pour-les-développeurs', component: PageForDevelopersComponent },
+    { path: 'concepteurs', component: ForDesignersComponent },
+    { path: 'developpeurs', component: PageForDevelopersComponent },
     { path: 'utilitaires', component: PageUtilitiesComponent },
     { path: 'boutons', component: PageButtonComponent },
     { path: 'contactez', component: OverviewComponent },

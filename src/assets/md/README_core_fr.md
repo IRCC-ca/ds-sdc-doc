@@ -1,67 +1,34 @@
-Ce package contient la fonctionnalité de thème pour le Journey Design System
-## Getting started
+Ce qui précède est une information générale afin de commencer. Vous pouvez trouver des directives d'utilisation Figma plus détaillées spécifiques à chaque partie du système sur leurs pages respectives sur ce site.
+## Commencer
 
-To install the IRCC Digital Journey Labs Design System styles, you will need to run the following command using [npm](https://www.npmjs.com/):
+Pour installer les styles du système de conception, vous devrez exécuter la commande suivante à l'aide de [npm](https://www.npmjs.com/) :
 
-```
+```sh
 npm install --save-dev @ircc-ca/ds-sdc-core
 ```
 
 ## Usage
 
-In your root-level stylesheet, initialize the design system with the following:
+Dans votre feuille de style de niveau racine, initialisez le système de conception avec ce qui suit :
 
-**For external websites:**
 ```scss
 @use '~@ircc-ca/ds-sdc-core/index' as ircc-ds;
 @include ircc-ds.theme-init-required(ircc-ds.palette-journeylab(), default, large);
 @include ircc-ds.element-styles();
-```
-**For internal websites:**
-```scss
-@use '~@ircc-ca/ds-sdc-core/index' as ircc-ds;
-@include ircc-ds.theme-init-required(ircc-ds.palette-journeylab(), default, large);
-@include ircc-ds.element-styles();
-```
-
-## Themes
-
-You can set the theme for your project to either Light, Dark or System. Setting the theme to System will apply the Light or Dark theme to your applications UI based on the users Operating System preferences.
-**To use the Light theme:**
-```
-<code block/>
-```
-**To use the Dark theme:**
-```
-<code block/>
-```
-**To use the users Operating System preference to set the theme:**
-```
-<code block/>
 ```
 
 ## Font Awesome
 
-The Design System core leverages the use of Font Awesome kits to import icons used by the design system. Place the following in the head of your project to pull down the relevant icons.
-```
-<code block/>
-```
-
-## Releases
-
-The Design System utilizes three different types of releases: patch releases, beta releases and full releases. To target a specific release type use the relevant pattern and specify the release number.
-
-**To install a patch release:**
-```
-<code block/>
+Le noyau du système de conception exploite l'utilisation des kits Font Awesome pour importer les icônes utilisées par le système de conception. Placez ce qui suit dans la tête de votre projet pour dérouler les icônes pertinentes.
+```html
+<script src="https://kit.fontawesome.com/8e16e0c619.js" crossorigin="anonymous"></script>
 ```
 
-**To install a beta release:**
-```
-<code block/>
-```
+## Versions
 
-**To install a full release:**
-```
-<code block/>
+Le système de conception utilise deux types de versions : les versions de correctifs et les versions complètes. Pour cibler un type de version spécifique, utilisez le modèle approprié et spécifiez le numéro de version.
+
+**Pour installer une version de correctif :**
+```sh
+npm install @ircc-ca/ds-sdc-core@patch
 ```

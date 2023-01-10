@@ -23,6 +23,8 @@ You can pass in `dark` instead of `light` as the final parameter of `theme-init-
 
 A list of elements can be passed to `element-styles()` to include, should only certain element styles be desired.
 
+At root-level create an `.npmrc` file. At the top of the file add `@ircc-ca:registry=https://registry.npmjs.org/ ` to specify the npmjs registry.
+
 ## Font Awesome
 
 The Design System core leverages the use of Font Awesome kits to import icons used by the design system. Place the following in the head of your project to pull down the relevant icons.

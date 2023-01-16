@@ -354,5 +354,8 @@
     "ThemesHeading": "Themes",
     "FontAwesomeHeading": "Font Awesome",
     "ReleasesHeading": "Releases"
+  },
+  "Contact": {
+    "Text": "To provide feedback (compliment, comment or complaint) or for any inquiries, contact <a href='mailto:Tyh.Simms@cic.gc.ca'>Tyh.Simms@cic.gc.ca</a>."
   }
 }

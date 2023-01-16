@@ -16,6 +16,11 @@ Dans votre feuille de style de niveau racine, initialisez le système de concept
 @include ircc-ds.theme-init-required(ircc-ds.palette-journeylab(), default, large);
 @include ircc-ds.element-styles();
 ```
+Le 3ème paramètre doit être défini sur "small" pour les sites Web **internes**, "large" pour les sites Web **externes**.
+
+Vous pouvez passer `dark` au lieu de `light` comme paramètre final de `theme-init-required()` pour initialiser uniquement le jeu de couleurs sombres, ou `system` si vous souhaitez utiliser par défaut les paramètres du système d'exploitation de l'utilisateur.
+
+Une liste d'éléments peut être transmise à `element-styles()` à inclure, si seuls certains styles d'éléments sont souhaités.
 
 ## Font Awesome
 
@@ -26,7 +31,7 @@ Le noyau du système de conception exploite l'utilisation des kits Font Awesome 
 
 ## Versions
 
-Le système de conception utilise deux types de versions : les versions de correctifs et les versions complètes. Pour cibler un type de version spécifique, utilisez le modèle approprié et spécifiez le numéro de version.
+Le Design System utilise deux types de versions différents : les versions de correctifs et les versions complètes. Pour cibler une version de correctif, utilisez la commande ci-dessous.
 
 **Pour installer une version de correctif :**
 ```sh

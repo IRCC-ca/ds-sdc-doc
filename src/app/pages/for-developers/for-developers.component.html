@@ -1,5 +1,6 @@
 <div class="content-doc-wrapper col-12 col-lg-9 col-xl-10">
-  <app-title-slug-url type="primary">For developers</app-title-slug-url>
-  <markdown clipboard [src]="'assets/md/README_core_en.md'"></markdown>
+  <app-title-slug-url type="primary">{{'Overview.DeveloperHeading' | translate}}</app-title-slug-url>
+  <markdown *ngIf="translate.currentLang==='en'" clipboard [src]="'assets/md/README_core_en.md'"></markdown>
+  <markdown *ngIf="translate.currentLang==='fr'" clipboard [src]="'assets/md/README_core_fr.md'"></markdown>
 </div>
 <app-side-nav class="right-nav col-12 col-lg-3 col-xl-2" [navBarData]="rightNavData"></app-side-nav>

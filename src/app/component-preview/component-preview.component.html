@@ -1,3 +1,4 @@
 <div class="preview-wrapper">
   <ng-content></ng-content>
+  <jds-link *ngIf="copyText" [cdkCopyToClipboard]="copyText">{{'Buttons.Copy' | translate}}</jds-link>
 </div>

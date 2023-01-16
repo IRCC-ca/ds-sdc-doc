@@ -29,6 +29,8 @@ import {PageForDevelopersComponent} from './pages/for-developers/for-developers.
 import { ForDesignersComponent } from './pages/for-designers/for-designers.component';
 import { LangSwitchComponent } from './share/lan-switch/lang-switch.component';
 import {SideNavComponent} from "./side-nav/side-nav.component";
+import { ShellComponent } from './shell/shell.component';
+import { PageContactComponent } from './pages/contact/contact.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/locales/', '.json');
@@ -58,7 +60,9 @@ const JL_ANGULAR_COMPONENTS = [
     ForDesignersComponent,
     PageForDevelopersComponent,
     LangSwitchComponent,
-    SideNavComponent
+    SideNavComponent,
+    ShellComponent,
+    PageContactComponent
   ],
   imports: [
     BrowserModule,

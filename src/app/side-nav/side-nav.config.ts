@@ -13,7 +13,7 @@ export class SideNavConfig {
     getRightNavBarConfig(navData: string[]): ISideNavDataInterface[] {
         const rightNavData: ISideNavDataInterface[] = [
             {
-                text: 'RightSideNav.title.on-this-page',
+                text: 'RightSideNav.OnThisPage',
                 type : ItemType.PlainText,
                 category : ItemCategory.Title,
                 path: ''
@@ -35,24 +35,24 @@ export class SideNavConfig {
     getLeftNavBarConfig() : ISideNavDataInterface[] {
     return [
         {
-            text : 'LeftSideNav.title.getting-started',
+            text : 'Developers.GetStartedHeading',
             type : ItemType.PlainText,
             category : ItemCategory.Title,
         },
         {
-            text : 'LeftSideNav.sub-titles.overview',
+            text : 'Overview.Heading',
             type : ItemType.Link,
             category : ItemCategory.subTitle,
             path: 'ROUTES.overview'
         },
         {
-            text : 'LeftSideNav.sub-titles.for-developers',
+            text : 'Overview.DeveloperHeading',
             type : ItemType.Link,
             category : ItemCategory.subTitle,
             path: 'ROUTES.forDevelopers'
         },
         {
-            text : 'LeftSideNav.sub-titles.for-designers',
+            text : 'Designers.Heading',
             type : ItemType.Link,
             category : ItemCategory.subTitle,
             path: 'ROUTES.forDesigners'
@@ -74,7 +74,7 @@ export class SideNavConfig {
             category : ItemCategory.Title,
         },
         {
-            text : 'LeftSideNav.sub-titles.buttons',
+            text : 'Buttons.Title',
             type : ItemType.Link,
             category : ItemCategory.subTitle,
             path: 'ROUTES.buttons'

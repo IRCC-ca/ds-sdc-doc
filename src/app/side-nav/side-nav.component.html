@@ -11,13 +11,18 @@
             </div>
             <div *ngIf="data.category === 'sub-title' && data.path">
                 <a class="menuItems"
-                   routerLink="{{currentLanguage}}/{{data.path | translate}}"
+                   routerLink="{{data.path | translate}}"
+                   routerLinkActive="active"
                    (click)="toggleMobileMenu(true)">
                   {{data.text | translate}}
                 </a>
             </div>
             <div *ngIf="data.category === 'slug-url' && data.path">
-                <a class="menuItems" routerLink="." fragment="{{data.path | translate | SlugifyPipe}}">{{data.text | translate}}</a>
+                <a class="menuItems"
+                   routerLink="."
+                   routerLinkActive="active"
+                   [routerLinkActiveOptions]="fragMatchOptions"
+                   fragment="{{data.path | translate | SlugifyPipe}}">{{data.text | translate}}</a>
             </div>
         </div>
     </div>

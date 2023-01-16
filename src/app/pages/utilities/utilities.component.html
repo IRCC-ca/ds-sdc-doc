@@ -13,9 +13,9 @@
     </tr>
     <tr *ngFor="let color of colorSample">
       <td>
-        <div class="color-sample" [style]="'background: '+color.colorCode+';'"></div>
+        <div class="color-sample" [style]="'background: var('+color.tokenName+');'"></div>
       </td>
-      <td>{{color.tokenName}}</td>
+      <td style="cursor: pointer" [cdkCopyToClipboard]="color.tokenName">{{color.tokenName}}</td>
       <td [innerHtml]="color.colorRole"></td>
       <td [innerHtml]="color.figmaStyle"></td>
       <td>{{color.description | translate}}</td>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-component-preview',
@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./component-preview.component.scss']
 })
 export class ComponentPreviewComponent {
+  @Input() copyText?: string;
 
   constructor() { }
 

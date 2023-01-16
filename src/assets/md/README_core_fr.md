@@ -26,7 +26,7 @@ Le noyau du système de conception exploite l'utilisation des kits Font Awesome 
 
 ## Versions
 
-Le système de conception utilise deux types de versions : les versions de correctifs et les versions complètes. Pour cibler un type de version spécifique, utilisez le modèle approprié et spécifiez le numéro de version.
+Le Design System utilise deux types de versions différents : les versions de correctifs et les versions complètes. Pour cibler une version de correctif, utilisez la commande ci-dessous.
 
 **Pour installer une version de correctif :**
 ```sh

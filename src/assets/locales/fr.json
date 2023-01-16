@@ -353,6 +353,9 @@
     "ThemesHeading": "Themes",
     "FontAwesomeHeading": "Font Awesome",
     "ReleasesHeading": "Versions"
+  },
+  "Contact": {
+    "Text": "Pour faire part de vos commentaires (compliment, commentaire ou plainte) ou pour toute demande de renseignements, contactez <a href='mailto:Tyh.Simms@cic.gc.ca'>Tyh.Simms@cic.gc.ca</a>."
   }
 }
 

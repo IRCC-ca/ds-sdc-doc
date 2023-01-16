@@ -16,6 +16,7 @@ import {PageUtilitiesComponent} from "./pages/utilities/utilities.component";
 import { ForDesignersComponent } from './pages/for-designers/for-designers.component';
 import {PageForDevelopersComponent} from "./pages/for-developers/for-developers.component";
 import { Shell } from './shell/shell.service';
+import {PageContactComponent} from "./pages/contact/contact.component";
 
 export function HttpLoaderFactory(translate: TranslateService, location: Location, settings: LocalizeRouterSettings, http: HttpClient) {
   return new LocalizeRouterHttpLoader(translate, location, { ...settings, alwaysSetPrefix: true }, http);
@@ -29,14 +30,14 @@ const routes: Routes = [
     { path: 'developers', component: PageForDevelopersComponent },
     { path: 'utilities', component: PageUtilitiesComponent },
     { path: 'buttons', component: PageButtonComponent },
-    { path: 'contact', component: OverviewComponent },
+    { path: 'contact', component: PageContactComponent },
     // French
     { path: 'aperçu', component: OverviewComponent },
     { path: 'concepteurs', component: ForDesignersComponent },
     { path: 'developpeurs', component: PageForDevelopersComponent },
     { path: 'utilitaires', component: PageUtilitiesComponent },
     { path: 'boutons', component: PageButtonComponent },
-    { path: 'contactez', component: OverviewComponent },
+    { path: 'contactez', component: PageContactComponent },
     { path: '', redirectTo: '/overview', pathMatch: 'full' },
   ]),
   { path: '**', redirectTo: '/overview', pathMatch: 'full' },

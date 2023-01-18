@@ -9,7 +9,7 @@ import { TranslateService } from "@ngx-translate/core";
   providers: [SlugifyPipe]
 })
 export class TitleSlugUrlComponent implements AfterContentInit {
-  @Input() type = 'secondary'; // primary | secondary
+  @Input() type: 'primary' | 'secondary' = 'secondary';
   @Input() translate = ''; // translation binding
   title = '';
   titleSlugified = ''; // overview-test

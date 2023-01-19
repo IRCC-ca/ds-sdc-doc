@@ -9,7 +9,7 @@ $footer-height: 240px;
   > jds-font-icon {
     font-size: ircc-ds-sizes.$fixed-24;
     position: fixed;
-    top: 120px;
+    top: 110px;
     right: 26px;
     @include grid.un-laptop-layout {
       right: ircc-ds-sizes.$fixed-12;

@@ -44,11 +44,11 @@ export class SideNavComponent implements OnInit {
   navStatus = 'nav-closed';
   barsIconConfig: IIconConfig = {
     unicode: 'f0c9',
-    fontFamily: 'fa-solid'
+    fontFamily: 'fa-light'
   };
   xmarkIconConfig: IIconConfig = {
     unicode: 'f00d',
-    fontFamily: 'fa-solid'
+    fontFamily: 'fa-light'
   }
   width: string = '100%'; // Width of component
 

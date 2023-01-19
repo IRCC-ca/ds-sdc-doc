@@ -18,7 +18,9 @@
       <td>{{color.tokenName}}</td>
       <td [innerHtml]="color.colorRole"></td>
       <td [innerHtml]="color.figmaStyle"></td>
-      <td>{{color.description | translate}}</td>
+      <td [style]="'white-space: normal; min-width: 400px;'">
+        {{color.description | translate}}
+      </td>
     </tr>
   </table>
   <app-title-slug-url [translate]="'Utilities.TypographyHeading'">Typography</app-title-slug-url>

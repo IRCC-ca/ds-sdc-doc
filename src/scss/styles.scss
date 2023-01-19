@@ -150,5 +150,8 @@ app-page-token {
 }
 
 jds-link {
+  a {
+    color: var(--link-text);
+  }
   cursor: pointer;
 }

@@ -40,6 +40,7 @@ export class SideNavComponent implements OnInit {
   currentLanguage : string = '';
   mobile =  false; // If window is under mobile view
   showMenu = true; // If show or hide side menu
+  showActive = false; // If show active nav item
   navClassName = '';
   navStatus = 'nav-closed';
   barsIconConfig: IIconConfig = {
@@ -69,6 +70,7 @@ export class SideNavComponent implements OnInit {
   ngOnInit() {
     // See node_modules/@ircc-ca/ds-sdc-core/tokens/_sizes.scss:3
     this.currentLanguage = this.translate.currentLang
+    this.showActive = this.el?.nativeElement.classList[0] === 'left-nav';
     if (this.mobileToggleIcon) {
       this.toggleMobile();
     }

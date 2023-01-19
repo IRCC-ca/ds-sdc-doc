@@ -55,6 +55,7 @@ $footer-height: 240px;
 
   a {
     border-radius: 4px;
+    outline-offset: -1px;
     &:link {
       color:black;
       text-decoration: none;

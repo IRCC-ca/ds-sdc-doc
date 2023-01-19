@@ -13,6 +13,7 @@
   "Buttons": {
     "Title": "Boutons",
     "Copy": "Copier",
+    "CopyCode": "Copier le code",
     "CopyURL": "Copier l’URL",
     "Intro": "Les boutons déclenchent une action ou permettent de naviguer vers une autre page. Ils ont de multiples styles et configurations selon les besoins variés. Ils attirent l’attention sur les actions que l’utilisateur doit effectuer pour progresser dans un flux.",
     "IntroAlert": "Cet élément de l’interface utilisateur est actuellement disponible uniquement dans le prologiciel des styles. Il sera bientôt offert pour le progiciel des composantes.",

@@ -13,6 +13,7 @@
   "Buttons": {
     "Title": "Buttons",
     "Copy": "Copy",
+    "CopyCode": "Copy code",
     "CopyURL": "Copy URL",
     "Intro": "Buttons trigger an action or navigate to another page. They have multiple styles and configurations for various needs. They call attention to actions the user should take to progress through a flow.",
     "IntroAlert": "This UI element is currently available in our styles package only. The component version is coming soon.",

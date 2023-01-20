@@ -17,7 +17,6 @@ export class PageForDevelopersComponent implements OnInit, TranslatedPageCompone
   rightNavDataRaw: string[] = [ // list of all right nav items
     'Developers.GetStartedHeading',
     'Developers.UsageHeading',
-    'Developers.ThemesHeading',
     'Developers.FontAwesomeHeading',
     'Developers.ReleasesHeading',
   ]

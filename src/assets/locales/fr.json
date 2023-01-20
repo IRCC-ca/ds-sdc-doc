@@ -303,7 +303,7 @@
     "AccessHeading": "Demande d'accès à la bibliothèque de conception",
     "AccessText1": "La bibliothèque de conception est publiée en tant que bibliothèque d'équipe sur Figma. Il existe actuellement trois fichiers Figma à connecter à votre projet afin d'accéder au système de conception complet - Foundations, Components et Patterns. Voici les étapes pour y accéder :",
     "AccessListItem1": "<a target='_blank' href='https://www.figma.com/signup'>Créez un compte Figma</a> si vous n'en avez pas déjà un.",
-    "AccessListItem2": "Envoyez un courriel à <a href='mailto:Matthew.Emond@cic.gc.ca'>Matthew.Emond@cic.gc.ca</a> et indiquez-nous le courriel que vous utilisez pour votre compte Figma. Vous recevrez une réponse dès que nous vous aurons accordé l'accès.",
+    "AccessListItem2": "Envoyez un courriel à <a href='mailto:IRCC.JLDS-JLSDC.IRCC@cic.gc.ca'>IRCC.JLDS-JLSDC.IRCC@cic.gc.ca</a> et indiquez-nous le courriel que vous utilisez pour votre compte Figma. Vous recevrez une réponse dès que nous vous aurons accordé l'accès.",
     "AccessListItem3": "Une fois que vous avez reçu la confirmation que vous avez accès, connectez-vous à Figma avec le courriel que vous avez fourni.",
     "AccessListItem4": "Créez un nouveau fichier de conception ou ouvrez un projet existant.",
     "AccessListItem5": "Dans la barre latérale gauche, sélectionnez 'Assets', puis sélectionnez l'icône de la bibliothèque d'équipe.",
@@ -356,7 +356,7 @@
     "ReleasesHeading": "Versions"
   },
   "Contact": {
-    "Text": "Pour faire part de vos commentaires (compliment, commentaire ou plainte) ou pour toute demande de renseignements, contactez <a href='mailto:Tyh.Simms@cic.gc.ca'>Tyh.Simms@cic.gc.ca</a>."
+    "Text": "Pour faire part de vos commentaires (compliment, commentaire ou plainte) ou pour toute demande de renseignements, contactez <a href='mailto:IRCC.JLDS-JLSDC.IRCC@cic.gc.ca'>IRCC.JLDS-JLSDC.IRCC@cic.gc.ca</a>."
   }
 }
 

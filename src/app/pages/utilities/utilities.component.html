@@ -16,7 +16,7 @@
         <div class="color-sample" [style]="'background: var('+color.tokenName+');'"></div>
       </td>
       <td>{{color.tokenName}}</td>
-      <td [innerHtml]="color.colorRole"></td>
+      <td [innerHtml]="color.colorRole" [style]="'white-space: normal; max-width: 200px;'"></td>
       <td [innerHtml]="color.figmaStyle"></td>
       <td [style]="'white-space: normal; min-width: 400px;'">
         {{color.description | translate}}

@@ -22,10 +22,14 @@
     </app-component-preview>
     <p>{{'Buttons.CriticalText' | translate}}</p>
     <h5>{{'Buttons.PlainHeading' | translate}}</h5>
-    <app-component-preview copyText="<button category='plain'>{{'Buttons.PlainBtnText' | translate}}</button>">
+    <app-component-preview
+      [style.width]="'300px'"
+      copyText="<button category='plain'>{{'Buttons.PlainBtnText' | translate}}</button>">
       <button category='plain'>{{'Buttons.PlainBtnText' | translate}}</button>
     </app-component-preview>
-    <app-component-preview copyText="<button category='plain' color='critical'>{{'Buttons.PlainCritBtnText' | translate}}</button>">
+    <app-component-preview
+      [style.width]="'300px'"
+      copyText="<button category='plain' color='critical'>{{'Buttons.PlainCritBtnText' | translate}}</button>">
       <button category='plain' color='critical'>{{'Buttons.PlainCritBtnText' | translate}}</button>
     </app-component-preview>
     <p>{{'Buttons.PlainText' | translate}}</p>

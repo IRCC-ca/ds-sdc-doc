@@ -20,8 +20,7 @@
             <div *ngIf="data.category === 'slug-url' && data.path">
                 <a class="menuItems"
                    routerLink="."
-                   routerLinkActive="active"
-                   [routerLinkActiveOptions]="fragMatchOptions"
+                   [routerLinkActive]="showActive ? 'active' : ''"
                    fragment="{{data.path | translate | SlugifyPipe}}">{{data.text | translate}}</a>
             </div>
         </div>

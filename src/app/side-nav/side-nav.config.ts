@@ -79,17 +79,6 @@ export class SideNavConfig {
             category : ItemCategory.subTitle,
             path: 'ROUTES.buttons'
         },
-        {
-            text: 'LeftSideNav.title.support',
-            type: ItemType.Link,
-            category: ItemCategory.Title,
-        },
-        {
-            text : 'LeftSideNav.sub-titles.contact',
-            type : ItemType.Link,
-            category : ItemCategory.subTitle,
-            path: 'ROUTES.contact'
-        },
     ]
     }
 }

@@ -314,7 +314,7 @@
     "FigmaImg1AltText": "The Figma interface used for connecting external component libraries to a Figma file.",
     "InstallFontsHeading": "Installing the design system fonts",
     "InstallFontsText1": "The design system uses Lato, Inter and Font Awesome (icon font). Lato and Inter are Google fonts and should automatically be available within Figma in the font picker. Font Awesome has been set as a “shared font” for our organization plan and should also be available automatically within Figma in the font picker. If you are not a member of the “IRCC - Journey Labs” Figma organization, you will need to obtain and install a paid version of Font Awesome or use your own icon font in combination with this design system.",
-    "InstallFontsLink": "<a href=https://fontawesome.com/'>Learn more about Font Awesome </a>",
+    "InstallFontsLink": "<a target='_blank' href='https://fontawesome.com/'>Learn more about Font Awesome </a>",
     "InstallFontsLinkURL": "https://fontawesome.com/",
     "UsingStylesHeading": "Using design system styles",
     "UsingStylesText1": "Once you’ve connected to the Figma libraries, and ensured you have access to the correct fonts within Figma, you’re ready to start using the colour and text styles from the system.",

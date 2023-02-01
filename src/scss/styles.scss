@@ -24,6 +24,8 @@ app-root {
   max-width: $page-width;
   margin: 0 auto;
   overflow: hidden;
+  // Colour overwrite
+  --generic-hover: transparent;
 }
 
 .language-toggle {

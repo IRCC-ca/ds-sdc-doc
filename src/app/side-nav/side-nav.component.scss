@@ -22,6 +22,9 @@ $footer-height: 240px;
     @include grid.un-laptop-layout {
       display: none;
     }
+    a:focus {
+      background: var(--navigation-weak);
+    }
   }
 
   .sidenav-section-wrapper {

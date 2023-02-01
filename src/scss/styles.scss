@@ -110,6 +110,9 @@ app-root {
         @include un-desktop-layout {
           padding-right: ircc-ds-sizes.$fixed-20;
         }
+        img {
+          max-width: 100%;
+        }
       }
     }
   }

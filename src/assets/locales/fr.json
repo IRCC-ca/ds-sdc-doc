@@ -98,7 +98,7 @@
     "FigmaDirectionsListItem1": "Dans le panneau des ressources, faire glisser le composant « bouton » à partir de la bibliothèque des composants.",
     "FigmaDirectionsListItem2": "Dans le panneau de droite, configurer les propriétés et les variantes en fonction de vos besoins.",
     "FigmaDirectionsListItem3": "Ne jamais modifier les couleurs, le rayon, le remplissage, la taille du texte, etc. De cette façon, les éléments fondamentaux restent cohérents.",
-    "FigmaDirectionsListItem4": "Si une icône est utilisée, les concepteurs peuvent <a target=_blank href=https://www.loom.com/share/b0d137f991034f08b504c93278384c2f>modifier</a> le mot-clé de Font Awesome afin de mettre à jour l’icône du bouton pour n’importe quelle icône de Font Awesome.",
+    "FigmaDirectionsListItem4": "Si une icône est utilisée, les concepteurs peuvent <a target='_blank' href='https://www.loom.com/share/b0d137f991034f08b504c93278384c2f'>modifier</a> le mot-clé de Font Awesome afin de mettre à jour l’icône du bouton pour n’importe quelle icône de Font Awesome.",
     "FigmaDirectionsImgAlt": "Une capture d’écran du panneau de conception de Figma. Le panneau de conception affiche les options de configuration parmi lesquelles les concepteurs peuvent choisir lorsqu’ils personnalisent un bouton.",
     "AccessibilityHeading": "Accessibilité",
     "AccessibilityColourHeading": "Contraste des couleurs",

@@ -10,18 +10,25 @@
 
     .wrapper-container {
       margin-top: 64px;
-
+      > div.col-md-6 {
+        padding-bottom: 12px;
+        // This can be replaced by Bootstrap's gutter
+        &:nth-child(1) {
+          @include grid.up-phone-layout {
+            padding-right: 6px;
+          }
+        }
+        &:nth-child(2) {
+          @include grid.up-phone-layout {
+            padding-left: 6px;
+          }
+        }
+      }
       .for-designers, .for-devs {
-        width: 470px;
-        height: 174px;
+        min-height: 174px;
         border: 1px solid #DFDFE1;
         border-radius: 12px;
         padding: 0 24px 24px 20px;
-        margin: 6px;
-
-        @include grid.un-laptop-layout {
-          width: 328px;
-        }
 
         h3 {
           margin: 20px 0 0 0;

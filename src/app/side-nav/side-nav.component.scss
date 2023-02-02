@@ -18,9 +18,11 @@ $footer-height: 240px;
   }
 
   .right-nav {
-    padding-left: 40px;
-    @include grid.un-laptop-layout {
+    @include grid.un-tablet-layout {
       display: none;
+    }
+    a:focus {
+      background: var(--navigation-weak);
     }
   }
 

@@ -24,6 +24,8 @@ app-root {
   max-width: $page-width;
   margin: 0 auto;
   overflow: hidden;
+  // Colour overwrite
+  --generic-hover: transparent;
 }
 
 .language-toggle {
@@ -40,6 +42,17 @@ app-root {
   z-index: 100;
   position: fixed;
   border-bottom: 1px solid var(--divider);
+  @include un-tablet-layout {
+    left: 0;
+  }
+  .grid-container {
+    @include un-tablet-layout {
+      padding-left: $tablet-padding;
+    }
+    @include in-phone-layout {
+      padding-left: $mobile-padding;
+    }
+  }
   h1 {
     @include un-tablet-layout {
       padding: 0 $tablet-padding;
@@ -87,11 +100,10 @@ app-root {
       @include col-12;
     }
     @include up-laptop-layout {
-      @include col-9;
+      @include col-10;
       padding-left: ircc-ds-sizes.$fixed-36;
     }
     @include in-desktop-layout {
-      @include col-10;
       padding-left: ircc-ds-sizes.$fixed-40;
     }
     @include un-tablet-layout {
@@ -103,6 +115,18 @@ app-root {
     }
     .page-content {
       width: 100%;
+      .content-doc-wrapper {
+        box-sizing: border-box;
+        @include in-desktop-layout {
+          padding-right: ircc-ds-sizes.$fixed-40;
+        }
+        @include un-desktop-layout {
+          padding-right: ircc-ds-sizes.$fixed-20;
+        }
+        img {
+          max-width: 100%;
+        }
+      }
     }
   }
 }

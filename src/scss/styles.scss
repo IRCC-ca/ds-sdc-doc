@@ -42,6 +42,7 @@ app-root {
   z-index: 100;
   position: fixed;
   border-bottom: 1px solid var(--divider);
+  padding-top: 16px;
   @include un-tablet-layout {
     left: 0;
   }

@@ -13,6 +13,7 @@
   "Buttons": {
     "Title": "Boutons",
     "Copy": "Copier",
+    "CopyCode": "Copier le code",
     "CopyURL": "Copier l’URL",
     "Intro": "Les boutons déclenchent une action ou permettent de naviguer vers une autre page. Ils ont de multiples styles et configurations selon les besoins variés. Ils attirent l’attention sur les actions que l’utilisateur doit effectuer pour progresser dans un flux.",
     "IntroAlert": "Cet élément de l’interface utilisateur est actuellement disponible uniquement dans le prologiciel des styles. Il sera bientôt offert pour le progiciel des composantes.",
@@ -97,7 +98,7 @@
     "FigmaDirectionsListItem1": "Dans le panneau des ressources, faire glisser le composant « bouton » à partir de la bibliothèque des composants.",
     "FigmaDirectionsListItem2": "Dans le panneau de droite, configurer les propriétés et les variantes en fonction de vos besoins.",
     "FigmaDirectionsListItem3": "Ne jamais modifier les couleurs, le rayon, le remplissage, la taille du texte, etc. De cette façon, les éléments fondamentaux restent cohérents.",
-    "FigmaDirectionsListItem4": "Si une icône est utilisée, les concepteurs peuvent <a target=_blank href=https://www.loom.com/share/b0d137f991034f08b504c93278384c2f>modifier</a> le mot-clé de Font Awesome afin de mettre à jour l’icône du bouton pour n’importe quelle icône de Font Awesome.",
+    "FigmaDirectionsListItem4": "Si une icône est utilisée, les concepteurs peuvent <a target='_blank' href='https://www.loom.com/share/b0d137f991034f08b504c93278384c2f'>modifier</a> le mot-clé de Font Awesome afin de mettre à jour l’icône du bouton pour n’importe quelle icône de Font Awesome.",
     "FigmaDirectionsImgAlt": "Une capture d’écran du panneau de conception de Figma. Le panneau de conception affiche les options de configuration parmi lesquelles les concepteurs peuvent choisir lorsqu’ils personnalisent un bouton.",
     "AccessibilityHeading": "Accessibilité",
     "AccessibilityColourHeading": "Contraste des couleurs",
@@ -280,7 +281,7 @@
       "input-field": "Champ de saisie",
       "radio-button": "Bouton radio",
       "tabs": "Onglets",
-      "contact": "Contacter"
+      "contact": "Contactez-nous"
     }
   },
   "Overview": {
@@ -302,7 +303,7 @@
     "AccessHeading": "Demande d'accès à la bibliothèque de conception",
     "AccessText1": "La bibliothèque de conception est publiée en tant que bibliothèque d'équipe sur Figma. Il existe actuellement trois fichiers Figma à connecter à votre projet afin d'accéder au système de conception complet - Foundations, Components et Patterns. Voici les étapes pour y accéder :",
     "AccessListItem1": "<a target='_blank' href='https://www.figma.com/signup'>Créez un compte Figma</a> si vous n'en avez pas déjà un.",
-    "AccessListItem2": "Envoyez un courriel à <a href='mailto:Matthew.Emond@cic.gc.ca'>Matthew.Emond@cic.gc.ca</a> et indiquez-nous le courriel que vous utilisez pour votre compte Figma. Vous recevrez une réponse dès que nous vous aurons accordé l'accès.",
+    "AccessListItem2": "Envoyez un courriel à <a href='mailto:IRCC.JLDS-JLSDC.IRCC@cic.gc.ca'>IRCC.JLDS-JLSDC.IRCC@cic.gc.ca</a> et indiquez-nous le courriel que vous utilisez pour votre compte Figma. Vous recevrez une réponse dès que nous vous aurons accordé l'accès.",
     "AccessListItem3": "Une fois que vous avez reçu la confirmation que vous avez accès, connectez-vous à Figma avec le courriel que vous avez fourni.",
     "AccessListItem4": "Créez un nouveau fichier de conception ou ouvrez un projet existant.",
     "AccessListItem5": "Dans la barre latérale gauche, sélectionnez 'Assets', puis sélectionnez l'icône de la bibliothèque d'équipe.",
@@ -355,7 +356,7 @@
     "ReleasesHeading": "Versions"
   },
   "Contact": {
-    "Text": "Pour faire part de vos commentaires (compliment, commentaire ou plainte) ou pour toute demande de renseignements, contactez <a href='mailto:Tyh.Simms@cic.gc.ca'>Tyh.Simms@cic.gc.ca</a>."
+    "Text": "Pour faire part de vos commentaires (compliment, commentaire ou plainte) ou pour toute demande de renseignements, contactez <a href='mailto:IRCC.JLDS-JLSDC.IRCC@cic.gc.ca'>IRCC.JLDS-JLSDC.IRCC@cic.gc.ca</a>."
   }
 }
 

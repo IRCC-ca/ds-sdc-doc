@@ -13,6 +13,7 @@
   "Buttons": {
     "Title": "Buttons",
     "Copy": "Copy",
+    "CopyCode": "Copy code",
     "CopyURL": "Copy URL",
     "Intro": "Buttons trigger an action or navigate to another page. They have multiple styles and configurations for various needs. They call attention to actions the user should take to progress through a flow.",
     "IntroAlert": "This UI element is currently available in our styles package only. The component version is coming soon.",
@@ -97,7 +98,7 @@
     "FigmaDirectionsListItem1": "From the “Assets” panel, drag in the <strong>“button”</strong> component from the Components library.",
     "FigmaDirectionsListItem2": "In the right panel, configure the properties and variants to meet your needs. ",
     "FigmaDirectionsListItem3": "Never override colours, radius, padding, text size, etc. This way foundational elements are kept consistent.",
-    "FigmaDirectionsListItem4": "If an icon is used, designers can <a target=_blank href=https://www.loom.com/share/b0d137f991034f08b504c93278384c2f>change the Font Awesome keyword</a> to update the icon in the button to any Font Awesome icon.",
+    "FigmaDirectionsListItem4": "If an icon is used, designers can <a target='_blank' href='https://www.loom.com/share/b0d137f991034f08b504c93278384c2f'>change the Font Awesome keyword</a> to update the icon in the button to any Font Awesome icon.",
     "FigmaDirectionsImgAlt": "A screenshot of the design panel from Figma. The design panel displays the configuration options designers can choose from when customizing a button.",
     "AccessibilityHeading": "Accessibility",
     "AccessibilityColourHeading": "Colour contrast",
@@ -281,7 +282,7 @@
       "input-field": "Input field",
       "radio-button": "Radio button",
       "tabs": "Tabs",
-      "contact": "Contact"
+      "contact": "Contact us"
     }
   },
   "Overview": {
@@ -299,11 +300,11 @@
     "HeadingText": "If you’re a designer, start here to find everything you need to use the design system’s Figma library.",
     "AboutHeading": "About the design library",
     "AboutText1": "The design system consists, in part, of a Figma library. This is the primary tool for designers to use and it allows them to create system-compatible designs. The design library is a centralized set of Figma files that is maintained by a core design system team. By connecting your project to the design library, your projects will automatically inherit updates, improvements and new features published to the design library.",
-    "AboutText2": "Figma is a collaborative design platform that is built to handle UI/UX and design system use cases. <a target='_blank' href='https://www.figma.com'>Learn more about Figma</a> or browse <a href='https://www.youtube.com/@Figma'>Figma’s Youtube channel</a> to become more familiar with the software or watch tutorials.",
+    "AboutText2": "Figma is a collaborative design platform that is built to handle UI/UX and design system use cases. <a target='_blank' href='https://www.figma.com'>Learn more about Figma</a> or browse <a target='_blank' href='https://www.youtube.com/@Figma'>Figma’s Youtube channel</a> to become more familiar with the software or watch tutorials.",
     "AccessHeading": "Requesting access to the design library",
     "AccessText1": "The design library is published as a team library on Figma. There are currently three Figma files to connect to your project in order to access the full design system – Foundations, Components and Patterns. Here are the steps to get access:",
     "AccessListItem1": "<a target='_blank' href='https://www.figma.com/signup'>Create a Figma account</a> if you don’t have one already.",
-    "AccessListItem2": "Email Matthew.Emond@cic.gc.ca and tell us the email you use for your Figma account. You will receive a response as soon as we’ve granted you access.",
+    "AccessListItem2": "Email <a href='mailto:IRCC.JLDS-JLSDC.IRCC@cic.gc.ca'>IRCC.JLDS-JLSDC.IRCC@cic.gc.ca</a> and tell us the email you use for your Figma account. You will receive a response as soon as we’ve granted you access.",
     "AccessListItem3": "Once you have received confirmation that you have access, log into Figma with the email you provided.",
     "AccessListItem4": "Create a new design file or open an existing project.",
     "AccessListItem5": "On the left sidebar, select “Assets,” then select the Team Library icon.",
@@ -313,7 +314,7 @@
     "FigmaImg1AltText": "The Figma interface used for connecting external component libraries to a Figma file.",
     "InstallFontsHeading": "Installing the design system fonts",
     "InstallFontsText1": "The design system uses Lato, Inter and Font Awesome (icon font). Lato and Inter are Google fonts and should automatically be available within Figma in the font picker. Font Awesome has been set as a “shared font” for our organization plan and should also be available automatically within Figma in the font picker. If you are not a member of the “IRCC - Journey Labs” Figma organization, you will need to obtain and install a paid version of Font Awesome or use your own icon font in combination with this design system.",
-    "InstallFontsLink": "<a href=https://fontawesome.com/'>Learn more about Font Awesome </a>",
+    "InstallFontsLink": "<a target='_blank' href='https://fontawesome.com/'>Learn more about Font Awesome </a>",
     "InstallFontsLinkURL": "https://fontawesome.com/",
     "UsingStylesHeading": "Using design system styles",
     "UsingStylesText1": "Once you’ve connected to the Figma libraries, and ensured you have access to the correct fonts within Figma, you’re ready to start using the colour and text styles from the system.",
@@ -356,6 +357,6 @@
     "ReleasesHeading": "Releases"
   },
   "Contact": {
-    "Text": "To provide feedback (compliment, comment or complaint) or for any inquiries, contact <a href='mailto:Tyh.Simms@cic.gc.ca'>Tyh.Simms@cic.gc.ca</a>."
+    "Text": "To provide feedback (compliment, comment or complaint) or for any inquiries, contact <a href='mailto:IRCC.JLDS-JLSDC.IRCC@cic.gc.ca'>IRCC.JLDS-JLSDC.IRCC@cic.gc.ca</a>."
   }
 }

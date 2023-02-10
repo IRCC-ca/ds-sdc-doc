@@ -24,8 +24,6 @@ app-root {
   max-width: $page-width;
   margin: 0 auto;
   overflow: hidden;
-  // Colour overwrite
-  --generic-hover: transparent;
 }
 
 .language-toggle {
@@ -200,5 +198,9 @@ jds-link {
 a {
   &:active {
     background: none !important;
+  }
+  // To be removed once core package fix the bug
+  &:hover {
+    background-color: transparent !important;
   }
 }

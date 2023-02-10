@@ -72,7 +72,7 @@ $footer-height: 240px;
       outline: var(--navigation) solid 1px !important;
     }
     &:hover {
-      background: var(--navigation-weak);
+      background: var(--generic-hover) !important;
     }
     &:visited {
       color:black;

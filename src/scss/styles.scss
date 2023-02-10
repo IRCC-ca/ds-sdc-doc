@@ -78,6 +78,9 @@ app-root {
 
   &.top {
     margin-top: 170px;
+    @include un-tablet-layout {
+      margin-top: 180px;
+    }
   }
 
   > app-side-nav.left-nav {

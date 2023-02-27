@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {SlugifyPipe} from "../../share/pipe-slugify.pipe";
 import {TranslateService} from "@ngx-translate/core";
 import {SideNavConfig} from "../../side-nav/side-nav.config";
@@ -15,6 +15,7 @@ import {TranslatedPageComponent} from "../translated-page-component";
 export class PageForDevelopersComponent implements OnInit, TranslatedPageComponent {
   rightNavData: ISideNavDataInterface[];
   rightNavDataRaw: string[] = [ // list of all right nav items
+    'Overview.DeveloperHeading',
     'Developers.GetStartedHeading',
     'Developers.UsageHeading',
     'Developers.FontAwesomeHeading',

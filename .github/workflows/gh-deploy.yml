@@ -4,8 +4,11 @@ on:
     # Sequence of patterns matched against refs/heads
     branches:
       - main
+    types:
+      - closed
 jobs:
   build-and-deploy:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

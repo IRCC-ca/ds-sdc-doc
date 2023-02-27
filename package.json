@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "deploy": "ng deploy --base-href='https://IRCC-ca.github.io/ds-sdc-doc/' --no-silent --name='The Buildbot' --email='buildbot@angular2buch.de'"
   },
   "private": true,
   "dependencies": {

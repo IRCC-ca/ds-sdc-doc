@@ -1,11 +1,14 @@
-name: CI / CD for Angular
+name: Angular Deploy to Github Page
 on:
   pull_request:
     # Sequence of patterns matched against refs/heads
-    branches:    
+    branches:
       - main
+    types:
+      - closed
 jobs:
   build-and-deploy:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -19,14 +22,8 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-        
-      - name: Build
-        run: ng build --configuration production
-        
+
       - name: Deploy to GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v3
-        with:
-          target_branch: gh-pages
-          build_dir: dist/ds-sdc-doc
+        run: npm run deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

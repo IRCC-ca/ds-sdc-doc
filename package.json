@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ng build --deploy-url /ds-sdc-doc/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint"

@@ -21,7 +21,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: ng build --configuration production
+        run: npm run build:prod
 
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3

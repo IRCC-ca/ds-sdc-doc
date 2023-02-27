@@ -20,14 +20,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-#      - name: Build
-#        run: npm run build:prod
-
       - name: Deploy to GitHub Pages
         run: npm run deploy
-        #        uses: crazy-max/ghaction-github-pages@v3
-#        with:
-#          target_branch: gh-pages
-#          build_dir: dist/ds-sdc-doc
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

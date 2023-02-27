@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --deploy-url /ds-sdc-doc/",
+    "build:prod": "ng build --base-href='https://IRCC-ca.github.io/ds-sdc-doc/'",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint"

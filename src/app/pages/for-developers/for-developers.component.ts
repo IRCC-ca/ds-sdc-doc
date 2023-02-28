@@ -15,6 +15,7 @@ import {TranslatedPageComponent} from "../translated-page-component";
 export class PageForDevelopersComponent implements OnInit, TranslatedPageComponent {
   rightNavData: ISideNavDataInterface[];
   rightNavDataRaw: string[] = [ // list of all right nav items
+    'Overview.DeveloperHeading',
     'Developers.GetStartedHeading',
     'Developers.UsageHeading',
     'Developers.FontAwesomeHeading',

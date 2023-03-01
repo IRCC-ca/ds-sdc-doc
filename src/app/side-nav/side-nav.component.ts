@@ -38,7 +38,6 @@ export class SideNavComponent implements OnInit, AfterViewInit {
   @Input() navBarData : ISideNavDataInterface[] = [];
 
   onWindowScroll() {
-    console.log("RUNNING");
     var current = '';
     //calculating real height of scrollable content
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -61,7 +60,6 @@ export class SideNavComponent implements OnInit, AfterViewInit {
       if (current != '' && link.getAttribute("href")?.endsWith(current) && link instanceof HTMLElement) {
       //class active needed for styling as well as focus to prevent negative interaction if using both clicking + scrolling
       link.classList.add("active");
-      console.log('LINK', link);
       link.focus();
       }
     });

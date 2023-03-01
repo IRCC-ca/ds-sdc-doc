@@ -46,7 +46,6 @@ export class SideNavComponent implements OnInit, AfterViewInit {
     //runs through sections to locate TOP of each heading
     sideNavTitles.forEach(section=>{
     const sectionTop = section.offsetTop;
-    //console.log(window.scrollY, height);
     //content begins 215px below sectionTop. Set current when scrollY passes top of section.
     if (window.scrollY >= sectionTop - 215 && window.scrollY != height) current = `${section.getAttribute("id")}`;
     });

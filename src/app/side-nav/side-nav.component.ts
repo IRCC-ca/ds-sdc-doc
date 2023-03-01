@@ -1,4 +1,4 @@
-import {Component, ElementRef, HostListener, Input, OnInit, AfterViewChecked} from '@angular/core';
+import {Component, ElementRef, HostListener, Input, OnInit, AfterViewInit} from '@angular/core';
 
 import {
   trigger,
@@ -33,34 +33,35 @@ import {IsActiveMatchOptions} from "@angular/router";
   ],
   providers: [SlugifyPipe]
 })
-export class SideNavComponent implements OnInit, AfterViewChecked {
+export class SideNavComponent implements OnInit, AfterViewInit {
   @Input() mobileToggleIcon: boolean = false; // If display toggle menu icon
   @Input() navBarData : ISideNavDataInterface[] = [];
 
-  @HostListener("window:scroll", [])
   onWindowScroll() {
+    console.log("RUNNING");
     var current = '';
     //calculating real height of scrollable content
-    const height = document.documentElement.offsetHeight - 566.5;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var sideNavTitles = document.querySelectorAll('h2');
     var sideNavLinks = document.querySelectorAll('.right-nav a');
     //runs through sections to locate TOP of each heading
     sideNavTitles.forEach(section=>{
     const sectionTop = section.offsetTop;
+    //console.log(window.scrollY, height);
     //content begins 215px below sectionTop. Set current when scrollY passes top of section.
     if (window.scrollY >= sectionTop - 215 && window.scrollY != height) current = `${section.getAttribute("id")}`;
     });
     //set current to lowest section is scroll is at bottom of content
-    if (window.scrollY === height) current = `${sideNavTitles[sideNavTitles.length - 1].getAttribute("id")}`;
+    if (window.scrollY >= height) current = `${sideNavTitles[sideNavTitles.length - 1].getAttribute("id")}`;
     //runs through links to set current active link
     sideNavLinks.forEach(link=>{
       link.classList.remove("active");
       //blur required to remove focus from previous link if it was clicked
-      if(document.activeElement instanceof HTMLElement) document.activeElement.blur();
+      if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
       if (current != '' && link.getAttribute("href")?.endsWith(current) && link instanceof HTMLElement) {
       //class active needed for styling as well as focus to prevent negative interaction if using both clicking + scrolling
       link.classList.add("active");
-      console.log(link);
+      console.log('LINK', link);
       link.focus();
       }
     });
@@ -103,12 +104,33 @@ export class SideNavComponent implements OnInit, AfterViewChecked {
     if (this.mobileToggleIcon) {
       this.toggleMobile();
     }
+    window.addEventListener("wheel", () => this.onWindowScroll());
+    window.addEventListener("touchmove", () => this.onWindowScroll());
+    window.addEventListener("mousedown", (e) => {
+      if(e.target instanceof HTMLAnchorElement){
+        document.querySelectorAll('.right-nav a').forEach(link => {link.classList.remove('active')});
+        e.target.focus();
+      }else{
+        this.onWindowScroll();
+      }
+    });
+    window.addEventListener("keydown", (e) => {
+      if(e.key === 'ArrowUp' || 'ArrowDown' || 'Up' || 'Down'){
+        this.onWindowScroll();
+      }
+    });
     this.adjustWidth();
   }
 
-  ngAfterViewChecked() {
-    //fake scroll event when ViewChecked to give focus and active to top link (if not navigating by heading ID)
-    dispatchEvent(new CustomEvent('scroll'));
+  ngAfterViewInit() {
+    if(window.location.hash){
+    document.querySelectorAll('.right-nav a').forEach(link => {
+      link.getAttribute("href")?.endsWith(window.location.hash) && link instanceof HTMLElement ? link.focus() : link.classList.remove('active');
+    });
+    } else {
+      var link = document.querySelectorAll('.right-nav a')[0];
+      link instanceof HTMLElement ? link.focus() : null;
+    }
   }
 
   private toggleMobile() {
@@ -142,7 +164,6 @@ export class SideNavComponent implements OnInit, AfterViewChecked {
   }
 
   toggleMobileMenu(hideOnClickMobileView : boolean) {
-
     if(hideOnClickMobileView) { //minimize left nav after menu item clicked in mobileView
       if (this.mobile && this.navStatus === 'nav-open') {
         this.navStatus = "nav-closed"

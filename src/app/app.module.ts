@@ -30,6 +30,7 @@ import { ForDesignersComponent } from './pages/for-designers/for-designers.compo
 import { LangSwitchComponent } from './share/lan-switch/lang-switch.component';
 import {SideNavComponent} from "./side-nav/side-nav.component";
 import { ShellComponent } from './shell/shell.component';
+import { IrccDsAngularComponentLibraryModule } from "ircc-ds-angular-component-library";
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/locales/', '.json');
@@ -66,6 +67,7 @@ const JL_ANGULAR_COMPONENTS = [
     BrowserModule,
     BrowserAnimationsModule,
     JL_ANGULAR_COMPONENTS,
+    IrccDsAngularComponentLibraryModule,
     HttpClientModule,
     MarkdownModule.forRoot({
       loader: HttpClient,

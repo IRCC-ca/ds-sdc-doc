@@ -40,7 +40,6 @@ app-root {
   z-index: 100;
   position: fixed;
   border-bottom: 1px solid var(--divider);
-  padding-top: 16px;
   @include un-tablet-layout {
     left: 0;
   }
@@ -58,6 +57,20 @@ app-root {
     }
     @include in-phone-layout {
       padding: 0 $mobile-padding;
+      font-size: 30px;
+    }
+  }
+  lib-header {
+    .grid-container {
+      img {
+        margin-left: 0;
+      }
+    }
+    button#header_langToggle {
+      padding-right: 0;
+      @include un-laptop-layout {
+        padding-right: 8px;
+      }
     }
   }
 }

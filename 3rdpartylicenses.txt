@@ -32,6 +32,9 @@ MIT
 @angular/core
 MIT
 
+@angular/forms
+MIT
+
 @angular/platform-browser
 MIT
 
@@ -52,6 +55,8 @@ MIT
 
 @ngx-translate/http-loader
 MIT
+
+ircc-ds-angular-component-library
 
 marked
 MIT

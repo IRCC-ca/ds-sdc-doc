@@ -41,7 +41,7 @@ export class SideNavComponent implements OnInit, AfterViewChecked {
   onWindowScroll() {
     var current = '';
     //calculating real height of scrollable content
-    const height = document.documentElement.offsetHeight - 566.5;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var sideNavTitles = document.querySelectorAll('h2');
     var sideNavLinks = document.querySelectorAll('.right-nav a');
     //runs through sections to locate TOP of each heading
@@ -51,8 +51,7 @@ export class SideNavComponent implements OnInit, AfterViewChecked {
     if (window.scrollY >= sectionTop - 215 && window.scrollY != height) current = `${section.getAttribute("id")}`;
     });
     //set current to lowest section is scroll is at bottom of content
-    if (window.scrollY === height) current = `${sideNavTitles[sideNavTitles.length - 1].getAttribute("id")}`;
-    //runs through links to set current active link
+    if (window.scrollY >= height) current = `${sideNavTitles[sideNavTitles.length - 1].getAttribute("id")}`;    //runs through links to set current active link
     sideNavLinks.forEach(link=>{
       link.classList.remove("active");
       //blur required to remove focus from previous link if it was clicked

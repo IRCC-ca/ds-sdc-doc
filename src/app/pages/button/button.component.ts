@@ -20,6 +20,7 @@ export class PageButtonComponent implements OnInit, TranslatedPageComponent {
     'Buttons.ConfigurationsHeading',
     'Buttons.DesignGuidelinesHeading',
     'Buttons.AnatomyHeading',
+    'Buttons.SpecsHeading',
     'Buttons.ContentGuidelinesHeading',
     'Buttons.FigmaHeading',
     'Buttons.AccessibilityHeading',

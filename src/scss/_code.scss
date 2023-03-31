@@ -1,4 +1,17 @@
 markdown {
+  p:first-of-type {
+    font-size: 20px;
+    margin: 0 0 64px 0;
+  }
+  #getting-started {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    margin: 0 0 24px 0;
+  }
+  p:nth-child(3) {
+    font-size: 14px;
+  }
   pre {
     border: 1px solid var(--border);
     border-radius: 6px;

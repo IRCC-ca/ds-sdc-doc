@@ -3,9 +3,19 @@
 :host {
   @include grid.row;
   > .content-doc-wrapper {
-    @include grid.col-12;
-    @include grid.up-laptop-layout {
       @include grid.col-12;
+      @include grid.up-laptop-layout {
+      @include grid.col-12;
+    }
+    .sub-title {
+      margin: {
+        top: 0;
+        bottom: 24px;
+      };
+    }
+    .overview-txt {
+      font-size: 20px;
+      margin: 24px 0 0 0;
     }
 
     .wrapper-container {
@@ -36,7 +46,11 @@
         }
 
         p {
-          margin: 12px 0;
+          margin: 10px 0 12px 0;
+        }
+
+        a {
+          padding: 0;
         }
       }
     }

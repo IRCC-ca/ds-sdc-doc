@@ -21,9 +21,9 @@ $footer-height: 240px;
     @include grid.un-tablet-layout {
       display: none;
     }
-    a:focus {
-      background: var(--navigation-weak);
-    }
+    // a:focus {
+    //   background: var(--navigation-weak);
+    // }
   }
 
   .sidenav-section-wrapper {
@@ -59,6 +59,7 @@ $footer-height: 240px;
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 12px;
+    margin-top: 32px;
   }
 
   a {
@@ -69,7 +70,8 @@ $footer-height: 240px;
       text-decoration: none;
     }
     &:focus {
-      outline: var(--navigation) solid 1px !important;
+      outline: var(--navigation) solid 3px !important;
+      // background: transparent;
     }
     &:hover {
       background: var(--generic-hover) !important;
@@ -79,8 +81,9 @@ $footer-height: 240px;
       text-decoration: none;
     }
     &.active {
-      background: var(--navigation-weak);
-      outline: var(--navigation) solid 1px;
+      background: var(--generic-active);
+      // background: var(--navigation-weak);
+      // outline: var(--navigation) solid 1px;
     }
   }
 }

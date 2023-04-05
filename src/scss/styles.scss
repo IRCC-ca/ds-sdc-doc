@@ -88,7 +88,7 @@ app-root {
   }
 
   &.top {
-    margin-top: 170px;
+    margin-top: 166px;
     @include un-tablet-layout {
       margin-top: 180px;
     }
@@ -123,10 +123,10 @@ app-root {
     }
     @include un-tablet-layout {
       @include col-12;
-      padding: 0 $tablet-padding;
+      padding: 0 calc($tablet-padding - 8px);
     }
     @include in-phone-layout {
-      padding: 0 $mobile-padding;
+      padding: 0 calc($mobile-padding - 8px);
     }
     .page-content {
       width: 100%;

@@ -1,7 +1,7 @@
 <div>
     <div class="header">
       <lib-header [id]="'header'"></lib-header>
-      <h1 class="emphasis">{{ 'Overview.SubHeading' | translate }}</h1>
+      <h2 class="emphasis overview-subHead">{{ 'Overview.SubHeading' | translate }}</h2>
     </div>
 
     <div class="main-container top {{navStatus}}">
@@ -10,7 +10,7 @@
         <div class="content-area-responsive">
           <div class="page-content">
             <router-outlet></router-outlet>
-            <p>{{ 'Home.DateModified' | translate}}: 2023-02-10</p>
+            <p class="date-txt">{{ 'Home.DateModified' | translate}}: 2023-02-10</p>
           </div>
         </div>
       </div>

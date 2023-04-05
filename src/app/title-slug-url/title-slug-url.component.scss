@@ -3,6 +3,8 @@
   > h2 {
     display: inline-block;
     font-weight: 700;
+    margin-top: 48px;
+    margin-bottom: 24px;
     &.primary {
       font-size: 36px;
     }
@@ -11,11 +13,13 @@
       margin-top: 60px;
     }
   }
-  > a {
+  > a { //should update to h6 as link
+    padding: 0;
     margin-left: 16px;
     position: relative;
     bottom: 5px;
     text-decoration: none !important;
     color: var(--link-text);
+    font-family: 'Lato';
   }
 }

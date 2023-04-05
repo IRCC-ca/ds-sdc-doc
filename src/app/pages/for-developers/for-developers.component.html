@@ -2,7 +2,9 @@
   <jds-button class="copy">{{'Buttons.Copy' | translate}}</jds-button>
 </ng-template>
 <div class="content-doc-wrapper col-12 col-lg-9 col-xl-10">
-  <app-title-slug-url type="primary">{{'Overview.DeveloperHeading' | translate}}</app-title-slug-url>
+  <app-title-slug-url class="for-developers" type="primary">{{'Overview.DeveloperHeading' | translate}}</app-title-slug-url>
+  <p class="dev-txt">{{'Overview.DeveloperPackageTxt' | translate}}</p>
+  <app-title-slug-url class="getting-started" type="primary">{{'Developers.GetStartedHeading' | translate}}</app-title-slug-url>
   <markdown *ngIf="translate.currentLang==='en'"
             clipboard
             [clipboardButtonTemplate]="clipboardBtn"

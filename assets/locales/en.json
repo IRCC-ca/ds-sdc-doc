@@ -292,6 +292,7 @@
     "DesignerHeading": "For designers",
     "DesignerText": "Learn how to get started with the IRCC design system Figma library.",
     "DeveloperHeading": "For developers",
+    "DeveloperPackageTxt": "This package contains the theming functionality for the Journey Design System.",
     "DeveloperText": "Learn how to get started setting up the IRCC Design System in your project.",
     "GetStartedHeading": "Get started"
   },

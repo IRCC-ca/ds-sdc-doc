@@ -1,5 +1,5 @@
-Ce qui précède est une information générale afin de commencer. Vous pouvez trouver des directives d'utilisation Figma plus détaillées spécifiques à chaque partie du système sur leurs pages respectives sur ce site.
-## Commencer
+<!-- Ce qui précède est une information générale afin de commencer. Vous pouvez trouver des directives d'utilisation Figma plus détaillées spécifiques à chaque partie du système sur leurs pages respectives sur ce site.
+## Commencer -->
 
 Pour installer les styles du système de conception, vous devrez exécuter la commande suivante à l'aide de [npm](https://www.npmjs.com/) :
 

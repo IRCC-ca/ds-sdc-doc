@@ -10,10 +10,12 @@ $footer-height: 240px;
     font-size: ircc-ds-sizes.$fixed-24;
     position: fixed;
     top: 123px;
-    right: 26px;
+    right: ircc-ds-sizes.$fixed-36;
     @include grid.un-laptop-layout {
-      right: ircc-ds-sizes.$fixed-12;
       z-index: 200;
+    }
+    @include grid.in-phone-layout {
+      right: 27px;
     }
   }
 

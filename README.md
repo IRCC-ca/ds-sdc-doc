@@ -17,7 +17,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Deploy
 
-Run `ng deploy --base-href="https://<user_name>.github.io/<repo_name>/"` to deploy to Github Page.
+Create & merge a Pull Request from `develop` to `main` to deploy to Github Page.
 
 ## Running unit tests
 

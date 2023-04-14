@@ -14,12 +14,20 @@
     }
   }
   > a { //should update to h6 as link
-    padding: 0;
+    padding: 12px 20px;
     margin-left: 16px;
     position: relative;
     bottom: 5px;
     text-decoration: none !important;
     color: var(--link-text);
     font-family: 'Lato';
+
+    &:hover {
+      background-color:var(--generic-hover) !important;
+    }
+    
+    &:active {
+      background-color:var(--generic-active) !important;
+    }
   }
 }

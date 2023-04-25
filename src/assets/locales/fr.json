@@ -1,6 +1,7 @@
 {
   "Home": {
-    "DateModified": "Date de modification"
+    "DateModified": "Date de modification",
+    "FooterAlt": "Symbole du gouvernement du Canada"
   },
   "ROUTES": {
     "overview": "apercu",
